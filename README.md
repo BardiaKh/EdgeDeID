@@ -1,4 +1,4 @@
-# EdgeDeID (HDIT)
+# EdgeDeID
 
 **Edge-deployable PHI de-identification for medical notes.**
 A reproducible pipeline for distilling three frontier LLM "teachers" into a
@@ -6,7 +6,7 @@ small Qwen3 student that tags protected health information (PHI) with XML
 entity markup, suitable for on-device or air-gapped deployment via
 `llama.cpp`.
 
-> Methodology: **HDIT** — *Hybrid Distillation with Iterative Tagging.*
+> Methodology: *Hybrid Distillation with Iterative Tagging.*
 > Multiple teachers generate diverse synthetic notes, a first-pass student
 > model is trained on raw teacher labels, that student then re-labels its own
 > training corpus to correct teacher drift, and a final student is trained on
