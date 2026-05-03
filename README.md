@@ -125,7 +125,6 @@ EdgeDeID/
 ├── evals/                         Stage-6 evaluation
 │   ├── synth_eval/                Held-out synthetic test set
 │   ├── ext_eval/                  External (English benchmark) evaluation
-│   ├── emory_reports.ipynb        Internal Emory de-id'd reports (data not shipped)
 │   ├── *.xlsx                     Per-tag F1 / precision / recall tables
 │   └── *.html                     Plotly performance dashboards
 │
@@ -290,15 +289,12 @@ or pass `--model` with an absolute path).
 
 ## Evaluation
 
-`evals/` contains three evaluation notebooks:
+`evals/` contains two evaluation notebooks:
 
 - **`synth_eval/synth_eval.ipynb`** — held-out synthetic test set
   (`data/test.csv`).
 - **`ext_eval/en_eval.ipynb`** — public English benchmark
   (`evals/ext_eval/en_data.csv`, included).
-- **`emory_reports.ipynb`** — internal Emory de-id'd reports. **Data not
-  shipped**; supply your own `JudyReports/CXP_Labeler_input_w_deid_reports.csv`
-  to run.
 
 Outputs include per-tag precision/recall/F1 (`*.xlsx`) and Plotly composite
 performance dashboards (`*.html`). The companion `synth_eval_inst.ipynb`
