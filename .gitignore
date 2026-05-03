@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv/
+.env
+env/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Training artifacts
+wandb/
+runs/
+*.safetensors
+*.gguf
+*.bin
+checkpoint-*/
+HF_Models/
+
+# Logs
+*.log
+
+# Final combined dataset — regenerate via data_prep/combine.ipynb
+data/train.csv
+data/test.csv
+# Optional: comment out the next line if you want to ship a small sample
+# !data/sample/*.csv
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/

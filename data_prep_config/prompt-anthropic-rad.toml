@@ -1,0 +1,290 @@
+[METADATA]
+version = "0.2"
+description = "Synthetic Medical Report Generator with Anonymization, Extended Identifiers, and Diversity"
+
+[PROMPTS]
+system_prompt = """
+You are an AI assistant trained to generate diverse, realistic medical reports and their anonymized versions. 
+The anonymized versions should replace all protected health information (PHI) with XML tags according to the provided schema.
+Generate reports based on the specified length and include only the requested features.
+"""
+
+xml_schema = """
+## XML Schema for Anonymized Reports:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="medical_report">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="name" type="nameType"/>
+        <xs:element name="age" type="xs:positiveInteger"/>
+        <xs:element name="date" type="xs:date"/>
+        <xs:element name="place" type="placeType"/>
+        <xs:element name="address" type="xs:string"/>
+        <xs:element name="phone" type="xs:string"/>
+        <xs:element name="email" type="xs:string"/>
+        <xs:element name="id" type="idType"/>
+        <xs:element name="url" type="xs:anyURI"/>
+        <xs:element name="device" type="xs:string"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="nameType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+        <xs:attribute name="type" use="required">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="patient"/>
+              <xs:enumeration value="doctor"/>
+              <xs:enumeration value="nurse"/>
+              <xs:enumeration value="other"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="placeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+        <xs:attribute name="type" use="required">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="hospital"/>
+              <xs:enumeration value="clinic"/>
+              <xs:enumeration value="other"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="idType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="type" use="required">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="MRN"/>
+              <xs:enumeration value="SSN"/>
+              <xs:enumeration value="health_plan"/>
+              <xs:enumeration value="account"/>
+              <xs:enumeration value="license"/>
+              <xs:enumeration value="other"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>
+```
+"""
+
+task_description = """
+## Task:
+Generate a realistic medical report and its anonymized version. The raw report should be wrapped in <raw_report> tags, and the anonymized version should be wrapped in <anonymized_report> tags. Use the XML schema provided above for the anonymized version.
+
+Adjust the length and content of the report based on the following parameters:
+- report_length: (short, medium, or long)
+- features_to_include: (comma-separated list of features to include in the report, chosen from the xml schema)
+
+Ensure that the generated report matches the specified length and only includes the requested features. Create diverse reports with varying medical conditions, patient demographics, and healthcare settings. Use names from various ethnicities and nationalities to reflect a diverse patient population. All text should be in English.
+
+Additional requirements:
+
+1. Structure the patient's notes with diverse clinical scenarios, formats, and treatments, mentioning procedures and medication names if required.
+2. If asked for to mention medical devices, use specific brand names. Specific medical devices including their brand names, models, and serial numbers should be wrapped in <device> tags. Generic device references (e.g., "insulin pump" without brand/model) do not need to be anonymized.
+3. Use common medical abbreviations where appropriate.
+4. Ensure a wide variety of clinical presentations, diagnoses, and treatment plans across different reports.
+5. Make sure that the report is PHI-dense, meaning that there are multiple PHI elements in the report.
+6. Express your creativity and make the report as diverse as possible.
+7. Do not include any other information after </raw_report> or </anonymized_report>.
+
+"""
+
+examples = """
+## Examples:
+
+Example 1:
+- report_length: medium
+- features_to_include: name, age, hospital, date, id
+
+<raw_report>
+EXAM: CT HEAD WITHOUT CONTRAST
+
+CLINICAL INDICATION: 
+72-year-old male presenting to Mount Sinai Medical Center ED with acute onset headache and left-sided weakness. MRN: MSH-78901234.
+
+COMPARISON: 
+None available.
+
+TECHNIQUE: 
+Non-contrast CT imaging of the head was performed from skull base to vertex with multiplanar reconstructions.
+
+FINDINGS:
+Large acute right middle cerebral artery territory infarct with hypodense areas in the right frontal, temporal, and parietal lobes. No hemorrhagic transformation. No midline shift. Ventricles are normal in size. Gray-white matter differentiation is preserved in other regions.
+
+IMPRESSION:
+1. Large acute right MCA territory infarct
+2. No hemorrhagic transformation
+3. No significant mass effect or midline shift
+
+Results were discussed with Dr. Sarah Chen, Emergency Department attending physician, on 01/15/2023 at 11:15 AM.
+
+Dictated by: Dr. Michael O'Connor via PowerScribe 360
+Electronically signed by: Dr. Michael O'Connor, 01/15/2023 11:20 AM
+</raw_report>
+
+<anonymized_report>
+EXAM: CT HEAD WITHOUT CONTRAST
+
+CLINICAL INDICATION: 
+<age>72</age>-year-old male presenting to <place id="1" type="hospital">Mount Sinai Medical Center</place> ED with acute onset headache and left-sided weakness. MRN: <id type="MRN">MSH-78901234</id>.
+
+COMPARISON: 
+None available.
+
+TECHNIQUE: 
+Non-contrast CT imaging of the head was performed from skull base to vertex with multiplanar reconstructions.
+
+FINDINGS:
+Large acute right middle cerebral artery territory infarct with hypodense areas in the right frontal, temporal, and parietal lobes. No hemorrhagic transformation. No midline shift. Ventricles are normal in size. Gray-white matter differentiation is preserved in other regions.
+
+IMPRESSION:
+1. Large acute right MCA territory infarct
+2. No hemorrhagic transformation
+3. No significant mass effect or midline shift
+
+Results were discussed with <name id="1" type="doctor">Dr. Sarah Chen</name>, Emergency Department attending physician, on <date>2023-01-15</date> at 11:15 AM.
+
+Dictated by: <name id="2" type="doctor">Dr. Michael O'Connor</name> via <device>PowerScribe 360</device>
+Electronically signed by: <name id="2" type="doctor">Dr. Michael O'Connor</name>, <date>2023-01-15</date> 11:20 AM
+</anonymized_report>
+
+Example 2:
+- report_length: short
+- features_to_include: name, age, hospital, date, id
+
+<raw_report>
+ORDER: CHEST X-RAY, 2 VIEWS
+EXAM DATE: 03/22/2023 14:45 PM
+
+CLINICAL INDICATION:
+45F with productive cough, fever. R/O pneumonia. Stanford Medical Record #: SMH-345678.
+
+COMPARISON:
+Chest radiograph from Stanford Hospital dated 01/15/2023.
+
+FINDINGS:
+Right lower lobe consolidation with air bronchograms. No pleural effusion. Heart size normal. No pneumothorax. Correct Pacemaker placement.
+
+IMPRESSION:
+Right lower lobe pneumonia.
+
+Results communicated to Dr. James Wong at 15:00 by Dr. Aisha Patel.
+
+Final Report: Dr. Aisha Patel
+Signed: 03/22/2023 15:15 PM
+</raw_report>
+
+<anonymized_report>
+ORDER: CHEST X-RAY, 2 VIEWS
+EXAM DATE: <date>2023-03-22</date> 14:45 PM
+
+CLINICAL INDICATION:
+<age>45</age>F with productive cough, fever. R/O pneumonia. <place id="1" type="hospital">Stanford Hospital</place> Medical Record #: <id type="MRN">SMH-345678</id>.
+
+COMPARISON:
+Chest radiograph from <place id="1" type="hospital">Stanford Hospital</place> dated <date>2023-01-15</date>.
+
+FINDINGS:
+Right lower lobe consolidation with air bronchograms. No pleural effusion. Heart size normal. No pneumothorax. Correct Pacemaker placement.
+
+IMPRESSION:
+Right lower lobe pneumonia.
+
+Results communicated to <name id="1" type="doctor">Dr. James Wong</name> at 15:00 by <name id="2" type="doctor">Dr. Aisha Patel</name>.
+
+Final Report: <name id="2" type="doctor">Dr. Aisha Patel</name>
+Signed: <date>2023-03-22</date> 15:15 PM
+</anonymized_report>
+
+Example 3:
+- report_length: long
+- features_to_include: name, age, hospital, date, id, device
+
+<raw_report>
+MRI LUMBAR SPINE WITH AND WITHOUT CONTRAST
+EXAM DATE: 05/03/2023 09:00 AM
+
+CLINICAL INDICATION: Miguel Rodriguez, 63-year-old male with chronic low back pain and right leg radiculopathy. Post-epidural steroid injection at UCLA Medical Center (MRN: UCLA-56789012).
+
+COMPARISON: MRI lumbar spine without contrast from 11/15/2022.
+
+TECHNIQUE: MRI of the lumbar spine was performed on Siemens MAGNETOM Vida 3T scanner (SN: VIDA-89012) with and without intravenous contrast using standard protocol including sagittal and axial T1 and T2-weighted sequences, STIR sequences, and post-contrast T1-weighted images with fat suppression.
+
+FINDINGS: Multilevel degenerative changes are present throughout the lumbar spine, most pronounced at L4-L5 and L5-S1. At L4-L5, there is a broad-based disc protrusion with right lateral recess stenosis and compression of the traversing right L5 nerve root. Moderate bilateral neural foraminal narrowing is present. At L5-S1, there is a disc extrusion with inferior migration, causing severe right neural foraminal stenosis and compression of the exiting right L5 nerve root.
+
+Central canal stenosis is moderate at L4-L5 and mild at L3-L4. Facet arthropathy is moderate to severe at L4-L5 and L5-S1 levels. Bone marrow signal is normal.
+
+IMPRESSION:
+1. L4-L5 disc protrusion with right lateral recess stenosis and right L5 nerve root compression
+2. L5-S1 disc extrusion with inferior migration and severe right neural foraminal stenosis
+3. Multilevel degenerative changes as described above
+4. No acute fracture or malignancy
+
+Results were discussed with Dr. Elena Torres, referring physician, on 05/03/2023 at 10:30 AM.
+
+Dictated by: Dr. Robert Kim
+Electronically signed by: Dr. Robert Kim, 05/03/2023 10:45 AM
+</raw_report>
+
+<anonymized_report>
+MRI LUMBAR SPINE WITH AND WITHOUT CONTRAST
+EXAM DATE: <date>2023-05-03</date> 09:00 AM
+
+CLINICAL INDICATION: <name id="1" type="patient">Miguel Rodriguez</name>, <age>63</age>-year-old male with chronic low back pain and right leg radiculopathy. Post-epidural steroid injection at <place id="1" type="hospital">UCLA Medical Center</place> (MRN: <id type="MRN">UCLA-56789012</id>).
+
+COMPARISON: MRI lumbar spine without contrast from <date>2022-11-15</date>.
+
+TECHNIQUE: MRI of the lumbar spine was performed on <device>Siemens MAGNETOM Vida 3T scanner (SN: VIDA-89012)</device> with and without intravenous contrast using standard protocol including sagittal and axial T1 and T2-weighted sequences, STIR sequences, and post-contrast T1-weighted images with fat suppression.
+
+FINDINGS: Multilevel degenerative changes are present throughout the lumbar spine, most pronounced at L4-L5 and L5-S1. At L4-L5, there is a broad-based disc protrusion with right lateral recess stenosis and compression of the traversing right L5 nerve root. Moderate bilateral neural foraminal narrowing is present. At L5-S1, there is a disc extrusion with inferior migration, causing severe right neural foraminal stenosis and compression of the exiting right L5 nerve root.
+
+Central canal stenosis is moderate at L4-L5 and mild at L3-L4. Facet arthropathy is moderate to severe at L4-L5 and L5-S1 levels. Bone marrow signal is normal.
+
+IMPRESSION:
+1. L4-L5 disc protrusion with right lateral recess stenosis and right L5 nerve root compression
+2. L5-S1 disc extrusion with inferior migration and severe right neural foraminal stenosis
+3. Multilevel degenerative changes as described above
+4. No acute fracture or malignancy
+
+Results were discussed with <name id="2" type="doctor">Dr. Elena Torres</name>, referring physician, on <date>2023-05-03</date> at 10:30 AM.
+
+Dictated by: <name id="3" type="doctor">Dr. Robert Kim</name>
+Electronically signed by: <name id="3" type="doctor">Dr. Robert Kim</name>, <date>2023-05-03</date> 10:45 AM
+</anonymized_report>
+"""
+
+step_1 = """
+Now, generate a new medical report based on the specified report_length and features_to_include. Then anonymize it based on the given XML schema and put it in the <anonymized_report> tags. The anonymized report should be an EXACT match to the raw report.
+
+- report_length: {{report_length}}
+- features_to_include: {{features_to_include}}
+
+"""
+
+[CONSTRUCTOR]
+system = "rdp(system_prompt)"
+user = ["rdp(xml_schema + task_description + examples + step_1)"]
+response_templates = ["<raw_report>\n"]
+stop_tags = ["\n</anonymized_report>"]

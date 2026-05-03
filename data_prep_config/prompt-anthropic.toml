@@ -1,0 +1,208 @@
+[METADATA]
+version = "0.2"
+description = "Synthetic Medical Report Generator with Anonymization, Extended Identifiers, and Diversity"
+
+[PROMPTS]
+system_prompt = """
+You are an AI assistant trained to generate diverse, realistic medical reports and their anonymized versions. 
+The anonymized versions should replace all protected health information (PHI) with XML tags according to the provided schema.
+Generate reports based on the specified length and include only the requested features.
+"""
+
+xml_schema = """
+## XML Schema for Anonymized Reports:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="medical_report">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="name" type="nameType"/>
+        <xs:element name="age" type="xs:positiveInteger"/>
+        <xs:element name="date" type="xs:date"/>
+        <xs:element name="place" type="placeType"/>
+        <xs:element name="address" type="xs:string"/>
+        <xs:element name="phone" type="xs:string"/>
+        <xs:element name="email" type="xs:string"/>
+        <xs:element name="id" type="idType"/>
+        <xs:element name="url" type="xs:anyURI"/>
+        <xs:element name="device" type="xs:string"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="nameType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+        <xs:attribute name="type" use="required">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="patient"/>
+              <xs:enumeration value="doctor"/>
+              <xs:enumeration value="nurse"/>
+              <xs:enumeration value="other"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="placeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+        <xs:attribute name="type" use="required">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="hospital"/>
+              <xs:enumeration value="clinic"/>
+              <xs:enumeration value="other"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="idType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="type" use="required">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="MRN"/>
+              <xs:enumeration value="SSN"/>
+              <xs:enumeration value="health_plan"/>
+              <xs:enumeration value="account"/>
+              <xs:enumeration value="license"/>
+              <xs:enumeration value="other"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>
+```
+"""
+
+task_description = """
+## Task:
+Generate a realistic medical report and its anonymized version. The raw report should be wrapped in <raw_report> tags, and the anonymized version should be wrapped in <anonymized_report> tags. Use the XML schema provided above for the anonymized version.
+
+Adjust the length and content of the report based on the following parameters:
+- report_length: (short, medium, or long)
+- features_to_include: (comma-separated list of features to include in the report, chosen from the xml schema)
+
+Ensure that the generated report matches the specified length and only includes the requested features. Create diverse reports with varying medical conditions, patient demographics, and healthcare settings. Use names from various ethnicities and nationalities to reflect a diverse patient population. All text should be in English.
+
+Additional requirements:
+
+1. Structure the patient's notes with diverse clinical scenarios, formats, and treatments, mentioning procedures and medication names if required.
+2. If asked for to mention medical devices, use specific brand names. Specific medical devices including their brand names, models, and serial numbers should be wrapped in <device> tags. Generic device references (e.g., "insulin pump" without brand/model) do not need to be anonymized.
+3. Use common medical abbreviations where appropriate.
+4. Ensure a wide variety of clinical presentations, diagnoses, and treatment plans across different reports.
+5. Make sure that the report is PHI-dense, meaning that there are multiple PHI elements in the report.
+6. Express your creativity and make the report as diverse as possible.
+7. Do not include any other information after </raw_report> or </anonymized_report>.
+
+"""
+
+examples = """
+## Examples:
+
+Example 1:
+- report_length: medium
+- features_to_include: name, age, hospital, date, address, phone, id
+
+<raw_report>
+Aisha Patel, a 34-year-old F presenting to Mount Sinai Hospital ED on 03/15/2023. MRN: MSH-89012345. Contact: (212) 555-6789. Resides at 789 Broadway, Apt 12C, New York, NY 10003.
+
+HPI: Pt c/o SOB and chest pain x 2 days. Hx of mild intermittent asthma, last exacerbation 2 yrs ago. Current episode began after exposure to strong cleaning products at work. Denies fever, cough, or recent URI. No h/o smoking. 
+
+PE: VS: BP 128/82, HR 92, RR 24, T 98.6°F, SpO2 94% on RA. Lungs with diffuse expiratory wheezing, no crackles. CV: Tachy, regular rhythm, no murmurs.
+
+Dx: Acute asthma exacerbation
+
+Tx: Albuterol/Ipratropium nebulizer q4h, IV methylprednisolone 125mg, consider discharge on Symbicort 160/4.5 mcg inhaler BID if good response.
+
+F/u with PCP Dr. Jared Cohen in 3-5 days. Return to ED prn worsening symptoms.
+</raw_report>
+
+<anonymized_report>
+<name id="1" type="patient">Aisha Patel</name>, a <age>34</age>-year-old F presenting to <place id="1" type="hospital">Mount Sinai Hospital</place> ED on <date>2023-03-15</date>. MRN: <id type="MRN">MSH-89012345</id>. Contact: <phone>(212) 555-6789</phone>. Resides at <address>789 Broadway, Apt 12C, New York, NY 10003</address>.
+
+HPI: Pt c/o SOB and chest pain x 2 days. Hx of mild intermittent asthma, last exacerbation 2 yrs ago. Current episode began after exposure to strong cleaning products at work. Denies fever, cough, or recent URI. No h/o smoking. 
+
+PE: VS: BP 128/82, HR 92, RR 24, T 98.6°F, SpO2 94% on RA. Lungs with diffuse expiratory wheezing, no crackles. CV: Tachy, regular rhythm, no murmurs.
+
+Dx: Acute asthma exacerbation
+
+Tx: Albuterol/Ipratropium nebulizer q4h, IV methylprednisolone 125mg, consider discharge on Symbicort 160/4.5 mcg inhaler BID if good response.
+
+F/u with PCP <name id="2" type="doctor">Dr. Jared Cohen</name> in 3-5 days. Return to ED prn worsening symptoms.
+</anonymized_report>
+
+Example 2:
+- report_length: short
+- features_to_include: name, age, hospital, email, id
+
+<raw_report>
+Pt 52 M, (email: j.rodriguez@email.com) visited Cedars-Sinai Medical Center, for a routine diabetes check-up. Health Plan ID: CSHP-456789. Dr. Smith noted improved blood glucose levels and adjusted medication dosage. Mr. Rodríguez was advised to maintain his diet and exercise regimen. Next appointment: two weeks.
+</raw_report>
+
+<anonymized_report>
+Pt, <age>52</age> M, (email: <email>j.rodriguez@email.com</email>) visited <place id="1" type="hospital">Cedars-Sinai Medical Center</place>, for a routine diabetes check-up. Health Plan ID: <id type="health_plan">CSHP-456789</id>. <name id="1" type="doctor">Dr. Smith</name> noted improved blood glucose levels and adjusted medication dosage. <name id="2" type="patient">Mr. Rodríguez</name> was advised to maintain his diet and exercise regimen. Next appointment: two weeks.
+</anonymized_report>
+
+Example 3:
+- report_length: long
+- features_to_include: name, age, date, hospital, address, phone, fax, id, url, device
+
+<raw_report>
+On February 10, 2023, Zara Mbatha, a 41-year-old woman residing at 567 Oak Ave, Boston, MA 02108, was admitted to Massachusetts General Hospital for a scheduled cardiac pacemaker implantation. Patient contact: (617) 555-1234. MGH Fax: (617) 555-5678. Medical Record Number: MGH-23456789.
+
+Dr. Elena Vázquez performed the procedure, implanting a Medtronic Advisa MRI™ SureScan pacemaker (Serial No: MDT12345) without complications. Post-operative care instructions were provided, including information about MRI safety and device monitoring through the patient portal (https://patientgateway.massgeneralhospital.org).
+
+Ms. Mbatha was discharged on February 12, 2023, with prescriptions for pain management and anticoagulation therapy. She was instructed to avoid strenuous activities for 4-6 weeks and to contact the cardiology department if experiencing any unusual symptoms.
+
+Follow-up appointments:
+1. Wound check with Nurse Practitioner Keisha Johnson on February 19, 2023
+2. Device check and programming with Dr. Vázquez on March 10, 2023
+3. Cardiac rehabilitation assessment on April 1, 2023
+
+Patient education materials were provided, including access to online resources at www.mghheartcenter.org/pacemakereducation.
+</raw_report>
+
+<anonymized_report>
+On <date>2023-02-10</date>, <name id="1" type="patient">Zara Mbatha</name>, a <age>41</age>-year-old individual residing at <address>567 Oak Ave, Boston, MA 02108</address>, was admitted to <place id="1" type="hospital">Massachusetts General Hospital</place> for a scheduled cardiac pacemaker implantation. Patient contact: <phone>(617) 555-1234</phone>. MGH Fax: <fax>(617) 555-5678</fax>. Medical Record Number: <id type="MRN">MGH-23456789</id>.
+
+<name id="2" type="doctor">Dr. Elena Vázquez</name> performed the procedure, implanting a <device>Medtronic Advisa MRI™ SureScan pacemaker (Serial No: MDT12345)</device> without complications. Post-operative care instructions were provided, including information about MRI safety and device monitoring through the patient portal (<url>https://patientgateway.massgeneralhospital.org</url>).
+
+<name id="1" type="patient">Ms. Mbatha</name> was discharged on <date>2023-02-12</date>, with prescriptions for pain management and anticoagulation therapy. She was instructed to avoid strenuous activities for 4-6 weeks and to contact the cardiology department if experiencing any unusual symptoms.
+
+Follow-up appointments:
+1. Wound check with Nurse Practitioner <name id="3" type="nurse">Keisha Johnson</name> on <date>2023-02-19</date>
+2. Device check and programming with <name id="2" type="doctor">Dr. Vázquez</name> on <date>2023-03-10</date>
+3. Cardiac rehabilitation assessment on <date>2023-04-01</date>
+
+Patient education materials were provided, including access to online resources at <url>www.mghheartcenter.org/pacemakereducation</url>.
+</anonymized_report>
+"""
+
+step_1 = """
+Now, generate a new medical report based on the specified report_length and features_to_include. Then anonymize it based on the given XML schema and put it in the <anonymized_report> tags. The anonymized report should be an EXACT match to the raw report.
+
+- report_length: {{report_length}}
+- features_to_include: {{features_to_include}}
+
+"""
+
+[CONSTRUCTOR]
+system = "rdp(system_prompt)"
+user = ["rdp(xml_schema + task_description + examples + step_1)"]
+response_templates = ["<raw_report>\n"]
+stop_tags = ["\n</anonymized_report>"]
