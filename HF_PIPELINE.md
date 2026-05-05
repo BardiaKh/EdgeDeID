@@ -6,19 +6,77 @@ Smart automation to push/pull EdgeDeID synthetic data to/from Hugging Face Hub *
 
 ---
 
-## 🚀 Quick Start (No Manual Copying!)
+## Secure Token Setup
+
+**Each team member** generates a personal HF token — zero tokens in the repo.
+
+### Local Development (Recommended)
+
+1. **Generate token** at https://huggingface.co/settings/tokens
+   - Click "New token"
+   - Name: `EdgeDeID` (or your name)
+   - Permissions: **Read + Write**
+
+2. **Store locally** (one-time):
+   ```bash
+   huggingface-cli login
+   ```
+   Paste your token. It's saved to `~/.huggingface/token` (NOT in repo).
+
+3. **Scripts automatically use it** — no config needed!
+
+✓ Each person has their own token  
+✓ No tokens ever in git  
+✓ Revoke anytime from HF settings  
+
+### Colab/Kaggle (Shared Notebooks)
+
+For shared notebooks that need a token:
+
+1. **Create `.env` file** (it's in `.gitignore`):
+   ```bash
+   cp .env.example .env
+   ```
+
+2. **Add your token**:
+   ```
+   HF_TOKEN=hf_xxxxxxxxxxx
+   ```
+
+3. **Never commit .env** — git will ignore it automatically
+
+✓ Scripts read from `.env` automatically  
+✓ Safe for shared notebooks  
+
+### Verify Your Setup
+
+```bash
+python scripts/setup_hf_token.py
+```
+
+---
+
+## Quick Start
 
 ### 1️⃣ Push data to HF (one-time setup)
 
-```bash
-pip install huggingface_hub tqdm
-huggingface-cli login  # Paste your HF token
+**Before first push**, setup your token:
 
-# From EdgeDeID root:
+```bash
+# Setup (one-time)
+python scripts/setup_hf_token.py
+huggingface-cli login  # Paste your token
+
+# Install
+pip install huggingface_hub tqdm
+
+# Push (automatic token detection)
 python scripts/push_to_hf.py
 ```
 
 ✓ Reads from `/data/` directly, uploads CSVs to HF.
+✓ Token is loaded automatically from `~/.huggingface/token` or `.env`.  
+✓ No token parameters needed.
 
 ### 2️⃣ Use data in Colab/Kaggle (auto-caching)
 

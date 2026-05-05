@@ -12,6 +12,11 @@ Usage in notebooks:
     data = load_teachers(pseudolabeled=True)
     df_all = pd.concat([data["deepseek"], data["haiku"], data["hermes"]])
 
+Token resolution (automatic):
+  1. ~/.huggingface/token (local setup)
+  2. HF_TOKEN environment variable
+  3. .env file in repo root (Colab/Kaggle)
+
 Caches files locally in ./data/ to avoid repeated downloads.
 """
 

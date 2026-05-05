@@ -9,7 +9,10 @@ wheels/
 # Virtual environments
 .venv/
 .env
+.env.local
 env/
+
+# HuggingFace token (stored in ~/.huggingface/token, NOT in repo)
 
 # Notebook checkpoints
 .ipynb_checkpoints/

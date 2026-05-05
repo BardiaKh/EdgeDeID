@@ -6,6 +6,11 @@ Usage:
     python scripts/push_to_hf.py
 
 Uploads data directly from ./data to HF
+Token resolution (automatic):
+  1. ~/.huggingface/token (local setup)
+  2. .env file (Colab/Kaggle)
+  3. HF_TOKEN environment variable
+
 Requires: huggingface_hub, git-lfs, valid HF token
 """
 
@@ -20,6 +25,45 @@ REPO_ID = "EdgeDeID/synthetic-dataset"
 REPO_TYPE = "dataset"
 DATA_DIR = Path(__file__).parent.parent / "data"
 TEACHERS = ["deepseek", "haiku", "hermes"]
+
+
+def load_token():
+    """
+    Load HF token from multiple sources (in order of precedence):
+    1. ~/.huggingface/token (local setup)
+    2. .env file in repo root (Colab/Kaggle)
+    3. HF_TOKEN environment variable
+    4. None (will use huggingface_hub default)
+    """
+    # Check ~/.huggingface/token
+    hf_token_path = Path.home() / ".huggingface" / "token"
+    if hf_token_path.exists():
+        token = hf_token_path.read_text().strip()
+        print(f"✓ Using token from {hf_token_path}")
+        return token
+    
+    # Check .env file
+    env_path = Path(__file__).parent.parent / ".env"
+    if env_path.exists():
+        try:
+            import re
+            env_content = env_path.read_text()
+            match = re.search(r'HF_TOKEN\s*=\s*(.+)', env_content)
+            if match:
+                token = match.group(1).strip()
+                print(f"✓ Using HF_TOKEN from .env")
+                return token
+        except Exception:
+            pass
+    
+    # Check environment variable
+    if "HF_TOKEN" in os.environ:
+        print("✓ Using HF_TOKEN from environment variable")
+        return os.environ["HF_TOKEN"]
+    
+    # Let huggingface_hub use its default
+    print("ℹ️  No explicit token found. Using default HuggingFace token...")
+    return None
 
 
 def get_files_to_upload():
@@ -112,14 +156,10 @@ def push_data_to_hf(token=None):
 
 
 if __name__ == "__main__":
-    import argparse
-    
-    parser = argparse.ArgumentParser(description="Push EdgeDeID data to Hugging Face")
-    parser.add_argument("--token", type=str, default=None, 
-                        help="HF API token (uses ~/.huggingface/token if not provided)")
-    args = parser.parse_args()
-    
-    print("🚀 EdgeDeID -> Hugging Face Dataset Push")
+    print("🚀 EdgeDeID → Hugging Face Dataset Push")
     print("=" * 60)
     
-    push_data_to_hf(token=args.token)
+    # Load token automatically
+    token = load_token()
+    
+    push_data_to_hf(token=token)
