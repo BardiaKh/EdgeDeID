@@ -8,7 +8,7 @@ Smart automation to push/pull EdgeDeID synthetic data to/from Hugging Face Hub *
 
 ## 🚀 Quick Start (No Manual Copying!)
 
-### 1️⃣ Push data to HF (one-time: 5–30 min)
+### 1️⃣ Push data to HF (one-time setup)
 
 ```bash
 pip install huggingface_hub tqdm
@@ -18,25 +18,27 @@ huggingface-cli login  # Paste your HF token
 python scripts/push_to_hf.py
 ```
 
-✓ Reads from `/data/` directly, uploads 33 CSVs (~675 MB) to HF.
+✓ Reads from `/data/` directly, uploads CSVs to HF.
 
 ### 2️⃣ Use data in Colab/Kaggle (auto-caching)
 
 ```python
+# Install (one-time in Colab)
 !pip install huggingface_hub
 
+# Load data
 from scripts.load_from_hf import load_dataset, load_teachers
 import pandas as pd
 
 # Load one teacher
 df = load_dataset("deepseek", pseudolabeled=True)
 
-# Load all three
-data = load_teachers(pseudolabeled=True)  # {"deepseek": df, ...}
+# Load all teachers
+data = load_teachers(pseudolabeled=True)  # {"deepseek": df, "haiku": df, ...}
 df_all = pd.concat(data.values(), ignore_index=True)
 ```
 
-✓ Downloads once, then cached forever (works offline).
+✓ Data automatically downloads once, then caches locally.
 
 ---
 
@@ -59,7 +61,7 @@ EdgeDeID/synthetic-dataset/  (HF dataset repo)
     └── hermes_pseudolabeled.csv
 ```
 
-**Total:** 30 raw + 3 pseudolabeled = **33 CSVs (~675 MB)**
+**Total:** raw outputs + pseudolabeled -> CSV files
 
 ---
 
@@ -67,7 +69,7 @@ EdgeDeID/synthetic-dataset/  (HF dataset repo)
 
 ### What it does
 
-Automatically scans `/data/{deepseek,haiku,hermes}/` and uploads all CSVs to HF in one commit. **No manual copying.**
+Automatically scans `/data/{deepseek,haiku,hermes}/` and uploads all CSVs to HF in one commit.
 
 ### Usage
 
@@ -81,7 +83,7 @@ python scripts/push_to_hf.py
 Found 6 files in deepseek/
 Found 7 files in haiku/
 Found 17 files in hermes/
-📤 Uploading 33 files (675.2 MB)...
+📤 Uploading 33 files...
 ✓ Successfully uploaded!
   Commit: https://huggingface.co/datasets/EdgeDeID/synthetic-dataset/tree/...
 ```
@@ -161,27 +163,11 @@ df_raw = load_dataset(dataset_name, pseudolabeled=False)
 
 ---
 
-## File Sizes & Download Times
-
-| Teacher   | Raw (6-17 files) | Pseudolabeled | Total   |
-|-----------|------------------|---------------|---------|
-| deepseek  | ~150 MB          | ~20 MB        | ~170 MB |
-| haiku     | ~180 MB          | ~20 MB        | ~200 MB |
-| hermes    | ~280 MB          | ~25 MB        | ~305 MB |
-| **Total** | ~610 MB          | ~65 MB        | **~675 MB** |
-
-**Timing:**
-- Full dataset (first run): 5–10 min
-- Pseudolabeled only: 30–60 sec
-- Cached loads: <1 sec
-
----
-
 ## Troubleshooting
 
 ### Push fails: "Cannot access EdgeDeID/synthetic-dataset"
 
-1. Verify repo exists: https://huggingface.co/EdgeDeID/synthetic-dataset
+1. Verify repo exists: https://huggingface.co/datasets/EdgeDeID/synthetic-dataset
 2. Check your token: `huggingface-cli whoami`
 3. Re-login: `huggingface-cli login`
 
@@ -196,8 +182,7 @@ from scripts.load_from_hf import load_dataset
 ### Dataset not visible after push
 
 - Refresh HF hub page (`Ctrl+Shift+R`)
-- Wait 2–5 minutes for indexing
-- Verify repo visibility (Settings → Private/Public)
+- Wait few minutes for indexing
 
 ---
 
