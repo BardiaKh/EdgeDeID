@@ -1,328 +1,220 @@
 # Hugging Face Dataset Pipeline
 
-Comprehensive guide to push/pull EdgeDeID synthetic data to/from Hugging Face Hub.
+Smart automation to push/pull EdgeDeID synthetic data to/from Hugging Face Hub **without manual copying**.
 
 **Dataset repo:** `https://huggingface.co/datasets/EdgeDeID/synthetic-dataset`
+
+---
+
+## 🚀 Quick Start (No Manual Copying!)
+
+### 1️⃣ Push data to HF (one-time: 5–30 min)
+
+```bash
+pip install huggingface_hub tqdm
+huggingface-cli login  # Paste your HF token
+
+# From EdgeDeID root:
+python scripts/push_to_hf.py
+```
+
+✓ Reads from `/data/` directly, uploads 33 CSVs (~675 MB) to HF.
+
+### 2️⃣ Use data in Colab/Kaggle (auto-caching)
+
+```python
+!pip install huggingface_hub
+
+from scripts.load_from_hf import load_dataset, load_teachers
+import pandas as pd
+
+# Load one teacher
+df = load_dataset("deepseek", pseudolabeled=True)
+
+# Load all three
+data = load_teachers(pseudolabeled=True)  # {"deepseek": df, ...}
+df_all = pd.concat(data.values(), ignore_index=True)
+```
+
+✓ Downloads once, then cached forever (works offline).
+
+---
 
 ## Dataset Structure
 
 ```
-synthetic-dataset/  (HF repo root)
-├── deepseek/
+EdgeDeID/synthetic-dataset/  (HF dataset repo)
+├── deepseek/                     (6 raw outputs + 1 pseudolabeled)
 │   ├── output_1_deepseek.csv
 │   ├── output_2_deepseek.csv
-│   ├── ... (output_1 through output_6)
+│   ├── ...output_6_deepseek.csv
 │   └── deepseek_pseudolabeled.csv
-├── haiku/
+├── haiku/                        (7 raw outputs + 1 pseudolabeled)
 │   ├── output_1_haiku.csv
-│   ├── output_2_haiku.csv
-│   ├── ... (output_1 through output_7)
+│   ├── ...output_7_haiku.csv
 │   └── haiku_pseudolabeled.csv
-└── hermes/
+└── hermes/                       (17 raw outputs + 1 pseudolabeled)
     ├── output_1_hermes.csv
-    ├── output_2_hermes.csv
-    ├── ... (output_1 through output_17)
+    ├── ...output_17_hermes.csv
     └── hermes_pseudolabeled.csv
 ```
 
-**Total:** 30 raw outputs + 3 pseudolabeled = 33 CSV files (~500 MB–1 GB)
+**Total:** 30 raw + 3 pseudolabeled = **33 CSVs (~675 MB)**
 
 ---
 
-## Part 1: Push Data to HF (One-time setup)
+## Part 1: Push to HF (scripts/push_to_hf.py)
 
-### 1. Prerequisites
+### What it does
 
-```bash
-pip install huggingface_hub
-huggingface-cli login  # Paste your HF token
-git lfs install        # Enable Git LFS for large files
-```
+Automatically scans `/data/{deepseek,haiku,hermes}/` and uploads all CSVs to HF in one commit. **No manual copying.**
 
-### 2. Clone HF dataset repo locally
+### Usage
 
 ```bash
-git clone https://huggingface.co/datasets/EdgeDeID/synthetic-dataset
-cd synthetic-dataset
+python scripts/push_to_hf.py
 ```
 
-### 3. Copy data from EdgeDeID repo
-
-From your EdgeDeID directory, copy the data. On Windows (PowerShell):
-
-```powershell
-# Navigate to EdgeDeID root, then copy directories
-Copy-Item -Path "data/deepseek" -Destination "C:\path\to\synthetic-dataset\" -Recurse -Force
-Copy-Item -Path "data/haiku"    -Destination "C:\path\to\synthetic-dataset\" -Recurse -Force
-Copy-Item -Path "data/hermes"   -Destination "C:\path\to\synthetic-dataset\" -Recurse -Force
+**Output:**
+```
+🚀 EdgeDeID → Hugging Face Dataset Push
+Found 6 files in deepseek/
+Found 7 files in haiku/
+Found 17 files in hermes/
+📤 Uploading 33 files (675.2 MB)...
+✓ Successfully uploaded!
+  Commit: https://huggingface.co/datasets/EdgeDeID/synthetic-dataset/tree/...
 ```
 
-Or on Linux/Mac:
+### Adding new data later
+
+After generating new files (e.g., `output_8_haiku.csv`):
 
 ```bash
-cp -r data/deepseek /path/to/synthetic-dataset/
-cp -r data/haiku    /path/to/synthetic-dataset/
-cp -r data/hermes   /path/to/synthetic-dataset/
-```
-
-### 4. Configure Git LFS for CSVs
-
-In the `synthetic-dataset` repo, set up LFS tracking:
-
-```bash
-cd synthetic-dataset
-git lfs track "*.csv"
-```
-
-This creates `.gitattributes`. Add it to git:
-
-```bash
-git add .gitattributes
-```
-
-### 5. Add and push all data
-
-```bash
-git add .
-git commit -m "Add all synthetic data (deepseek, haiku, hermes) - raw + pseudolabeled"
-git push
-```
-
-**First push may take 10–30 minutes** (LFS uploads). Monitor progress in the terminal.
-
-### 6. Verify on HF Hub
-
-Visit `https://huggingface.co/datasets/EdgeDeID/synthetic-dataset` and confirm all files appear.
-
----
-
-## Part 2: Pull Data in Colab/Kaggle (Programmatic)
-
-### Option A: Python Script (Recommended)
-
-**Installation in Colab/Kaggle cell:**
-
-```python
-!pip install huggingface_hub
-
-from huggingface_hub import snapshot_download
-import os
-
-# Download entire dataset
-dataset_path = snapshot_download(
-    repo_id="EdgeDeID/synthetic-dataset",
-    repo_type="dataset",
-    local_dir="./data",           # Downloads to ./data/
-    local_dir_use_symlinks=False  # Avoid symlink issues on Colab
-)
-
-print(f"Dataset downloaded to: {dataset_path}")
-
-# Verify structure
-import os
-for root, dirs, files in os.walk("data"):
-    level = root.replace("data", "").count(os.sep)
-    indent = " " * 2 * level
-    print(f"{indent}{os.path.basename(root)}/")
-    subindent = " " * 2 * (level + 1)
-    for file in files[:3]:  # Show first 3 files per folder
-        print(f"{subindent}{file}")
-    if len(files) > 3:
-        print(f"{subindent}... and {len(files) - 3} more files")
-```
-
-**Output:** Creates directory structure:
-```
-./data/
-├── deepseek/
-│   ├── output_1_deepseek.csv
-│   ├── ...
-│   └── deepseek_pseudolabeled.csv
-├── haiku/
-├── hermes/
-```
-
-### Option B: Selective Download (Download only pseudolabeled)
-
-If bandwidth is limited, download only the cleaned pseudolabeled CSVs:
-
-```python
-from huggingface_hub import hf_hub_download
-import os
-
-# Create directory
-os.makedirs("data", exist_ok=True)
-
-teachers = ["deepseek", "haiku", "hermes"]
-for teacher in teachers:
-    file_path = hf_hub_download(
-        repo_id="EdgeDeID/synthetic-dataset",
-        filename=f"{teacher}/{teacher}_pseudolabeled.csv",
-        repo_type="dataset",
-        local_dir="./data"
-    )
-    print(f"Downloaded: {file_path}")
-```
-
-### Option C: CLI (Quick, one-liner)
-
-For Colab, in a shell cell:
-
-```bash
-!pip install huggingface_hub
-!huggingface-cli download EdgeDeID/synthetic-dataset --repo-type dataset --local-dir ./data
+python scripts/push_to_hf.py  # Uploads only new files
 ```
 
 ---
 
-## Part 3: Integration with Data Pipeline Notebooks
+## Part 2: Load from HF (scripts/load_from_hf.py)
 
-### Example: `data_prep/combine.ipynb`
+### Basic examples
 
-At the top of the notebook, add a cell to download data:
-
+**Load one teacher:**
 ```python
-# Cell 0: Download data from HF (if running on Colab/Kaggle)
-
-import os
-from huggingface_hub import snapshot_download
-
-# Check if data already exists
-if not os.path.exists("data/deepseek/deepseek_pseudolabeled.csv"):
-    print("Downloading EdgeDeID synthetic data from Hugging Face...")
-    snapshot_download(
-        repo_id="EdgeDeID/synthetic-dataset",
-        repo_type="dataset",
-        local_dir="./data",
-        local_dir_use_symlinks=False
-    )
-    print("✓ Data downloaded successfully!")
-else:
-    print("✓ Data already exists locally")
+from scripts.load_from_hf import load_dataset
+df = load_dataset("deepseek", pseudolabeled=True)
 ```
 
-Then, your existing `combine.ipynb` code works as-is (reads from `data/deepseek/`, etc.).
-
-### Example: `data_prep/pseudolabel.ipynb`
-
-Similarly, at the start:
-
+**Load all teachers:**
 ```python
-# Download raw outputs if needed
-from huggingface_hub import hf_hub_download
-import os
+from scripts.load_from_hf import load_teachers
+data = load_teachers(pseudolabeled=True)  # Dict: {teacher: df}
+```
 
-dataset_name = "hermes"  # or "haiku", "deepseek"
+**Load raw outputs (not pseudolabeled):**
+```python
+df_raw = load_dataset("hermes", pseudolabeled=False)
+```
 
-# Download all raw outputs for this teacher
-os.makedirs(f"data/{dataset_name}", exist_ok=True)
-for i in range(1, 20):  # Adjust range per teacher
-    try:
-        hf_hub_download(
-            repo_id="EdgeDeID/synthetic-dataset",
-            filename=f"{dataset_name}/output_{i}_{dataset_name}.csv",
-            repo_type="dataset",
-            local_dir="./data"
-        )
-    except Exception:
-        break  # Stop when output_N doesn't exist
+**Pre-download everything (offline later):**
+```python
+from scripts.load_from_hf import download_all
+download_all()  # ~10 min, then works offline
+```
+
+### How it works
+
+- **First call:** Downloads from HF (~5–10 min), caches to `./data/`
+- **Later calls:** Loads from cache (~instant)
+- **After cache:** Works without internet
+
+### In your notebooks
+
+**combine.ipynb:**
+```python
+import sys
+sys.path.insert(0, "..")
+
+from scripts.load_from_hf import load_teachers
+
+data = load_teachers(pseudolabeled=True)
+df_deepseek = data["deepseek"]
+df_haiku = data["haiku"]
+df_hermes = data["hermes"]
+
+# Rest of your code continues...
+```
+
+**pseudolabel.ipynb:**
+```python
+import sys
+sys.path.insert(0, "..")
+
+from scripts.load_from_hf import load_dataset
+
+dataset_name = "hermes"
+df_raw = load_dataset(dataset_name, pseudolabeled=False)
+
+# Your pseudolabeling code...
 ```
 
 ---
 
-## Part 4: File Sizes & Download Times
+## File Sizes & Download Times
 
-| Teacher   | Raw Outputs | Pseudolabeled | Total   |
-|-----------|-------------|---------------|---------|
-| deepseek  | ~150 MB     | ~20 MB        | ~170 MB |
-| haiku     | ~180 MB     | ~20 MB        | ~200 MB |
-| hermes    | ~280 MB     | ~25 MB        | ~305 MB |
-| **Total** | ~610 MB     | ~65 MB        | **~675 MB** |
+| Teacher   | Raw (6-17 files) | Pseudolabeled | Total   |
+|-----------|------------------|---------------|---------|
+| deepseek  | ~150 MB          | ~20 MB        | ~170 MB |
+| haiku     | ~180 MB          | ~20 MB        | ~200 MB |
+| hermes    | ~280 MB          | ~25 MB        | ~305 MB |
+| **Total** | ~610 MB          | ~65 MB        | **~675 MB** |
 
-**Download times (typical):**
-- Full dataset: 2–5 min (broadband)
+**Timing:**
+- Full dataset (first run): 5–10 min
 - Pseudolabeled only: 30–60 sec
+- Cached loads: <1 sec
 
 ---
 
-## Part 5: Troubleshooting
+## Troubleshooting
 
-### "Token not found" during `huggingface-cli login`
+### Push fails: "Cannot access EdgeDeID/synthetic-dataset"
 
-Generate a token on HF Hub:
-1. Go to `https://huggingface.co/settings/tokens`
-2. Click "New token" (type: **Read**)
-3. Copy and paste into terminal prompt
+1. Verify repo exists: https://huggingface.co/EdgeDeID/synthetic-dataset
+2. Check your token: `huggingface-cli whoami`
+3. Re-login: `huggingface-cli login`
 
-### "No space left on device" (Colab)
-
-Colab has ~15 GB storage. The full dataset (~675 MB) fits. If low on space:
+### Load fails: "ModuleNotFoundError"
 
 ```python
-# Download pseudolabeled only (much smaller)
-teachers = ["deepseek", "haiku", "hermes"]
-for teacher in teachers:
-    hf_hub_download(
-        repo_id="EdgeDeID/synthetic-dataset",
-        filename=f"{teacher}/{teacher}_pseudolabeled.csv",
-        repo_type="dataset",
-        local_dir="./data"
-    )
+import sys
+sys.path.insert(0, "..")  # Add EdgeDeID root to path
+from scripts.load_from_hf import load_dataset
 ```
 
-### Dataset not showing up on HF Hub
+### Dataset not visible after push
 
-After push:
-1. Refresh the page (`Ctrl+Shift+R`)
-2. Wait 2–5 minutes (HF indexing)
-3. Check repo settings: ensure it's not **private** (unless intentional)
+- Refresh HF hub page (`Ctrl+Shift+R`)
+- Wait 2–5 minutes for indexing
+- Verify repo visibility (Settings → Private/Public)
 
 ---
 
-## Part 6: Updating Data (Adding new runs)
+## Advanced: Custom loading
 
-When you generate new outputs (e.g., `output_8_haiku.csv`):
+See docstrings in `scripts/load_from_hf.py`:
 
-```bash
-cd synthetic-dataset
-# Copy new file
-cp ../EdgeDeID/data/haiku/output_8_haiku.csv ./haiku/
-
-# Commit and push
-git add .
-git commit -m "Add output_8_haiku.csv"
-git push
-```
-
-Colab users automatically pull the latest on next `snapshot_download()` call (no cache by default).
-
----
-
-## Part 7: Quick Copy-Paste Commands
-
-**Push (local machine, one-time):**
-```bash
-huggingface-cli login
-git clone https://huggingface.co/datasets/EdgeDeID/synthetic-dataset
-cp -r data/* synthetic-dataset/
-cd synthetic-dataset
-git lfs track "*.csv"
-git add .
-git commit -m "Add synthetic data"
-git push
-```
-
-**Pull (Colab, in notebook cell):**
 ```python
-!pip install huggingface_hub
-from huggingface_hub import snapshot_download
-snapshot_download("EdgeDeID/synthetic-dataset", repo_type="dataset", local_dir="./data")
+# Suppress verbose output
+df = load_dataset("haiku", pseudolabeled=True, verbose=False)
+
+# Load multiple times with progress
+df_all = load_teachers(pseudolabeled=False, verbose=True)
 ```
 
 ---
 
 ## References
 
-- [HF Hub Datasets Documentation](https://huggingface.co/docs/hub/datasets)
-- [Git LFS Setup](https://git-lfs.com/)
-- [`huggingface_hub` Python API](https://huggingface.co/docs/hub/security-tokens)
+- [scripts/push_to_hf.py](scripts/push_to_hf.py) — Full push implementation
