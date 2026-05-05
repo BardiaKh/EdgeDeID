@@ -22,15 +22,13 @@ runs/
 *.bin
 checkpoint-*/
 HF_Models/
+SFT/weights/
 
 # Logs
 *.log
 
-# Final combined dataset — regenerate via data_prep/combine.ipynb
-data/train.csv
-data/test.csv
-# Optional: comment out the next line if you want to ship a small sample
-# !data/sample/*.csv
+# Dataset — hosted on HF: EdgeDeID/synthetic-dataset
+data/
 
 # OS
 .DS_Store
