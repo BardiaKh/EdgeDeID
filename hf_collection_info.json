@@ -1,0 +1,18 @@
+{
+  "models": {
+    "EdgeDeID/Qwen3-1.7B-Base_SFT": {
+      "id": "EdgeDeID/Qwen3-1.7B-Base_SFT",
+      "error": "(MaxRetryError(\"HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /api/models/EdgeDeID/Qwen3-1.7B-Base_SFT (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))\"), '(Request ID: c343ac58-6ca5-45c4-a8d2-843882e358e9)')"
+    },
+    "EdgeDeID/Qwen3-0.6B-Base_SFT": {
+      "id": "EdgeDeID/Qwen3-0.6B-Base_SFT",
+      "error": "404 Client Error. (Request ID: Root=1-69fa75ec-60a3364b74f3216f476c6922;da947dca-28af-4b33-af50-d7900aebca0e)\n\nRepository Not Found for url: https://huggingface.co/api/models/EdgeDeID/Qwen3-0.6B-Base_SFT.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated. For more details, see https://huggingface.co/docs/huggingface_hub/authentication"
+    }
+  },
+  "datasets": {
+    "EdgeDeID/synthetic-dataset": {
+      "id": "EdgeDeID/synthetic-dataset",
+      "error": "404 Client Error. (Request ID: Root=1-69fa75ec-65850cc43b129342026fda2c;699b0b81-02e7-4831-9a56-d49627916873)\n\nRepository Not Found for url: https://huggingface.co/api/datasets/EdgeDeID/synthetic-dataset.\nPlease make sure you specified the correct `repo_id` and `repo_type`.\nIf you are trying to access a private or gated repo, make sure you are authenticated. For more details, see https://huggingface.co/docs/huggingface_hub/authentication"
+    }
+  }
+}
