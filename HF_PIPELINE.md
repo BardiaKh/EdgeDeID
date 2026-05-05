@@ -180,12 +180,12 @@ df_raw = load_dataset("hermes", pseudolabeled=False)
 **Pre-download everything (offline later):**
 ```python
 from scripts.load_from_hf import download_all
-download_all()  # ~10 min, then works offline
+download_all()  # few min, then works offline
 ```
 
 ### How it works
 
-- **First call:** Downloads from HF (~5–10 min), caches to `./data/`
+- **First call:** Downloads from HF (few min), caches to `./data/`
 - **Later calls:** Loads from cache (~instant)
 - **After cache:** Works without internet
 
