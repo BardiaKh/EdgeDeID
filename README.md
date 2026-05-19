@@ -134,6 +134,13 @@ EdgeDeID/
 │   ├── prompts.txt                System prompt (mirrors pipeline.prompts.SYSTEM_PROMPT)
 │   └── sample_note.txt            Synthetic example for smoke testing
 │
+├── scripts/                       HuggingFace integration
+│   ├── load_from_hf.py            Load dataset into notebooks (with local caching)
+│   ├── push_to_hf.py              Push data CSVs to EdgeDeID/synthetic-dataset
+│   ├── fetch_hf_info.py           Snapshot metadata for all models & datasets
+│   ├── verify_hf_collection.py    Health-check all HF repos
+│   └── README.md                  Auth setup + usage docs
+│
 ├── pyproject.toml                 uv-managed dependencies
 ├── .python-version
 └── README.md
