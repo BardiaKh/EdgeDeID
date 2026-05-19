@@ -45,8 +45,9 @@ def build_grpo_trainer(
     train_dataset: datasets.Dataset with 'prompt', 'source_note', 'ground_truth' columns
     eval_dataset : optional validation split
     """
-    from trl import GRPOConfig as TRLGRPOConfig, GRPOTrainer
-
+    from trl.trainer.grpo_trainer import GRPOTrainer
+    from trl.trainer.grpo_config import GRPOConfig as TRLGRPOConfig
+    
     trl_cfg = TRLGRPOConfig(
         output_dir=config.output_dir,
         run_name=config.run_name,
@@ -54,7 +55,6 @@ def build_grpo_trainer(
         per_device_train_batch_size=config.per_device_train_batch_size,
         per_device_eval_batch_size=config.per_device_eval_batch_size,
         learning_rate=config.learning_rate,
-        max_prompt_length=config.max_prompt_length,
         max_completion_length=config.max_completion_length,
         num_generations=config.num_generations,
         max_steps=config.max_steps,
