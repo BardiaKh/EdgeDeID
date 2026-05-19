@@ -26,6 +26,11 @@ checkpoint-*/
 HF_Models/
 SFT/weights/
 
+# Evaluation results
+evals/**/results/
+evals/results/
+evals/**/*.html
+
 # Logs
 *.log
 
