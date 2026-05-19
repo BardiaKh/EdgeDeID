@@ -41,7 +41,7 @@ class GRPOConfig(RLConfig):
     # streaming IterableDataset has no __len__, so max_steps must be set
     max_steps: int = 1000
     gradient_accumulation_steps: int = 8
-    logging_steps: int = 10
+    logging_steps: int = 5
     reward_clip_min: float | None = None
     reward_clip_max: float | None = None
     # reward weighting for compute_grpo_reward (presence / completeness / qc / length)
