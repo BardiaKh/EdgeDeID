@@ -11,7 +11,7 @@ from ..prompts import SYSTEM_PROMPT
 # GRPO extends the base prompt with a mandatory <qc_status> self-assessment tag.
 GRPO_SYSTEM_PROMPT: str = SYSTEM_PROMPT + (
     "\n\n8. After the <phi_entities> block, add a self-assessment on a new line:\n"
-    "   <>complete</qc_status>   — if you believe you found all PHI entities.\n"
+    "   <qc_status>complete</qc_status>   — if you believe you found all PHI entities.\n"
     "   <qc_status>incomplete</qc_status> — if you think some PHI entities may be missing.\n"
     "   This tag is mandatory."
 )
