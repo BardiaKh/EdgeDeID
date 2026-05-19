@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-"""
-Fetch detailed information about HuggingFace models and datasets.
-"""
-from huggingface_hub import model_info, dataset_info
-import json
+"""Fetch metadata for all EdgeDeID models and datasets from HuggingFace Hub."""
 
-# Model and Dataset IDs
+import json
+from pathlib import Path
+from huggingface_hub import model_info, dataset_info
+
 MODELS = [
     "EdgeDeID/Qwen3-1.7B-Base_SFT",
     "EdgeDeID/Qwen3-0.6B-Base_SFT",
@@ -15,8 +14,10 @@ DATASETS = [
     "EdgeDeID/synthetic-dataset",
 ]
 
+OUTPUT_FILE = Path(__file__).parent.parent / "hf_collection_info.json"
+
+
 def get_model_details(model_id):
-    """Fetch model details from HuggingFace Hub."""
     try:
         info = model_info(model_id)
         return {
@@ -28,13 +29,13 @@ def get_model_details(model_id):
             "downloads": info.downloads,
             "likes": info.likes,
             "private": info.private,
-            "files": [f.filename for f in info.siblings[:10]],  # First 10 files
+            "files": [f.filename for f in info.siblings[:10]],
         }
     except Exception as e:
         return {"id": model_id, "error": str(e)}
 
+
 def get_dataset_details(dataset_id):
-    """Fetch dataset details from HuggingFace Hub."""
     try:
         info = dataset_info(dataset_id)
         return {
@@ -49,41 +50,30 @@ def get_dataset_details(dataset_id):
     except Exception as e:
         return {"id": dataset_id, "error": str(e)}
 
+
 if __name__ == "__main__":
-    print("=" * 80)
-    print("EDGDEID HUGGINGFACE COLLECTION - DETAILED INFORMATION")
-    print("=" * 80)
-    
-    print("\n📦 MODELS:")
-    print("-" * 80)
+    print("=" * 70)
+    print("EdgeDeID HuggingFace Collection — Metadata")
+    print("=" * 70)
+
     models_info = {}
+    print("\nModels:")
+    print("-" * 70)
     for model_id in MODELS:
-        print(f"\nFetching: {model_id}...")
+        print(f"  Fetching {model_id}...")
         info = get_model_details(model_id)
         models_info[model_id] = info
-        print(json.dumps(info, indent=2))
-    
-    print("\n" + "=" * 80)
-    print("\n📊 DATASETS:")
-    print("-" * 80)
+        print(json.dumps(info, indent=4))
+
     datasets_info = {}
+    print("\nDatasets:")
+    print("-" * 70)
     for dataset_id in DATASETS:
-        print(f"\nFetching: {dataset_id}...")
+        print(f"  Fetching {dataset_id}...")
         info = get_dataset_details(dataset_id)
         datasets_info[dataset_id] = info
-        print(json.dumps(info, indent=2))
-    
-    print("\n" + "=" * 80)
-    print("SUMMARY")
-    print("=" * 80)
-    print(f"\n✅ Successfully fetched information for {len(models_info)} models and {len(datasets_info)} dataset(s)")
-    
-    # Save to JSON for reference
-    all_info = {
-        "models": models_info,
-        "datasets": datasets_info,
-    }
-    
-    with open("hf_collection_info.json", "w") as f:
-        json.dump(all_info, f, indent=2)
-    print("✅ Saved detailed information to hf_collection_info.json")
+        print(json.dumps(info, indent=4))
+
+    all_info = {"models": models_info, "datasets": datasets_info}
+    OUTPUT_FILE.write_text(json.dumps(all_info, indent=2))
+    print(f"\nSaved to {OUTPUT_FILE}")

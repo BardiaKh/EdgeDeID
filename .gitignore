@@ -31,6 +31,10 @@ SFT/weights/
 
 # Dataset — hosted on HF: EdgeDeID/synthetic-dataset
 data/
+datasets--EdgeDeID--synthetic-dataset/
+
+# Generated HF metadata snapshot
+hf_collection_info.json
 
 # OS
 .DS_Store
