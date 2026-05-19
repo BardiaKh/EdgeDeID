@@ -57,8 +57,10 @@ def build_grpo_trainer(
         max_prompt_length=config.max_prompt_length,
         max_completion_length=config.max_completion_length,
         num_generations=config.num_generations,
+        max_steps=config.max_steps,
+        gradient_accumulation_steps=config.gradient_accumulation_steps,
+        logging_steps=config.logging_steps,
         report_to="wandb" if config.wandb_project else "none",
-        **({"project": config.wandb_project} if config.wandb_project else {}),
     )
 
     return GRPOTrainer(

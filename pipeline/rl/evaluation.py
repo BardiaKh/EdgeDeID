@@ -48,11 +48,18 @@ def evaluate_policy(
     max_new_tokens: int = 1024,
     temperature: float = 0.0,
     batch_size: int = 4,
+    qc_config: Any | None = None,
 ) -> dict[str, float]:
     """Generate completions for every item in dataset and return aggregate metrics.
 
     dataset items must have keys: 'prompt', 'source_note', 'ground_truth'.
-    'prompt' should be a list of chat messages (apply_chat_template format).
+    'prompt' is a flat text string (the SFT base model has no chat template),
+    so it is tokenised directly rather than via apply_chat_template.
+
+    If ``qc_config`` is a ``pipeline.qc.QCConfig`` the layered QC pipeline is
+    applied to every completion before scoring (ablation rows D / F): the
+    intrinsic <qc_status> is read from the completion, deterministic repair +
+    detector reconciliation enforce the recall floor, and escalation is gated.
     """
     import torch
 
@@ -69,14 +76,11 @@ def evaluate_policy(
             source_notes.extend(r["source_note"] for r in batch)
             ground_truths.extend(r["ground_truth"] for r in batch)
 
-            encoded = tokenizer.apply_chat_template(
+            encoded = tokenizer(
                 prompts,
-                tokenize=True,
                 return_tensors="pt",
                 padding=True,
                 truncation=True,
-                add_generation_prompt=True,
-                return_dict=True,
             ).to(model.device)
 
             out = model.generate(
@@ -90,6 +94,11 @@ def evaluate_policy(
                 completions.append(
                     tokenizer.decode(seq[prompt_len:], skip_special_tokens=True)
                 )
+
+    if qc_config is not None:
+        from ..qc import apply_qc_batch
+
+        completions, _ = apply_qc_batch(completions, source_notes, qc_config)
 
     return compute_metrics(completions, source_notes, ground_truths)
 

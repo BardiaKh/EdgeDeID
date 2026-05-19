@@ -84,21 +84,35 @@ def reward_phi_text_presence(completion: str, source_note: str) -> float:
     return found / len(entities)  # fraction; consistent with recall-side eval logic
 
 
-def _soft_match(a: str, b: str) -> bool:
-    """Bidirectional substring match (case-insensitive).
+_MIN_MATCH_LEN = 3  # guard against 1–2 char values substring-matching everything
 
-    Consistent with the eval notebook's compare_entities logic:
-    "a in b or b in a" — catches partial names, date format variants, etc.
+
+def _soft_match(a: str, b: str) -> bool:
+    """Bidirectional substring match (case-insensitive) with a length guard.
+
+    Consistent with the eval notebook's compare_entities logic
+    ("a in b or b in a" — catches partial names, date format variants), but the
+    shorter operand must be >= _MIN_MATCH_LEN characters unless the two are
+    exactly equal. This closes the reward-hacking channel where emitting a
+    single-character entity value soft-matches arbitrary ground-truth spans.
     """
-    a, b = a.lower(), b.lower()
+    a, b = a.strip().lower(), b.strip().lower()
+    if not a or not b:
+        return False
+    if a == b:
+        return True
+    if min(len(a), len(b)) < _MIN_MATCH_LEN:
+        return False
     return a in b or b in a
 
 
-def reward_completeness(completion: str, ground_truth: str) -> float:
-    """Entity-level F1 using bidirectional substring matching.
+def reward_completeness(completion: str, ground_truth: str, beta: float = 2.0) -> float:
+    """Entity-level F-beta using guarded bidirectional substring matching.
 
-    Uses the same matching logic as the evaluation notebooks so that the
-    training signal is consistent with reported metrics.
+    Uses the same matching logic as the evaluation notebooks so the training
+    signal stays consistent with reported metrics, but defaults to F-beta with
+    beta=2 (recall-weighted): a missed PHI entity (leakage) is clinically far
+    worse than an over-tag, so recall is weighted above precision.
     """
 
     def _entity_list(text: str) -> list[str]:
@@ -132,29 +146,53 @@ def reward_completeness(completion: str, ground_truth: str) -> float:
 
     if precision + recall == 0:
         return 0.0
-    return 2 * precision * recall / (precision + recall)
+    b2 = beta * beta
+    denom = b2 * precision + recall
+    if denom == 0:
+        return 0.0
+    return (1 + b2) * precision * recall / denom
 
 
-def reward_qc_calibration(completion: str, completeness_score: float, threshold: float = 0.7) -> float:
-    """1.0 if the model's <qc_status> tag correctly reflects actual completeness.
+def reward_qc_calibration(
+    completion: str, completeness_score: float, threshold: float = 0.7
+) -> float:
+    """Asymmetric metacognitive-calibration reward for the <qc_status> tag.
 
-    Rewards the model for knowing what it doesn't know (metacognitive accuracy).
-    Returns 0.0 if no <qc_status> tag is present.
+    Rewards the model for knowing what it doesn't know, but the four cases are
+    NOT symmetric — for a PHI de-identification safety task, confidently
+    claiming "complete" while entities were actually missed is the dangerous
+    error and is punished hardest:
+
+      claimed   | actual      | reward | rationale
+      ----------|-------------|--------|-------------------------------------
+      complete  | complete    |  1.0   | correct & confident
+      incomplete| incomplete  |  1.0   | correctly flags its own miss
+      incomplete| complete    |  0.5   | over-cautious — safe but imprecise
+      complete  | incomplete  |  0.0   | overconfident leakage — worst case
+
+    Returns 0.0 if no <qc_status> tag is present (the tag is mandatory).
     """
     status = _extract_qc_status(completion)
     if status is None:
         return 0.0
     actually_complete = completeness_score >= threshold
     claimed_complete = status == "complete"
-    return 1.0 if actually_complete == claimed_complete else 0.0
+    if claimed_complete == actually_complete:
+        return 1.0
+    if not claimed_complete and actually_complete:
+        return 0.5  # over-cautious: safe but loses precision
+    return 0.0  # claimed complete but was not: dangerous overconfidence
 
 
 def reward_length_penalty(completion: str, soft_max_tokens: int = 1024) -> float:
     """1.0 for outputs within the token budget; decays linearly beyond it.
 
-    Prevents the model from generating redundant or padded content.
+    Prevents the model from generating redundant or padded content. The exact
+    tokenizer is unavailable inside the reward fn, so token count is estimated
+    as ~len(text)/4 (a stable English+XML proxy) rather than whitespace splits,
+    which badly under-count the whitespace-sparse <phi_entities> XML.
     """
-    n_tokens = len(completion.split())
+    n_tokens = max(len(completion.split()), len(completion) // 4)
     if n_tokens <= soft_max_tokens:
         return 1.0
     excess = n_tokens - soft_max_tokens
