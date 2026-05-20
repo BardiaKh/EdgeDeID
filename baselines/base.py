@@ -16,6 +16,15 @@ class BaselineModel(ABC):
 
     name: str = "baseline"
 
+    # Schema keys this model is *capable* of emitting. Used by
+    # pipeline.eval.compute_metrics to scope macro-F1 / per-entity reporting to
+    # what the model can actually detect (entities outside this set show as N/A
+    # instead of a misleading 0.0). Defaults to the full schema.
+    supported_entities: set[str] = {
+        "name", "age", "date", "place", "address",
+        "phone", "email", "id", "url", "device",
+    }
+
     @abstractmethod
     def predict_entities(self, note: str) -> dict[str, list[str]]:
         """Return {entity_type: [text, …]} for all PHI detected in note."""

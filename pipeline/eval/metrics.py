@@ -175,6 +175,7 @@ def compute_metrics(
     predictions: list[str],
     ground_truths: list[str],
     source_notes: list[str] | None = None,
+    supported_entities: set[str] | None = None,
 ) -> EvalResult:
     """Compute all metrics over a list of predictions.
 
@@ -183,6 +184,12 @@ def compute_metrics(
     predictions  : raw model output strings (may or may not contain valid XML)
     ground_truths: corresponding ground-truth XML strings
     source_notes : optional raw notes (needed for token_reduction_rate)
+    supported_entities : if given, the schema keys this model is *capable* of
+        emitting. Only these entities are included in the per-entity breakdown
+        and the macro-F1 average — entities outside this set show as N/A rather
+        than a misleading 0.0. Micro-F1, recall, and zero-leak are deliberately
+        left full-coverage: PHI the model structurally cannot detect is still a
+        real leak, so it must count against the safety metrics.
     """
     assert len(predictions) == len(ground_truths)
 
@@ -213,12 +220,14 @@ def compute_metrics(
 
     zero_leak_rate = n_zero_leak / len(predictions) if predictions else 0.0
 
-    # per-entity TagMetrics
+    # per-entity TagMetrics — restricted to supported labels (macro fairness);
+    # micro/recall/zero-leak below stay full-coverage for safety honesty.
     all_tags = set(accum_gt) | set(accum_pred)
+    report_tags = all_tags & supported_entities if supported_entities is not None else all_tags
     per_entity: dict[str, TagMetrics] = {}
     macro_f1_sum = 0.0
 
-    for tag in all_tags:
+    for tag in report_tags:
         tp = accum_gt.get(tag, {}).get("correct", 0)
         total_gt = accum_gt.get(tag, {}).get("total", 0)
         total_pred = accum_pred.get(tag, {}).get("total", 0)
@@ -229,9 +238,10 @@ def compute_metrics(
         )
         macro_f1_sum += f
 
-    macro_f1 = macro_f1_sum / len(all_tags) if all_tags else 0.0
+    macro_f1 = macro_f1_sum / len(report_tags) if report_tags else 0.0
 
-    # micro overall
+    # micro overall — full coverage across every GT/pred tag, regardless of
+    # supported_entities, so undetectable PHI still counts against the model.
     total_tp = sum(v.get("correct", 0) for v in accum_gt.values())
     total_gt_all = sum(v.get("total", 0) for v in accum_gt.values())
     total_pred_all = sum(v.get("total", 0) for v in accum_pred.values())

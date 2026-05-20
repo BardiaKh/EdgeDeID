@@ -39,6 +39,13 @@ class PresidioBaseline(BaselineModel):
 
     name = "Presidio"
 
+    # Default AnalyzerEngine ships no AGE, MEDICAL_DEVICE, or ADDRESS recognizer
+    # (street addresses surface only as LOCATION -> place), so those schema keys
+    # are unreachable and excluded from macro-F1 / per-entity.
+    supported_entities = {
+        "name", "date", "place", "phone", "email", "url", "id",
+    }
+
     def __init__(self, score_threshold: float = 0.5):
         from presidio_analyzer import AnalyzerEngine
         self._analyzer = AnalyzerEngine()
