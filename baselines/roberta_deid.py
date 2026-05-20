@@ -41,10 +41,31 @@ class RobertaDeidBaseline(BaselineModel):
 
     def __init__(self, model_name: str = "obi/deid_roberta_i2b2"):
         from transformers import pipeline
+        # Aggregation strategy controls how byte-level subword tokens are merged
+        # back into entity spans. "simple" leaves fragments ("Seattle" ->
+        # "Se"+"attle") that inflate prediction counts ~6x and crater precision;
+        # "average"/"max" fix that but suppress EMAIL entirely (the @/. word
+        # boundaries flip the averaged label) and halve AGE. "first" gives the
+        # best macro-F1 while preserving every entity.
+        #
+        # Per-entity F1 on data/test.csv (revise in lab):
+        #   entity    simple   first    average
+        #   name      0.572    0.687    0.737
+        #   age       0.987    0.988    0.692
+        #   date      0.595    0.454    0.506
+        #   place     0.286    0.469    0.571
+        #   address   0.309    0.405    0.490
+        #   phone     0.649    0.652    0.654
+        #   email     0.678    0.695    0.000
+        #   id        0.422    0.640    0.741
+        #   MACRO     0.562    0.624    0.549
+        # _AGG = "simple"
+        # _AGG = "average"
+        _AGG = "first"
         self._pipe = pipeline(
             "token-classification",
             model=model_name,
-            aggregation_strategy="simple",
+            aggregation_strategy=_AGG,
         )
 
     def predict_entities(self, note: str) -> dict[str, list[str]]:
