@@ -146,11 +146,13 @@ class EvalResult:
     micro_recall: float
     micro_f1: float
     macro_f1: float          # mean of per-class F1 (unweighted)
+    f_beta: float            # F-β (β=2): recall-weighted F1 for safety-critical evaluation
 
     # reliability & safety
     xml_parse_rate: float    # fraction with valid <phi_entities> XML
     hallucination_rate: float  # 1 − micro_precision (FP pressure on safety)
     token_reduction_rate: float  # fraction of source tokens that are PHI
+    zero_leak_rate: float    # fraction of notes where every GT entity was found (recall == 1.0)
 
     # per-entity breakdown
     per_entity: dict[str, TagMetrics] = field(default_factory=dict)
@@ -188,9 +190,10 @@ def compute_metrics(
     parsed = [_extract_phi_block(p) is not None for p in predictions]
     xml_parse_rate = sum(parsed) / len(predictions) if predictions else 0.0
 
-    # accumulate per-tag stats
+    # accumulate per-tag stats + zero-leak tracking
     accum_gt: dict[str, dict] = {}
     accum_pred: dict[str, dict] = {}
+    n_zero_leak = 0
 
     for pred, gt in zip(predictions, ground_truths):
         gt_s, pred_s = compare_sample(gt, pred)
@@ -202,6 +205,13 @@ def compute_metrics(
             accum_pred.setdefault(tag, {"correct": 0, "total": 0})
             accum_pred[tag]["correct"] += stats["correct"]
             accum_pred[tag]["total"] += stats["total"]
+        # zero-leak: note has no missed PHI if every GT entity was matched
+        sample_gt  = sum(v["total"]   for v in gt_s.values())
+        sample_tp  = sum(v["correct"] for v in gt_s.values())
+        if sample_gt == 0 or sample_tp == sample_gt:
+            n_zero_leak += 1
+
+    zero_leak_rate = n_zero_leak / len(predictions) if predictions else 0.0
 
     # per-entity TagMetrics
     all_tags = set(accum_gt) | set(accum_pred)
@@ -229,6 +239,10 @@ def compute_metrics(
 
     hallucination_rate = 1.0 - micro_p
 
+    # F-β with β=2: weights recall twice as much as precision
+    _b2 = 4  # β² = 2² = 4
+    f_beta = (1 + _b2) * micro_p * micro_r / (_b2 * micro_p + micro_r) if (_b2 * micro_p + micro_r) else 0.0
+
     # token_reduction_rate
     if source_notes is not None:
         rates = []
@@ -247,9 +261,11 @@ def compute_metrics(
         micro_recall=micro_r,
         micro_f1=micro_f,
         macro_f1=macro_f1,
+        f_beta=f_beta,
         xml_parse_rate=xml_parse_rate,
         hallucination_rate=hallucination_rate,
         token_reduction_rate=token_reduction_rate,
+        zero_leak_rate=zero_leak_rate,
         per_entity=per_entity,
         total_tp=total_tp,
         total_gt=total_gt_all,
@@ -272,8 +288,10 @@ def print_report(result: EvalResult, title: str = "EVALUATION REPORT") -> None:
     print(f"  Micro Precision   : {result.micro_precision:.4f}")
     print(f"  Micro Recall      : {result.micro_recall:.4f}")
     print(f"  Micro F1          : {result.micro_f1:.4f}")
+    print(f"  F-β (β=2)         : {result.f_beta:.4f}  (recall-weighted)")
     print(f"  Macro F1          : {result.macro_f1:.4f}")
     print()
+    print(f"  Zero-leak rate    : {result.zero_leak_rate:.4f}  (notes with no missed PHI)")
     print(f"  Hallucination rate: {result.hallucination_rate:.4f}  (1 − Precision)")
     if not (result.token_reduction_rate != result.token_reduction_rate):  # nan check
         print(f"  Token reduction   : {result.token_reduction_rate:.4f}")
