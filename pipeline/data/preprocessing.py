@@ -1,6 +1,42 @@
+import difflib
 import pandas as pd
 import re
 from datetime import datetime
+
+# Matches any XML/HTML tag — used by XML-aware helpers below.
+_XML_TAG = re.compile(r'<[^>]+>')
+
+def _apply_to_text_segments(func, text, skip_element_content=False):
+    """Apply func(segment) -> (segment, int) only to plain-text parts between XML tags.
+
+    Splits text on XML tags, applies func to each non-tag segment, then
+    reassembles. This prevents any text-munging function from accidentally
+    modifying tag names, attribute values, or already-tagged content.
+
+    skip_element_content=True: also skip segments that are the direct content
+    of an XML element (i.e. the segment immediately follows an opening tag).
+    Use this for functions that should only process top-level / inter-element
+    text, not values stored inside existing tags (e.g. <original>Feb 13</original>).
+    """
+    parts    = _XML_TAG.split(text)
+    xml_tags = _XML_TAG.findall(text)
+    total    = 0
+    new_parts = []
+    for i, part in enumerate(parts):
+        if skip_element_content and i > 0:
+            preceding = xml_tags[i - 1]
+            # Skip if immediately inside an opening tag (not a closing or self-closing tag)
+            if not preceding.startswith('</') and not preceding.endswith('/>'):
+                new_parts.append(part)
+                continue
+        new_part, n = func(part)
+        new_parts.append(new_part)
+        total += n
+    result = new_parts[0]
+    for tag, part in zip(xml_tags, new_parts[1:]):
+        result += tag + part
+    return result, total
+
 
 ## Finding gibberish generated content
 # We will find content that is not a URL and is more than 30 characters long.
@@ -43,29 +79,38 @@ def fix_space_in_tags(text):
 # We will find phone numbers and replace them with <phone>1234567890</phone>
 
 
+_PHONE_PATTERNS = [
+    r'\b\d{3}-\d{3}-\d{4}\b',
+    r'\b\d{3}\s\d{3}\s\d{4}\b',
+    r'\(\d{3}\)\s\d{3}[-\s]\d{4}',
+]
+
 def fix_unformatted_phone_numbers(text):
-    patterns = [r'\b\d{3}-\d{3}-\d{4}\b', r'\b\d{3}\s\d{3}\s\d{4}\b', r'\(\d{3}\)\s\d{3}[-\s]\d{4}']
-    total_changes = 0
-    for pattern in patterns:
-        text_matches = re.findall(pattern, text)
-        for match in text_matches:
-            if not re.search(f"<phone>{re.escape(match)}</phone>", text):
-                text = text.replace(match, f"<phone>{match}</phone>")
-                total_changes += 1
-    return text, total_changes
+    def _fix(segment):
+        changes = 0
+        for pattern in _PHONE_PATTERNS:
+            for match in re.findall(pattern, segment):
+                if f"<phone>{match}</phone>" not in segment:
+                    segment = segment.replace(match, f"<phone>{match}</phone>", 1)
+                    changes += 1
+        return segment, changes
+    return _apply_to_text_segments(_fix, text, skip_element_content=True)
 
 ## Fixing issues with dates
 # We will find dates (YYYY-MM-DD) and replace them with <date>YYYY-MM-DD</date>
 
 def fix_unformatted_dates(text):
-    pattern = r'\b\d{4}-\d{2}-\d{2}\b'
-    total_changes = 0
-    text_matches = re.findall(pattern, text)
-    for match in text_matches:
-        if not re.search(f"<date>{match}</date>", text):
-            text = text.replace(match, f'<date>{match}</date>')
-            total_changes += 1
-    return text, total_changes
+    _DATE_PATTERN = re.compile(r'\b\d{4}-\d{2}-\d{2}\b')
+
+    def _fix(segment):
+        changes = 0
+        for match in _DATE_PATTERN.findall(segment):
+            if f"<date>{match}</date>" not in segment:
+                segment = segment.replace(match, f'<date>{match}</date>', 1)
+                changes += 1
+        return segment, changes
+
+    return _apply_to_text_segments(_fix, text, skip_element_content=True)
 
 ## Fixing age issue
 # Sometimes the LLM will use "1-year-old" instead of "<age>1</age>-year-old". We will correct for this.
@@ -187,7 +232,7 @@ def correct_name_tag_suffix(text):
         return f'<name{attrs}>{name}</name>{separator}{suffix}'
     
     # Correct suffixes that are inside the name tags
-    corrected_text, count = re.subn(suffix_pattern, reposition_suffix, text)
+    corrected_text, count = re.subn(suffix_pattern, reposition_suffix, text, flags=re.DOTALL)
     
     return corrected_text, count
 
@@ -212,14 +257,18 @@ def process_names_tags(df, column_name):
 def simplify_name_tags(df, column_name='default_response_1'):
     def process_text(text):
         pattern = r'<name id="(\d+)" type="(doctor|nurse|other|patient)">(.*?)</name>'
-        
+        changes = [0]
+
         def replace_tag(match):
             id_num, type_, name = match.groups()
             new_type = "provider" if type_ in ["doctor", "nurse", "nurse practitioner", "other"] else "patient"
-            return f'<name id="{id_num}" type="{new_type}">{name}</name>'
-        
-        new_text, count = re.subn(pattern, replace_tag, text)
-        return new_text, count
+            result = f'<name id="{id_num}" type="{new_type}">{name}</name>'
+            if result != match.group(0):
+                changes[0] += 1
+            return result
+
+        new_text = re.sub(pattern, replace_tag, text, flags=re.DOTALL)
+        return new_text, changes[0]
 
     total_changes = 0
     for index, row in df.iterrows():
@@ -240,7 +289,7 @@ def reformat_id_tags(df, column_name='default_response_1'):
             type_, prefix, space, id_num = match.groups()
             return f'{prefix}:{space}<id type="{type_}">{id_num}</id>'
         
-        new_text, count = re.subn(pattern, replace_tag, text)
+        new_text, count = re.subn(pattern, replace_tag, text, flags=re.DOTALL)
         return new_text, count
 
     total_changes = 0
@@ -255,152 +304,134 @@ def reformat_id_tags(df, column_name='default_response_1'):
 ## Fixing dates
 # We will find missed dates and replace them with <date>YYYY-MM-DD</date>
 
-def extract_and_format_dates(text):
-    months = ["January", "February", "March", "April", "June", "July", "August", "September", "October", "November", "December"]
+_MONTHS = ["January", "February", "March", "April", "June", "July",
+           "August", "September", "October", "November", "December"]
+
+def _format_dates_in_segment(text):
+    """Format bare month-name date strings in a plain-text segment (no XML tags)."""
     changes = 0
-    
-    # Define a regex pattern to find dates in the format "Month Day, Year"
-    pattern = r'\b(?:' + '|'.join(months) + r')\s+\d{1,2},\s+\d{4}\b'
-    matches = re.findall(pattern, text, re.IGNORECASE)
-    for date_str in matches:
+    months = _MONTHS
+    M = '|'.join(months)
+
+    # "Month Day, Year"
+    for date_str in re.findall(rf'\b(?:{M})\s+\d{{1,2}},\s+\d{{4}}\b', text, re.IGNORECASE):
         try:
             date_obj = datetime.strptime(date_str.strip(), '%B %d, %Y')
             text = text.replace(date_str, f'<date>{date_obj.strftime("%Y-%m-%d")}</date>')
             changes += 1
-        except ValueError as e:
-            print(f"Error parsing date '{date_str}': {e}")
+        except ValueError:
+            pass
 
-    # Define a regex pattern to find dates in the format "Month Day(st/nd/rd/th), year"
-    pattern = r'\b((?:' + '|'.join(months) + r'))\s+(\d{1,2})(?:st|nd|rd|th),\s+(\d{4})\b'
-    matches = re.findall(pattern, text, re.IGNORECASE)
-    for match in matches:
+    # "Month Dayth, Year"
+    for mo, day, yr in re.findall(rf'\b((?:{M}))\s+(\d{{1,2}})(?:st|nd|rd|th),\s+(\d{{4}})\b', text, re.IGNORECASE):
         try:
-            month, day, year = match
-            date_str = f"{month} {day}, {year}"
-            date_obj = datetime.strptime(date_str, '%B %d, %Y')
-            original_date = f"{month} {day}th, {year}"
-            text = text.replace(original_date, f'<date>{date_obj.strftime("%Y-%m-%d")}</date>')
+            date_obj = datetime.strptime(f"{mo} {day}, {yr}", '%B %d, %Y')
+            text = text.replace(f"{mo} {day}th, {yr}", f'<date>{date_obj.strftime("%Y-%m-%d")}</date>')
             changes += 1
-        except ValueError as e:
-            print(f"Error parsing date '{date_str}': {e}")
-                    
-    # Define a regex pattern to find dates in the format "Month Year"
-    pattern = r'\b(?:' + '|'.join(months) + r')\s+\d{4}\b'
-    matches = re.findall(pattern, text, re.IGNORECASE)
-    for date_str in matches:
+        except ValueError:
+            pass
+
+    # "Month Year"
+    for date_str in re.findall(rf'\b(?:{M})\s+\d{{4}}\b', text, re.IGNORECASE):
         try:
             date_obj = datetime.strptime(date_str.strip(), '%B %Y')
             text = text.replace(date_str, f'<date>{date_obj.strftime("%Y-%m-??")}</date>')
             changes += 1
-        except ValueError as e:
-            print(f"Error parsing date '{date_str}': {e}")
+        except ValueError:
+            pass
 
-    # Define a regex pattern to find dates in the format "Month Day"
-    pattern = r'\b(?:' + '|'.join(months) + r')\s+\d{1,2}\b'
-    matches = re.findall(pattern, text, re.IGNORECASE)
-    for date_str in matches:
+    # "Month Day"
+    for date_str in re.findall(rf'\b(?:{M})\s+\d{{1,2}}\b', text, re.IGNORECASE):
         try:
             date_obj = datetime.strptime(date_str.strip(), '%B %d')
             text = text.replace(date_str, f'<date>{date_obj.strftime("????-%m-%d")}</date>')
             changes += 1
-        except ValueError as e:
-            print(f"Error parsing date '{date_str}': {e}")
+        except ValueError:
+            pass
 
-    # Define a regex pattern to find dates in the format "Month Day(st/nd/rd/th)"
-    pattern = r'\b((?:' + '|'.join(months) + r'))\s+(\d{1,2})(?:st|nd|rd|th)\b'
-    matches = re.findall(pattern, text, re.IGNORECASE)
-    for match in matches:
+    # "Month Dayth"
+    for mo, day in re.findall(rf'\b((?:{M}))\s+(\d{{1,2}})(?:st|nd|rd|th)\b', text, re.IGNORECASE):
         try:
-            month, day = match
-            date_str = f"{month} {day}"
-            date_obj = datetime.strptime(date_str, '%B %d')
-            original_date = f"{month} {day}th"
-            text = text.replace(original_date, f'<date>????-{date_obj.strftime("%m-%d")}</date>')
+            date_obj = datetime.strptime(f"{mo} {day}", '%B %d')
+            text = text.replace(f"{mo} {day}th", f'<date>????-{date_obj.strftime("%m-%d")}</date>')
             changes += 1
-        except ValueError as e:
-            print(f"Error parsing date '{date_str}': {e}")
+        except ValueError:
+            pass
 
-    # Define a regex pattern to find standalone months (not at start if "May")
-    pattern = r'(?<!^)(?<![\.\!\?\n])(?<![\.\!\?\n]\s)(?<![\.\!\?\n]\s\s)\b((?:' + '|'.join(months) + r'))\b(?![a-zA-Z])'
-    matches = re.findall(pattern, text)
-    for match in matches:
-        if isinstance(match, tuple):
-            month = match[0]
-        else:
-            month = match
-        
+    # Standalone month names (fallback)
+    standalone = rf'(?<!^)(?<![\.\!\?\n])(?<![\.\!\?\n]\s)(?<![\.\!\?\n]\s\s)\b((?:{M}))\b(?![a-zA-Z])'
+    for match in re.findall(standalone, text):
+        month = match[0] if isinstance(match, tuple) else match
         date_obj = datetime.strptime(month.strip(), '%B')
         text = text.replace(month, f'<date>????-{date_obj.strftime("%m")}-??</date>')
         changes += 1
 
-    # remove double date tags <date><date>2023-04-15</date></date>
-    text = re.sub(r'<date><date>(.*?)</date></date>', r'<date>\1</date>', text)
     return text, changes
+
+
+def extract_and_format_dates(text):
+    return _apply_to_text_segments(_format_dates_in_segment, text, skip_element_content=True)
 
 ## Removing Markdowns
 # We will remove the markdown tags from the text.
 
+# _XML_TAG and _apply_to_text_segments are defined at the top of this module.
+_MD_PATTERNS = [
+    (re.compile(r'\*\*(.+?)\*\*', re.DOTALL), r'\1'),
+    (re.compile(r'__(.+?)__',     re.DOTALL), r'\1'),
+    (re.compile(r'\*(.+?)\*',     re.DOTALL), r'\1'),
+    (re.compile(r'_(.+?)_',       re.DOTALL), r'\1'),
+    (re.compile(r'\[([^\]]+)\]\([^)]+\)'),    r'\1'),
+]
+
 def remove_markdown(df, column_name='default_response_1'):
-    """
-    Remove markdown formatting from text while preserving the content.
-    Handles bold (**), italic (*), underscores (_), and URLs.
-    
-    Args:
-        df (DataFrame): The input DataFrame
-        column_name (str): Name of the column to process
-        
-    Returns:
-        tuple: (DataFrame, int) - Modified DataFrame and number of changes made
-    """
-    def find_matching_close(text: str, start_index: int, symbol: str) -> int:
-        i = start_index + len(symbol)
-        while i < len(text):
-            if text.startswith(symbol, i):
-                if i + len(symbol) >= len(text) or text[i + len(symbol)] != symbol[0]:
-                    return i
-            i += 1
-        return -1
-
+    """Remove markdown formatting from plain-text segments, skipping XML tags."""
     def process_single_text(text):
-        original_text = text
-        result = text
-        start_index = 0
-        
-        while start_index < len(result):
-            patterns = ['**', '__', '*', '_']
-            
-            found = False
-            for pattern in patterns:
-                if result.startswith(pattern, start_index):
-                    close_index = find_matching_close(result, start_index, pattern)
-                    
-                    if close_index != -1:
-                        content = result[start_index + len(pattern):close_index]
-                        result = result[:start_index] + content + result[close_index + len(pattern):]
-                        found = True
-                        break
+        # Split into alternating [text, tag, text, tag, ...] segments.
+        # Only process the text (non-tag) segments.
+        parts = _XML_TAG.split(text)
+        tags  = _XML_TAG.findall(text)
+        tokens = 0
+        new_parts = []
+        for part in parts:
+            for pattern, repl in _MD_PATTERNS:
+                part, n = pattern.subn(repl, part)
+                tokens += n
+            new_parts.append(part)
+        # Re-interleave text and tag segments.
+        result = new_parts[0]
+        for tag, part in zip(tags, new_parts[1:]):
+            result += tag + part
+        return result, tokens
 
-            if not found:
-                url_match = re.search(r'\[([^\]]+)\]\(([^)]+)\)', result[start_index:])
-                if url_match:
-                    full_match = url_match.group(0)
-                    link_text = url_match.group(1)
-                    match_index = start_index + url_match.start()
-                    result = result[:match_index] + link_text + result[match_index + len(full_match):]
-                    found = True
-
-            if not found:
-                start_index += 1
-                
-        return result, 1 if result != original_text else 0
-
-    total_changes = 0
+    total_removed = 0
     for index, row in df.iterrows():
-        new_text, changes = process_single_text(row[column_name])
+        new_text, count = process_single_text(row[column_name])
         df.at[index, column_name] = new_text
-        total_changes += changes
+        total_removed += count
 
-    return df, total_changes
+    return df, total_removed
+
+
+_ENTITY_TAG_PATTERNS: dict[str, re.Pattern] = {
+    "name":    re.compile(r"<name[\s>]"),
+    "age":     re.compile(r"<age>"),
+    "date":    re.compile(r"<date>"),
+    "place":   re.compile(r"<place>"),
+    "address": re.compile(r"<address>"),
+    "phone":   re.compile(r"<phone>"),
+    "email":   re.compile(r"<email>"),
+    "id":      re.compile(r"<id[\s>]"),
+    "url":     re.compile(r"<url>"),
+    "device":  re.compile(r"<device>"),
+}
+
+def _count_entity_tags(df: pd.DataFrame, column: str) -> dict[str, int]:
+    """Count individual entity tags of each PHI type across all rows."""
+    return {
+        entity: int(df[column].apply(lambda x: len(pat.findall(x))).sum())
+        for entity, pat in _ENTITY_TAG_PATTERNS.items()
+    }
 
 
 def preprocess_text(df, input_col='default_response_0', output_col='default_response_1'):
@@ -479,17 +510,108 @@ def preprocess_text(df, input_col='default_response_0', output_col='default_resp
     print("Removing markdown tags...")
     df, markdown_changes = remove_markdown(df, output_col)
     
-    # Print summary of all changes
+    # Per-entity reformatting totals (keyed to the same entity names as tag counts)
+    reformatted: dict[str, int] = {
+        "name":  name_tag_changes + name_type_changes,
+        "age":   age_changes,
+        "date":  date_changes + remaining_date_changes,
+        "phone": phone_changes,
+        "id":    id_tag_changes,
+    }
+    other_changes = {"gender terms corrected": gender_changes,
+                     "markdown tokens removed": markdown_changes}
+
+    entity_counts = _count_entity_tags(df, output_col)
+
     print("\nProcessing Summary:")
-    print(f"Phone numbers formatted: {phone_changes}")
-    print(f"Dates formatted: {date_changes} + {remaining_date_changes}")
-    print(f"Ages processed: {age_changes}")
-    print(f"Gender terms corrected: {gender_changes}")
-    print(f"Name tags processed: {name_tag_changes}")
-    print(f"Name types simplified: {name_type_changes}")
-    print(f"ID tags reformatted: {id_tag_changes}")
-    print(f"Markdown tags removed: {markdown_changes}")
-    
+    print(f"  {'Entity':<10}  {'Detected':>9}  {'Reformatted':>11}")
+    print(f"  {'-'*10}  {'-'*9}  {'-'*11}")
+    for entity, detected in entity_counts.items():
+        ref = reformatted.get(entity, 0)
+        ref_str = str(ref) if ref else "-"
+        print(f"  {entity:<10}  {detected:>9}  {ref_str:>11}")
+
+    extras = [(label, n) for label, n in other_changes.items() if n]
+    if extras:
+        print()
+        for label, n in extras:
+            print(f"  {label}: {n}")
+
     print("\nText processing pipeline completed!")
     return df
 
+
+def inspect_changes(
+    before: pd.Series,
+    after: pd.Series,
+    entity: str | None = None,
+    n: int = 5,
+    context: int = 2,
+) -> None:
+    """Show unified diffs for rows where preprocessing made changes.
+
+    Usage
+    -----
+    Snapshot the column *before* calling preprocess_text, then call this
+    function afterwards:
+
+        before_col = df['anonymized'].copy()
+        df = preprocess_text(df, input_col='original', output_col='anonymized')
+        inspect_changes(before_col, df['anonymized'], entity='date', n=3)
+
+    Parameters
+    ----------
+    before  : Series of column values before preprocessing.
+    after   : Series of column values after preprocessing.
+    entity  : Optional PHI type to filter on — only shows rows where the
+              tag count for that entity changed.
+              One of: name, age, date, place, address, phone, email, id, url, device.
+    n       : Max number of samples to display (default 5).
+    context : Diff context lines shown around each change (default 2).
+    """
+    # Align by position — preprocess_text may drop rows and reset the index,
+    # so the two series might not share the same labels.
+    before = before.reset_index(drop=True)
+    after  = after.reset_index(drop=True)
+    # Truncate to the shorter series (rows dropped by gibberish filter won't appear in after)
+    min_len = min(len(before), len(after))
+    before  = before.iloc[:min_len]
+    after   = after.iloc[:min_len]
+
+    changed = before != after
+
+    if entity is not None:
+        pat = _ENTITY_TAG_PATTERNS.get(entity)
+        if pat is None:
+            raise ValueError(
+                f"Unknown entity {entity!r}. "
+                f"Valid options: {sorted(_ENTITY_TAG_PATTERNS)}"
+            )
+        b_cnt = before.apply(lambda x: len(pat.findall(str(x))))
+        a_cnt = after.apply(lambda x: len(pat.findall(str(x))))
+        changed = changed & (b_cnt != a_cnt)
+
+    indices = changed[changed].index.tolist()
+    total   = len(indices)
+    label   = f" for entity='{entity}'" if entity else ""
+    print(f"{total} row(s) changed{label}.")
+
+    for rank, idx in enumerate(indices[:n], 1):
+        b_lines = str(before.loc[idx]).splitlines(keepends=True)
+        a_lines = str(after.loc[idx]).splitlines(keepends=True)
+        diff    = list(difflib.unified_diff(
+            b_lines, a_lines,
+            fromfile="before", tofile="after",
+            n=context, lineterm="",
+        ))
+        print(f"\n{'─' * 64}")
+        print(f"  [{rank}/{min(n, total)}]  row index {idx}")
+        if diff:
+            # Skip the @@-header lines; just print changed lines with context
+            for line in diff[2:]:
+                print(line)
+        else:
+            print("  (content changed but no line-level diff found)")
+
+    if total > n:
+        print(f"\n  … {total - n} more row(s) not shown — increase n= to see them.")

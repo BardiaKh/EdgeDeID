@@ -18,13 +18,37 @@ def convert_to_xml(text, sort_by_position=False):
     
     for tag in tags:
         pattern = rf'<{tag}((?:\s+\w+="[^"]*")*)\s*>(.*?)</{tag}>'
-        for match in re.finditer(pattern, text):
+        for match in re.finditer(pattern, text, re.DOTALL):
             position = match.start()
-            attr_string, content = match.groups()
+            attr_string, raw_content = match.groups()
             attrs = extract_attributes(attr_string)
-            
+            stripped = raw_content.strip()
+
+            # --- Hierarchical sub-element format (HF / test dataset) ---
+            # Dates: <date><original>text</original><formatted>fmt</formatted></date>
+            if tag == 'date' and '<original>' in stripped:
+                orig_m = re.search(r'<original>(.*?)</original>', stripped, re.DOTALL)
+                fmt_m  = re.search(r'<formatted>(.*?)</formatted>', stripped, re.DOTALL)
+                content = orig_m.group(1).strip() if orig_m else stripped
+                if fmt_m and 'formatted' not in attrs:
+                    attrs = dict(attrs)
+                    attrs['formatted'] = fmt_m.group(1).strip()
+
+            # Names: <name ...><variations><value>v1</value><value>v2</value></variations></name>
+            elif tag == 'name' and '<variations>' in stripped:
+                values = re.findall(r'<value>(.*?)</value>', stripped, re.DOTALL)
+                name_id = f"name_{attrs.get('id')}_{attrs.get('type')}"
+                for i, v in enumerate(values):
+                    # Append each value as a separate entry; the existing dedup logic
+                    # will merge them into one element with multiple <variation> children.
+                    tag_positions.append((position + i * 1e-6, tag, attrs, v.strip(), name_id))
+                continue  # skip the default append below
+
+            else:
+                content = stripped
+            # --- end sub-element handling ---
+
             # Create unique identifier based on tag type
-            unique_id = None
             if tag == 'name':
                 unique_id = f"name_{attrs.get('id')}_{attrs.get('type')}"
             elif tag == 'date':
@@ -33,7 +57,7 @@ def convert_to_xml(text, sort_by_position=False):
                 unique_id = f"{tag}_{attrs.get('id') or attrs.get('type')}"
             else:
                 unique_id = f"{tag}_{content}"
-                
+
             tag_positions.append((position, tag, attrs, content, unique_id))
     
     # Sort by position to preserve original order

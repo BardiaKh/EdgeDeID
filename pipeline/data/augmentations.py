@@ -155,7 +155,7 @@ def ymd_to_wordy_no_comma(date_str: str) -> str:  # Example: 2024-12-01 -> Decem
 def introduce_misspelling_in_name(text: str) -> str:
     words = text.split()
     if not words:
-        return text.group(0)
+        return text
     
     word_to_misspell = random.choice(words)
     
