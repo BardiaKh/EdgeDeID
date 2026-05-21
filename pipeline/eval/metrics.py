@@ -9,7 +9,6 @@ from __future__ import annotations
 import re
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass, field
-from datetime import datetime
 
 _PHI_PARENT_TAGS = [
     "names", "ages", "dates", "places", "addresses",
@@ -66,16 +65,20 @@ def extract_entities(xml_str: str) -> dict[str, list[str]]:
                         if val.text and val.text.strip():
                             entities.setdefault(singular, []).append(val.text.strip())
             elif singular == "date":
-                fmt = child.find("formatted")
+                # Match dates on the raw source span (`original`), not the
+                # dataset's ISO `formatted` value. NER baselines emit the
+                # detected span verbatim ("12-25-2028"), so comparing against
+                # the normalized ISO form ("2028-12-25") spuriously failed even
+                # when the date was correctly detected. Detection is what the
+                # PHI-leak metric should measure; `formatted` is a fallback for
+                # entries that lack an `original`.
                 orig = child.find("original")
+                fmt = child.find("formatted")
                 text = None
-                if fmt is not None and fmt.text:
-                    try:
-                        text = datetime.strptime(fmt.text.strip(), "%Y-%m-%d").strftime("%Y-%m-%d")
-                    except ValueError:
-                        pass
-                if text is None and orig is not None and orig.text:
+                if orig is not None and orig.text and orig.text.strip():
                     text = orig.text.strip()
+                elif fmt is not None and fmt.text and fmt.text.strip():
+                    text = fmt.text.strip()
                 if text:
                     entities.setdefault(singular, []).append(text)
             else:
