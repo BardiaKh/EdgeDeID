@@ -9,17 +9,21 @@ from __future__ import annotations
 
 from .base import BaselineModel
 
-# Mapping from Presidio entity types to our schema keys
+# Mapping from Presidio entity types to our schema keys.
+# Note: Presidio's LOCATION fires on streets/cities (e.g. "246 Maple Lane",
+# "San Francisco"), which align with our `address`, NOT `place` — spaCy tags
+# hospital institutions as ORG, which the default AnalyzerEngine does not emit,
+# so `place` is undetectable. NRP (nationality/religion/politics) is not an ID
+# and was dropped: it produced false-positive ids like "Russian".
 _PRESIDIO_TO_SCHEMA: dict[str, str] = {
     "PERSON":          "name",
     "AGE":             "age",
     "DATE_TIME":       "date",
-    "LOCATION":        "place",
+    "LOCATION":        "address",
     "ADDRESS":         "address",
     "PHONE_NUMBER":    "phone",
     "EMAIL_ADDRESS":   "email",
     "MEDICAL_LICENSE": "id",
-    "NRP":             "id",
     "ID":              "id",
     "URL":             "url",
     "MEDICAL_DEVICE":  "device",
@@ -30,7 +34,6 @@ _PRESIDIO_TO_SCHEMA: dict[str, str] = {
     "US_BANK_NUMBER":  "id",
     "CREDIT_CARD":     "id",
     "IBAN_CODE":       "id",
-    "IP_ADDRESS":      "id",
 }
 
 
@@ -39,11 +42,14 @@ class PresidioBaseline(BaselineModel):
 
     name = "Presidio"
 
-    # Default AnalyzerEngine ships no AGE, MEDICAL_DEVICE, or ADDRESS recognizer
-    # (street addresses surface only as LOCATION -> place), so those schema keys
-    # are unreachable and excluded from macro-F1 / per-entity.
+    # Default AnalyzerEngine cannot reach several schema keys, so they are
+    # excluded from macro-F1 / per-entity (shown as N/A):
+    #   age, device  — no recognizer exists
+    #   place        — hospital institutions are spaCy ORG, which is not emitted
+    #   id           — no recognizer for the dataset's prefixed MRNs (e.g.
+    #                  "MGH-90785634"); recall was ~0.03
     supported_entities = {
-        "name", "date", "place", "phone", "email", "url", "id",
+        "name", "date", "address", "phone", "email", "url",
     }
 
     def __init__(self, score_threshold: float = 0.5):
