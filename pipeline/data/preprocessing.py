@@ -417,7 +417,7 @@ _ENTITY_TAG_PATTERNS: dict[str, re.Pattern] = {
     "name":    re.compile(r"<name[\s>]"),
     "age":     re.compile(r"<age>"),
     "date":    re.compile(r"<date>"),
-    "place":   re.compile(r"<place>"),
+    "place":   re.compile(r"<place[\s>]"),
     "address": re.compile(r"<address>"),
     "phone":   re.compile(r"<phone>"),
     "email":   re.compile(r"<email>"),
