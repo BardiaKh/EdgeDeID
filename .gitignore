@@ -38,6 +38,9 @@ evals/**/*.html
 data/
 datasets--EdgeDeID--synthetic-dataset/
 
+# Models
+models/
+
 # Generated HF metadata snapshot
 hf_collection_info.json
 

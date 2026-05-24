@@ -9,21 +9,22 @@ from __future__ import annotations
 
 from .base import BaselineModel
 
-# scispaCy entity types → our schema keys
-# en_core_sci_lg uses BIONLP13CG or BC5CDR entities — mostly clinical, not de-id focused.
-# We map the closest matches; many PHI types have no direct equivalent.
+# spaCy (OntoNotes) entity types → our schema keys.
+# Only the standard typed-NER labels map to PHI; everything else is skipped.
+# Location split (verified on the test set): spaCy tags street addresses as FAC
+# ("246 Maple Lane") and cities/states as GPE ("San Francisco", "WA"), which are
+# our `address`; institutions are ORG ("Cleveland Clinic"), which is our `place`.
+# NOTE: en_core_sci_lg only emits a single untyped "ENTITY" label, so none of
+# these match and it yields no typed predictions (supported_entities below ends
+# up empty) — use a typed model such as en_core_web_lg.
 _SCI_TO_SCHEMA: dict[str, str] = {
-    "PERSON":           "name",
-    "GPE":              "place",   # geopolitical entity
-    "LOC":              "place",
-    "FAC":              "place",   # facility
-    "ORG":              "place",
-    "DATE":             "date",
-    "TIME":             "date",
-    "CARDINAL":         None,
-    "DISEASE":          None,
-    "CHEMICAL":         None,
-    "GENE_OR_GENE_PRODUCT": None,
+    "PERSON":  "name",
+    "ORG":     "place",     # organizations / institutions (hospitals, clinics)
+    "FAC":     "address",   # facilities incl. street addresses
+    "GPE":     "address",   # geopolitical: cities, states, countries
+    "LOC":     "address",   # non-GPE locations: streets, parks
+    "DATE":    "date",
+    "TIME":    "date",
 }
 
 
@@ -37,9 +38,17 @@ class ScispaCyBaseline(BaselineModel):
 
     name = "scispaCy"
 
-    def __init__(self, model_name: str = "en_core_sci_lg"):
+    def __init__(self, model_name: str = "en_core_web_lg"):
         import spacy
         self._nlp = spacy.load(model_name)
+        # Scope macro-F1 / per-entity to the schema keys this model can actually
+        # reach, derived from its NER labels (e.g. en_core_web_lg has no
+        # phone/email/id/url/age/device labels -> those show as N/A, not 0.0).
+        ner = self._nlp.get_pipe("ner") if "ner" in self._nlp.pipe_names else None
+        labels = set(ner.labels) if ner is not None else set()
+        self.supported_entities = {
+            _SCI_TO_SCHEMA[lbl] for lbl in labels if _SCI_TO_SCHEMA.get(lbl)
+        }
 
     def predict_entities(self, note: str) -> dict[str, list[str]]:
         doc = self._nlp(note)

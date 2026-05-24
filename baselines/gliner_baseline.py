@@ -8,21 +8,9 @@ from __future__ import annotations
 
 from .base import BaselineModel
 
-# Labels we ask GLiNER to detect, mapped to our schema keys.
-# GLiNER accepts free-text label names so we keep them descriptive.
-_GLINER_LABELS: list[str] = [
-    "person name",
-    "patient age",
-    "date",
-    "hospital or clinic",
-    "address",
-    "phone number",
-    "email address",
-    "medical record number or identifier",
-    "url",
-    "medical device",
-]
-
+# Free-text labels we ask GLiNER to detect, mapped to our schema keys.
+# This dict is the single source of truth: the prompt label list is derived
+# from its keys, so the two can never drift out of sync.
 _LABEL_TO_SCHEMA: dict[str, str] = {
     "person name":                          "name",
     "patient age":                          "age",
@@ -35,6 +23,8 @@ _LABEL_TO_SCHEMA: dict[str, str] = {
     "url":                                  "url",
     "medical device":                       "device",
 }
+
+_GLINER_LABELS: list[str] = list(_LABEL_TO_SCHEMA)
 
 
 class GLiNERBaseline(BaselineModel):
