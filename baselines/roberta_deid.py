@@ -67,9 +67,20 @@ class RobertaDeidBaseline(BaselineModel):
             model=model_name,
             aggregation_strategy=_AGG,
         )
+        # obi's tokenizers ship without model_max_length set (defaults to the
+        # 1e30 sentinel), so the pipeline never truncates and crashes on notes
+        # over 512 tokens. Both i2b2 models (BERT and RoBERTa) have a 512-token
+        # effective limit, so pin it explicitly to make `stride` chunking in
+        # predict_entities actually kick in.
+        self._pipe.tokenizer.model_max_length = 512
 
     def predict_entities(self, note: str) -> dict[str, list[str]]:
-        raw = self._pipe(note)
+        # Notes can exceed the 512-token limit of the i2b2 BERT/RoBERTa models.
+        # `stride` makes the pipeline split long input into overlapping windows
+        # (512 tokens, 128-token overlap) and merge the results, instead of
+        # crashing on the position-embedding add. Plain truncation would drop
+        # every entity past token 512 and tank recall on long notes.
+        raw = self._pipe(note, stride=128)
         entities: dict[str, list[str]] = {}
         for r in raw:
             # entity_group may carry a BILOU prefix (B-/I-/L-/U-); take the base
