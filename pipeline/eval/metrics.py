@@ -1,7 +1,13 @@
 """Evaluation metrics for PHI de-identification.
 
-Matches the entity-matching logic used in the eval notebooks (bidirectional
-substring matching) so that numbers here are comparable to reported results.
+Entity matching is asymmetric by design:
+- Recall / leak (the safety metric) uses *directional containment*: a GT entity
+  counts as protected only when a prediction covers the whole span (gt ⊆ pred).
+  A partial/fragment prediction does NOT count, because the uncovered remainder
+  would still leak — counting it would overstate safety.
+- Precision uses lenient bidirectional substring matching: it measures false
+  positives, not leakage, so a prediction overlapping a true entity in either
+  direction is not treated as a hallucination.
 """
 
 from __future__ import annotations
@@ -88,9 +94,25 @@ def extract_entities(xml_str: str) -> dict[str, list[str]]:
     return entities
 
 
+def _normalize(s: str) -> str:
+    return s.lower().strip()
+
+
+def _covers(gt: str, pred: str) -> bool:
+    """True if the prediction covers the entire GT span (gt ⊆ pred).
+
+    Directional containment for the recall/leak metric: a GT entity counts as
+    protected only when a prediction includes the *whole* span. A prediction
+    that is merely a fragment of the GT does not count — the uncovered remainder
+    would still leak.
+    """
+    return _normalize(gt) in _normalize(pred)
+
+
 def _soft_match(a: str, b: str) -> bool:
-    """Bidirectional substring match (case-insensitive)."""
-    a, b = a.lower(), b.lower()
+    """Bidirectional substring match (case-insensitive) — used for PRECISION
+    only, which measures false positives rather than leakage."""
+    a, b = _normalize(a), _normalize(b)
     return a in b or b in a
 
 
@@ -112,8 +134,9 @@ def compare_sample(
     gt_stats: dict[str, dict] = {}
     for tag, gt_vals in gt_entities.items():
         pred_vals = pred_entities.get(tag, [])
+        # recall: GT entity is caught only if some prediction covers it fully
         correct = sum(
-            1 for v in gt_vals if any(_soft_match(v, p) for p in pred_vals)
+            1 for v in gt_vals if any(_covers(v, p) for p in pred_vals)
         )
         gt_stats[tag] = {"correct": correct, "total": len(gt_vals)}
 
