@@ -27,7 +27,10 @@ class QwenDeidBaseline(BaselineModel):
         self,
         model_src: str = "Qwen/Qwen3-0.6B-Base",
         name: str = "Qwen3-0.6B-Base (zero-shot)",
-        max_new_tokens: int = 2048,
+        # 1024 exceeds the longest reference output (568 Qwen tokens on the test
+        # set) by ~1.8x, so valid completions are never truncated, while keeping
+        # the budget uniform across all generative models for a fair comparison.
+        max_new_tokens: int = 1024,
     ):
         import torch
         from transformers import AutoModelForCausalLM, AutoTokenizer
