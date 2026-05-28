@@ -1,6 +1,3 @@
-for (let i = 0; i < 5; i++) {
-  console.log('Hello world!');
-}
 #!/usr/bin/env python3
 """Verify that all EdgeDeID models and datasets are accessible on HuggingFace Hub."""
 

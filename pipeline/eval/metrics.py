@@ -190,9 +190,13 @@ class EvalResult:
     n_samples: int = 0
 
 
-def _prf(tp: int, total_pred: int, total_gt: int) -> tuple[float, float, float]:
-    p = tp / total_pred if total_pred else 0.0
-    r = tp / total_gt if total_gt else 0.0
+def _prf(tp_pred: int, tp_gt: int, total_pred: int, total_gt: int) -> tuple[float, float, float]:
+    # Asymmetric matching: precision uses pred-side TP (lenient bidirectional),
+    # recall uses gt-side TP (directional containment). The two counts differ
+    # when a single prediction covers multiple GT variations (e.g. name aliases),
+    # so they must not share a numerator — doing so produced P > 1.
+    p = tp_pred / total_pred if total_pred else 0.0
+    r = tp_gt / total_gt if total_gt else 0.0
     f = 2 * p * r / (p + r) if (p + r) else 0.0
     return p, r, f
 
@@ -254,13 +258,14 @@ def compute_metrics(
     macro_f1_sum = 0.0
 
     for tag in report_tags:
-        tp = accum_gt.get(tag, {}).get("correct", 0)
+        tp_gt = accum_gt.get(tag, {}).get("correct", 0)
+        tp_pred = accum_pred.get(tag, {}).get("correct", 0)
         total_gt = accum_gt.get(tag, {}).get("total", 0)
         total_pred = accum_pred.get(tag, {}).get("total", 0)
-        p, r, f = _prf(tp, total_pred, total_gt)
+        p, r, f = _prf(tp_pred, tp_gt, total_pred, total_gt)
         per_entity[tag] = TagMetrics(
             precision=p, recall=r, f1=f,
-            gt_count=total_gt, pred_count=total_pred, tp=tp,
+            gt_count=total_gt, pred_count=total_pred, tp=tp_gt,
         )
         macro_f1_sum += f
 
@@ -268,10 +273,11 @@ def compute_metrics(
 
     # micro overall — full coverage across every GT/pred tag, regardless of
     # supported_entities, so undetectable PHI still counts against the model.
-    total_tp = sum(v.get("correct", 0) for v in accum_gt.values())
+    total_tp_gt = sum(v.get("correct", 0) for v in accum_gt.values())
+    total_tp_pred = sum(v.get("correct", 0) for v in accum_pred.values())
     total_gt_all = sum(v.get("total", 0) for v in accum_gt.values())
     total_pred_all = sum(v.get("total", 0) for v in accum_pred.values())
-    micro_p, micro_r, micro_f = _prf(total_tp, total_pred_all, total_gt_all)
+    micro_p, micro_r, micro_f = _prf(total_tp_pred, total_tp_gt, total_pred_all, total_gt_all)
 
     hallucination_rate = 1.0 - micro_p
 
@@ -303,7 +309,7 @@ def compute_metrics(
         token_reduction_rate=token_reduction_rate,
         zero_leak_rate=zero_leak_rate,
         per_entity=per_entity,
-        total_tp=total_tp,
+        total_tp=total_tp_gt,
         total_gt=total_gt_all,
         total_pred=total_pred_all,
         n_samples=len(predictions),
