@@ -69,31 +69,42 @@ def evaluate_policy(
     ground_truths: list[str] = []
 
     model.eval()
-    with torch.no_grad():
-        for i in range(0, len(rows), batch_size):
-            batch = rows[i : i + batch_size]
-            prompts = [r["prompt"] for r in batch]
-            source_notes.extend(r["source_note"] for r in batch)
-            ground_truths.extend(r["ground_truth"] for r in batch)
+    # Decoder-only batched generation requires LEFT padding: with the default
+    # right padding, pad tokens land between the prompt and the generated text
+    # for shorter prompts in a batch, corrupting their completions (and the
+    # prompt_len slice). Also disable truncation — prompts (instructions+schema
+    # +few-shot) must stay intact, exactly as in training (max_prompt_length=None).
+    prev_side = tokenizer.padding_side
+    tokenizer.padding_side = "left"
+    try:
+        with torch.no_grad():
+            for i in range(0, len(rows), batch_size):
+                batch = rows[i : i + batch_size]
+                prompts = [r["prompt"] for r in batch]
+                source_notes.extend(r["source_note"] for r in batch)
+                ground_truths.extend(r["ground_truth"] for r in batch)
 
-            encoded = tokenizer(
-                prompts,
-                return_tensors="pt",
-                padding=True,
-                truncation=True,
-            ).to(model.device)
+                encoded = tokenizer(
+                    prompts,
+                    return_tensors="pt",
+                    padding=True,
+                    truncation=False,
+                ).to(model.device)
 
-            out = model.generate(
-                **encoded,
-                max_new_tokens=max_new_tokens,
-                temperature=temperature if temperature > 0 else None,
-                do_sample=temperature > 0,
-            )
-            prompt_len = encoded["input_ids"].shape[1]
-            for seq in out:
-                completions.append(
-                    tokenizer.decode(seq[prompt_len:], skip_special_tokens=True)
+                out = model.generate(
+                    **encoded,
+                    max_new_tokens=max_new_tokens,
+                    temperature=temperature if temperature > 0 else None,
+                    do_sample=temperature > 0,
+                    pad_token_id=tokenizer.pad_token_id,
                 )
+                prompt_len = encoded["input_ids"].shape[1]
+                for seq in out:
+                    completions.append(
+                        tokenizer.decode(seq[prompt_len:], skip_special_tokens=True)
+                    )
+    finally:
+        tokenizer.padding_side = prev_side
 
     if qc_config is not None:
         from ..qc import apply_qc_batch

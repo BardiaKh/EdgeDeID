@@ -55,6 +55,13 @@ def build_grpo_trainer(
         per_device_train_batch_size=config.per_device_train_batch_size,
         per_device_eval_batch_size=config.per_device_eval_batch_size,
         learning_rate=config.learning_rate,
+        # CRITICAL: forward max_prompt_length. TRL's default is 512 and our flat
+        # SFT prompts (instructions + schema + few-shot examples) run 1000-4600+
+        # tokens. TRL left-truncates the prompt, so any cap below the full length
+        # drops the leading <instructions> block — the policy then never learns to
+        # emit <phi_entities> and every completion fails the structure gate
+        # (reward 0, zero variance, zero gradient). None = no truncation.
+        max_prompt_length=config.max_prompt_length,
         max_completion_length=config.max_completion_length,
         num_generations=config.num_generations,
         max_steps=config.max_steps,
