@@ -37,38 +37,38 @@ teachers on held-out external data (see `evals/`).
 
 ```
 ┌─ Stage 1: Generate ──────────────────────────────────────────────────────┐
-│  data_prep/DataGeneration-{Haiku,DeepSeek,Hermes}.ipynb                  │
+│  notebooks/1_data/DataGeneration-{Haiku,DeepSeek,Hermes}.ipynb                  │
 │   ↳ 3 frontier LLMs each emit ~10–25k synthetic (note, XML-tags) pairs   │
 │   ↳ writes raw CSVs → data/{hermes,haiku,deepseek}/output_N_<teacher>.csv │
 └──────────────────────────────────────────────────────────────────────────┘
                                   │
 ┌─ Stage 2: First-pass SFT ────────────────────────────────────────────────┐
-│  SFT/sft.ipynb with MODEL_NAME = "Qwen/Qwen3-1.7B-Base"                  │
+│  notebooks/2_train/sft.ipynb with MODEL_NAME = "Qwen/Qwen3-1.7B-Base"                  │
 │   ↳ trained on small high-confidence subset                              │
 │   ↳ produces a 1.7B "labeling" model                                     │
 └──────────────────────────────────────────────────────────────────────────┘
                                   │
 ┌─ Stage 3: Pseudo-label ──────────────────────────────────────────────────┐
-│  data_prep/pseudolabel.ipynb (vLLM-served 1.7B model)                    │
+│  notebooks/1_data/pseudolabel.ipynb (vLLM-served 1.7B model)                    │
 │   ↳ re-tags every synthetic note with the trained 1.7B model             │
 │   ↳ writes data/<teacher>/<teacher>_pseudolabeled.csv                    │
 └──────────────────────────────────────────────────────────────────────────┘
                                   │
 ┌─ Stage 4: Combine + augment ─────────────────────────────────────────────┐
-│  data_prep/combine.ipynb (PSEUDO_LABEL=True)                             │
+│  notebooks/1_data/combine.ipynb (PSEUDO_LABEL=True)                             │
 │   ↳ merges three teachers, applies date-format / name / phone aug.       │
-│   ↳ pipeline.data.augmentations rotates labels through ~30 transforms    │
+│   ↳ edgedeid.data.augmentations rotates labels through ~30 transforms    │
 │   ↳ writes data/train.csv + data/test.csv                                │
 └──────────────────────────────────────────────────────────────────────────┘
                                   │
 ┌─ Stage 5: Final SFT ─────────────────────────────────────────────────────┐
-│  SFT/sft.ipynb with MODEL_NAME = "Qwen/Qwen3-0.6B-Base"                  │
+│  notebooks/2_train/sft.ipynb with MODEL_NAME = "Qwen/Qwen3-0.6B-Base"                  │
 │   ↳ trains the deployable 0.6B student on the full pseudo-labeled set    │
 └──────────────────────────────────────────────────────────────────────────┘
                                   │
 ┌─ Stage 6: Quantize + serve ──────────────────────────────────────────────┐
 │  llama.cpp convert_hf_to_gguf.py + quantize → Q4_K_M GGUF                │
-│  demo/cli_anonymizer.py — terminal demo, llama.cpp backend               │
+│  scripts/cli_anonymizer.py — terminal demo, llama.cpp backend               │
 │  demo/gradio_demo.ipynb — web UI                                         │
 └──────────────────────────────────────────────────────────────────────────┘
 ```
@@ -77,73 +77,42 @@ teachers on held-out external data (see `evals/`).
 
 ## Repository layout
 
+Install the library once (`pip install -e .`); then every notebook/script imports
+`edgedeid.*` the same way, and each notebook self-locates the repo root via a small
+bootstrap cell (no `sys.path` hacks needed).
+
 ```
 EdgeDeID/
-├── pipeline/                      Reusable source code
+├── edgedeid/                      Installable library — `pip install -e .`
 │   ├── prompts.py                 Canonical SYSTEM_PROMPT (PHI tagging schema)
-│   ├── data/
-│   │   ├── preprocessing.py       Text cleanup: gibberish detection, tag fixing,
-│   │   │                          age/phone/date normalization, duplicate removal
-│   │   ├── augmentations.py       ~30 PHI-preserving transforms (date formats,
-│   │   │                          name spellings, phone separators, …)
-│   │   ├── augmentator.py         TextAugmentor: composes transforms with per-
-│   │   │                          field probabilities and "OneOf" groups
-│   │   └── xml_utils.py           Convert <phi_entities> XML ↔ inline tags;
-│   │                              entity-position extraction
-│   └── training/
-│       └── expand_tokenizer.py    Adds new XML tag tokens (<phi_entities>,
-│                                  <name>, <date>, …) to the Qwen3 tokenizer
+│   ├── runtime.py                 Shared runtime/path helpers
+│   ├── data/                      preprocessing · augmentations · augmentator · xml_utils
+│   ├── eval/                      metrics + inference (compute_metrics, batch_inference)
+│   ├── qc/                        recall-floor QC tiers (repair, reconcile, detectors)
+│   ├── rl/                        GRPO: config · rewards · evaluation
+│   ├── training/                  expand_tokenizer (adds XML tag tokens to Qwen3)
+│   └── baselines/                 baseline wrappers (Presidio, GLiNER, NER, Qwen)
 │
-├── data_prep_config/              RadPrompter TOML prompt configs
-│   ├── prompt.toml                Hermes (vLLM/OpenRouter)
-│   ├── prompt-anthropic.toml      DeepSeek (chat)
-│   ├── prompt-anthropic-rad.toml  Haiku v1
-│   └── prompt-anthropic-rad-2.toml Haiku v2 (radiology-focused)
+├── notebooks/                     All notebooks, grouped by stage
+│   ├── 1_data/                    data_generation · pseudolabel · combine (+ local utils)
+│   ├── 2_train/                   sft.ipynb (Stages 2 & 5) · grpo.ipynb
+│   └── 3_eval/                    baselines · ablation · qc_ablation · en_eval · synth_eval
 │
-├── data_prep/                     Notebook pipeline
-│   ├── DataGeneration-Haiku.ipynb     Stage 1 — Anthropic Haiku batch API
-│   ├── DataGeneration-DeepSeek.ipynb  Stage 1 — DeepSeek chat API
-│   ├── DataGeneration-Hermes.ipynb    Stage 1 — Hermes-405B via OpenRouter
-│   ├── pseudolabel.ipynb              Stage 3 — vLLM-served self-relabeling
-│   └── combine.ipynb                  Stage 4 — merge + augment → train/test
+├── scripts/                       CLI entrypoints
+│   ├── serve_vllm.sh              serve one checkpoint with vLLM
+│   ├── run_our_vllm.sh            eval all 3 Qwen checkpoints (serve→eval→stop) end-to-end
+│   ├── eval_one_vllm.py           headless eval of one served model on en_data.csv
+│   ├── cli_anonymizer.py          Rich terminal demo (llama.cpp backend)
+│   └── *_hf.py                    HuggingFace load/push/verify utilities
 │
-├── data/                          Synthetic data
-│   ├── hermes/   output_N_hermes.csv      raw teacher outputs
-│   │             hermes_pseudolabeled.csv self-relabeled corpus (Stage 3)
-│   ├── haiku/    output_N_haiku.csv
-│   │             haiku_pseudolabeled.csv
-│   ├── deepseek/ output_N_deepseek.csv
-│   │             deepseek_pseudolabeled.csv
-│   ├── train.csv  ← NOT IN REPO; regenerate via combine.ipynb
-│   └── test.csv   ← NOT IN REPO; regenerate via combine.ipynb
-│
-├── SFT/
-│   └── sft.ipynb                  Stages 2 & 5 — TRL SFTTrainer with
-│                                  completion-only loss, Liger kernels,
-│                                  warmup-stable-decay LR schedule
-│
-├── evals/                         Stage-6 evaluation
-│   ├── synth_eval/                Held-out synthetic test set
-│   ├── ext_eval/                  External (English benchmark) evaluation
-│   ├── *.xlsx                     Per-tag F1 / precision / recall tables
-│   └── *.html                     Plotly performance dashboards
-│
-├── demo/
-│   ├── gradio_demo.ipynb          Web UI — uploads a note, returns highlighted PHI
-│   ├── cli_anonymizer.py          Rich-based terminal demo, llama.cpp backend
-│   ├── prompts.txt                System prompt (mirrors pipeline.prompts.SYSTEM_PROMPT)
-│   └── sample_note.txt            Synthetic example for smoke testing
-│
-├── scripts/                       HuggingFace integration
-│   ├── load_from_hf.py            Load dataset into notebooks (with local caching)
-│   ├── push_to_hf.py              Push data CSVs to EdgeDeID/synthetic-dataset
-│   ├── fetch_hf_info.py           Snapshot metadata for all models & datasets
-│   ├── verify_hf_collection.py    Health-check all HF repos
-│   └── README.md                  Auth setup + usage docs
-│
-├── pyproject.toml                 uv-managed dependencies
-├── .python-version
-└── README.md
+├── configs/                       RadPrompter TOML prompt configs (was data_prep_config/)
+├── evals/                         Evaluation data + dashboards
+│   └── ext_eval/en_data.csv       supervisor benchmark (100 annotated reports)
+├── demo/                          gradio_demo.ipynb · sample_note.txt
+├── data/                          datasets (gitignored; hosted on HF)
+├── artifacts/                     all run outputs (gitignored)
+├── paper/                         manuscript (gitignored)
+├── pyproject.toml  README.md
 ```
 
 ---
@@ -178,11 +147,11 @@ export OPENROUTER_API_KEY=sk-or-...
   are committed — these are the Stage 3 self-relabeled corpora that Stage 4
   consumes.
 - **`data/train.csv` and `data/test.csv` are not committed.** They are
-  produced by `data_prep/combine.ipynb` and are easy to regenerate (a few
+  produced by `notebooks/1_data/combine.ipynb` and are easy to regenerate (a few
   minutes on a laptop). To make them:
 
   ```bash
-  jupyter lab data_prep/combine.ipynb
+  jupyter lab notebooks/1_data/combine.ipynb
   # Run all cells with PSEUDO_LABEL = True (default)
   ```
 
@@ -214,7 +183,7 @@ Each notebook writes to `data/<teacher>/output_<N>_<teacher>.csv`. Increment
 
 ### Stage 2 — First-pass SFT (1.7B labeler)
 
-`SFT/sft.ipynb` with `MODEL_NAME = "Qwen/Qwen3-1.7B-Base"`. The dataset cell
+`notebooks/2_train/sft.ipynb` with `MODEL_NAME = "Qwen/Qwen3-1.7B-Base"`. The dataset cell
 reads `data/train.csv` / `data/test.csv` — for the first pass, run
 `combine.ipynb` once with `PSEUDO_LABEL = False` to get a "raw labels" version
 of the dataset. Trains for ~1 epoch; output goes to
@@ -230,19 +199,19 @@ CUDA_VISIBLE_DEVICES=0 python -m vllm.entrypoints.openai.api_server \
   --port 9995 --tensor-parallel-size 1
 ```
 
-Then run `data_prep/pseudolabel.ipynb` once per teacher (set
+Then run `notebooks/1_data/pseudolabel.ipynb` once per teacher (set
 `DATASET_NAME = "hermes" | "haiku" | "deepseek"` at the top). Each run reads
 the raw teacher CSVs, sends every note back through the labeler, and writes
 `data/<teacher>/<teacher>_pseudolabeled.csv`.
 
 ### Stage 4 — Combine + augment
 
-`data_prep/combine.ipynb` with `PSEUDO_LABEL = True`:
+`notebooks/1_data/combine.ipynb` with `PSEUDO_LABEL = True`:
 
 1. Reads all three `<teacher>_pseudolabeled.csv` files.
-2. Drops gibberish / malformed rows via `pipeline.data.preprocessing.preprocess_text`.
+2. Drops gibberish / malformed rows via `edgedeid.data.preprocessing.preprocess_text`.
 3. Applies a stack of label-preserving augmentations
-   (`pipeline.data.augmentations`) — date format permutations, name spellings,
+   (`edgedeid.data.augmentations`) — date format permutations, name spellings,
    phone-number separators, etc. Each augmentation runs with a per-field
    probability and may be wrapped in a `OneOf` group so a single field
    samples a transform proportional to weight.
@@ -251,7 +220,7 @@ the raw teacher CSVs, sends every note back through the labeler, and writes
 
 ### Stage 5 — Final SFT (0.6B student)
 
-`SFT/sft.ipynb` again, this time with `MODEL_NAME = "Qwen/Qwen3-0.6B-Base"`.
+`notebooks/2_train/sft.ipynb` again, this time with `MODEL_NAME = "Qwen/Qwen3-0.6B-Base"`.
 Output → `SFT/data/Qwen3-0.6B-Base_SFT/`. Training-relevant config:
 
 | Setting              | Value                                       |
@@ -263,7 +232,7 @@ Output → `SFT/data/Qwen3-0.6B-Base_SFT/`. Training-relevant config:
 | Max length           | 8192                                        |
 | Eval / save strategy | Per-epoch                                   |
 
-The notebook also calls `pipeline.training.expand_tokenizer` to add the XML
+The notebook also calls `edgedeid.training.expand_tokenizer` to add the XML
 PHI tag tokens (`<phi_entities>`, `<name>`, `<date>`, …) to the tokenizer
 and resize the model's embedding table accordingly.
 
@@ -285,10 +254,10 @@ python convert_hf_to_gguf.py \
 Then run the demo:
 
 ```bash
-python demo/cli_anonymizer.py --model /path/to/Qwen3-0.6B-Base_SFT-Q4_K_M.gguf
+python scripts/cli_anonymizer.py --model /path/to/Qwen3-0.6B-Base_SFT-Q4_K_M.gguf
 ```
 
-`demo/cli_anonymizer.py` shells out to `llama.cpp/bin/llama-cli` (compile
+`scripts/cli_anonymizer.py` shells out to `llama.cpp/bin/llama-cli` (compile
 `llama.cpp` separately and either copy the binary into `demo/llama.cpp/bin/`
 or pass `--model` with an absolute path).
 
@@ -313,7 +282,7 @@ evaluates the instruct variant of the student.
 
 - **Tokenizer expansion** — the SFT notebooks call `expand_tokenizer` only
   for the Qwen3 family. If you swap in a different base model, either remove
-  that call or extend `pipeline.training.expand_tokenizer.py` for your
+  that call or extend `edgedeid.training.expand_tokenizer.py` for your
   tokenizer family.
 - **Augmentation reproducibility** — augmentations are seeded via
   `random.seed(2025)` in `combine.ipynb`. Bump the seed if you want a
@@ -321,7 +290,7 @@ evaluates the instruct variant of the student.
 - **vLLM server for pseudolabel** — the notebook hits `localhost:9995`. If
   you change the port, update the `OpenAI(base_url=...)` line in cell ~13 of
   `pseudolabel.ipynb`.
-- **`prompts.txt` vs `pipeline.prompts.SYSTEM_PROMPT`** — these must stay in
+- **`prompts.txt` vs `edgedeid.prompts.SYSTEM_PROMPT`** — these must stay in
   sync. The CLI demo loads the former (because it ships independently);
   every notebook imports the latter.
 

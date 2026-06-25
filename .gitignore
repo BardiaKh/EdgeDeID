@@ -41,6 +41,9 @@ datasets--EdgeDeID--synthetic-dataset/
 # Models
 models/
 
+# Run outputs (centralized)
+artifacts/
+
 # Generated HF metadata snapshot
 hf_collection_info.json
 
