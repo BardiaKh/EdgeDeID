@@ -60,6 +60,11 @@ class QwenDeidBaseline(BaselineModel):
         # Not used: the model produces XML directly (predict_xml is overridden).
         raise NotImplementedError("Qwen emits XML directly; use predict_xml().")
 
+    def _wrap(self, gen: str) -> str:
+        """Re-attach the opening tag and trim everything after the closing tag."""
+        xml = "<phi_entities>\n" + gen
+        return xml.split(self.stop_str)[0] + self.stop_str
+
     def predict_xml(self, note: str) -> str:
         from pipeline.eval.inference import _build_prompt
 
@@ -77,5 +82,32 @@ class QwenDeidBaseline(BaselineModel):
             )
         gen = self.tokenizer.decode(out[0][inputs["input_ids"].shape[-1]:],
                                     skip_special_tokens=True)
-        xml = "<phi_entities>\n" + gen
-        return xml.split(self.stop_str)[0] + self.stop_str
+        return self._wrap(gen)
+
+    def predict_xml_batch(self, notes: list[str]) -> list[str]:
+        """Generate XML for a batch of notes in one forward pass (GPU-friendly).
+
+        Left-pads the prompts so the generated suffix aligns across the batch,
+        then slices each completion off after the shared prompt length.
+        """
+        from pipeline.eval.inference import _build_prompt
+
+        prompts = [_build_prompt(n) for n in notes]
+        # Left-padding is required for correct batched decoding of causal LMs.
+        prev_side = self.tokenizer.padding_side
+        self.tokenizer.padding_side = "left"
+        inputs = self.tokenizer(prompts, return_tensors="pt", truncation=True,
+                                max_length=4096, padding=True).to(self.device)
+        self.tokenizer.padding_side = prev_side
+        with self._torch.no_grad():
+            out = self.model.generate(
+                **inputs,
+                max_new_tokens=self.max_new_tokens,
+                do_sample=False,
+                stop_strings=self.stop_str,
+                tokenizer=self.tokenizer,
+                pad_token_id=self.tokenizer.pad_token_id,
+            )
+        prompt_len = inputs["input_ids"].shape[-1]          # shared after left-pad
+        gens = self.tokenizer.batch_decode(out[:, prompt_len:], skip_special_tokens=True)
+        return [self._wrap(g) for g in gens]
