@@ -166,6 +166,12 @@ def download_all(verbose: bool = True):
 
 
 if __name__ == "__main__":
+    import sys
+
+    if "--download-all" in sys.argv:
+        download_all()
+        sys.exit(0)
+
     # Quick test
     print("Testing data loading...")
     print("\n1. Loading haiku_pseudolabeled.csv")
