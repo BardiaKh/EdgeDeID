@@ -36,7 +36,7 @@ class StanfordDeidBaseline(BaselineModel):
     supported_entities = {"name", "date", "place", "id", "phone", "device"}
 
     def __init__(self, model_name: str = "StanfordAIMI/stanford-deidentifier-base"):
-        from transformers import edgedeid
+        from transformers import pipeline
         # "first" assigns each WordPiece word the label of its first sub-token,
         # which avoids the fragmentation/over-prediction seen with "simple" on
         # subword models. (Aggregation strategy can be revisited in lab.)

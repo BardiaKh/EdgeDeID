@@ -40,7 +40,7 @@ class RobertaDeidBaseline(BaselineModel):
     }
 
     def __init__(self, model_name: str = "obi/deid_roberta_i2b2"):
-        from transformers import edgedeid
+        from transformers import pipeline
         # Aggregation strategy controls how byte-level subword tokens are merged
         # back into entity spans. "simple" leaves fragments ("Seattle" ->
         # "Se"+"attle") that inflate prediction counts ~6x and crater precision;

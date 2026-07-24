@@ -73,7 +73,7 @@ class OpenMedPIIBaseline(BaselineModel):
         self,
         model_name: str = "OpenMed/OpenMed-PII-SuperClinical-Large-434M-v1",
     ):
-        from transformers import edgedeid
+        from transformers import pipeline
         # "first" assigns each word the label of its first sub-token — matches
         # the aggregation strategy used by the other transformer baselines.
         self._pipe = pipeline(
