@@ -36,6 +36,7 @@ evals/**/*.html
 
 # Dataset — hosted on HF: EdgeDeID/synthetic-dataset
 data/
+!edgedeid/data
 datasets--EdgeDeID--synthetic-dataset/
 
 # Models
