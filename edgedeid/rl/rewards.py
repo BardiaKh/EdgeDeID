@@ -106,6 +106,17 @@ def _soft_match(a: str, b: str) -> bool:
     return a in b or b in a
 
 
+def _entity_list(text: str) -> list[str]:
+    """All leaf entity values in the <phi_entities> block of ``text``."""
+    xml_str = _extract_phi_xml(text)
+    if xml_str is None:
+        return []
+    root = _parse_phi_xml(xml_str)
+    if root is None:
+        return []
+    return _extract_entity_texts(root)
+
+
 def reward_completeness(completion: str, ground_truth: str, beta: float = 2.0) -> float:
     """Entity-level F-beta using guarded bidirectional substring matching.
 
@@ -114,16 +125,6 @@ def reward_completeness(completion: str, ground_truth: str, beta: float = 2.0) -
     beta=2 (recall-weighted): a missed PHI entity (leakage) is clinically far
     worse than an over-tag, so recall is weighted above precision.
     """
-
-    def _entity_list(text: str) -> list[str]:
-        xml_str = _extract_phi_xml(text)
-        if xml_str is None:
-            return []
-        root = _parse_phi_xml(xml_str)
-        if root is None:
-            return []
-        return _extract_entity_texts(root)
-
     pred_list = _entity_list(completion)
     true_list = _entity_list(ground_truth)
 
@@ -153,10 +154,41 @@ def reward_completeness(completion: str, ground_truth: str, beta: float = 2.0) -
     return (1 + b2) * precision * recall / denom
 
 
+def entity_recall(completion: str, ground_truth: str) -> float:
+    """Fraction of ground-truth entities matched by at least one prediction.
+
+    This is the ground truth for the <qc_status> tag: 'complete' means "I did
+    not miss any PHI", which is a pure recall question. reward_completeness is
+    F-beta and therefore precision-sensitive — an output that catches every
+    entity but over-tags scores well below 1.0, so it must NOT be used to
+    decide whether the model was actually complete. Over-tagging is the safe
+    direction and is penalised by the completeness/presence terms instead.
+    """
+    pred_list = _entity_list(completion)
+    true_list = _entity_list(ground_truth)
+
+    if not true_list:
+        return 1.0  # nothing to miss
+    if not pred_list:
+        return 0.0
+    hits = sum(1 for gt in true_list if any(_soft_match(gt, p) for p in pred_list))
+    return hits / len(true_list)
+
+
+# Single source of truth for "the model was actually complete", shared by the
+# GRPO reward and the calibration eval. Strict by design: one missed entity is
+# one leaked identifier, so anything below full recall counts as incomplete.
+QC_COMPLETE_THRESHOLD: float = 1.0
+
+
 def reward_qc_calibration(
-    completion: str, completeness_score: float, threshold: float = 0.7
+    completion: str,
+    recall_score: float,
+    threshold: float = QC_COMPLETE_THRESHOLD,
 ) -> float:
     """Asymmetric metacognitive-calibration reward for the <qc_status> tag.
+
+    ``recall_score`` must come from entity_recall(), not reward_completeness().
 
     Rewards the model for knowing what it doesn't know, but the four cases are
     NOT symmetric — for a PHI de-identification safety task, confidently
@@ -175,7 +207,7 @@ def reward_qc_calibration(
     status = _extract_qc_status(completion)
     if status is None:
         return 0.0
-    actually_complete = completeness_score >= threshold
+    actually_complete = recall_score >= threshold
     claimed_complete = status == "complete"
     if claimed_complete == actually_complete:
         return 1.0
@@ -228,7 +260,9 @@ def compute_grpo_reward(
 
     r_presence = reward_phi_text_presence(completion, source_note)
     r_complete = reward_completeness(completion, ground_truth)
-    r_qc = reward_qc_calibration(completion, r_complete)
+    # qc is graded against pure recall, not the F-beta completeness score:
+    # "complete" is a claim about missed entities only (see entity_recall).
+    r_qc = reward_qc_calibration(completion, entity_recall(completion, ground_truth))
     r_length = reward_length_penalty(completion)
 
     return (

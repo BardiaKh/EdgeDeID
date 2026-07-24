@@ -22,7 +22,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
-from ..rl.rewards import _extract_qc_status, reward_completeness
+from ..rl.rewards import QC_COMPLETE_THRESHOLD, _extract_qc_status, entity_recall
 
 
 @dataclass
@@ -35,7 +35,7 @@ class QCCalibrationResult:
 
     n_missing_tag: int = 0   # samples where <qc_status> tag is absent
     n_total: int = 0
-    completeness_threshold: float = 0.99  # recall cutoff for "actually complete"
+    completeness_threshold: float = QC_COMPLETE_THRESHOLD  # recall cutoff
 
     # per-sample completeness scores (for histogram plotting in notebook)
     scores: list[float] = field(default_factory=list, repr=False)
@@ -90,13 +90,14 @@ class QCCalibrationResult:
 def compute_qc_calibration(
     predictions: list[str],
     ground_truths: list[str],
-    completeness_threshold: float = 0.99,
+    completeness_threshold: float = QC_COMPLETE_THRESHOLD,
 ) -> QCCalibrationResult:
     """Measure calibration of <qc_status> against actual per-sample recall.
 
-    'Actually complete' is defined as per-sample reward_completeness >=
-    completeness_threshold.  Uses the same scoring function as GRPO training
-    so that the evaluation signal is consistent with the reward signal.
+    'Actually complete' is defined as per-sample entity_recall >=
+    completeness_threshold, sharing both the scoring function and the default
+    cutoff (QC_COMPLETE_THRESHOLD) with the GRPO reward, so the evaluation
+    signal cannot drift from the training signal.
 
     Missing <qc_status> tags are treated as claimed=incomplete (conservative),
     but counted separately so you can see tag coverage.
@@ -106,7 +107,7 @@ def compute_qc_calibration(
 
     for pred, gt in zip(predictions, ground_truths):
         status = _extract_qc_status(pred)
-        score = reward_completeness(pred, gt)
+        score = entity_recall(pred, gt)
         result.scores.append(score)
 
         actually_complete = score >= completeness_threshold

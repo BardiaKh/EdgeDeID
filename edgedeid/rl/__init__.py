@@ -12,7 +12,9 @@ from .data import (
 from .evaluation import compute_metrics, evaluate_policy, evaluate_preference_accuracy
 from .grpo import build_grpo_trainer, prepare_grpo_reward_function, train_grpo
 from .rewards import (
+    QC_COMPLETE_THRESHOLD,
     compute_grpo_reward,
+    entity_recall,
     make_reward_fn,
     reward_completeness,
     reward_length_penalty,
