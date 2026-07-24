@@ -9,7 +9,6 @@ from .data import (
     grpo_map_fn,
     prepare_grpo_split,
 )
-from .dpo import build_dpo_trainer, prepare_dpo_dataset, train_dpo
 from .evaluation import compute_metrics, evaluate_policy, evaluate_preference_accuracy
 from .grpo import build_grpo_trainer, prepare_grpo_reward_function, train_grpo
 from .rewards import (

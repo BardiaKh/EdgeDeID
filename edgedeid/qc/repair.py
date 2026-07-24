@@ -13,8 +13,6 @@ import re
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
 
-from ..data.preprocessing import fix_space_in_closing_tags, fix_space_in_tags
-
 # schema parent → child (full PHI schema, ordered as in the system prompt)
 SCHEMA: tuple[tuple[str, str], ...] = (
     ("names", "name"), ("ages", "age"), ("dates", "date"),
@@ -28,6 +26,23 @@ _ALL_TAGS = {p for p, _ in SCHEMA} | {c for _, c in SCHEMA} | {
 _BLOCK_RE = re.compile(
     r"<phi_entities\b[^>]*>.*?</phi_entities>", re.DOTALL | re.IGNORECASE
 )
+
+# Whitespace slips the model makes inside tags: "< name>", "</ name>", "< /name>".
+# Both fixers are restricted to known schema tag names so that stray "<" in
+# free-text entity values is never rewritten.
+_TAG_ALT = "|".join(sorted(_ALL_TAGS, key=len, reverse=True))
+_OPEN_SPACE_RE = re.compile(rf"<\s+({_TAG_ALT})\b", re.IGNORECASE)
+_CLOSE_SPACE_RE = re.compile(rf"<\s*/\s*({_TAG_ALT})\s*>", re.IGNORECASE)
+
+
+def fix_space_in_tags(text: str) -> str:
+    """Drop whitespace between '<' and a known opening tag name ("< name>")."""
+    return _OPEN_SPACE_RE.sub(r"<\1", text)
+
+
+def fix_space_in_closing_tags(text: str) -> str:
+    """Normalise whitespace in known closing tags ("</ name>", "< /name >")."""
+    return _CLOSE_SPACE_RE.sub(r"</\1>", text)
 
 
 @dataclass(slots=True)

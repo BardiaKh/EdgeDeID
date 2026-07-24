@@ -35,12 +35,14 @@ evals/**/*.html
 *.log
 
 # Dataset — hosted on HF: EdgeDeID/synthetic-dataset
-data/
-!edgedeid/data
+# Anchored with a leading slash: an unanchored `data/` also matches the
+# edgedeid/data/ source package and silently un-tracks it. Anchoring covers
+# every such collision, so no per-directory negation is needed.
+/data/
 datasets--EdgeDeID--synthetic-dataset/
 
 # Models
-models/
+/models/
 
 # Run outputs (centralized)
 artifacts/
