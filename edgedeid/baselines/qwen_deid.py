@@ -111,3 +111,40 @@ class QwenDeidBaseline(BaselineModel):
         prompt_len = inputs["input_ids"].shape[-1]          # shared after left-pad
         gens = self.tokenizer.batch_decode(out[:, prompt_len:], skip_special_tokens=True)
         return [self._wrap(g) for g in gens]
+
+    def sample_xml_batch(
+        self, notes: list[str], k: int = 5, temperature: float = 0.7,
+    ) -> list[list[str]]:
+        """Draw ``k`` sampled XML completions per note (do_sample, temperature > 0).
+
+        Returns ``[[xml_1, …, xml_k], …]`` — one inner list per input note — for
+        the K-sample *union* decoding arm. ``num_return_sequences`` gets all K
+        draws of a note in a single generate() call. Use ``predict_xml_batch``
+        for the greedy (temperature 0) arm; sampling with k draws only makes
+        sense when temperature > 0.
+        """
+        from edgedeid.eval.inference import _build_prompt
+
+        prompts = [_build_prompt(n) for n in notes]
+        prev_side = self.tokenizer.padding_side
+        self.tokenizer.padding_side = "left"
+        inputs = self.tokenizer(prompts, return_tensors="pt", truncation=True,
+                                max_length=4096, padding=True).to(self.device)
+        self.tokenizer.padding_side = prev_side
+        with self._torch.no_grad():
+            out = self.model.generate(
+                **inputs,
+                max_new_tokens=self.max_new_tokens,
+                do_sample=True,
+                temperature=temperature,
+                num_return_sequences=k,
+                stop_strings=self.stop_str,
+                tokenizer=self.tokenizer,
+                pad_token_id=self.tokenizer.pad_token_id,
+            )
+        prompt_len = inputs["input_ids"].shape[-1]
+        gens = self.tokenizer.batch_decode(out[:, prompt_len:], skip_special_tokens=True)
+        wrapped = [self._wrap(g) for g in gens]
+        # generate() returns sequences grouped per input: note_i occupies the
+        # rows [i*k : (i+1)*k].
+        return [wrapped[i * k:(i + 1) * k] for i in range(len(notes))]
