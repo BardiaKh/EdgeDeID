@@ -23,6 +23,7 @@ runs/
 *.gguf
 *.bin
 checkpoint-*/
+checkpoints/
 HF_Models/
 SFT/weights/
 

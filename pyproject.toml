@@ -20,8 +20,12 @@ dependencies = [
     "levenshtein>=0.27.1",
     "tqdm>=4.66",
     # Training (SFT)
-    "trl[vllm]>=0.23.0",
-    "transformers>=4.45",
+    # NOTE: vLLM extra dropped — GRPO/SFT use the HF generation backend, not a
+    # vLLM server. transformers pinned <5 because trl 0.23.1 reads transformers'
+    # _is_package_available(), whose default return type changed to a tuple in
+    # transformers 5.x and breaks trl's vllm/availability gating.
+    "trl>=0.23.0",
+    "transformers>=4.56.1,<5",
     "accelerate>=1.0",
     "datasets>=3.0",
     "torch>=2.4",
