@@ -8,6 +8,7 @@ from huggingface_hub import model_info, dataset_info
 MODELS = [
     "EdgeDeID/Qwen3-1.7B-Base_SFT",
     "EdgeDeID/Qwen3-0.6B-Base_SFT",
+    "EdgeDeID/Qwen3-0.6B-GRPO",
 ]
 
 DATASETS = [
@@ -29,7 +30,7 @@ def get_model_details(model_id):
             "downloads": info.downloads,
             "likes": info.likes,
             "private": info.private,
-            "files": [f.filename for f in info.siblings[:10]],
+            "files": [f.rfilename for f in info.siblings[:10]],
         }
     except Exception as e:
         return {"id": model_id, "error": str(e)}

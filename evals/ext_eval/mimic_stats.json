@@ -1,0 +1,20 @@
+{
+  "n_records": 2434,
+  "total_phi_spans": 2161,
+  "mapped_spans": 2158,
+  "unmapped_spans": 3,
+  "mapped_by_schema_tag": {
+    "name": 1123,
+    "date": 633,
+    "place": 307,
+    "phone": 48,
+    "age": 33,
+    "address": 13,
+    "id": 1
+  },
+  "unmapped_by_raw_label": {
+    "": 3
+  },
+  "ambiguous_multi_bracket_spans": 3,
+  "diff_opcodes_without_bracket": 0
+}

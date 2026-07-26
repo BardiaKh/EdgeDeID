@@ -17,6 +17,7 @@ except ImportError as e:
 MODELS = {
     "Qwen3-1.7B-Base_SFT": "EdgeDeID/Qwen3-1.7B-Base_SFT",
     "Qwen3-0.6B-Base_SFT": "EdgeDeID/Qwen3-0.6B-Base_SFT",
+    "Qwen3-0.6B-GRPO": "EdgeDeID/Qwen3-0.6B-GRPO",
 }
 
 DATASETS = {
