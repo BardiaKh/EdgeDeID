@@ -8,8 +8,28 @@ from typing import Any
 from ..prompts import SYSTEM_PROMPT
 
 
-def _build_prompt(note: str, examples: list[dict] | None = None) -> str:
-    """Build the raw completion prompt used by eval notebooks."""
+def _build_prompt(
+    note: str,
+    examples: list[dict] | None = None,
+    *,
+    with_qc_status: bool = False,
+) -> str:
+    """Build the raw completion prompt used by eval notebooks.
+
+    ``with_qc_status`` selects ``GRPO_SYSTEM_PROMPT`` (the SFT prompt plus the
+    mandatory ``<qc_status>`` self-assessment rule) instead of the bare
+    ``SYSTEM_PROMPT``. GRPO checkpoints were *trained* with that extra rule, so
+    evaluating them with the plain prompt is a train/eval mismatch: the model is
+    never asked for the tag it was optimized to emit. Pass True for any
+    GRPO-trained checkpoint whose ``<qc_status>`` signal is being measured.
+    """
+    # Imported lazily: edgedeid.rl pulls in training-side deps that eval-only
+    # environments need not have installed.
+    if with_qc_status:
+        from ..rl.data import GRPO_SYSTEM_PROMPT as _prompt
+    else:
+        _prompt = SYSTEM_PROMPT
+
     examples_str = ""
     if examples:
         parts = [
@@ -20,7 +40,7 @@ def _build_prompt(note: str, examples: list[dict] | None = None) -> str:
         examples_str = "<examples>\n" + "\n\n".join(parts) + "\n</examples>\n\n"
 
     return (
-        f"<instructions>\n{SYSTEM_PROMPT}\n</instructions>\n\n"
+        f"<instructions>\n{_prompt}\n</instructions>\n\n"
         f"{examples_str}"
         f"<note>\n{note.strip()}\n</note>\n\n"
         "<phi_entities>\n"

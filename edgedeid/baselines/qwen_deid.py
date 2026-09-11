@@ -11,6 +11,8 @@ Install:
 
 from __future__ import annotations
 
+import re
+
 from .base import BaselineModel
 
 
@@ -31,12 +33,21 @@ class QwenDeidBaseline(BaselineModel):
         # set) by ~1.8x, so valid completions are never truncated, while keeping
         # the budget uniform across all generative models for a fair comparison.
         max_new_tokens: int = 1024,
+        emit_qc_status: bool = False,
     ):
         import torch
         from transformers import AutoModelForCausalLM, AutoTokenizer
 
         self.name = name
         self.stop_str = "</phi_entities>"
+        # GRPO checkpoints emit `<qc_status>…</qc_status>` on the line AFTER
+        # </phi_entities> (see notebooks/2_train/grpo.py). Halting generation at
+        # </phi_entities> — and then hard-truncating there in _wrap() — makes
+        # that tag structurally impossible to observe, which is what drove the
+        # tag-coverage=0.00 result. When measuring the metacognitive signal, keep
+        # generating past the XML and stop on the qc_status tag instead.
+        self.emit_qc_status = emit_qc_status
+        self.gen_stop_str = "</qc_status>" if emit_qc_status else self.stop_str
         self.max_new_tokens = max_new_tokens
         self._torch = torch
 
@@ -61,14 +72,23 @@ class QwenDeidBaseline(BaselineModel):
         raise NotImplementedError("Qwen emits XML directly; use predict_xml().")
 
     def _wrap(self, gen: str) -> str:
-        """Re-attach the opening tag and trim everything after the closing tag."""
+        """Re-attach the opening tag and trim everything after the closing tag.
+
+        With ``emit_qc_status``, the trailing ``<qc_status>`` tag is preserved
+        rather than truncated, since it is the signal being measured.
+        """
         xml = "<phi_entities>\n" + gen
-        return xml.split(self.stop_str)[0] + self.stop_str
+        head = xml.split(self.stop_str)[0] + self.stop_str
+        if not self.emit_qc_status:
+            return head
+        tail = xml.split(self.stop_str, 1)[1] if self.stop_str in xml else ""
+        m = re.search(r"<qc_status\s*>(complete|incomplete)</qc_status>", tail, re.I)
+        return head + ("\n" + m.group(0) if m else "")
 
     def predict_xml(self, note: str) -> str:
         from edgedeid.eval.inference import _build_prompt
 
-        prompt = _build_prompt(note)                       # flat-text SFT template
+        prompt = _build_prompt(note, with_qc_status=self.emit_qc_status)
         inputs = self.tokenizer(prompt, return_tensors="pt", truncation=True,
                                 max_length=4096).to(self.device)
         with self._torch.no_grad():
@@ -76,7 +96,7 @@ class QwenDeidBaseline(BaselineModel):
                 **inputs,
                 max_new_tokens=self.max_new_tokens,
                 do_sample=False,                           # greedy / deterministic
-                stop_strings=self.stop_str,                # halt as soon as the tag closes
+                stop_strings=self.gen_stop_str,            # halt once the final tag closes
                 tokenizer=self.tokenizer,
                 pad_token_id=self.tokenizer.pad_token_id,
             )
@@ -92,7 +112,7 @@ class QwenDeidBaseline(BaselineModel):
         """
         from edgedeid.eval.inference import _build_prompt
 
-        prompts = [_build_prompt(n) for n in notes]
+        prompts = [_build_prompt(n, with_qc_status=self.emit_qc_status) for n in notes]
         # Left-padding is required for correct batched decoding of causal LMs.
         prev_side = self.tokenizer.padding_side
         self.tokenizer.padding_side = "left"
@@ -104,7 +124,7 @@ class QwenDeidBaseline(BaselineModel):
                 **inputs,
                 max_new_tokens=self.max_new_tokens,
                 do_sample=False,
-                stop_strings=self.stop_str,
+                stop_strings=self.gen_stop_str,
                 tokenizer=self.tokenizer,
                 pad_token_id=self.tokenizer.pad_token_id,
             )
@@ -125,7 +145,7 @@ class QwenDeidBaseline(BaselineModel):
         """
         from edgedeid.eval.inference import _build_prompt
 
-        prompts = [_build_prompt(n) for n in notes]
+        prompts = [_build_prompt(n, with_qc_status=self.emit_qc_status) for n in notes]
         prev_side = self.tokenizer.padding_side
         self.tokenizer.padding_side = "left"
         inputs = self.tokenizer(prompts, return_tensors="pt", truncation=True,
@@ -138,7 +158,7 @@ class QwenDeidBaseline(BaselineModel):
                 do_sample=True,
                 temperature=temperature,
                 num_return_sequences=k,
-                stop_strings=self.stop_str,
+                stop_strings=self.gen_stop_str,
                 tokenizer=self.tokenizer,
                 pad_token_id=self.tokenizer.pad_token_id,
             )
