@@ -1,0 +1,4333 @@
+prediction
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>mychart</value></variations></name>
+    <name><variations><value>nyulmc</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates/>
+  <places>
+    <place>NYU Langone Medical</place>
+    <place>Center</place>
+  </places>
+  <addresses>
+    <address>3456</address>
+    <address>Broadway</address>
+    <address>Apt</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10024</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>amira</value></variations></name>
+    <name><variations><value>hassan</value></variations></name>
+    <name><variations><value>Julian</value></variations></name>
+    <name><variations><value>Sanchez</value></variations></name>
+    <name><variations><value>Zimmer</value></variations></name>
+    <name><variations><value>Persona</value></variations></name>
+    <name><variations><value>myconnectnyp</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Lisa</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+    <name><variations><value>Sanchez</value></variations></name>
+    <name><variations><value>nyp</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>recoveryplan</value></variations></name>
+    <name><variations><value>nyp</value></variations></name>
+  </names>
+  <ages>
+    <age>38</age>
+  </ages>
+  <dates>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>15</original><formatted>15</formatted></date>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>17</original><formatted>17</formatted></date>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>24</original><formatted>24</formatted></date>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>14</original><formatted>14</formatted></date>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYPH</place>
+  </places>
+  <addresses>
+    <address>901 Maple</address>
+    <address>Street</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10001</address>
+  </addresses>
+  <phones>
+    <phone>( 212 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ramesh</value></variations></name>
+    <name><variations><value>Srinivasan</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Srinivasan</value></variations></name>
+    <name><variations><value>Srinivasan</value></variations></name>
+    <name><variations><value>Srinivasan</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Srinivasan</value></variations></name>
+  </names>
+  <ages>
+    <age>62</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>15</original><formatted>15</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>18</original><formatted>18</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>Zimmer Persona</place>
+    <place>Knee</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>mychart</value></variations></name>
+    <name><variations><value>dukehealth</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>Duke University</place>
+    <place>Hospital</place>
+    <place>DUH</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Drive</address>
+    <address>Raleigh</address>
+    <address>NC 27615</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>1234567</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akua</value></variations></name>
+    <name><variations><value>Mensah</value></variations></name>
+    <name><variations><value>akua</value></variations></name>
+    <name><variations><value>mensah</value></variations></name>
+    <name><variations><value>Julian</value></variations></name>
+    <name><variations><value>Sanchez</value></variations></name>
+    <name><variations><value>patientportal</value></variations></name>
+    <name><variations><value>emoryhealthcare</value></variations></name>
+    <name><variations><value>Mensah</value></variations></name>
+    <name><variations><value>Leila</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Sanchez</value></variations></name>
+    <name><variations><value>euhorthopedics</value></variations></name>
+    <name><variations><value>Mensah</value></variations></name>
+    <name><variations><value>myrehabprogram</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>28</original><formatted>28</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>08</original><formatted>08</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>04</original><formatted>04</formatted></date>
+    <date><original>https</original><formatted>https</formatted></date>
+  </dates>
+  <places>
+    <place>Emory University</place>
+    <place>Hospital</place>
+  </places>
+  <addresses>
+    <address>901 Willow</address>
+    <address>Creek Drive</address>
+    <address>Atlanta</address>
+    <address>GA 30350</address>
+  </addresses>
+  <phones>
+    <phone>( 404 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>EUH</id>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>713</phone>
+    <phone>123</phone>
+    <phone>-</phone>
+    <phone>4567</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>amit</value></variations></name>
+    <name><variations><value>kumar</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>nyp</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>22</original><formatted>22</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>05</original><formatted>05</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYPH</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>( 212 )</phone>
+    <phone>555</phone>
+    <phone>-</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>56789012</id>
+    <id>https</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Karen</value></variations></name>
+    <name><variations><value>Thompson</value></variations></name>
+    <name><variations><value>Michael</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>osfhealthcare</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+  </names>
+  <ages>
+    <age>65</age>
+  </ages>
+  <dates>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>08</original><formatted>08</formatted></date>
+    <date><original>22</original><formatted>22</formatted></date>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>08</original><formatted>08</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>08</original><formatted>08</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>29</original><formatted>29</formatted></date>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>09</original><formatted>09</formatted></date>
+    <date><original>05</original><formatted>05</formatted></date>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>09</original><formatted>09</formatted></date>
+    <date><original>19</original><formatted>19</formatted></date>
+  </dates>
+  <places>
+    <place>HealthCare</place>
+    <place>St</place>
+    <place>Joseph Medical</place>
+    <place>Center</place>
+    <place>OSFH</place>
+  </places>
+  <addresses>
+    <address>901 Maplewood</address>
+    <address>Drive</address>
+    <address>Bloomington</address>
+    <address>IL 61704</address>
+  </addresses>
+  <phones>
+    <phone>( 309 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>Houston Methodist</place>
+    <place>Hospital</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>713</phone>
+    <phone>-</phone>
+    <phone>123</phone>
+    <phone>-</phone>
+    <phone>4567</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Rohan</value></variations></name>
+    <name><variations><value>Jensen</value></variations></name>
+    <name><variations><value>jensen</value></variations></name>
+    <name><variations><value>Jensen</value></variations></name>
+    <name><variations><value>Kaur</value></variations></name>
+    <name><variations><value>Smith</value></variations></name>
+    <name><variations><value>Jensen</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>08</original><formatted>08</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>22</original><formatted>22</formatted></date>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>08</original><formatted>08</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+  </dates>
+  <places>
+    <place>PHS</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Street</address>
+    <address>Philadelphia</address>
+    <address>PA 19103</address>
+  </addresses>
+  <phones>
+    <phone>( 215 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Fatima</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>fatima</value></variations></name>
+    <name><variations><value>hassan</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>umich</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>04</original><formatted>04</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>06</original><formatted>06</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>07</original><formatted>07</formatted></date>
+    <date><original>11</original><formatted>11</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>10</original><formatted>10</formatted></date>
+    <date><original>24</original><formatted>24</formatted></date>
+  </dates>
+  <places>
+    <place>University of Michigan</place>
+    <place>Hospital</place>
+    <place>University of Michigan</place>
+    <place>Center</place>
+    <place>UMH</place>
+  </places>
+  <addresses>
+    <address>901 S. Main</address>
+    <address>St</address>
+    <address>Apt</address>
+    <address>Ann</address>
+    <address>Arbor</address>
+    <address>MI 48104</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>34567890</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>mychart</value></variations></name>
+    <name><variations><value>nyp</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>22</original><formatted>22</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>04</original><formatted>04</formatted></date>
+    <date><original>05</original><formatted>05</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYPH</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>( 212 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>89012345</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>uclahealth</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>John</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>uclahealth</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>04</original><formatted>04</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>04</original><formatted>04</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>28</original><formatted>28</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>05</original><formatted>05</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>05</original><formatted>05</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>06</original><formatted>06</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>07</original><formatted>07</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+  </dates>
+  <places>
+    <place>UCLA Health - Ronald Reagan Medical</place>
+    <place>Center</place>
+    <place>UCLAH</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Drive</address>
+    <address>12C</address>
+    <address>Los</address>
+    <address>Angeles</address>
+    <address>CA 90036</address>
+  </addresses>
+  <phones>
+    <phone>( 310 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>ahmed</value></variations></name>
+    <name><variations><value>ali</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>mychart</value></variations></name>
+    <name><variations><value>nyp</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>James</value></variations></name>
+    <name><variations><value>Davis</value></variations></name>
+    <name><variations><value>Lisa</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>15</original><formatted>15</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>17</original><formatted>17</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>04</original><formatted>04</formatted></date>
+    <date><original>14</original><formatted>14</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYPH</place>
+  </places>
+  <addresses>
+    <address>901 Lexington</address>
+    <address>Avenue</address>
+    <address>Apt</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10065</address>
+  </addresses>
+  <phones>
+    <phone>( 212 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>amit</value></variations></name>
+    <name><variations><value>kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>patientportal</value></variations></name>
+    <name><variations><value>denverhealth</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>22</original><formatted>22</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>04</original><formatted>04</formatted></date>
+    <date><original>05</original><formatted>05</formatted></date>
+    <date><original>https</original><formatted>https</formatted></date>
+  </dates>
+  <places>
+    <place>Denver Health Medical</place>
+    <place>Center</place>
+    <place>DHMC</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Drive</address>
+    <address>Denver</address>
+    <address>CO 80202</address>
+  </addresses>
+  <phones>
+    <phone>( 720 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>45678901</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>akira</value></variations></name>
+    <name><variations><value>nakamura</value></variations></name>
+    <name><variations><value>Ramesh</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>PennMedicine</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>PennMedicine</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>27</original><formatted>27</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>08</original><formatted>08</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>15</original><formatted>15</formatted></date>
+  </dates>
+  <places>
+    <place>HUP</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Street</address>
+    <address>Philadelphia</address>
+    <address>PA 19103</address>
+    <address>Pennsylvania</address>
+  </addresses>
+  <phones>
+    <phone>( 215 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Ava</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>06</original><formatted>06</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>20</original><formatted>20</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>08</original><formatted>08</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>22</original><formatted>22</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYPH</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Rohan</value></variations></name>
+    <name><variations><value>Jensen</value></variations></name>
+    <name><variations><value>Jensen</value></variations></name>
+    <name><variations><value>covid19</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>22</original><formatted>22</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>29</original><formatted>29</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYPH</place>
+  </places>
+  <addresses>
+    <address>3456</address>
+    <address>Broadway</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10027</address>
+  </addresses>
+  <phones>
+    <phone>( 212 )</phone>
+    <phone>555</phone>
+    <phone>-</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>amit</value></variations></name>
+    <name><variations><value>kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Street</address>
+    <address>Philadelphia</address>
+    <address>PA 19103</address>
+  </addresses>
+  <phones>
+    <phone>( 215 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>akira</value></variations></name>
+    <name><variations><value>nakamura</value></variations></name>
+    <name><variations><value>Sofia</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>mychart</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>nyp</value></variations></name>
+    <name><variations><value>hipreplacementeducation</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Yuna</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>nakamara</value></variations></name>
+  </names>
+  <ages>
+    <age>75</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>28</original><formatted>28</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>08</original><formatted>08</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>15</original><formatted>15</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYPH</place>
+  </places>
+  <addresses>
+    <address>901 Lexington</address>
+    <address>Avenue</address>
+    <address>Apt</address>
+    <address>14C</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10065</address>
+  </addresses>
+  <phones>
+    <phone>( 212 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akua</value></variations></name>
+    <name><variations><value>Mensah</value></variations></name>
+    <name><variations><value>akua</value></variations></name>
+    <name><variations><value>mensah</value></variations></name>
+    <name><variations><value>Julian</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Mensah</value></variations></name>
+    <name><variations><value>Sophia</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Mensah</value></variations></name>
+    <name><variations><value>jointreplacementsupport</value></variations></name>
+    <name><variations><value>Mensah</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>15</original><formatted>15</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>18</original><formatted>18</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>22</original><formatted>22</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+  </dates>
+  <places>
+    <place>HUP</place>
+    <place>HUP</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Street</address>
+    <address>Philadelphia</address>
+    <address>PA 19104</address>
+    <address>Pennsylvania</address>
+  </addresses>
+  <phones>
+    <phone>( 215 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>34567890</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Lian</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>9015 Walnut</address>
+    <address>Drive</address>
+    <address>Denver</address>
+    <address>CO 80219</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ramesh</value></variations></name>
+    <name><variations><value>Srinivasan</value></variations></name>
+    <name><variations><value>srinivasan</value></variations></name>
+    <name><variations><value>Sophia</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>mychart</value></variations></name>
+    <name><variations><value>Srinivasan</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>datede</value></variations></name>
+    <name><variations><value>nyp</value></variations></name>
+    <name><variations><value>Srinivasan</value></variations></name>
+    <name><variations><value>’</value></variations></name>
+    <name><variations><value>Henry</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Lisa</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+  </names>
+  <ages>
+    <age>60</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>28</original><formatted>28</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>08</original><formatted>08</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYPH</place>
+  </places>
+  <addresses>
+    <address>123 Parkview</address>
+    <address>Drive</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10021</address>
+  </addresses>
+  <phones>
+    <phone>( 212 ) 555 -</phone>
+    <phone>9012</phone>
+    <phone>( 212 ) 555 -</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>Johns Hopkins</place>
+    <place>Hospital</place>
+  </places>
+  <addresses>
+    <address>901 Lexington</address>
+    <address>Street</address>
+    <address>Baltimore</address>
+    <address>MD 21201</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Liang</value></variations></name>
+    <name><variations><value>Liang</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Liang</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>SHC</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Yui</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>nakamura</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>ucsfmychart</value></variations></name>
+    <name><variations><value>ucsfmedicalcenter</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>04</original><formatted>04</formatted></date>
+    <date><original>22</original><formatted>22</formatted></date>
+  </dates>
+  <places>
+    <place>San Francisco Medical</place>
+    <place>Center</place>
+    <place>UCSF</place>
+  </places>
+  <addresses>
+    <address>901 Cherry Blossom</address>
+    <address>Lane</address>
+    <address>San</address>
+    <address>Francisco</address>
+    <address>CA 94118</address>
+  </addresses>
+  <phones>
+    <phone>( 415 ) 123 -</phone>
+    <phone>4567</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>567890</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>amira</value></variations></name>
+    <name><variations><value>hassan</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>mychart</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>nyp</value></variations></name>
+    <name><variations><value>ninds</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>28</original><formatted>28</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>05</original><formatted>05</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>04</original><formatted>04</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYPH</place>
+    <place>American</place>
+    <place>National</place>
+    <place>Institute</place>
+  </places>
+  <addresses>
+    <address>901 Main</address>
+    <address>Street</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10001</address>
+  </addresses>
+  <phones>
+    <phone>( 212 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ramesh</value></variations></name>
+    <name><variations><value>Srinivasan</value></variations></name>
+    <name><variations><value>ramesh</value></variations></name>
+    <name><variations><value>srinivasan</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>myhealth</value></variations></name>
+    <name><variations><value>upenn</value></variations></name>
+    <name><variations><value>Srinivasan</value></variations></name>
+    <name><variations><value>David</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Emily</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Srinivasan</value></variations></name>
+    <name><variations><value>carelink</value></variations></name>
+    <name><variations><value>Srinivasan</value></variations></name>
+  </names>
+  <ages>
+    <age>62</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>04</original><formatted>04</formatted></date>
+    <date><original>20</original><formatted>20</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>04</original><formatted>04</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>05</original><formatted>05</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>05</original><formatted>05</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>06</original><formatted>06</formatted></date>
+  </dates>
+  <places>
+    <place>HUP</place>
+    <place>Medtronic CareLink</place>
+  </places>
+  <addresses>
+    <address>9012 Pine</address>
+    <address>Street</address>
+    <address>Philadelphia</address>
+    <address>PA 19104</address>
+    <address>University</address>
+    <address>Pennsylvania</address>
+  </addresses>
+  <phones>
+    <phone>( 215 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Fatima</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>1423 Cypress</address>
+    <address>Drive</address>
+    <address>Brooklyn</address>
+    <address>NY 11201</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>amit</value></variations></name>
+    <name><variations><value>kumar</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>06</original><formatted>06</formatted></date>
+    <date><original>22</original><formatted>22</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>07</original><formatted>07</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9010 Walnut</address>
+    <address>Street</address>
+    <address>Philadelphia</address>
+    <address>PA 19103</address>
+    <address>University</address>
+    <address>Pennsylvania</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>22</original><formatted>22</formatted></date>
+  </dates>
+  <places>
+    <place>AH</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>( 718 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>123456</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>ahmed</value></variations></name>
+    <name><variations><value>ali</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>mychart</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>nypheart</value></variations></name>
+    <name><variations><value>hearteducation</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+  </names>
+  <ages>
+    <age>62</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>27</original><formatted>27</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>15</original><formatted>15</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>04</original><formatted>04</formatted></date>
+    <date><original>20</original><formatted>20</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYPH</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>654321</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>amira</value></variations></name>
+    <name><variations><value>hassan</value></variations></name>
+    <name><variations><value>David</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Michael</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>nyp</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Emily</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Michael</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>08</original><formatted>08</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>08</original><formatted>08</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>28</original><formatted>28</formatted></date>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>09</original><formatted>09</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>09</original><formatted>09</formatted></date>
+    <date><original>05</original><formatted>05</formatted></date>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>09</original><formatted>09</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYP</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>( 212 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>myhealth</value></variations></name>
+    <name><variations><value>stanfordhealthcare</value></variations></name>
+    <name><variations><value>Thompson</value></variations></name>
+    <name><variations><value>Aisha</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>https</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>RMH</place>
+  </places>
+  <addresses>
+    <address>3210 Lakeview</address>
+    <address>Drive</address>
+    <address>Raleigh</address>
+    <address>NC 27607</address>
+  </addresses>
+  <phones>
+    <phone>( 919 )</phone>
+    <phone>123</phone>
+    <phone>-</phone>
+    <phone>4567</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>9012345</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amita</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+    <name><variations><value>amita</value></variations></name>
+    <name><variations><value>desai</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+    <name><variations><value>patientportal uchospital</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>06</original><formatted>06</formatted></date>
+    <date><original>22</original><formatted>22</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>07</original><formatted>07</formatted></date>
+    <date><original>06</original><formatted>06</formatted></date>
+  </dates>
+  <places>
+    <place>University of Colorado</place>
+    <place>Hospital</place>
+    <place>UCH</place>
+  </places>
+  <addresses>
+    <address>901 Lincoln</address>
+    <address>Street</address>
+    <address>Denver</address>
+    <address>CO 80203</address>
+  </addresses>
+  <phones>
+    <phone>( 303 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>akira</value></variations></name>
+    <name><variations><value>nakamura</value></variations></name>
+    <name><variations><value>Rohan</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>myconnect</value></variations></name>
+    <name><variations><value>nyp</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>nyp</value></variations></name>
+    <name><variations><value>hipreplacementeducation</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>nyp</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+  </names>
+  <ages>
+    <age>75</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>28</original><formatted>28</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>24</original><formatted>24</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses>
+    <address>901 Lexington</address>
+    <address>Avenue</address>
+    <address>Apt</address>
+    <address>12C</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10065</address>
+  </addresses>
+  <phones>
+    <phone>( 212 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>NYP</id>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>ahmed</value></variations></name>
+    <name><variations><value>ali</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>myhealth</value></variations></name>
+    <name><variations><value>upenn</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>08</original><formatted>08</formatted></date>
+    <date><original>20</original><formatted>20</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>08</original><formatted>08</formatted></date>
+    <date><original>22</original><formatted>22</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>09</original><formatted>09</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>10</original><formatted>10</formatted></date>
+  </dates>
+  <places>
+    <place>University</place>
+    <place>HUP</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Street</address>
+    <address>Philadelphia</address>
+    <address>PA 19103</address>
+    <address>Pennsylvania</address>
+  </addresses>
+  <phones>
+    <phone>( 215 ) 555 -</phone>
+    <phone>9012</phone>
+    <phone>( 215 ) 662 - 8777</phone>
+    <phone>( 215 ) 898 -</phone>
+    <phone>8877</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>amit</value></variations></name>
+    <name><variations><value>kumar</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages>
+    <age>29</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Mission</address>
+    <address>Street</address>
+    <address>San</address>
+    <address>Francisco</address>
+    <address>CA 94103</address>
+  </addresses>
+  <phones>
+    <phone>( 415 )</phone>
+    <phone>123</phone>
+    <phone>-</phone>
+    <phone>4567</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amara</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+    <name><variations><value>Liam</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+    <name><variations><value>Ava</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+    <name><variations><value>Yoon</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nii</value></variations></name>
+    <name><variations><value>Mensah</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>05</original><formatted>05</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>17</original><formatted>17</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>15,</original><formatted>15,</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYPH</place>
+  </places>
+  <addresses>
+    <address>901 Park</address>
+    <address>Avenue</address>
+    <address>Apt</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10021</address>
+  </addresses>
+  <phones>
+    <phone>( 212 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ling</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+    <name><variations><value>l</value></variations></name>
+    <name><variations><value>wong</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>mychart</value></variations></name>
+    <name><variations><value>nyp</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>05</original><formatted>05</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYPH</place>
+  </places>
+  <addresses>
+    <address>3456</address>
+    <address>Broadway</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10027</address>
+  </addresses>
+  <phones>
+    <phone>( 212 )</phone>
+    <phone>555</phone>
+    <phone>-</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>567890</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYPH</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>( 212 )</phone>
+    <phone>555</phone>
+    <phone>-</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>87654321</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>901 Lexington</address>
+    <address>Avenue</address>
+    <address>Apt</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10065</address>
+  </addresses>
+  <phones>
+    <phone>( 212 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>akira</value></variations></name>
+    <name><variations><value>nakamura</value></variations></name>
+    <name><variations><value>Liam</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>mychart</value></variations></name>
+    <name><variations><value>ucsfmedicalcenter</value></variations></name>
+    <name><variations><value>ucsfhealth</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>04</original><formatted>04</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>07</original><formatted>07</formatted></date>
+    <date><original>22</original><formatted>22</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>10</original><formatted>10</formatted></date>
+  </dates>
+  <places>
+    <place>California</place>
+    <place>San Francisco Medical</place>
+    <place>Center</place>
+    <place>UCSF</place>
+    <place>UCSF</place>
+    <place>UCSF</place>
+  </places>
+  <addresses>
+    <address>1456 Cherry Blossom</address>
+    <address>Lane</address>
+    <address>San</address>
+    <address>Francisco</address>
+    <address>CA 94118</address>
+    <address>University</address>
+  </addresses>
+  <phones>
+    <phone>( 415 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>( 713 )</phone>
+    <phone>555</phone>
+    <phone>-</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+    <name><variations><value>Liam</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Ava</value></variations></name>
+  </names>
+  <ages>
+    <age>28</age>
+  </ages>
+  <dates/>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Leila</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>l</value></variations></name>
+    <name><variations><value>hassan</value></variations></name>
+    <name><variations><value>Rohan</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>myconnectnyp</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>nyp</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>22</original><formatted>22</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>05</original><formatted>05</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>12</original><formatted>12</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYPH</place>
+  </places>
+  <addresses>
+    <address>901 Park</address>
+    <address>Avenue</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10021</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amara</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+    <name><variations><value>amara</value></variations></name>
+    <name><variations><value>diallo</value></variations></name>
+    <name><variations><value>Rohan</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+    <name><variations><value>nyp</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Casey</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>nyp</value></variations></name>
+  </names>
+  <ages>
+    <age>65</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>05</original><formatted>05</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>10</original><formatted>10</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>15</original><formatted>15</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYPH</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>( 212 )</phone>
+    <phone>123</phone>
+    <phone>-</phone>
+    <phone>4567</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>987654321</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+    <name><variations><value>Jackson</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>06</original><formatted>06</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>20</original><formatted>20</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>amira</value></variations></name>
+    <name><variations><value>hassan</value></variations></name>
+    <name><variations><value>Julian</value></variations></name>
+    <name><variations><value>Sanchez</value></variations></name>
+    <name><variations><value>mychart</value></variations></name>
+    <name><variations><value>nyp</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Sanchez</value></variations></name>
+    <name><variations><value>nypneurosurgery</value></variations></name>
+    <name><variations><value>Emily</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>David</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>15</original><formatted>15</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>18</original><formatted>18</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>22</original><formatted>22</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>05</original><formatted>05</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYPH</place>
+  </places>
+  <addresses>
+    <address>901 Park</address>
+    <address>Avenue</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10021</address>
+  </addresses>
+  <phones>
+    <phone>( 212 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>22</original><formatted>22</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>29</original><formatted>29</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>( 713 )</phone>
+    <phone>123</phone>
+    <phone>-</phone>
+    <phone>4567</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>myhealth</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>29</age>
+  </ages>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>901 Lexington</address>
+    <address>Ave</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10065</address>
+  </addresses>
+  <phones>
+    <phone>( 212 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>akira</value></variations></name>
+    <name><variations><value>nakamura</value></variations></name>
+    <name><variations><value>Julian</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>ucsfhealth</value></variations></name>
+    <name><variations><value>mychart</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>ucsfhealth</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>28</original><formatted>28</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>08</original><formatted>08</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+  </dates>
+  <places>
+    <place>University</place>
+    <place>California</place>
+    <place>San Francisco Medical</place>
+    <place>Center</place>
+    <place>UCSF</place>
+    <place>UCSF</place>
+  </places>
+  <addresses>
+    <address>901 Linden</address>
+    <address>Street</address>
+    <address>San</address>
+    <address>Francisco</address>
+    <address>CA 94115</address>
+  </addresses>
+  <phones>
+    <phone>( 415 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Leila</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>mychart</value></variations></name>
+    <name><variations><value>leila</value></variations></name>
+    <name><variations><value>hassan</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Leila</value></variations></name>
+    <name><variations><value>Leila</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYP</place>
+  </places>
+  <addresses>
+    <address>901</address>
+    <address>Broadway</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10003</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akua</value></variations></name>
+    <name><variations><value>Mensah</value></variations></name>
+    <name><variations><value>akmensah</value></variations></name>
+    <name><variations><value>Rohan</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Mensah</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Mensah</value></variations></name>
+    <name><variations><value>Mensah</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Lisa</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>20</original><formatted>20</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>10</original><formatted>10</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>04</original><formatted>04</formatted></date>
+    <date><original>05</original><formatted>05</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>3456</address>
+    <address>Broadway</address>
+    <address>Apt</address>
+    <address>12C</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10031</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed</value></variations></name>
+    <name><variations><value>Al</value></variations></name>
+    <name><variations><value>-</value></variations></name>
+    <name><variations><value>Khateeb</value></variations></name>
+    <name><variations><value>ahmed</value></variations></name>
+    <name><variations><value>al -</value></variations></name>
+    <name><variations><value>khateeb</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Al -</value></variations></name>
+    <name><variations><value>Khateeb</value></variations></name>
+    <name><variations><value>Al -</value></variations></name>
+    <name><variations><value>Khateeb</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Al -</value></variations></name>
+    <name><variations><value>Khateeb</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+  </names>
+  <ages>
+    <age>39</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>15</original><formatted>15</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>20</original><formatted>20</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+  </dates>
+  <places>
+    <place>University</place>
+    <place>HUP</place>
+    <place>PennMedicine</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Street</address>
+    <address>Apt</address>
+    <address>Philadelphia</address>
+    <address>PA 19104</address>
+    <address>Pennsylvania</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>kumar</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>( 415 )</phone>
+    <phone>555</phone>
+    <phone>-</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>hassan</value></variations></name>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>nyulangone</value></variations></name>
+  </names>
+  <ages>
+    <age>29</age>
+  </ages>
+  <dates>
+    <date><original>https</original><formatted>https</formatted></date>
+  </dates>
+  <places>
+    <place>NYU Langone Medical</place>
+    <place>Center</place>
+  </places>
+  <addresses>
+    <address>901</address>
+    <address>Broadway</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10003</address>
+  </addresses>
+  <phones>
+    <phone>( 212 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Li Ming</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+    <name><variations><value>lm</value></variations></name>
+    <name><variations><value>wong</value></variations></name>
+    <name><variations><value>Sofia</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>patientportal</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>nyportho</value></variations></name>
+    <name><variations><value>tkrrecovery</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+  </names>
+  <ages>
+    <age>38</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>28</original><formatted>28</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>11</original><formatted>11</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYPH</place>
+  </places>
+  <addresses>
+    <address>9012 Broadway</address>
+    <address>Avenue</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10024</address>
+  </addresses>
+  <phones>
+    <phone>( 212 ) 555 -</phone>
+    <phone>9012</phone>
+    <phone>( 212 )</phone>
+    <phone>123</phone>
+    <phone>-</phone>
+    <phone>4567</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>654321</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>myconnectnyp</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>28</original><formatted>28</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYPH</place>
+  </places>
+  <addresses>
+    <address>321 Main</address>
+    <address>St</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10001</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>90123456</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>akira</value></variations></name>
+    <name><variations><value>nakamura</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>myconnectnyp</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Lisa</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+    <name><variations><value>Emily</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>nyp</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>15</original><formatted>15</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>18</original><formatted>18</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>05</original><formatted>05</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYPH</place>
+    <place>Smith</place>
+  </places>
+  <addresses>
+    <address>901 Park</address>
+    <address>Avenue</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10021</address>
+  </addresses>
+  <phones>
+    <phone>( 212 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Rohan</value></variations></name>
+    <name><variations><value>Jensen</value></variations></name>
+    <name><variations><value>rjensen</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Jensen</value></variations></name>
+  </names>
+  <ages>
+    <age>29</age>
+  </ages>
+  <dates>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>11</original><formatted>11</formatted></date>
+    <date><original>15</original><formatted>15</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>amit</value></variations></name>
+    <name><variations><value>kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>06</original><formatted>06</formatted></date>
+    <date><original>20</original><formatted>20</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>07</original><formatted>07</formatted></date>
+  </dates>
+  <places>
+    <place>HUP</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Street</address>
+    <address>Philadelphia</address>
+    <address>PA 19103</address>
+    <address>University</address>
+    <address>Pennsylvania</address>
+  </addresses>
+  <phones>
+    <phone>( 215 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>45678901</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>mychart</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>NYP</id>
+    <id>87654321</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Gupta</value></variations></name>
+    <name><variations><value>gupta</value></variations></name>
+    <name><variations><value>Gupta</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Gupta</value></variations></name>
+    <name><variations><value>patientportal</value></variations></name>
+    <name><variations><value>nyp</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>06</original><formatted>06</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYPH</place>
+  </places>
+  <addresses>
+    <address>345 W</address>
+    <address>57th</address>
+    <address>St</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10019</address>
+  </addresses>
+  <phones>
+    <phone>( 212 )</phone>
+    <phone>555</phone>
+    <phone>-</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>9012345</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>akira</value></variations></name>
+    <name><variations><value>nakamura</value></variations></name>
+    <name><variations><value>Ramesh</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>stanfordhealthcare</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>stanfordhealthcare</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>stanfordhealthcare</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>stanford</value></variations></name>
+    <name><variations><value>alzheimers</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+  </names>
+  <ages>
+    <age>75</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>04</original><formatted>04</formatted></date>
+    <date><original>15</original><formatted>15</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>05</original><formatted>05</formatted></date>
+    <date><original>10</original><formatted>10</formatted></date>
+  </dates>
+  <places>
+    <place>Stanford Health</place>
+    <place>Care</place>
+    <place>SHC</place>
+    <place>Stanford Health</place>
+    <place>Care</place>
+    <place>Stanford Health</place>
+    <place>Care</place>
+    <place>Stanford University</place>
+    <place>School</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>( 650 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>a</value></variations></name>
+    <name><variations><value>hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>Houston Methodist</place>
+    <place>Hospital</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>713</phone>
+    <phone>123</phone>
+    <phone>-</phone>
+    <phone>4567</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>29</age>
+  </ages>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>321 Cedar</address>
+    <address>Lane</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10021</address>
+  </addresses>
+  <phones>
+    <phone>( 212 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>amit</value></variations></name>
+    <name><variations><value>kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>myconnect</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>06</original><formatted>06</formatted></date>
+    <date><original>20</original><formatted>20</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>08</original><formatted>08</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses>
+    <address>890</address>
+    <address>Broadway</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10003</address>
+  </addresses>
+  <phones>
+    <phone>( 212 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>mychart</value></variations></name>
+    <name><variations><value>uclahealth</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>29</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Main</address>
+    <address>St</address>
+    <address>Los</address>
+    <address>Angeles</address>
+    <address>CA 90024</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>amira</value></variations></name>
+    <name><variations><value>hassan</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>myhealth</value></variations></name>
+    <name><variations><value>upenn</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>John</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>hupobgyn</value></variations></name>
+    <name><variations><value>yourbabiesfirstyear</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Alam</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>20</original><formatted>20</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>22</original><formatted>22</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>04</original><formatted>04</formatted></date>
+    <date><original>10</original><formatted>10</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>04</original><formatted>04</formatted></date>
+    <date><original>17</original><formatted>17</formatted></date>
+    <date><original>04</original><formatted>04</formatted></date>
+    <date><original>24</original><formatted>24</formatted></date>
+  </dates>
+  <places>
+    <place>HUP</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Street</address>
+    <address>Philadelphia</address>
+    <address>PA 19103</address>
+    <address>Pennsylvania</address>
+  </addresses>
+  <phones>
+    <phone>( 215 ) 555 -</phone>
+    <phone>9012</phone>
+    <phone>( 267 )</phone>
+    <phone>9023456</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akhil</value></variations></name>
+    <name><variations><value>Jensen</value></variations></name>
+    <name><variations><value>jensen</value></variations></name>
+    <name><variations><value>Jensen</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Jensen</value></variations></name>
+    <name><variations><value>Jensen</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>06</original><formatted>06</formatted></date>
+    <date><original>20</original><formatted>20</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>07</original><formatted>07</formatted></date>
+    <date><original>https</original><formatted>https</formatted></date>
+  </dates>
+  <places>
+    <place>HUP</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Street</address>
+    <address>Philadelphia</address>
+    <address>PA 19103</address>
+    <address>Pennsylvania</address>
+  </addresses>
+  <phones>
+    <phone>( 215 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>45678901</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>https</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>10</original><formatted>10</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Mission</address>
+    <address>Street</address>
+    <address>San</address>
+    <address>Francisco</address>
+    <address>CA 94103</address>
+  </addresses>
+  <phones>
+    <phone>( 415 )</phone>
+    <phone>123</phone>
+    <phone>-</phone>
+    <phone>4567</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>amira</value></variations></name>
+    <name><variations><value>hassan</value></variations></name>
+    <name><variations><value>Liam</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Fatima</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>PennOrtho</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>15</original><formatted>15</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>18</original><formatted>18</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>22</original><formatted>22</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>20</original><formatted>20</formatted></date>
+  </dates>
+  <places>
+    <place>HUP</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Street</address>
+    <address>Philadelphia</address>
+    <address>PA 19104</address>
+    <address>Pennsylvania</address>
+  </addresses>
+  <phones>
+    <phone>( 215 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>akira</value></variations></name>
+    <name><variations><value>nakamura</value></variations></name>
+    <name><variations><value>Sofia</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Henry</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Jane</value></variations></name>
+    <name><variations><value>Smith</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>15</original><formatted>15</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>20</original><formatted>20</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>04</original><formatted>04</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>05</original><formatted>05</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYPH</place>
+  </places>
+  <addresses>
+    <address>3456</address>
+    <address>Broadway</address>
+    <address>Apt</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10031</address>
+  </addresses>
+  <phones>
+    <phone>( 212 )</phone>
+    <phone>555</phone>
+    <phone>-</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Fatima</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Ahmed</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>ahmed</value></variations></name>
+    <name><variations><value>ali</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Juan</value></variations></name>
+    <name><variations><value>Reyes</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>cedars</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Amy</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>cedars</value></variations></name>
+  </names>
+  <ages>
+    <age>65</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>15</original><formatted>15</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>17</original><formatted>17</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>20</original><formatted>20</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>24</original><formatted>24</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>04</original><formatted>04</formatted></date>
+    <date><original>10</original><formatted>10</formatted></date>
+    <date><original>May 1,</original><formatted>May 1,</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+  </dates>
+  <places>
+    <place>Cedars - Sinai Medical</place>
+    <place>Center</place>
+    <place>CSMC</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Drive</address>
+    <address>Los</address>
+    <address>Angeles</address>
+    <address>CA 90036</address>
+  </addresses>
+  <phones>
+    <phone>( 310 )</phone>
+    <phone>555</phone>
+    <phone>-</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aishwarya</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+    <name><variations><value>myconnectnyp</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>nyp</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>https</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+    <name><variations><value>awong</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+  </names>
+  <ages>
+    <age>29</age>
+  </ages>
+  <dates/>
+  <places>
+    <place>SFGH</place>
+  </places>
+  <addresses>
+    <address>1456 Pine</address>
+    <address>Street</address>
+    <address>San</address>
+    <address>Francisco</address>
+    <address>CA 94109</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>456789</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>akira</value></variations></name>
+    <name><variations><value>nakamura</value></variations></name>
+    <name><variations><value>Julian</value></variations></name>
+    <name><variations><value>Sanchez</value></variations></name>
+    <name><variations><value>patientportal</value></variations></name>
+    <name><variations><value>uwmedicine</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Sophia</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Sanchez</value></variations></name>
+    <name><variations><value>uwmedicine</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+  </names>
+  <ages>
+    <age>65</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>15</original><formatted>15</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>20</original><formatted>20</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>27</original><formatted>27</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>04</original><formatted>04</formatted></date>
+    <date><original>10</original><formatted>10</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>05</original><formatted>05</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+  </dates>
+  <places>
+    <place>University of Washington Medical</place>
+    <place>Center</place>
+    <place>UWMC</place>
+  </places>
+  <addresses>
+    <address>901 Cherry Blossom</address>
+    <address>Drive</address>
+    <address>Seattle</address>
+    <address>WA 98122</address>
+  </addresses>
+  <phones>
+    <phone>( 206 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>akira</value></variations></name>
+    <name><variations><value>nakamura</value></variations></name>
+    <name><variations><value>Sofia</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Triathlon</value></variations></name>
+    <name><variations><value>myhealth</value></variations></name>
+    <name><variations><value>upenn</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>08</original><formatted>08</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>08</original><formatted>08</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>27</original><formatted>27</formatted></date>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>09</original><formatted>09</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>09</original><formatted>09</formatted></date>
+    <date><original>15</original><formatted>15</formatted></date>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>10</original><formatted>10</formatted></date>
+  </dates>
+  <places>
+    <place>HUP</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Street</address>
+    <address>Philadelphia</address>
+    <address>PA 19103</address>
+    <address>Pennsylvania</address>
+  </addresses>
+  <phones>
+    <phone>( 215 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>04</original><formatted>04</formatted></date>
+    <date><original>22</original><formatted>22</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>05</original><formatted>05</formatted></date>
+    <date><original>06</original><formatted>06</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>( 212 )</phone>
+    <phone>555</phone>
+    <phone>-</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Sofia</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>uclahealth</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Jasmine</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>uclahealth</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>myrehab</value></variations></name>
+    <name><variations><value>uclaortho</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>15</original><formatted>15</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>18</original><formatted>18</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>04</original><formatted>04</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>05</original><formatted>05</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>https</original><formatted>https</formatted></date>
+  </dates>
+  <places>
+    <place>Ronald Reagan UCLA Medical</place>
+    <place>Center</place>
+    <place>UCLA</place>
+  </places>
+  <addresses>
+    <address>9017 Sunset</address>
+    <address>Boulevard</address>
+    <address>Los</address>
+    <address>Angeles</address>
+    <address>CA 90069</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>myhealth</value></variations></name>
+    <name><variations><value>stanfordhealthcare</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>15</original><formatted>15</formatted></date>
+  </dates>
+  <places>
+    <place>SHC</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>amit</value></variations></name>
+    <name><variations><value>kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>22</original><formatted>22</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>04</original><formatted>04</formatted></date>
+    <date><original>05</original><formatted>05</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYP</place>
+  </places>
+  <addresses>
+    <address>901 Washington</address>
+    <address>Street</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10014</address>
+  </addresses>
+  <phones>
+    <phone>( 212 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>45678901</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>amit</value></variations></name>
+    <name><variations><value>kumar</value></variations></name>
+    <name><variations><value>Lisa</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>mypatientportal</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYPH</place>
+  </places>
+  <addresses>
+    <address>525 East 68th</address>
+    <address>Street</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10065</address>
+  </addresses>
+  <phones>
+    <phone>( 212 ) 555 -</phone>
+    <phone>8901</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>ahmed</value></variations></name>
+    <name><variations><value>ali</value></variations></name>
+    <name><variations><value>Julian</value></variations></name>
+    <name><variations><value>Sanchez</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>uclahealth</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Emily</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Sanchez</value></variations></name>
+    <name><variations><value>uclahealth</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>15</original><formatted>15</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>17</original><formatted>17</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>22</original><formatted>22</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>05</original><formatted>05</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+  </dates>
+  <places>
+    <place>Ronald Reagan UCLA Medical</place>
+    <place>Center</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Drive</address>
+    <address>Los</address>
+    <address>Angeles</address>
+    <address>CA 90001</address>
+  </addresses>
+  <phones>
+    <phone>( 310 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Samantha</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>22</original><formatted>22</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>29</original><formatted>29</formatted></date>
+  </dates>
+  <places>
+    <place>HUP</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Street</address>
+    <address>Philadelphia</address>
+    <address>PA 19103</address>
+    <address>University</address>
+    <address>Pennsylvania</address>
+  </addresses>
+  <phones>
+    <phone>( 215 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates/>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>ahmed</value></variations></name>
+    <name><variations><value>ali</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>nyp</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>22</original><formatted>22</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>29</original><formatted>29</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYPH</place>
+  </places>
+  <addresses>
+    <address>123 W</address>
+    <address>110th</address>
+    <address>St</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10026</address>
+  </addresses>
+  <phones>
+    <phone>( 212 )</phone>
+    <phone>555</phone>
+    <phone>-</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Fatima</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>f</value></variations></name>
+    <name><variations><value>hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>David</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>patientportal</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>weillcornell</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>08</original><formatted>08</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>09</original><formatted>09</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>09</original><formatted>09</formatted></date>
+    <date><original>09</original><formatted>09</formatted></date>
+    <date><original>2022</original><formatted>2022</formatted></date>
+    <date><original>10</original><formatted>10</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYPH</place>
+    <place>Weill Cornell Medical</place>
+    <place>College</place>
+  </places>
+  <addresses>
+    <address>901 River</address>
+    <address>Road</address>
+    <address>New</address>
+    <address>York</address>
+    <address>NY 10021</address>
+  </addresses>
+  <phones>
+    <phone>( 212 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>90123456</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+    <name><variations><value>mychart</value></variations></name>
+    <name><variations><value>ucsfmedicalcenter</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+  </names>
+  <ages>
+    <age>29</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>20</original><formatted>20</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Fatima</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>fatima</value></variations></name>
+    <name><variations><value>ali</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Tom</value></variations></name>
+    <name><variations><value>Bradley</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Smith</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>20</original><formatted>20</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>15</original><formatted>15</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital</place>
+  </places>
+  <addresses>
+    <address>9012 Chestnut</address>
+    <address>Drive</address>
+    <address>Philadelphia</address>
+    <address>PA 19118</address>
+    <address>University</address>
+    <address>Pennsylvania</address>
+  </addresses>
+  <phones>
+    <phone>( 215 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Jain</value></variations></name>
+    <name><variations><value>Lisa</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+    <name><variations><value>mychart</value></variations></name>
+    <name><variations><value>Jain</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+    <name><variations><value>Jain</value></variations></name>
+    <name><variations><value>Jain</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+    <name><variations><value>Jain</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates/>
+  <places>
+    <place>Heart</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Thompson</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>65</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>05</original><formatted>05</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork - Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aruna</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>901 Lexington</address>
+    <address>Drive</address>
+    <address>San</address>
+    <address>Francisco</address>
+    <address>CA 94109</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>amit</value></variations></name>
+    <name><variations><value>kumar</value></variations></name>
+    <name><variations><value>NYULMC</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>mychart</value></variations></name>
+    <name><variations><value>nyulmc</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>nyulangone</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates/>
+  <places>
+    <place>NYU Langone Medical</place>
+    <place>Center</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>( 212 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Rohan</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+    <name><variations><value>rdesai</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+    <name><variations><value>Emily</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>pennmedicine</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+  </names>
+  <ages>
+    <age>55</age>
+  </ages>
+  <dates>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>25</original><formatted>25</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>31</original><formatted>31</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>07</original><formatted>07</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+    <date><original>03</original><formatted>03</formatted></date>
+    <date><original>01</original><formatted>01</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>10</original><formatted>10</formatted></date>
+    <date><original>14</original><formatted>14</formatted></date>
+    <date><original>02</original><formatted>02</formatted></date>
+    <date><original>-</original><formatted>-</formatted></date>
+    <date><original>21</original><formatted>21</formatted></date>
+  </dates>
+  <places>
+    <place>HUP</place>
+    <place>HUP</place>
+  </places>
+  <addresses>
+    <address>2345 Walnut</address>
+    <address>Street</address>
+    <address>Philadelphia</address>
+    <address>PA 19103</address>
+    <address>University</address>
+    <address>Pennsylvania</address>
+  </addresses>
+  <phones>
+    <phone>( 215 ) 555 -</phone>
+    <phone>9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+  </names>
+  <ages>
+    <age>29</age>
+  </ages>
+  <dates>
+    <date><original>https</original><formatted>https</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"

@@ -1,0 +1,24 @@
+\begin{table}
+\caption{PHI de-identification on revizied_evals.xlsx: accuracy, size and edge latency.}
+\label{tab:results}
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+ & Micro-P & Micro-R & Micro-F1 & Macro-F1 & Zero-leak & Halluc. & #Params (M) & ms/note (median) & notes/sec \\
+Model &  &  &  &  &  &  &  &  &  \\
+\midrule
+\textbf{EdgeDeID-SFT} & 0.997 & 0.971 & 0.984 & 0.983 & 0.800 & 0.004 & 596.000 & 23314.500 & 0.040 \\
+\textbf{EdgeDeID-GRPO} & 0.997 & 0.961 & 0.978 & 0.974 & 0.720 & 0.003 & 596.000 & 28114.900 & 0.040 \\
+\textbf{EdgeDeID-GRPO+QC} & 0.943 & 0.962 & 0.953 & 0.927 & 0.730 & 0.057 & 596.000 & -- & -- \\
+\textbf{EdgeDeID-SFT+QC} & 0.922 & 0.973 & 0.947 & 0.936 & 0.810 & 0.077 & 596.000 & -- & -- \\
+\textbf{OPF} & 0.991 & 0.740 & 0.847 & 0.849 & 0.120 & 0.009 & -- & 18.800 & 53.270 \\
+\textbf{GLiNER} & 0.917 & 0.646 & 0.758 & 0.603 & 0.050 & 0.083 & 195.200 & 83.800 & 11.940 \\
+\textbf{Presidio} & 0.776 & 0.667 & 0.718 & 0.578 & 0.050 & 0.224 & -- & 33.300 & 30.030 \\
+\textbf{scispaCy} & 0.779 & 0.551 & 0.646 & 0.563 & 0.020 & 0.221 & -- & 27.300 & 36.700 \\
+\textbf{OpenMed-PII} & 0.833 & 0.522 & 0.642 & 0.481 & 0.000 & 0.167 & 434.100 & 16.600 & 60.260 \\
+\textbf{RoBERTa-i2b2} & 0.891 & 0.474 & 0.619 & 0.517 & 0.000 & 0.109 & 354.400 & 12.900 & 77.280 \\
+\textbf{Stanford-deid} & 0.472 & 0.346 & 0.400 & 0.201 & 0.000 & 0.528 & 108.900 & 7.700 & 130.060 \\
+\textbf{BERT-i2b2} & 0.870 & 0.221 & 0.353 & 0.201 & 0.000 & 0.130 & 107.800 & 9.100 & 110.300 \\
+\textbf{Qwen3-0.6B-Base} & 0.564 & 0.135 & 0.217 & 0.149 & 0.070 & 0.436 & 596.000 & 127666.100 & 0.010 \\
+\bottomrule
+\end{tabular}
+\end{table}

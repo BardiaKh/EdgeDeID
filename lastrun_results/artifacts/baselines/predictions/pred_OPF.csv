@@ -1,0 +1,2687 @@
+prediction
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Dr. Rachel Lee</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>3456 Broadway, Apt 2A, New York, NY 10024</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira Hassan</value></variations></name>
+    <name><variations><value>Julian Sanchez</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+    <name><variations><value>Lisa Nguyen</value></variations></name>
+    <name><variations><value>Dr. Sanchez</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2022-01-15</original><formatted>2022-01-15</formatted></date>
+    <date><original>2022-01-17</original><formatted>2022-01-17</formatted></date>
+    <date><original>2022-01-24</original><formatted>2022-01-24</formatted></date>
+    <date><original>2022-02-14</original><formatted>2022-02-14</formatted></date>
+    <date><original>2022-03-01</original><formatted>2022-03-01</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Maple Street, Apt 3A, New York, NY 10001</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>amira.hassan@email.com</email>
+  </emails>
+  <ids>
+    <id>NYPH-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ramesh Srinivasan</value></variations></name>
+    <name><variations><value>Dr. Rachel Kim</value></variations></name>
+    <name><variations><value>Mr. Srinivasan</value></variations></name>
+    <name><variations><value>Mr. Srinivasan</value></variations></name>
+    <name><variations><value>Mr. Srinivasan</value></variations></name>
+    <name><variations><value>Dr. Kim</value></variations></name>
+    <name><variations><value>Dr. Kim</value></variations></name>
+    <name><variations><value>Mr.Srinivasan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+    <date><original>2023-01-18</original><formatted>2023-01-18</formatted></date>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-03-01</original><formatted>2023-03-01</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Drive, Raleigh, NC 27615</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>DUH-1234567</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akua Mensah</value></variations></name>
+    <name><variations><value>Dr. Julian Sanchez</value></variations></name>
+    <name><variations><value>Ms. Mensah</value></variations></name>
+    <name><variations><value>Nurse Practitioner Leila Hassan</value></variations></name>
+    <name><variations><value>Dr. Sanchez</value></variations></name>
+    <name><variations><value>Ms.Mensah</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-01-28</original><formatted>2023-01-28</formatted></date>
+    <date><original>2023-02-08</original><formatted>2023-02-08</formatted></date>
+    <date><original>2023-03-01</original><formatted>2023-03-01</formatted></date>
+    <date><original>2023-04-15</original><formatted>2023-04-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Willow Creek Drive, Atlanta, GA 30350</address>
+  </addresses>
+  <phones>
+    <phone>(404) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>akua.mensah@email.com</email>
+  </emails>
+  <ids>
+    <id>EUH-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>713-123-4567</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Dr. Maria Rodriguez</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Dr. Rodriguez</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-22</original><formatted>2023-03-22</formatted></date>
+    <date><original>2023-05-03</original><formatted>2023-05-03</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>amit.kumar@email.com</email>
+  </emails>
+  <ids>
+    <id>NYPH-56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+    <name><variations><value>Dr. Rachel Kim</value></variations></name>
+    <name><variations><value>Mr. Ali</value></variations></name>
+    <name><variations><value>Karen Thompson</value></variations></name>
+    <name><variations><value>Michael Lee</value></variations></name>
+    <name><variations><value>Dr. Kim</value></variations></name>
+    <name><variations><value>Mr. Ali</value></variations></name>
+    <name><variations><value>Mr. Ali</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2022-08-22</original><formatted>2022-08-22</formatted></date>
+    <date><original>2022-08-25</original><formatted>2022-08-25</formatted></date>
+    <date><original>2022-08-29</original><formatted>2022-08-29</formatted></date>
+    <date><original>2022-09-05</original><formatted>2022-09-05</formatted></date>
+    <date><original>2022-09-19</original><formatted>2022-09-19</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Maplewood Drive, Bloomington, IL 61704</address>
+  </addresses>
+  <phones>
+    <phone>(309) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>OSFH-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>713-123-4567</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Rohan Jensen</value></variations></name>
+    <name><variations><value>Mr. Jensen</value></variations></name>
+    <name><variations><value>Dr. Kaur</value></variations></name>
+    <name><variations><value>Dr. Smith</value></variations></name>
+    <name><variations><value>Mr. Jensen</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2022-08-22</original><formatted>2022-08-22</formatted></date>
+    <date><original>2022-08-25</original><formatted>2022-08-25</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Street, Apt 3A, Philadelphia, PA 19103</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>r.jensen@email.com</email>
+  </emails>
+  <ids>
+    <id>PHS-56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Fatima Hassan</value></variations></name>
+    <name><variations><value>Dr. Maria Rodriguez</value></variations></name>
+    <name><variations><value>Dr. Rodriguez</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+    <name><variations><value>Ms.Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-04-25</original><formatted>2023-04-25</formatted></date>
+    <date><original>2023-06-20</original><formatted>2023-06-20</formatted></date>
+    <date><original>2023-07-11</original><formatted>2023-07-11</formatted></date>
+    <date><original>2023-10-24</original><formatted>2023-10-24</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 S. Main St, Apt 3A, Ann Arbor, MI 48104</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>fatima.hassan@email.com</email>
+  </emails>
+  <ids>
+    <id>UMH-34567890</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Dr. Maria Rodriguez</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Dr. Rodriguez</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-22</original><formatted>2023-03-22</formatted></date>
+    <date><original>2023-04-05</original><formatted>2023-04-05</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>NYPH-89012345</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+    <name><variations><value>Dr. Maria Rodriguez</value></variations></name>
+    <name><variations><value>Mr. Ali</value></variations></name>
+    <name><variations><value>Dr. Rodriguez</value></variations></name>
+    <name><variations><value>Dr. John Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-04-25</original><formatted>2023-04-25</formatted></date>
+    <date><original>2023-04-28</original><formatted>2023-04-28</formatted></date>
+    <date><original>2023-05-05</original><formatted>2023-05-05</formatted></date>
+    <date><original>2023-06-10</original><formatted>2023-06-10</formatted></date>
+    <date><original>2023-07-01</original><formatted>2023-07-01</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Drive, Apt 12C, Los Angeles, CA 90036</address>
+  </addresses>
+  <phones>
+    <phone>(310) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>UCLAH-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+    <name><variations><value>Dr. Rachel Kim</value></variations></name>
+    <name><variations><value>Mr. Ali</value></variations></name>
+    <name><variations><value>Mr. Ali</value></variations></name>
+    <name><variations><value>James Davis</value></variations></name>
+    <name><variations><value>Dr. Lisa Nguyen</value></variations></name>
+    <name><variations><value>Mr. Ali</value></variations></name>
+    <name><variations><value>Mr. Ali</value></variations></name>
+    <name><variations><value>Dr. Kim</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+    <date><original>2023-02-10</original><formatted>2023-02-10</formatted></date>
+    <date><original>2023-02-17</original><formatted>2023-02-17</formatted></date>
+    <date><original>2023-03-01</original><formatted>2023-03-01</formatted></date>
+    <date><original>2023-01-20</original><formatted>2023-01-20</formatted></date>
+    <date><original>2023-04-14</original><formatted>2023-04-14</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Lexington Avenue, Apt 3A, New York, NY 10065</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>ahmed.ali@email.com</email>
+  </emails>
+  <ids>
+    <id>NYPH-56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-22</original><formatted>2023-03-22</formatted></date>
+    <date><original>2023-04-05</original><formatted>2023-04-05</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Drive, Apt 3A, Denver, CO 80202</address>
+  </addresses>
+  <phones>
+    <phone>(720) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>amit.kumar@email.com</email>
+  </emails>
+  <ids>
+    <id>DHMC-45678901</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Dr. Ramesh Patel</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+    <name><variations><value>Maria Rodriguez</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-01-27</original><formatted>2023-01-27</formatted></date>
+    <date><original>2023-02-01</original><formatted>2023-02-01</formatted></date>
+    <date><original>2023-02-08</original><formatted>2023-02-08</formatted></date>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Street, Apt 3A, Philadelphia, PA 19103</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>akira.nakamura@email.com</email>
+  </emails>
+  <ids>
+    <id>HUP-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava Wong</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Ava</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-06-20</original><formatted>2023-06-20</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-08-22</original><formatted>2023-08-22</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>NewYork-Presbyterian Hospital</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>NYPH-56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Rohan Jensen</value></variations></name>
+    <name><variations><value>Mr. Jensen</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-22</original><formatted>2023-03-22</formatted></date>
+    <date><original>2023-03-29</original><formatted>2023-03-29</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>3456 Broadway, Apt 3A, New York, NY 10027</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>NYPH-56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Dr. Nguyen</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Dr. Nguyen</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Street, Apt 3A, Philadelphia, PA 19103</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>amit.kumar@email.com</email>
+  </emails>
+  <ids>
+    <id>PHS-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Sofia Patel</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+    <name><variations><value>Maria Rodriguez</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+    <name><variations><value>Mr.Nakamura</value></variations></name>
+    <name><variations><value>Yuna Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-01-28</original><formatted>2023-01-28</formatted></date>
+    <date><original>2023-02-01</original><formatted>2023-02-01</formatted></date>
+    <date><original>2023-02-08</original><formatted>2023-02-08</formatted></date>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Lexington Avenue, Apt 14C, New York, NY 10065</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>akira.nakamura@email.com</email>
+    <email>y.nakamara@email.com</email>
+  </emails>
+  <ids>
+    <id>NYPH-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akua Mensah</value></variations></name>
+    <name><variations><value>Dr. Julian Lee</value></variations></name>
+    <name><variations><value>Ms. Mensah</value></variations></name>
+    <name><variations><value>Sophia Patel</value></variations></name>
+    <name><variations><value>Dr. Lee</value></variations></name>
+    <name><variations><value>Ms. Mensah</value></variations></name>
+    <name><variations><value>Ms. Mensah</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+    <date><original>2023-01-18</original><formatted>2023-01-18</formatted></date>
+    <date><original>2023-01-22</original><formatted>2023-01-22</formatted></date>
+    <date><original>2023-02-01</original><formatted>2023-02-01</formatted></date>
+    <date><original>2023-03-10</original><formatted>2023-03-10</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Street, Philadelphia, PA 19104</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>akua.mensah@email.com</email>
+  </emails>
+  <ids>
+    <id>HUP-34567890</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Lian Chen</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>9015 Walnut Drive, Denver, CO 80219</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ramesh Srinivasan</value></variations></name>
+    <name><variations><value>Dr. Sophia Patel</value></variations></name>
+    <name><variations><value>Mr. Srinivasan</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Mr. Srinivasan</value></variations></name>
+    <name><variations><value>Dr. Henry Lee</value></variations></name>
+    <name><variations><value>Dr. Lisa Nguyen</value></variations></name>
+    <name><variations><value>Rachel Kim</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-01-28</original><formatted>2023-01-28</formatted></date>
+    <date><original>2023-02-08</original><formatted>2023-02-08</formatted></date>
+    <date><original>2023-02-15</original><formatted>2023-02-15</formatted></date>
+    <date><original>2023-03-01</original><formatted>2023-03-01</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>123 Parkview Drive, New York, NY 10021</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>r.srinivasan@email.com</email>
+  </emails>
+  <ids>
+    <id>NYPH-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>901 Lexington Street, Apt 3A, Baltimore, MD 21201</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Dr. Liang</value></variations></name>
+    <name><variations><value>Dr. Liang</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+    <name><variations><value>Dr. Liang</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>SHC-56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Yui Nakamura</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-04-22</original><formatted>2023-04-22</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Cherry Blossom Lane, San Francisco, CA 94118</address>
+    <address>University of California, San Francisco Medical Center</address>
+  </addresses>
+  <phones>
+    <phone>(415) 123-4567</phone>
+  </phones>
+  <emails>
+    <email>y.nakamura@email.com</email>
+  </emails>
+  <ids>
+    <id>UCSF-567890</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira Hassan</value></variations></name>
+    <name><variations><value>Rachel Kim</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+    <name><variations><value>Dr. Kim</value></variations></name>
+    <name><variations><value>Dr. Kim</value></variations></name>
+    <name><variations><value>Ms Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-01-28</original><formatted>2023-01-28</formatted></date>
+    <date><original>2023-02-01</original><formatted>2023-02-01</formatted></date>
+    <date><original>2023-02-15</original><formatted>2023-02-15</formatted></date>
+    <date><original>2023-03-10</original><formatted>2023-03-10</formatted></date>
+    <date><original>????-02-05</original><formatted>????-02-05</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Main Street, Apt 3A, New York, NY 10001</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>amira.hassan@email.com</email>
+  </emails>
+  <ids>
+    <id>NYPH-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ramesh Srinivasan</value></variations></name>
+    <name><variations><value>Dr. Maria Rodriguez</value></variations></name>
+    <name><variations><value>Mr. Srinivasan</value></variations></name>
+    <name><variations><value>David Lee</value></variations></name>
+    <name><variations><value>Emily Chen</value></variations></name>
+    <name><variations><value>Dr. Rodriguez</value></variations></name>
+    <name><variations><value>Mr. Srinivasan</value></variations></name>
+    <name><variations><value>Mr.Srinivasan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-04-20</original><formatted>2023-04-20</formatted></date>
+    <date><original>2023-04-25</original><formatted>2023-04-25</formatted></date>
+    <date><original>2023-05-01</original><formatted>2023-05-01</formatted></date>
+    <date><original>2023-05-10</original><formatted>2023-05-10</formatted></date>
+    <date><original>2023-06-15</original><formatted>2023-06-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Pine Street, Apt 3A, Philadelphia, PA 19104</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>ramesh.srinivasan@email.com</email>
+  </emails>
+  <ids>
+    <id>HUP-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Fatima Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>1423 Cypress Drive, Apt 3A, Brooklyn, NY 11201</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Dr. Rachel Lee</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Dr. Lee</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Dr. Lee</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-06-22</original><formatted>2023-06-22</formatted></date>
+    <date><original>2023-07-13</original><formatted>2023-07-13</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9010 Walnut Street, Apt 3A, Philadelphia, PA 19103</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>amit.kumar@email.com</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-22</original><formatted>2023-01-22</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>(718) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>AH-123456</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Mr. Ali</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Mr. Ali</value></variations></name>
+    <name><variations><value>Mr.Ali</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-01-27</original><formatted>2023-01-27</formatted></date>
+    <date><original>2023-02-10</original><formatted>2023-02-10</formatted></date>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+    <date><original>2023-04-20</original><formatted>2023-04-20</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails>
+    <email>ahmed.ali@email.com</email>
+  </emails>
+  <ids>
+    <id>NYPH-654321</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira Hassan</value></variations></name>
+    <name><variations><value>David Lee</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+    <name><variations><value>Rachel Kim</value></variations></name>
+    <name><variations><value>Michael Patel</value></variations></name>
+    <name><variations><value>Dr. Lee</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+    <name><variations><value>Dr. Lee</value></variations></name>
+    <name><variations><value>Dr. Emily Chen</value></variations></name>
+    <name><variations><value>Rachel Kim</value></variations></name>
+    <name><variations><value>Michael Patel</value></variations></name>
+    <name><variations><value>Ms.Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2022-08-25</original><formatted>2022-08-25</formatted></date>
+    <date><original>2022-08-28</original><formatted>2022-08-28</formatted></date>
+    <date><original>2022-09-01</original><formatted>2022-09-01</formatted></date>
+    <date><original>2022-09-05</original><formatted>2022-09-05</formatted></date>
+    <date><original>2022-09-15</original><formatted>2022-09-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>amira.hassan@email.com</email>
+  </emails>
+  <ids>
+    <id>NYP-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Ali</value></variations></name>
+    <name><variations><value>Dr. Thompson</value></variations></name>
+    <name><variations><value>Aisha</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>https://myhealth.stanfordhealthcare.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>3210 Lakeview Drive, Raleigh, NC 27607</address>
+  </addresses>
+  <phones>
+    <phone>(919) 123-4567</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>RMH-9012345</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amita Desai</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Ms. Desai</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-06-22</original><formatted>2023-06-22</formatted></date>
+    <date><original>2023-07-06</original><formatted>2023-07-06</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Lincoln Street, Denver, CO 80203</address>
+  </addresses>
+  <phones>
+    <phone>(303) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>amita.desai@email.com</email>
+  </emails>
+  <ids>
+    <id>UCH-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Dr. Rohan Patel</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-01-28</original><formatted>2023-01-28</formatted></date>
+    <date><original>2023-02-10</original><formatted>2023-02-10</formatted></date>
+    <date><original>2023-02-15</original><formatted>2023-02-15</formatted></date>
+    <date><original>2023-03-24</original><formatted>2023-03-24</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Lexington Avenue, Apt 12C, New York, NY 10065</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>akira.nakamura@email.com</email>
+  </emails>
+  <ids>
+    <id>NYP-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+    <name><variations><value>Dr. Rachel Kim</value></variations></name>
+    <name><variations><value>Mr. Ali</value></variations></name>
+    <name><variations><value>Dr. Kim</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-08-20</original><formatted>2023-08-20</formatted></date>
+    <date><original>2023-08-22</original><formatted>2023-08-22</formatted></date>
+    <date><original>2023-09-03</original><formatted>2023-09-03</formatted></date>
+    <date><original>2023-10-15</original><formatted>2023-10-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Street, Philadelphia, PA 19103</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+    <phone>(215) 898-8877</phone>
+  </phones>
+  <emails>
+    <email>ahmed.ali@email.com</email>
+  </emails>
+  <ids>
+    <id>HUP-56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Mission Street, Apt 3A, San Francisco, CA 94103</address>
+  </addresses>
+  <phones>
+    <phone>(415) 123-4567</phone>
+  </phones>
+  <emails>
+    <email>amit.kumar@email.com</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amara Diallo</value></variations></name>
+    <name><variations><value>Ms. Diallo</value></variations></name>
+    <name><variations><value>Dr. Liam Chen</value></variations></name>
+    <name><variations><value>Dr. Chen</value></variations></name>
+    <name><variations><value>Ms. Diallo</value></variations></name>
+    <name><variations><value>Dr. Ava Patel</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Ms.Diallo</value></variations></name>
+    <name><variations><value>Ms. Diallo</value></variations></name>
+    <name><variations><value>Drs. Patel</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Ms. Diallo</value></variations></name>
+    <name><variations><value>Yoon Lee</value></variations></name>
+    <name><variations><value>Dr.Patel</value></variations></name>
+    <name><variations><value>Dr.Nii Mensah</value></variations></name>
+    <name><variations><value>Ms. Diallo</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-02-01</original><formatted>2023-02-01</formatted></date>
+    <date><original>2023-02-01</original><formatted>2023-02-01</formatted></date>
+    <date><original>2023-02-05</original><formatted>2023-02-05</formatted></date>
+    <date><original>2023-02-10</original><formatted>2023-02-10</formatted></date>
+    <date><original>2023-02-17</original><formatted>2023-02-17</formatted></date>
+    <date><original>????-03-15,2023</original><formatted>????-03-15,2023</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Park Avenue, Apt 3A, New York, NY 10021</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>NYPH-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ling Wong</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Mr. Wong</value></variations></name>
+    <name><variations><value>Mr. Wong</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-05</original><formatted>2023-03-05</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>3456 Broadway, Apt 10A, New York, NY 10027</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>l.wong@email.com</email>
+  </emails>
+  <ids>
+    <id>NYPH-567890</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>NewYork-Presbyterian Hospital</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>NYPH-87654321</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>901 Lexington Avenue, Apt 3C, New York, NY 10065</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>a.hassan@email.com</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Dr. Liam Chen</value></variations></name>
+    <name><variations><value>Ms. Nakamura</value></variations></name>
+    <name><variations><value>Ms. Nakamura</value></variations></name>
+    <name><variations><value>Ms. Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-04-15</original><formatted>2023-04-15</formatted></date>
+    <date><original>2023-07-22</original><formatted>2023-07-22</formatted></date>
+    <date><original>2023-10-15</original><formatted>2023-10-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>1456 Cherry Blossom Lane, San Francisco, CA 94118</address>
+  </addresses>
+  <phones>
+    <phone>(415) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>akira.nakamura@email.com</email>
+  </emails>
+  <ids>
+    <id>UCSF-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>(713) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>a.hassan@email.com</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava Wong</value></variations></name>
+    <name><variations><value>Dr. Liam Chen</value></variations></name>
+    <name><variations><value>Dr. Chen</value></variations></name>
+    <name><variations><value>Ava</value></variations></name>
+    <name><variations><value>Ava</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Leila Hassan</value></variations></name>
+    <name><variations><value>Dr. Rohan Patel</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+    <name><variations><value>Rachel Kim</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+    <name><variations><value>Dr.Patel</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-22</original><formatted>2023-01-22</formatted></date>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>????-02-05</original><formatted>????-02-05</formatted></date>
+    <date><original>2023-03-12</original><formatted>2023-03-12</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Park Avenue, Apt 3C, New York, NY 10021</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>l.hassan@email.com</email>
+  </emails>
+  <ids>
+    <id>NYPH-56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amara Diallo</value></variations></name>
+    <name><variations><value>Dr. Rohan Patel</value></variations></name>
+    <name><variations><value>Ms. Diallo</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Ms. Diallo</value></variations></name>
+    <name><variations><value>Ms. Diallo</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-05</original><formatted>2023-01-05</formatted></date>
+    <date><original>2023-01-10</original><formatted>2023-01-10</formatted></date>
+    <date><original>2023-01-24</original><formatted>2023-01-24</formatted></date>
+    <date><original>2023-02-01</original><formatted>2023-02-01</formatted></date>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>(212) 123-4567</phone>
+  </phones>
+  <emails>
+    <email>amara.diallo@email.com</email>
+  </emails>
+  <ids>
+    <id>NYPH-987654321</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava Wong</value></variations></name>
+    <name><variations><value>Jackson</value></variations></name>
+    <name><variations><value>Ms. Wong</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-06-20</original><formatted>2023-06-20</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira Hassan</value></variations></name>
+    <name><variations><value>Dr. Julian Sanchez</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+    <name><variations><value>Dr. Sanchez</value></variations></name>
+    <name><variations><value>Dr. Emily Lee</value></variations></name>
+    <name><variations><value>Dr. David Kim</value></variations></name>
+    <name><variations><value>Ms Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+    <date><original>2023-01-18</original><formatted>2023-01-18</formatted></date>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-02-01</original><formatted>2023-02-01</formatted></date>
+    <date><original>2023-01-22</original><formatted>2023-01-22</formatted></date>
+    <date><original>2023-02-05</original><formatted>2023-02-05</formatted></date>
+    <date><original>????-02-10</original><formatted>????-02-10</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Park Avenue, New York, NY 10021</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>amira.hassan@email.com</email>
+  </emails>
+  <ids>
+    <id>NYPH-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+    <name><variations><value>Dr. Lee</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-22</original><formatted>2023-03-22</formatted></date>
+    <date><original>2023-03-29</original><formatted>2023-03-29</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>(713) 123-4567</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>901 Lexington Ave, Apt 3A, New York, NY 10065</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Julian Lee</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+    <name><variations><value>Dr. Lee</value></variations></name>
+    <name><variations><value>Dr. Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-01-28</original><formatted>2023-01-28</formatted></date>
+    <date><original>2023-02-08</original><formatted>2023-02-08</formatted></date>
+    <date><original>2023-02-22</original><formatted>2023-02-22</formatted></date>
+    <date><original>2023/03/15</original><formatted>2023/03/15</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Linden Street, Apt 3A, San Francisco, CA 94115</address>
+  </addresses>
+  <phones>
+    <phone>(415) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>akira.nakamura@email.com</email>
+  </emails>
+  <ids>
+    <id>UCSF-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Leila Hassan</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Leila</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>901 Broadway, Apt 3A, New York, NY 10003</address>
+    <address>NewYork-Presbyterian Hospital</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>leila.hassan@email.com</email>
+  </emails>
+  <ids>
+    <id>NYP-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Mrs. Akua Mensah</value></variations></name>
+    <name><variations><value>Dr. Rohan Patel</value></variations></name>
+    <name><variations><value>Mrs. Mensah</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Mrs. Mensah</value></variations></name>
+    <name><variations><value>Mrs. Mensah</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Lisa Nguyen</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023/01/20</original><formatted>2023/01/20</formatted></date>
+    <date><original>2023/03/10</original><formatted>2023/03/10</formatted></date>
+    <date><original>2023/04/05</original><formatted>2023/04/05</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>3456 Broadway, Apt 12C, New York, NY 10031</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>akmensah@email.com</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Al-Khateeb</value></variations></name>
+    <name><variations><value>Dr. Rachel Kim</value></variations></name>
+    <name><variations><value>Mr. Al-Khateeb</value></variations></name>
+    <name><variations><value>Mr. Al-Khateeb</value></variations></name>
+    <name><variations><value>Dr. Kim</value></variations></name>
+    <name><variations><value>Mr. Al-Khateeb</value></variations></name>
+    <name><variations><value>Dr. Kim</value></variations></name>
+    <name><variations><value>Dr. Rachel Kim</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+    <date><original>2023-01-20</original><formatted>2023-01-20</formatted></date>
+    <date><original>2023-02-02</original><formatted>2023-02-02</formatted></date>
+    <date><original>2023-02-10</original><formatted>2023-02-10</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Street, Apt 3A, Philadelphia, PA 19104</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>ahmed.al-khateeb@email.com</email>
+  </emails>
+  <ids>
+    <id>HUP-56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>(415) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>a.kumar@email.com</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>901 Broadway, Apt 3C, New York, NY 10003</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>a.hassan@email.com</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Li Ming Wong</value></variations></name>
+    <name><variations><value>Dr. Sofia Patel</value></variations></name>
+    <name><variations><value>Mr. Wong</value></variations></name>
+    <name><variations><value>Maria Rodriguez</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Mr. Wong</value></variations></name>
+    <name><variations><value>Mr. Wong</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-01-28</original><formatted>2023-01-28</formatted></date>
+    <date><original>2023-02-04</original><formatted>2023-02-04</formatted></date>
+    <date><original>2023-02-11</original><formatted>2023-02-11</formatted></date>
+    <date><original>2023-03-01</original><formatted>2023-03-01</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Broadway Avenue, Apt 3C, New York, NY 10024</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+    <phone>((212) 123-4567</phone>
+  </phones>
+  <emails>
+    <email>lm.wong@email.com</email>
+    <email>pcp.practice@email.com</email>
+    <email>hr.department@company.com</email>
+  </emails>
+  <ids>
+    <id>NYPH-654321</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-01-28</original><formatted>2023-01-28</formatted></date>
+    <date><original>2023-02-15</original><formatted>2023-02-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>321 Main St, Apt 3A, New York, NY 10001</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>NYPH-90123456</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Rachel Kim</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+    <name><variations><value>Lisa Nguyen</value></variations></name>
+    <name><variations><value>Dr. Emily Chen</value></variations></name>
+    <name><variations><value>Dr. Kim</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+    <date><original>2023-01-18</original><formatted>2023-01-18</formatted></date>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-02-05</original><formatted>2023-02-05</formatted></date>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Park Avenue, Apt 12A, New York, NY 10021</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>akira.nakamura@email.com</email>
+  </emails>
+  <ids>
+    <id>NYPH-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Rohan Jensen</value></variations></name>
+    <name><variations><value>Dr. Lee</value></variations></name>
+    <name><variations><value>Mr. Jensen</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2022-11-15</original><formatted>2022-11-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails>
+    <email>rjensen@email.com</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Dr. Rachel Lee</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Dr. Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-06-20</original><formatted>2023-06-20</formatted></date>
+    <date><original>2023-07-15</original><formatted>2023-07-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Street, Philadelphia, PA 19103</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>amit.kumar@email.com</email>
+  </emails>
+  <ids>
+    <id>HUP-45678901</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Dr. Lee</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>NewYork-Presbyterian Hospital</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>NYP-87654321</id>
+  </ids>
+  <urls>
+    <url>https://mychart.nyp.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Gupta</value></variations></name>
+    <name><variations><value>Mr. Gupta</value></variations></name>
+    <name><variations><value>Dr. Maria Rodriguez</value></variations></name>
+    <name><variations><value>Mr. Gupta</value></variations></name>
+    <name><variations><value>Dr. Rodriguez</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-06-15</original><formatted>2023-06-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>345 W 57th St, Apt 12B, New York, NY 10019</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>a.gupta@email.com</email>
+  </emails>
+  <ids>
+    <id>NYPH-9012345</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Dr. Ramesh Patel</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-04-15</original><formatted>2023-04-15</formatted></date>
+    <date><original>2023-05-10</original><formatted>2023-05-10</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>(650) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>akira.nakamura@email.com</email>
+  </emails>
+  <ids>
+    <id>SHC-12345678</id>
+  </ids>
+  <urls>
+    <url>https://myhealth.stanfordhealthcare.org</url>
+    <url>https://med.stanford.edu/alzheimers/trials.html</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>713-123-4567</phone>
+  </phones>
+  <emails>
+    <email>a.hassan@email.com</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>321 Cedar Lane, Apt 3A, New York, NY 10021</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Dr. Rachel Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-06-20</original><formatted>2023-06-20</formatted></date>
+    <date><original>2023-08-15</original><formatted>2023-08-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>890 Broadway, Apt 12A, New York, NY 10003</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>amit.kumar@email.com</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Dr. Rodriguez</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Main St, Apt 3A, Los Angeles, CA 90024</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira Hassan</value></variations></name>
+    <name><variations><value>Dr. Maria Rodriguez</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+    <name><variations><value>Dr. Rodriguez</value></variations></name>
+    <name><variations><value>Dr. Rodriguez</value></variations></name>
+    <name><variations><value>Pediatrician Dr. John Lee</value></variations></name>
+    <name><variations><value>Mr. Ali Alam</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-20</original><formatted>2023-03-20</formatted></date>
+    <date><original>2023-03-22</original><formatted>2023-03-22</formatted></date>
+    <date><original>8:45 AM on ????-03-20</original><formatted>8:45 AM on ????-03-20</formatted></date>
+    <date><original>04/10</original><formatted>04/10</formatted></date>
+    <date><original>2023-04-17</original><formatted>2023-04-17</formatted></date>
+    <date><original>04/24</original><formatted>04/24</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Street, Apt 3A, Philadelphia, PA 19103</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+    <phone>,(267)9023456</phone>
+  </phones>
+  <emails>
+    <email>amira.hassan@email.com</email>
+  </emails>
+  <ids>
+    <id>HUP-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akhil Jensen</value></variations></name>
+    <name><variations><value>Mr. Jensen</value></variations></name>
+    <name><variations><value>Dr. Rachel Kim</value></variations></name>
+    <name><variations><value>Mr. Jensen</value></variations></name>
+    <name><variations><value>Mr. Jensen</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-06-20</original><formatted>2023-06-20</formatted></date>
+    <date><original>2023-07-10</original><formatted>2023-07-10</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Street, Apt 3A, Philadelphia, PA 19103</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>a.jensen@email.com</email>
+  </emails>
+  <ids>
+    <id>HUP-45678901</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Rachel Lee</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Dr. Lee</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Dr. Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-10-15</original><formatted>2023-10-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Mission Street, Apt 3A, San Francisco, CA 94103</address>
+  </addresses>
+  <phones>
+    <phone>(415) 123-4567</phone>
+  </phones>
+  <emails>
+    <email>amit.kumar@email.com</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira Hassan</value></variations></name>
+    <name><variations><value>Liam Chen</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+    <name><variations><value>Fatima Patel</value></variations></name>
+    <name><variations><value>Dr. Chen</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+    <date><original>2023-01-18</original><formatted>2023-01-18</formatted></date>
+    <date><original>2023-01-22</original><formatted>2023-01-22</formatted></date>
+    <date><original>2023-02-01</original><formatted>2023-02-01</formatted></date>
+    <date><original>2023-03-10</original><formatted>2023-03-10</formatted></date>
+    <date><original>2023-01-20</original><formatted>2023-01-20</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Street, Philadelphia, PA 19104</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>amira.hassan@email.com</email>
+  </emails>
+  <ids>
+    <id>HUP-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Sofia Patel</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+    <name><variations><value>Dr. Henry Lee</value></variations></name>
+    <name><variations><value>Dr. Maria Rodriguez</value></variations></name>
+    <name><variations><value>Jane Smith</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+    <date><original>2023-03-20</original><formatted>2023-03-20</formatted></date>
+    <date><original>2023-03-25</original><formatted>2023-03-25</formatted></date>
+    <date><original>2023-04-01</original><formatted>2023-04-01</formatted></date>
+    <date><original>2023-05-01</original><formatted>2023-05-01</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>NewYork-Presbyterian Hospital</address>
+    <address>3456 Broadway, Apt 12A, New York, NY 10031</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>akira.nakamura@email.com</email>
+  </emails>
+  <ids>
+    <id>NYPH-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Dr. Fatima Hassan</value></variations></name>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+    <name><variations><value>Mr. Ali</value></variations></name>
+    <name><variations><value>Dr. Juan Reyes</value></variations></name>
+    <name><variations><value>Mr. Ali</value></variations></name>
+    <name><variations><value>Mr. Ali</value></variations></name>
+    <name><variations><value>Dr. Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+    <date><original>2023-03-17</original><formatted>2023-03-17</formatted></date>
+    <date><original>2023-03-20</original><formatted>2023-03-20</formatted></date>
+    <date><original>2023-03-24</original><formatted>2023-03-24</formatted></date>
+    <date><original>2023-04-10</original><formatted>2023-04-10</formatted></date>
+    <date><original>May 1, 2023</original><formatted>May 1, 2023</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Drive, Los Angeles, CA 90036</address>
+  </addresses>
+  <phones>
+    <phone>(310) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>ahmed.ali@email.com</email>
+  </emails>
+  <ids>
+    <id>CSMC-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aishwarya Desai</value></variations></name>
+    <name><variations><value>Dr. Rachel Lee</value></variations></name>
+    <name><variations><value>Dr. Lee</value></variations></name>
+    <name><variations><value>Ms. Desai</value></variations></name>
+    <name><variations><value>Ms. Desai</value></variations></name>
+    <name><variations><value>Dr. Lee</value></variations></name>
+    <name><variations><value>Dr.Lee</value></variations></name>
+    <name><variations><value>Ms. Desai</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava Wong</value></variations></name>
+    <name><variations><value>Dr. Lee</value></variations></name>
+    <name><variations><value>Ms. Wong</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>1456 Pine Street, Apt 3A, San Francisco, CA 94109</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>awong@email.com</email>
+  </emails>
+  <ids>
+    <id>SFGH-456789</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Dr. Julian Sanchez</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+    <name><variations><value>Sophia Patel</value></variations></name>
+    <name><variations><value>Dr. Sanchez</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+    <date><original>2023-03-20</original><formatted>2023-03-20</formatted></date>
+    <date><original>2023-03-27</original><formatted>2023-03-27</formatted></date>
+    <date><original>2023-04-10</original><formatted>2023-04-10</formatted></date>
+    <date><original>2023-05-01</original><formatted>2023-05-01</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Cherry Blossom Drive, Seattle, WA 98122</address>
+  </addresses>
+  <phones>
+    <phone>(206) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>akira.nakamura@email.com</email>
+  </emails>
+  <ids>
+    <id>UWMC-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Dr. Sofia Patel</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+    <name><variations><value>Rachel Lee</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2022-08-25</original><formatted>2022-08-25</formatted></date>
+    <date><original>2022-08-27</original><formatted>2022-08-27</formatted></date>
+    <date><original>2022-09-01</original><formatted>2022-09-01</formatted></date>
+    <date><original>2022-09-15</original><formatted>2022-09-15</formatted></date>
+    <date><original>2022-10-20</original><formatted>2022-10-20</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Street, Apt 3A, Philadelphia, PA 19103</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>akira.nakamura@email.com</email>
+  </emails>
+  <ids>
+    <id>HUP-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-04-22</original><formatted>2023-04-22</formatted></date>
+    <date><original>2023-05-06</original><formatted>2023-05-06</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+    <name><variations><value>Sofia Patel</value></variations></name>
+    <name><variations><value>Mr. Ali</value></variations></name>
+    <name><variations><value>Jasmine Lee</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Mr. Ali</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+    <date><original>2023-03-18</original><formatted>2023-03-18</formatted></date>
+    <date><original>2023-03-25</original><formatted>2023-03-25</formatted></date>
+    <date><original>2023-04-10</original><formatted>2023-04-10</formatted></date>
+    <date><original>2023-05-01</original><formatted>2023-05-01</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9017 Sunset Boulevard, Los Angeles, CA 90069</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>UCLA-56789012</id>
+  </ids>
+  <urls>
+    <url>https://www.myrehab.com/uclaortho</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Dr. Maria Rodriguez</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Dr. Rodriguez</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>SHC-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Dr. Maria Rodriguez</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Dr. Rodriguez</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-22</original><formatted>2023-03-22</formatted></date>
+    <date><original>2023-03-25</original><formatted>2023-03-25</formatted></date>
+    <date><original>2023-04-05</original><formatted>2023-04-05</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Washington Street, Apt 3C, New York, NY 10014</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>amit.kumar@email.com</email>
+  </emails>
+  <ids>
+    <id>NYP-45678901</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava Wong</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>www.eyecarecenter.org/cataracts</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Dr. Lisa Nguyen</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-25</original><formatted>2023-03-25</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>525 East 68th Street, New York, NY 10065</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-8901</phone>
+  </phones>
+  <emails>
+    <email>amit.kumar@email.com</email>
+  </emails>
+  <ids>
+    <id>NYPH-56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+    <name><variations><value>Dr. Julian Sanchez</value></variations></name>
+    <name><variations><value>Mr. Ali</value></variations></name>
+    <name><variations><value>Mr. Ali</value></variations></name>
+    <name><variations><value>Maria Rodriguez</value></variations></name>
+    <name><variations><value>Dr. Emily Chen</value></variations></name>
+    <name><variations><value>Dr. Sanchez</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+    <date><original>2023-01-17</original><formatted>2023-01-17</formatted></date>
+    <date><original>2023-01-22</original><formatted>2023-01-22</formatted></date>
+    <date><original>2023-02-05</original><formatted>2023-02-05</formatted></date>
+    <date><original>2023-03-01</original><formatted>2023-03-01</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Drive, Apt 12B, Los Angeles, CA 90001</address>
+  </addresses>
+  <phones>
+    <phone>(310) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>ahmed.ali@email.com</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Dr. Samantha Lee</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Dr. Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-22</original><formatted>2023-01-22</formatted></date>
+    <date><original>2023-01-29</original><formatted>2023-01-29</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Street, Apt 3A, Philadelphia, PA 19103</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>HUP-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava Wong</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>visited NewYork-Presbyterian Hospital</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+    <name><variations><value>Mr. Ali</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Mr. Ali</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-22</original><formatted>2023-03-22</formatted></date>
+    <date><original>2023-03-29</original><formatted>2023-03-29</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>123</address>
+    <address>W 110th St, Apt 4A, New York, NY 10026</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>ahmed.ali@email.com</email>
+  </emails>
+  <ids>
+    <id>NYPH-56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Fatima Hassan</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+    <name><variations><value>Dr. David Lee</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+    <name><variations><value>Dr.Lee</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+    <name><variations><value>Dr.Lee</value></variations></name>
+    <name><variations><value>Dr.Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2022-08-25</original><formatted>2022-08-25</formatted></date>
+    <date><original>2022-09-02</original><formatted>2022-09-02</formatted></date>
+    <date><original>2022-09-09</original><formatted>2022-09-09</formatted></date>
+    <date><original>2022-10-14</original><formatted>2022-10-14</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 River Road, Apartment 3A, New York, NY 10021</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>f.hassan@email.com</email>
+  </emails>
+  <ids>
+    <id>NYPH-90123456</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava Wong</value></variations></name>
+    <name><variations><value>Dr. Lee</value></variations></name>
+    <name><variations><value>Ms. Wong</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-20</original><formatted>2023-01-20</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Fatima Ali</value></variations></name>
+    <name><variations><value>Ms. Ali</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Ms. Ali</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Ms. Ali</value></variations></name>
+    <name><variations><value>Maria Rodriguez</value></variations></name>
+    <name><variations><value>Tom Bradley</value></variations></name>
+    <name><variations><value>Ms. Ali</value></variations></name>
+    <name><variations><value>Dr. Smith</value></variations></name>
+    <name><variations><value>Maria Rodriguez</value></variations></name>
+    <name><variations><value>Dr.Patel</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-20</original><formatted>2023-01-20</formatted></date>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-02-01</original><formatted>2023-02-01</formatted></date>
+    <date><original>2023-02-10</original><formatted>2023-02-10</formatted></date>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Chestnut Drive, Philadelphia, PA 19118</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>fatima.ali@email.com</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Jain</value></variations></name>
+    <name><variations><value>Dr. Lisa Nguyen</value></variations></name>
+    <name><variations><value>Mr. Jain</value></variations></name>
+    <name><variations><value>Dr. Nguyen</value></variations></name>
+    <name><variations><value>Mr. Jain</value></variations></name>
+    <name><variations><value>Mr. Jain</value></variations></name>
+    <name><variations><value>Dr. Nguyen</value></variations></name>
+    <name><variations><value>Dr. Nguyen</value></variations></name>
+    <name><variations><value>Mr. Jain</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>https://mychart.cardiohealth.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Thompson</value></variations></name>
+    <name><variations><value>Ms. Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-05</original><formatted>2023-01-05</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>visited NewYork-Presbyterian Hospital</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aruna Desai</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Ms. Desai</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Ms. Desai</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Ms. Desai</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>901 Lexington Drive, Apt 3A, San Francisco, CA 94109</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Dr. Rachel Lee</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>amit.kumar@email.com</email>
+  </emails>
+  <ids>
+    <id>NYULMC-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Rohan Desai</value></variations></name>
+    <name><variations><value>Dr. Maria Rodriguez</value></variations></name>
+    <name><variations><value>Mr. Desai</value></variations></name>
+    <name><variations><value>Emily Chen</value></variations></name>
+    <name><variations><value>Mr. Desai</value></variations></name>
+    <name><variations><value>Dr. Rodriguez</value></variations></name>
+    <name><variations><value>Mr. Desai</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-01-31</original><formatted>2023-01-31</formatted></date>
+    <date><original>2023-02-07</original><formatted>2023-02-07</formatted></date>
+    <date><original>2023-03-01</original><formatted>2023-03-01</formatted></date>
+    <date><original>02-10</original><formatted>02-10</formatted></date>
+    <date><original>02-14</original><formatted>02-14</formatted></date>
+    <date><original>02-21</original><formatted>02-21</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>2345 Walnut Street, Apt 12A, Philadelphia, PA 19103</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>rdesai@email.com</email>
+  </emails>
+  <ids>
+    <id>HUP-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"

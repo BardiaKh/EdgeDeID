@@ -1,0 +1,3912 @@
+prediction
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar,</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates/>
+  <places>
+    <place>NYU Langone Medical</place>
+    <place>Center,</place>
+  </places>
+  <addresses>
+    <address>3456</address>
+    <address>Broadway,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10024.
+
+Dr.</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>amira.hassan@email.com.</value></variations></name>
+    <name><variations><value>Julian</value></variations></name>
+    <name><variations><value>Sanchez</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Lisa</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+    <name><variations><value>Sanchez</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>38-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2022-01-15,</original><formatted>2022-01-15,</formatted></date>
+    <date><original>2022-01-17,</original><formatted>2022-01-17,</formatted></date>
+    <date><original>2022-01-24
+2.</original><formatted>2022-01-24
+2.</formatted></date>
+    <date><original>2022-02-14
+3.</original><formatted>2022-02-14
+3.</formatted></date>
+    <date><original>2022-03-01
+
+Patient</original><formatted>2022-03-01
+
+Patient</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+    <place>www.nyp.org/orthopedics/knee-replacement.
+
+Additionally,</place>
+  </places>
+  <addresses>
+    <address>901 Maple</address>
+    <address>Street,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10001,</address>
+  </addresses>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>NYPH-12345678.
+
+Dr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ramesh</value></variations></name>
+    <name><variations><value>Srinivasan,</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Srinivasan</value></variations></name>
+    <name><variations><value>Srinivasan</value></variations></name>
+    <name><variations><value>Srinivasan</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+  </names>
+  <ages>
+    <age>62-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-15,</original><formatted>2023-01-15,</formatted></date>
+    <date><original>2023-01-18,</original><formatted>2023-01-18,</formatted></date>
+    <date><original>2023-01-25.
+
+Post-operative</original><formatted>2023-01-25.
+
+Post-operative</formatted></date>
+    <date><original>2023-03-01</original><formatted>2023-03-01</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar,</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Kumar's</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Kumar's</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>Duke University</place>
+    <place>Hospital</place>
+    <place>DUH-1234567.
+
+During</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Drive,</address>
+    <address>Raleigh, NC 27615,</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akua</value></variations></name>
+    <name><variations><value>Mensah,</value></variations></name>
+    <name><variations><value>akua.mensah@email.com.</value></variations></name>
+    <name><variations><value>Julian</value></variations></name>
+    <name><variations><value>Sanchez</value></variations></name>
+    <name><variations><value>Mensah</value></variations></name>
+    <name><variations><value>Leila</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Sanchez</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-25,</original><formatted>2023-01-25,</formatted></date>
+    <date><original>2023-01-28,</original><formatted>2023-01-28,</formatted></date>
+    <date><original>2023-02-08
+2.</original><formatted>2023-02-08
+2.</formatted></date>
+    <date><original>2023-03-01
+3.</original><formatted>2023-03-01
+3.</formatted></date>
+  </dates>
+  <places>
+    <place>Emory University</place>
+    <place>Hospital</place>
+  </places>
+  <addresses>
+    <address>901 Willow Creek</address>
+    <address>Drive,</address>
+    <address>Atlanta, GA 30350,</address>
+  </addresses>
+  <phones>
+    <phone>(404)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>EUH-12345678.
+
+Dr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25,</original><formatted>2023-01-25,</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>713-123-4567),</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar,</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Kumar's</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-03-22,</original><formatted>2023-03-22,</formatted></date>
+    <date><original>https://www.nyp.org/kidneyhealth.
+
+Follow-up</original><formatted>https://www.nyp.org/kidneyhealth.
+
+Follow-up</formatted></date>
+    <date><original>2023-05-03.
+</anonymized_report</original><formatted>2023-05-03.
+</anonymized_report</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012,</phone>
+  </phones>
+  <emails>
+    <email>amit.kumar@email.com.</email>
+  </emails>
+  <ids>
+    <id>NYPH-56789012.
+
+Dr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed</value></variations></name>
+    <name><variations><value>Ali,</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Karen</value></variations></name>
+    <name><variations><value>Thompson</value></variations></name>
+    <name><variations><value>Michael</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Ali's</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+  </names>
+  <ages>
+    <age>65</age>
+  </ages>
+  <dates>
+    <date><original>2022-08-22,</original><formatted>2022-08-22,</formatted></date>
+    <date><original>2022-08-25,</original><formatted>2022-08-25,</formatted></date>
+    <date><original>2022-08-29
+2.</original><formatted>2022-08-29
+2.</formatted></date>
+    <date><original>2022-09-05
+3.</original><formatted>2022-09-05
+3.</formatted></date>
+    <date><original>2022-09-19
+
+Patient</original><formatted>2022-09-19
+
+Patient</formatted></date>
+  </dates>
+  <places>
+    <place>HealthCare St. Joseph Medical</place>
+    <place>Center</place>
+  </places>
+  <addresses>
+    <address>901 Maplewood</address>
+    <address>Drive,</address>
+    <address>Bloomington, IL 61704,</address>
+  </addresses>
+  <phones>
+    <phone>(309)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>OSFH-12345678.
+
+Dr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>Houston Methodist</place>
+    <place>Hospital</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>713-123-4567),</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Rohan</value></variations></name>
+    <name><variations><value>Jensen,</value></variations></name>
+    <name><variations><value>Jensen</value></variations></name>
+    <name><variations><value>Kaur</value></variations></name>
+    <name><variations><value>Smith.</value></variations></name>
+    <name><variations><value>Jensen</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2022-08-22.</original><formatted>2022-08-22.</formatted></date>
+    <date><original>2022-08-25,</original><formatted>2022-08-25,</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Street,</address>
+    <address>Philadelphia, PA 19103,</address>
+  </addresses>
+  <phones>
+    <phone>(215)</phone>
+    <phone>555-9012</phone>
+  </phones>
+  <emails>
+    <email>r.jensen@email.com.</email>
+  </emails>
+  <ids>
+    <id>PHS-56789012.
+
+Mr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Fatima</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>fatima.hassan@email.com.
+
+Dr.</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Hassan's</value></variations></name>
+    <name><variations><value>Hassan's</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-04-25,</original><formatted>2023-04-25,</formatted></date>
+    <date><original>2023-10-24
+
+Ms.Hassan</original><formatted>2023-10-24
+
+Ms.Hassan</formatted></date>
+  </dates>
+  <places>
+    <place>University of Michigan</place>
+    <place>Hospital</place>
+    <place>University of</place>
+    <place>Michigan</place>
+    <place>UMH-34567890.
+
+Ms.</place>
+  </places>
+  <addresses>
+    <address>901 S. Main</address>
+    <address>St,</address>
+    <address>Ann</address>
+    <address>Arbor,</address>
+    <address>MI 48104,</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar,</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-03-22.</original><formatted>2023-03-22.</formatted></date>
+    <date><original>2023-04-05.</original><formatted>2023-04-05.</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>NYPH-89012345.
+
+Mr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed</value></variations></name>
+    <name><variations><value>Ali,</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>John</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-04-25,</original><formatted>2023-04-25,</formatted></date>
+    <date><original>2023-04-28,</original><formatted>2023-04-28,</formatted></date>
+    <date><original>2023-05-05
+2.</original><formatted>2023-05-05
+2.</formatted></date>
+    <date><original>2023-06-10
+3.</original><formatted>2023-06-10
+3.</formatted></date>
+    <date><original>2023-07-01
+
+Patient</original><formatted>2023-07-01
+
+Patient</formatted></date>
+  </dates>
+  <places>
+    <place>UCLA Health - Ronald Reagan Medical</place>
+    <place>Center</place>
+    <place>www.uclahealth.org/neurosurgery/patient-resources.
+Medical</place>
+    <place>UCLAH-12345678.</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Drive,</address>
+    <address>Los</address>
+    <address>Angeles,</address>
+    <address>CA 90036,</address>
+  </addresses>
+  <phones>
+    <phone>(310)</phone>
+    <phone>555-9012.
+
+Dr.</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed</value></variations></name>
+    <name><variations><value>Ali,</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Ali's</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>James</value></variations></name>
+    <name><variations><value>Davis</value></variations></name>
+    <name><variations><value>Lisa</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Ali's</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-15,</original><formatted>2023-01-15,</formatted></date>
+    <date><original>2023-02-10
+2.</original><formatted>2023-02-10
+2.</formatted></date>
+    <date><original>2023-02-17
+3.</original><formatted>2023-02-17
+3.</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses>
+    <address>901 Lexington</address>
+    <address>Avenue,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10065,</address>
+  </addresses>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails>
+    <email>ahmed.ali@email.com.</email>
+  </emails>
+  <ids>
+    <id>NYPH-56789012.
+
+Dr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar,</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-03-22.</original><formatted>2023-03-22.</formatted></date>
+    <date><original>2023-04-05.</original><formatted>2023-04-05.</formatted></date>
+    <date><original>https://patientportal.denverhealth.org.
+
+Medications</original><formatted>https://patientportal.denverhealth.org.
+
+Medications</formatted></date>
+  </dates>
+  <places>
+    <place>Denver Health Medical</place>
+    <place>Center</place>
+    <place>DHMC-45678901.
+
+Mr.</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Drive,</address>
+    <address>Denver, CO 80202,</address>
+  </addresses>
+  <phones>
+    <phone>(720)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails>
+    <email>amit.kumar@email.com.</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira</value></variations></name>
+    <name><variations><value>Nakamura,</value></variations></name>
+    <name><variations><value>akira.nakamura@email.com.</value></variations></name>
+    <name><variations><value>Ramesh</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura's</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-25,</original><formatted>2023-01-25,</formatted></date>
+    <date><original>2023-01-27,</original><formatted>2023-01-27,</formatted></date>
+    <date><original>2023-02-01
+2.</original><formatted>2023-02-01
+2.</formatted></date>
+    <date><original>2023-02-08
+3.</original><formatted>2023-02-08
+3.</formatted></date>
+    <date><original>2023-03-15
+
+Patient</original><formatted>2023-03-15
+
+Patient</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital of the University of</place>
+    <place>Pennsylvania</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Street,</address>
+    <address>Philadelphia, PA 19103,</address>
+  </addresses>
+  <phones>
+    <phone>(215)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>HUP-12345678.
+
+Dr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Ava's</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-06-20,</original><formatted>2023-06-20,</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-08-22,</original><formatted>2023-08-22,</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital,</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>NYPH-56789012.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Rohan</value></variations></name>
+    <name><variations><value>Jensen,</value></variations></name>
+    <name><variations><value>Jensen</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-03-22.</original><formatted>2023-03-22.</formatted></date>
+    <date><original>https://covid19.nyp.org.
+
+Follow-up</original><formatted>https://covid19.nyp.org.
+
+Follow-up</formatted></date>
+    <date><original>2023-03-29.</original><formatted>2023-03-29.</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+    <place>NYPH-56789012.
+
+Mr.</place>
+  </places>
+  <addresses>
+    <address>3456</address>
+    <address>Broadway,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10027.</address>
+  </addresses>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar,</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Street,</address>
+    <address>Philadelphia, PA 19103,</address>
+  </addresses>
+  <phones>
+    <phone>(215)</phone>
+    <phone>555-9012</phone>
+  </phones>
+  <emails>
+    <email>amit.kumar@email.com.</email>
+  </emails>
+  <ids>
+    <id>PHS-12345678.
+
+Mr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira</value></variations></name>
+    <name><variations><value>Nakamura,</value></variations></name>
+    <name><variations><value>akira.nakamura@email.com.</value></variations></name>
+    <name><variations><value>Sofia</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura's</value></variations></name>
+    <name><variations><value>Yuna</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+  </names>
+  <ages>
+    <age>75-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-25,</original><formatted>2023-01-25,</formatted></date>
+    <date><original>2023-01-28,</original><formatted>2023-01-28,</formatted></date>
+    <date><original>2023-02-01
+2.</original><formatted>2023-02-01
+2.</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses>
+    <address>901 Lexington</address>
+    <address>Avenue,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10065,</address>
+  </addresses>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails>
+    <email>y.nakamara@email.com)</email>
+  </emails>
+  <ids>
+    <id>NYPH-12345678.
+
+Dr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akua</value></variations></name>
+    <name><variations><value>Mensah,</value></variations></name>
+    <name><variations><value>akua.mensah@email.com.</value></variations></name>
+    <name><variations><value>Julian</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Mensah</value></variations></name>
+    <name><variations><value>Sophia</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Mensah</value></variations></name>
+    <name><variations><value>Mensah's</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-15,</original><formatted>2023-01-15,</formatted></date>
+    <date><original>2023-01-18,</original><formatted>2023-01-18,</formatted></date>
+    <date><original>2023-01-22
+2.</original><formatted>2023-01-22
+2.</formatted></date>
+    <date><original>2023-02-01
+3.</original><formatted>2023-02-01
+3.</formatted></date>
+    <date><original>2023-03-10
+
+Patient</original><formatted>2023-03-10
+
+Patient</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital of</place>
+    <place>University of</place>
+    <place>Pennsylvania</place>
+    <place>www.pennmedicine.org/orthopaedics/patient-education.
+
+Additionally,</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Street,</address>
+    <address>Philadelphia, PA 19104,</address>
+  </addresses>
+  <phones>
+    <phone>(215)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>HUP-34567890.
+
+Dr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Lian</value></variations></name>
+    <name><variations><value>Chen,</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>9015 Walnut</address>
+    <address>Drive,</address>
+    <address>Denver, CO 80219,</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ramesh</value></variations></name>
+    <name><variations><value>Srinivasan,</value></variations></name>
+    <name><variations><value>Sophia</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Srinivasan</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Srinivasan’s</value></variations></name>
+    <name><variations><value>Henry</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Lisa</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+  </names>
+  <ages>
+    <age>60-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-25,</original><formatted>2023-01-25,</formatted></date>
+    <date><original>2023-01-28,</original><formatted>2023-01-28,</formatted></date>
+    <date><original>2023-02-08
+2.</original><formatted>2023-02-08
+2.</formatted></date>
+    <date><original>2023-02-15
+3.</original><formatted>2023-02-15
+3.</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+    <place>www.nyp.org/spinecare.
+
+During</place>
+  </places>
+  <addresses>
+    <address>123 Parkview</address>
+    <address>Drive,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10021,</address>
+  </addresses>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012.</phone>
+    <phone>(212)</phone>
+    <phone>555-1000.</phone>
+  </phones>
+  <emails>
+    <email>r.srinivasan@email.com.</email>
+  </emails>
+  <ids>
+    <id>NYPH-12345678.
+
+Dr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>Johns Hopkins</place>
+    <place>Hospital</place>
+  </places>
+  <addresses>
+    <address>901 Lexington</address>
+    <address>Street,</address>
+    <address>Baltimore, MD 21201,</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>Liang</value></variations></name>
+    <name><variations><value>Liang</value></variations></name>
+    <name><variations><value>Hassan's</value></variations></name>
+    <name><variations><value>Liang</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>SHC-56789012,</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Yui</value></variations></name>
+    <name><variations><value>Nakamura,</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-04-22.</original><formatted>2023-04-22.</formatted></date>
+  </dates>
+  <places>
+    <place>University of California, San Francisco Medical</place>
+    <place>Center</place>
+  </places>
+  <addresses>
+    <address>901 Cherry Blossom</address>
+    <address>Lane,</address>
+    <address>San</address>
+    <address>Francisco,</address>
+    <address>CA 94118,</address>
+  </addresses>
+  <phones>
+    <phone>(415)</phone>
+    <phone>123-4567</phone>
+  </phones>
+  <emails>
+    <email>y.nakamura@email.com.
+
+Dr.</email>
+  </emails>
+  <ids>
+    <id>UCSF-567890.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>amira.hassan@email.com.</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-25,</original><formatted>2023-01-25,</formatted></date>
+    <date><original>2023-01-28,</original><formatted>2023-01-28,</formatted></date>
+    <date><original>2023-02-01
+2.</original><formatted>2023-02-01
+2.</formatted></date>
+    <date><original>2023-02-15
+3.</original><formatted>2023-02-15
+3.</formatted></date>
+    <date><original>https://orthoinfo.org/
+-</original><formatted>https://orthoinfo.org/
+-</formatted></date>
+    <date><original>????-03-??</original><formatted>????-03-??</formatted></date>
+    <date><original>????-04-??</original><formatted>????-04-??</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+    <place>American</place>
+    <place>National</place>
+  </places>
+  <addresses>
+    <address>901 Main</address>
+    <address>Street,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10001,</address>
+  </addresses>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>NYPH-12345678.
+
+Dr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ramesh</value></variations></name>
+    <name><variations><value>Srinivasan,</value></variations></name>
+    <name><variations><value>ramesh.srinivasan@email.com.</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Srinivasan</value></variations></name>
+    <name><variations><value>David</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Emily</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Srinivasan's</value></variations></name>
+  </names>
+  <ages>
+    <age>62-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-04-20,</original><formatted>2023-04-20,</formatted></date>
+    <date><original>2023-04-25,</original><formatted>2023-04-25,</formatted></date>
+    <date><original>2023-05-01
+2.</original><formatted>2023-05-01
+2.</formatted></date>
+    <date><original>2023-06-15
+
+Patient</original><formatted>2023-06-15
+
+Patient</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital of</place>
+    <place>University of</place>
+    <place>Pennsylvania</place>
+    <place>www.pennmedicine.org/hipreplacement.
+
+During</place>
+    <place>CareLink</place>
+  </places>
+  <addresses>
+    <address>9012 Pine</address>
+    <address>Street,</address>
+    <address>Philadelphia, PA 19104,</address>
+  </addresses>
+  <phones>
+    <phone>(215)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>HUP-12345678.
+
+Dr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Fatima</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>1423 Cypress</address>
+    <address>Drive,</address>
+    <address>Brooklyn, NY 11201,</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar,</value></variations></name>
+    <name><variations><value>amit.kumar@email.com),</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-06-22.</original><formatted>2023-06-22.</formatted></date>
+    <date><original>2023-07-13.
+
+In</original><formatted>2023-07-13.
+
+In</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital of the University of</place>
+    <place>Pennsylvania</place>
+  </places>
+  <addresses>
+    <address>9010 Walnut</address>
+    <address>Street,</address>
+    <address>Philadelphia, PA 19103</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-22.</original><formatted>2023-01-22.</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>(718)</phone>
+    <phone>555-9012.
+
+Ms.</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>AH-123456.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed</value></variations></name>
+    <name><variations><value>Ali,</value></variations></name>
+    <name><variations><value>ahmed.ali@email.com.
+
+Dr.</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Ali's</value></variations></name>
+  </names>
+  <ages>
+    <age>62-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-25,</original><formatted>2023-01-25,</formatted></date>
+    <date><original>2023-01-27,</original><formatted>2023-01-27,</formatted></date>
+    <date><original>2023-02-10
+2.</original><formatted>2023-02-10
+2.</formatted></date>
+    <date><original>2023-03-15
+3.</original><formatted>2023-03-15
+3.</formatted></date>
+    <date><original>2023-04-20
+
+Patient</original><formatted>2023-04-20
+
+Patient</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>NYPH-654321.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>David</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Michael</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan's</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Emily</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Michael</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2022-08-25,</original><formatted>2022-08-25,</formatted></date>
+    <date><original>2022-08-28,</original><formatted>2022-08-28,</formatted></date>
+    <date><original>2022-09-01
+2.</original><formatted>2022-09-01
+2.</formatted></date>
+    <date><original>2022-09-05
+3.</original><formatted>2022-09-05
+3.</formatted></date>
+    <date><original>2022-09-15
+
+Patient</original><formatted>2022-09-15
+
+Patient</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails>
+    <email>amira.hassan@email.com.</email>
+  </emails>
+  <ids>
+    <id>NYP-12345678.
+
+Dr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Thompson</value></variations></name>
+    <name><variations><value>Aisha</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>https://myhealth.stanfordhealthcare.org</original><formatted>https://myhealth.stanfordhealthcare.org</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar,</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>RMH-9012345.
+
+Mr.</place>
+  </places>
+  <addresses>
+    <address>3210 Lakeview</address>
+    <address>Drive,</address>
+    <address>Raleigh, NC 27607,</address>
+  </addresses>
+  <phones>
+    <phone>(919)</phone>
+    <phone>123-4567.</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amita</value></variations></name>
+    <name><variations><value>Desai,</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+  </names>
+  <ages>
+    <age>35,</age>
+  </ages>
+  <dates>
+    <date><original>2023-06-22.</original><formatted>2023-06-22.</formatted></date>
+    <date><original>2023-07-06.</original><formatted>2023-07-06.</formatted></date>
+  </dates>
+  <places>
+    <place>University of Colorado</place>
+    <place>Hospital</place>
+    <place>UCH-12345678.
+
+Dr.</place>
+    <place>uchospital.org).</place>
+  </places>
+  <addresses>
+    <address>901 Lincoln</address>
+    <address>Street,</address>
+    <address>Denver, CO 80203,</address>
+  </addresses>
+  <phones>
+    <phone>(303)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails>
+    <email>amita.desai@email.com.</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira</value></variations></name>
+    <name><variations><value>Nakamura,</value></variations></name>
+    <name><variations><value>akira.nakamura@email.com.
+
+Dr.</value></variations></name>
+    <name><variations><value>Rohan</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura's</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+  </names>
+  <ages>
+    <age>75-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-25,</original><formatted>2023-01-25,</formatted></date>
+    <date><original>2023-01-28,</original><formatted>2023-01-28,</formatted></date>
+    <date><original>2023-02-10
+2.</original><formatted>2023-02-10
+2.</formatted></date>
+    <date><original>2023-02-15
+3.</original><formatted>2023-02-15
+3.</formatted></date>
+    <date><original>2023-03-24
+
+Patient</original><formatted>2023-03-24
+
+Patient</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+    <place>www.nyp.org/hipreplacementeducation.
+
+Additionally,</place>
+  </places>
+  <addresses>
+    <address>901 Lexington</address>
+    <address>Avenue,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10065,</address>
+  </addresses>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>NYP-12345678.
+
+Follow-up</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed</value></variations></name>
+    <name><variations><value>Ali,</value></variations></name>
+    <name><variations><value>ahmed.ali@email.com.
+
+Dr.</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-08-20,</original><formatted>2023-08-20,</formatted></date>
+    <date><original>2023-08-22,</original><formatted>2023-08-22,</formatted></date>
+    <date><original>2023-09-03
+2.</original><formatted>2023-09-03
+2.</formatted></date>
+    <date><original>2023-10-15
+
+Patient</original><formatted>2023-10-15
+
+Patient</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital of</place>
+    <place>University of</place>
+    <place>Pennsylvania</place>
+    <place>www.pennmedicine.org/urology/prostate-cancer.
+
+Medical</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Street,</address>
+    <address>Philadelphia, PA 19103,</address>
+  </addresses>
+  <phones>
+    <phone>(215)</phone>
+    <phone>555-9012.</phone>
+    <phone>(215)</phone>
+    <phone>662-8777
+24-hour</phone>
+    <phone>(215)</phone>
+    <phone>898-8877</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>HUP-56789012.
+
+Additional</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar,</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages>
+    <age>29-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-25.</original><formatted>2023-01-25.</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Mission</address>
+    <address>Street,</address>
+    <address>San</address>
+    <address>Francisco,</address>
+    <address>CA 94103.</address>
+  </addresses>
+  <phones>
+    <phone>(415)</phone>
+    <phone>123-4567.</phone>
+  </phones>
+  <emails>
+    <email>amit.kumar@email.com)</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amara</value></variations></name>
+    <name><variations><value>Diallo,</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+    <name><variations><value>Liam</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+    <name><variations><value>Ava</value></variations></name>
+    <name><variations><value>Patel,</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Diallo,</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+    <name><variations><value>Yoon</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Mensah,</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-25,</original><formatted>2023-01-25,</formatted></date>
+    <date><original>2023-02-01.
+
+Pre-operative</original><formatted>2023-02-01.
+
+Pre-operative</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital.</place>
+  </places>
+  <addresses>
+    <address>901 Park</address>
+    <address>Avenue,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10021,</address>
+  </addresses>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>NYPH-12345678.
+
+Ms.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ling</value></variations></name>
+    <name><variations><value>Wong,</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Wong's</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-03-05.</original><formatted>2023-03-05.</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses>
+    <address>3456</address>
+    <address>Broadway,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10027.</address>
+  </addresses>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012,</phone>
+  </phones>
+  <emails>
+    <email>l.wong@email.com.</email>
+  </emails>
+  <ids>
+    <id>NYPH-567890.
+
+Dr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital,</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>NYPH-87654321.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan's</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>901 Lexington</address>
+    <address>Avenue,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10065,</address>
+  </addresses>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012</phone>
+  </phones>
+  <emails>
+    <email>a.hassan@email.com.
+
+Ms.</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira</value></variations></name>
+    <name><variations><value>Nakamura,</value></variations></name>
+    <name><variations><value>Liam</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25,</original><formatted>2023-01-25,</formatted></date>
+    <date><original>2023-04-15
+2.</original><formatted>2023-04-15
+2.</formatted></date>
+    <date><original>2023-07-22
+3.</original><formatted>2023-07-22
+3.</formatted></date>
+    <date><original>2023-10-15
+
+Patient</original><formatted>2023-10-15
+
+Patient</formatted></date>
+  </dates>
+  <places>
+    <place>University of California, San Francisco Medical</place>
+    <place>Center</place>
+    <place>UCSF</place>
+    <place>UCSF-12345678.
+
+Follow-up</place>
+    <place>www.ucsfhealth.org/ms_resources.
+
+Additionally,</place>
+    <place>UCSF</place>
+  </places>
+  <addresses>
+    <address>1456 Cherry Blossom</address>
+    <address>Lane,</address>
+    <address>San</address>
+    <address>Francisco,</address>
+    <address>CA 94118</address>
+  </addresses>
+  <phones>
+    <phone>(415)</phone>
+    <phone>555-9012.
+
+Dr.</phone>
+  </phones>
+  <emails>
+    <email>akira.nakamura@email.com),</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>(713)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails>
+    <email>a.hassan@email.com)</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava</value></variations></name>
+    <name><variations><value>Wong,</value></variations></name>
+    <name><variations><value>Liam</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Ava's</value></variations></name>
+  </names>
+  <ages>
+    <age>28</age>
+  </ages>
+  <dates/>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Leila</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>Rohan</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-22,</original><formatted>2023-01-22,</formatted></date>
+    <date><original>2023-01-25,</original><formatted>2023-01-25,</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+    <place>www.nyp.org/orthopedics/ACLrecovery.</place>
+  </places>
+  <addresses>
+    <address>901 Park</address>
+    <address>Avenue,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10021</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>l.hassan@email.com),</email>
+  </emails>
+  <ids>
+    <id>NYPH-56789012.
+
+Dr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amara</value></variations></name>
+    <name><variations><value>Diallo,</value></variations></name>
+    <name><variations><value>Rohan</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Casey</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages>
+    <age>65-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-05,</original><formatted>2023-01-05,</formatted></date>
+    <date><original>2023-01-10,</original><formatted>2023-01-10,</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital.</place>
+    <place>www.nyp.org/copd-management.</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>(212)</phone>
+    <phone>123-4567</phone>
+  </phones>
+  <emails>
+    <email>amara.diallo@email.com.</email>
+  </emails>
+  <ids>
+    <id>NYPH-987654321.
+
+Dr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+    <name><variations><value>Jackson</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-06-20,</original><formatted>2023-06-20,</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>amira.hassan@email.com.</value></variations></name>
+    <name><variations><value>Julian</value></variations></name>
+    <name><variations><value>Sanchez</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Sanchez</value></variations></name>
+    <name><variations><value>Emily</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>David</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-15,</original><formatted>2023-01-15,</formatted></date>
+    <date><original>2023-01-18,</original><formatted>2023-01-18,</formatted></date>
+    <date><original>2023-01-25
+2.</original><formatted>2023-01-25
+2.</formatted></date>
+    <date><original>2023-02-01
+
+Patient</original><formatted>2023-02-01
+
+Patient</formatted></date>
+    <date><original>2023-01-22
+-</original><formatted>2023-01-22
+-</formatted></date>
+    <date><original>????-03-??.</original><formatted>????-03-??.</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses>
+    <address>901 Park</address>
+    <address>Avenue,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10021,</address>
+  </addresses>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>NYPH-12345678.
+
+Dr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-03-22.</original><formatted>2023-03-22.</formatted></date>
+    <date><original>2023-03-29,</original><formatted>2023-03-29,</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>(713)</phone>
+    <phone>123-4567.
+
+Ms.</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>29,</age>
+  </ages>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>901 Lexington</address>
+    <address>Ave,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10065,</address>
+  </addresses>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira</value></variations></name>
+    <name><variations><value>Nakamura,</value></variations></name>
+    <name><variations><value>akira.nakamura@email.com.</value></variations></name>
+    <name><variations><value>Julian</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-25,</original><formatted>2023-01-25,</formatted></date>
+    <date><original>2023-01-28,</original><formatted>2023-01-28,</formatted></date>
+    <date><original>2023-02-08
+2.</original><formatted>2023-02-08
+2.</formatted></date>
+    <date><original>2023/03/15
+
+Patient</original><formatted>2023/03/15
+
+Patient</formatted></date>
+  </dates>
+  <places>
+    <place>University of California, San Francisco Medical</place>
+    <place>Center</place>
+    <place>UCSF-12345678.
+
+Dr.</place>
+    <place>www.ucsfhealth.org/spinecenter.</place>
+  </places>
+  <addresses>
+    <address>901 Linden</address>
+    <address>Street,</address>
+    <address>San</address>
+    <address>Francisco,</address>
+    <address>CA 94115,</address>
+  </addresses>
+  <phones>
+    <phone>(415)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Leila</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>leila.hassan@email.com.</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Leila's</value></variations></name>
+    <name><variations><value>Leila</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses>
+    <address>901</address>
+    <address>Broadway,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10003,</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>NYP-12345678.
+
+The</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akua</value></variations></name>
+    <name><variations><value>Mensah,</value></variations></name>
+    <name><variations><value>Rohan</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Mensah's</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Mensah</value></variations></name>
+    <name><variations><value>Mensah</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Lisa</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023/01/20,</original><formatted>2023/01/20,</formatted></date>
+    <date><original>2023/03/10
+2.Discussion</original><formatted>2023/03/10
+2.Discussion</formatted></date>
+    <date><original>2023/04/05
+
+Ongoing</original><formatted>2023/04/05
+
+Ongoing</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>3456</address>
+    <address>Broadway,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10031.
+
+Dr.</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>akmensah@email.com),</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed</value></variations></name>
+    <name><variations><value>Al-Khateeb,</value></variations></name>
+    <name><variations><value>ahmed.al-khateeb@email.com),</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Al-Khateeb</value></variations></name>
+    <name><variations><value>Al-Khateeb</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Al-Khateeb</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+  </names>
+  <ages>
+    <age>39-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-15,</original><formatted>2023-01-15,</formatted></date>
+    <date><original>2023-01-20,</original><formatted>2023-01-20,</formatted></date>
+    <date><original>2023-02-02
+2.</original><formatted>2023-02-02
+2.</formatted></date>
+    <date><original>2023-02-10
+
+Patient</original><formatted>2023-02-10
+
+Patient</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital of</place>
+    <place>University of</place>
+    <place>Pennsylvania</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Street,</address>
+    <address>Philadelphia, PA 19104</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>HUP-56789012.
+
+Dr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar,</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>(415)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails>
+    <email>a.kumar@email.com)</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>29,</age>
+  </ages>
+  <dates>
+    <date><original>https://nyulangone.org/patient-resources/pregnancy-and-childbirth</original><formatted>https://nyulangone.org/patient-resources/pregnancy-and-childbirth</formatted></date>
+  </dates>
+  <places>
+    <place>NYU Langone Medical</place>
+    <place>Center</place>
+  </places>
+  <addresses>
+    <address>901</address>
+    <address>Broadway,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10003.</address>
+  </addresses>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails>
+    <email>a.hassan@email.com)</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Li Ming</value></variations></name>
+    <name><variations><value>Wong,</value></variations></name>
+    <name><variations><value>Sofia</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+    <name><variations><value>Wong's</value></variations></name>
+  </names>
+  <ages>
+    <age>38-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-25,</original><formatted>2023-01-25,</formatted></date>
+    <date><original>2023-01-28,</original><formatted>2023-01-28,</formatted></date>
+    <date><original>2023-02-04
+2.</original><formatted>2023-02-04
+2.</formatted></date>
+    <date><original>2023-02-11
+3.</original><formatted>2023-02-11
+3.</formatted></date>
+    <date><original>2023-03-01
+
+Patient</original><formatted>2023-03-01
+
+Patient</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+    <place>www.nyportho.org/tkrrecovery.
+
+Additionally,</place>
+  </places>
+  <addresses>
+    <address>9012 Broadway</address>
+    <address>Avenue,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10024,</address>
+  </addresses>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012.</phone>
+    <phone>((212)</phone>
+    <phone>123-4567)</phone>
+  </phones>
+  <emails>
+    <email>lm.wong@email.com.</email>
+  </emails>
+  <ids>
+    <id>NYPH-654321.
+
+Dr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25.</original><formatted>2023-01-25.</formatted></date>
+    <date><original>2023-01-28,</original><formatted>2023-01-28,</formatted></date>
+    <date><original>2023-02-15.</original><formatted>2023-02-15.</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses>
+    <address>321 Main</address>
+    <address>St,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10001,</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>NYPH-90123456.
+
+Ms.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira</value></variations></name>
+    <name><variations><value>Nakamura,</value></variations></name>
+    <name><variations><value>akira.nakamura@email.com.</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Lisa</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+    <name><variations><value>Emily</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-15,</original><formatted>2023-01-15,</formatted></date>
+    <date><original>2023-01-18,</original><formatted>2023-01-18,</formatted></date>
+    <date><original>2023-01-25
+2.</original><formatted>2023-01-25
+2.</formatted></date>
+    <date><original>2023-02-05
+3.</original><formatted>2023-02-05
+3.</formatted></date>
+    <date><original>2023-03-15.
+
+Patient</original><formatted>2023-03-15.
+
+Patient</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses>
+    <address>901 Park</address>
+    <address>Avenue,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10021,</address>
+  </addresses>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>NYPH-12345678.
+
+Dr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Rohan</value></variations></name>
+    <name><variations><value>Jensen,</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Jensen</value></variations></name>
+  </names>
+  <ages>
+    <age>29,</age>
+  </ages>
+  <dates>
+    <date><original>2022-11-15.</original><formatted>2022-11-15.</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails>
+    <email>rjensen@email.com)</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar,</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-06-20.</original><formatted>2023-06-20.</formatted></date>
+    <date><original>2023-07-15.</original><formatted>2023-07-15.</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital of the University of</place>
+    <place>Pennsylvania</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Street,</address>
+    <address>Philadelphia, PA 19103,</address>
+  </addresses>
+  <phones>
+    <phone>(215)</phone>
+    <phone>555-9012</phone>
+  </phones>
+  <emails>
+    <email>amit.kumar@email.com.</email>
+  </emails>
+  <ids>
+    <id>HUP-45678901.
+
+Mr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar,</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital,</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>NYP-87654321.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Gupta,</value></variations></name>
+    <name><variations><value>Gupta</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Gupta's</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-06-15.</original><formatted>2023-06-15.</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses>
+    <address>345 W 57th</address>
+    <address>St,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10019.
+
+Dr.</address>
+  </addresses>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012,</phone>
+  </phones>
+  <emails>
+    <email>a.gupta@email.com.</email>
+  </emails>
+  <ids>
+    <id>NYPH-9012345.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira</value></variations></name>
+    <name><variations><value>Nakamura,</value></variations></name>
+    <name><variations><value>akira.nakamura@email.com.</value></variations></name>
+    <name><variations><value>Ramesh</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura's</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Nakamura's</value></variations></name>
+  </names>
+  <ages>
+    <age>75-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-04-15,</original><formatted>2023-04-15,</formatted></date>
+    <date><original>2023-05-10,</original><formatted>2023-05-10,</formatted></date>
+  </dates>
+  <places>
+    <place>Stanford Health</place>
+    <place>Care</place>
+    <place>Stanford</place>
+    <place>Health Care</place>
+    <place>Stanford Health</place>
+    <place>Care</place>
+    <place>Stanford University</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>(650)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>SHC-12345678.
+
+Dr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>Houston Methodist</place>
+    <place>Hospital</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>713-123-4567,</phone>
+  </phones>
+  <emails>
+    <email>a.hassan@email.com),</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>29,</age>
+  </ages>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>321 Cedar</address>
+    <address>Lane,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10021,</address>
+  </addresses>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar,</value></variations></name>
+    <name><variations><value>amit.kumar@email.com)</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-06-20,</original><formatted>2023-06-20,</formatted></date>
+    <date><original>2023-08-15.</original><formatted>2023-08-15.</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses>
+    <address>890</address>
+    <address>Broadway,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10003.</address>
+  </addresses>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012.
+
+Dr.</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>29-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-25.</original><formatted>2023-01-25.</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Main</address>
+    <address>St,</address>
+    <address>Los</address>
+    <address>Angeles,</address>
+    <address>CA 90024.
+
+Dr.</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>amira.hassan@email.com.</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>John</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Alam,(267)9023456
+Mother</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-03-20,Amira</original><formatted>2023-03-20,Amira</formatted></date>
+    <date><original>2023-03-22,</original><formatted>2023-03-22,</formatted></date>
+    <date><original>04/10
+2.</original><formatted>04/10
+2.</formatted></date>
+    <date><original>2023-04-17
+3.Lactation</original><formatted>2023-04-17
+3.Lactation</formatted></date>
+    <date><original>04/24
+
+Patient</original><formatted>04/24
+
+Patient</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital of</place>
+    <place>University of</place>
+    <place>Pennsylvania</place>
+    <place>www.hupobgyn.org/newmomresources</place>
+    <place>www.chop.edu/yourbabiesfirstyear.
+
+Additional</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Street,</address>
+    <address>Philadelphia, PA 19103,</address>
+  </addresses>
+  <phones>
+    <phone>(215)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>HUP-12345678.
+
+Dr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akhil</value></variations></name>
+    <name><variations><value>Jensen,</value></variations></name>
+    <name><variations><value>Jensen</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Jensen</value></variations></name>
+    <name><variations><value>Jensen's</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-06-20.</original><formatted>2023-06-20.</formatted></date>
+    <date><original>2023-07-10.
+
+In</original><formatted>2023-07-10.
+
+In</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital of</place>
+    <place>University of</place>
+    <place>Pennsylvania</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Street,</address>
+    <address>Philadelphia, PA 19103,</address>
+  </addresses>
+  <phones>
+    <phone>(215)</phone>
+    <phone>555-9012</phone>
+  </phones>
+  <emails>
+    <email>a.jensen@email.com.</email>
+  </emails>
+  <ids>
+    <id>HUP-45678901.
+
+Mr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar,</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>amit.kumar@email.com.</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Kumar's</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-10-15.</original><formatted>2023-10-15.</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Mission</address>
+    <address>Street,</address>
+    <address>San</address>
+    <address>Francisco,</address>
+    <address>CA 94103.
+
+During</address>
+  </addresses>
+  <phones>
+    <phone>(415)</phone>
+    <phone>123-4567</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>amira.hassan@email.com.</value></variations></name>
+    <name><variations><value>Liam</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Fatima</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-15,</original><formatted>2023-01-15,</formatted></date>
+    <date><original>2023-01-18,</original><formatted>2023-01-18,</formatted></date>
+    <date><original>2023-01-22
+2.</original><formatted>2023-01-22
+2.</formatted></date>
+    <date><original>2023-02-01
+3.</original><formatted>2023-02-01
+3.</formatted></date>
+    <date><original>2023-03-10
+
+Patient</original><formatted>2023-03-10
+
+Patient</formatted></date>
+    <date><original>2023-01-20,</original><formatted>2023-01-20,</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital of</place>
+    <place>University of</place>
+    <place>Pennsylvania</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Street,</address>
+    <address>Philadelphia, PA 19104,</address>
+  </addresses>
+  <phones>
+    <phone>(215)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>HUP-12345678.
+
+Dr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira</value></variations></name>
+    <name><variations><value>Nakamura,</value></variations></name>
+    <name><variations><value>akira.nakamura@email.com.</value></variations></name>
+    <name><variations><value>Sofia</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura's</value></variations></name>
+    <name><variations><value>Henry</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Jane</value></variations></name>
+    <name><variations><value>Smith</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-15,</original><formatted>2023-03-15,</formatted></date>
+    <date><original>2023-03-20,</original><formatted>2023-03-20,</formatted></date>
+    <date><original>2023-03-25
+2.</original><formatted>2023-03-25
+2.</formatted></date>
+    <date><original>2023-04-01
+3.</original><formatted>2023-04-01
+3.</formatted></date>
+    <date><original>2023-05-01
+
+Patient</original><formatted>2023-05-01
+
+Patient</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses>
+    <address>3456</address>
+    <address>Broadway,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10031.</address>
+  </addresses>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012,</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>NYPH-12345678.
+
+Dr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Fatima</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Ahmed</value></variations></name>
+    <name><variations><value>Ali,</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Juan</value></variations></name>
+    <name><variations><value>Reyes.</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Amy</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages>
+    <age>65-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-03-15,</original><formatted>2023-03-15,</formatted></date>
+    <date><original>2023-03-17,</original><formatted>2023-03-17,</formatted></date>
+    <date><original>2023-03-20,</original><formatted>2023-03-20,</formatted></date>
+    <date><original>May 1,</original><formatted>May 1,</formatted></date>
+    <date><original>2023
+
+Patient</original><formatted>2023
+
+Patient</formatted></date>
+  </dates>
+  <places>
+    <place>Cedars-Sinai Medical</place>
+    <place>Center</place>
+    <place>CSMC-12345678.
+
+Mr.</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Drive,</address>
+    <address>Los</address>
+    <address>Angeles,</address>
+    <address>CA 90036,</address>
+  </addresses>
+  <phones>
+    <phone>(310)</phone>
+    <phone>555-9012</phone>
+  </phones>
+  <emails>
+    <email>ahmed.ali@email.com.</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aishwarya</value></variations></name>
+    <name><variations><value>Desai,</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Desai's</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Desai's</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital,</place>
+    <place>www.nyp.org</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava</value></variations></name>
+    <name><variations><value>Wong,</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+  </names>
+  <ages>
+    <age>29,</age>
+  </ages>
+  <dates/>
+  <places>
+    <place>SFGH-456789.</place>
+  </places>
+  <addresses>
+    <address>1456 Pine</address>
+    <address>Street,</address>
+    <address>San</address>
+    <address>Francisco,</address>
+    <address>CA 94109,</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>awong@email.com.</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira</value></variations></name>
+    <name><variations><value>Nakamura,</value></variations></name>
+    <name><variations><value>akira.nakamura@email.com.</value></variations></name>
+    <name><variations><value>Julian</value></variations></name>
+    <name><variations><value>Sanchez</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Sophia</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Sanchez</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+  </names>
+  <ages>
+    <age>65-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-03-15,</original><formatted>2023-03-15,</formatted></date>
+    <date><original>2023-03-20,</original><formatted>2023-03-20,</formatted></date>
+    <date><original>2023-03-27
+2.</original><formatted>2023-03-27
+2.</formatted></date>
+    <date><original>2023-04-10
+3.</original><formatted>2023-04-10
+3.</formatted></date>
+  </dates>
+  <places>
+    <place>University of Washington Medical</place>
+    <place>Center</place>
+    <place>UWMC-12345678.
+
+Dr.</place>
+  </places>
+  <addresses>
+    <address>901 Cherry Blossom</address>
+    <address>Drive,</address>
+    <address>Seattle, WA 98122,</address>
+  </addresses>
+  <phones>
+    <phone>(206)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira</value></variations></name>
+    <name><variations><value>Nakamura,</value></variations></name>
+    <name><variations><value>akira.nakamura@email.com.</value></variations></name>
+    <name><variations><value>Sofia</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Nakamura's</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2022-08-25,</original><formatted>2022-08-25,</formatted></date>
+    <date><original>2022-08-27,</original><formatted>2022-08-27,</formatted></date>
+    <date><original>2022-09-01
+2.</original><formatted>2022-09-01
+2.</formatted></date>
+    <date><original>2022-09-15
+3.</original><formatted>2022-09-15
+3.</formatted></date>
+    <date><original>2022-10-20
+
+Patient</original><formatted>2022-10-20
+
+Patient</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital of</place>
+    <place>University of</place>
+    <place>Pennsylvania</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Street,</address>
+    <address>Philadelphia, PA 19103,</address>
+  </addresses>
+  <phones>
+    <phone>(215)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>HUP-12345678.
+
+Dr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar,</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Kumar's</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-04-22.</original><formatted>2023-04-22.</formatted></date>
+    <date><original>2023-05-06.
+
+Mr.</original><formatted>2023-05-06.
+
+Mr.</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012.
+
+Mr.</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed</value></variations></name>
+    <name><variations><value>Ali,</value></variations></name>
+    <name><variations><value>Sofia</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Jasmine</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-03-15,</original><formatted>2023-03-15,</formatted></date>
+    <date><original>2023-03-18,</original><formatted>2023-03-18,</formatted></date>
+    <date><original>2023-03-25
+2.</original><formatted>2023-03-25
+2.</formatted></date>
+    <date><original>2023-04-10
+3.</original><formatted>2023-04-10
+3.</formatted></date>
+    <date><original>2023-05-01
+
+Patient</original><formatted>2023-05-01
+
+Patient</formatted></date>
+  </dates>
+  <places>
+    <place>Ronald Reagan UCLA Medical</place>
+    <place>Center</place>
+    <place>UCLA-56789012.
+
+Dr.</place>
+    <place>www.uclahealth.org/orthopedics.
+
+Additionally,</place>
+    <place>https://www.myrehab.com/uclaortho.</place>
+  </places>
+  <addresses>
+    <address>9017 Sunset</address>
+    <address>Boulevard,</address>
+    <address>Los</address>
+    <address>Angeles,</address>
+    <address>CA 90069,</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar,</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Kumar's</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Kumar's</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>SHC-12345678.
+
+During</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar,</value></variations></name>
+    <name><variations><value>amit.kumar@email.com.</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-03-22.</original><formatted>2023-03-22.</formatted></date>
+    <date><original>2023-03-25,</original><formatted>2023-03-25,</formatted></date>
+    <date><original>2023-04-05.</original><formatted>2023-04-05.</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses>
+    <address>901 Washington</address>
+    <address>Street,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10014,</address>
+  </addresses>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>NYP-45678901.
+
+Mr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>www.eyecarecenter.org/cataracts.</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar,</value></variations></name>
+    <name><variations><value>amit.kumar@email.com)</value></variations></name>
+    <name><variations><value>Lisa</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+    <name><variations><value>Kumar's</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-25.</original><formatted>2023-03-25.</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital,</place>
+  </places>
+  <addresses>
+    <address>525 East 68th</address>
+    <address>Street,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10065,</address>
+  </addresses>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-8901.</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>NYPH-56789012.
+
+Dr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed</value></variations></name>
+    <name><variations><value>Ali,</value></variations></name>
+    <name><variations><value>ahmed.ali@email.com.
+
+Dr.</value></variations></name>
+    <name><variations><value>Julian</value></variations></name>
+    <name><variations><value>Sanchez</value></variations></name>
+    <name><variations><value>Ali's</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Emily</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Sanchez</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-15,</original><formatted>2023-01-15,</formatted></date>
+    <date><original>2023-01-17,</original><formatted>2023-01-17,</formatted></date>
+    <date><original>2023-01-22
+2.</original><formatted>2023-01-22
+2.</formatted></date>
+    <date><original>2023-02-05
+3.</original><formatted>2023-02-05
+3.</formatted></date>
+    <date><original>2023-03-01
+
+Patient</original><formatted>2023-03-01
+
+Patient</formatted></date>
+  </dates>
+  <places>
+    <place>Ronald Reagan UCLA Medical</place>
+    <place>Center</place>
+    <place>www.uclahealth.org/orthopedicsurgery.</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Drive,</address>
+    <address>Los</address>
+    <address>Angeles,</address>
+    <address>CA 90001,</address>
+  </addresses>
+  <phones>
+    <phone>(310)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar,</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Samantha</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-22.</original><formatted>2023-01-22.</formatted></date>
+    <date><original>2023-01-29.</original><formatted>2023-01-29.</formatted></date>
+  </dates>
+  <places>
+    <place>of the University of</place>
+    <place>Pennsylvania</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut</address>
+    <address>Street,</address>
+    <address>Philadelphia, PA 19103,</address>
+  </addresses>
+  <phones>
+    <phone>(215)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>HUP-12345678.
+
+Mr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava</value></variations></name>
+    <name><variations><value>Wong,</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates/>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed</value></variations></name>
+    <name><variations><value>Ali,</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-03-22.</original><formatted>2023-03-22.</formatted></date>
+    <date><original>2023-03-29.</original><formatted>2023-03-29.</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses>
+    <address>123 W 110th</address>
+    <address>St,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10026.
+
+Dr.</address>
+  </addresses>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012,</phone>
+  </phones>
+  <emails>
+    <email>ahmed.ali@email.com.</email>
+  </emails>
+  <ids>
+    <id>NYPH-56789012.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Fatima</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>David</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2022-08-25,</original><formatted>2022-08-25,</formatted></date>
+    <date><original>2022-09-02,</original><formatted>2022-09-02,</formatted></date>
+    <date><original>2022-09-09
+2.Cardiac</original><formatted>2022-09-09
+2.Cardiac</formatted></date>
+    <date><original>2022-10-14
+
+Medication</original><formatted>2022-10-14
+
+Medication</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital.</place>
+    <place>Weill Cornell Medical</place>
+    <place>College</place>
+  </places>
+  <addresses>
+    <address>901 River</address>
+    <address>Road,</address>
+    <address>New</address>
+    <address>York,</address>
+    <address>NY 10021,</address>
+  </addresses>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails>
+    <email>f.hassan@email.com.</email>
+  </emails>
+  <ids>
+    <id>NYPH-90123456.
+
+Ms.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava</value></variations></name>
+    <name><variations><value>Wong,</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+  </names>
+  <ages>
+    <age>29-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-20,</original><formatted>2023-01-20,</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Fatima</value></variations></name>
+    <name><variations><value>Ali,</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Ali's</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Tom</value></variations></name>
+    <name><variations><value>Bradley</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Smith</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-20,</original><formatted>2023-01-20,</formatted></date>
+    <date><original>2023-01-25,Ms.</original><formatted>2023-01-25,Ms.</formatted></date>
+    <date><original>2023-02-01
+2.Wound</original><formatted>2023-02-01
+2.Wound</formatted></date>
+    <date><original>2023-02-10
+3.Neurology</original><formatted>2023-02-10
+3.Neurology</formatted></date>
+    <date><original>2023-03-15
+
+Patient</original><formatted>2023-03-15
+
+Patient</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital of</place>
+    <place>University of</place>
+    <place>Pennsylvania.</place>
+  </places>
+  <addresses>
+    <address>9012 Chestnut</address>
+    <address>Drive,</address>
+    <address>Philadelphia, PA 19118,</address>
+  </addresses>
+  <phones>
+    <phone>(215)</phone>
+    <phone>555-9012</phone>
+  </phones>
+  <emails>
+    <email>fatima.ali@email.com.
+
+Ms.</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Jain,</value></variations></name>
+    <name><variations><value>Lisa</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+    <name><variations><value>Jain</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+    <name><variations><value>Jain's</value></variations></name>
+    <name><variations><value>Jain</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+    <name><variations><value>Jain</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha</value></variations></name>
+    <name><variations><value>Hassan,</value></variations></name>
+    <name><variations><value>Thompson</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>65,</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-05,</original><formatted>2023-01-05,</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian</place>
+    <place>Hospital</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aruna</value></variations></name>
+    <name><variations><value>Desai,</value></variations></name>
+    <name><variations><value>Patel's</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Desai's</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>901 Lexington</address>
+    <address>Drive,</address>
+    <address>San</address>
+    <address>Francisco,</address>
+    <address>CA 94109,</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit</value></variations></name>
+    <name><variations><value>Kumar,</value></variations></name>
+    <name><variations><value>amit.kumar@email.com)</value></variations></name>
+    <name><variations><value>Rachel</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages>
+    <age>35,</age>
+  </ages>
+  <dates/>
+  <places>
+    <place>NYU Langone Medical</place>
+    <place>Center</place>
+    <place>NYULMC-12345678.</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>(212)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Rohan</value></variations></name>
+    <name><variations><value>Desai,</value></variations></name>
+    <name><variations><value>Maria</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+    <name><variations><value>Emily</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+    <name><variations><value>Rodriguez's</value></variations></name>
+    <name><variations><value>Desai's</value></variations></name>
+  </names>
+  <ages>
+    <age>55-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-25,</original><formatted>2023-01-25,</formatted></date>
+    <date><original>2023-01-31,</original><formatted>2023-01-31,</formatted></date>
+    <date><original>2023-02-07
+2.</original><formatted>2023-02-07
+2.</formatted></date>
+    <date><original>2023-03-01
+
+Patient</original><formatted>2023-03-01
+
+Patient</formatted></date>
+    <date><original>02-10,</original><formatted>02-10,</formatted></date>
+    <date><original>02-21</original><formatted>02-21</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital of the</place>
+    <place>University</place>
+    <place>of</place>
+    <place>Pennsylvania</place>
+    <place>www.pennmedicine.org/heart-and-vascular/cabg.
+
+On</place>
+  </places>
+  <addresses>
+    <address>2345 Walnut</address>
+    <address>Street,</address>
+    <address>Philadelphia, PA 19103,</address>
+  </addresses>
+  <phones>
+    <phone>(215)</phone>
+    <phone>555-9012.</phone>
+  </phones>
+  <emails>
+    <email>rdesai@email.com.</email>
+  </emails>
+  <ids>
+    <id>HUP-12345678.
+
+Dr.</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira</value></variations></name>
+    <name><variations><value>Nakamura,</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+  </names>
+  <ages>
+    <age>29,</age>
+  </ages>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"

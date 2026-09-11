@@ -1,0 +1,2654 @@
+prediction
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Dr. Rachel Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>NYU Langone Medical Center</place>
+  </places>
+  <addresses>
+    <address>3456 Broadway</address>
+    <address>Apt 2A</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>https://mychart.nyulmc.org</url>
+  </urls>
+  <devices>
+    <device>ECG</device>
+  </devices>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira Hassan</value></variations></name>
+    <name><variations><value>Dr. Julian Sanchez</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2022-01-15</original><formatted>2022-01-15</formatted></date>
+    <date><original>2022-01-17</original><formatted>2022-01-17</formatted></date>
+    <date><original>2022-01-24</original><formatted>2022-01-24</formatted></date>
+    <date><original>2022-02-14</original><formatted>2022-02-14</formatted></date>
+    <date><original>2022-03-01</original><formatted>2022-03-01</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses>
+    <address>901 Maple Street</address>
+    <address>Apt 3A</address>
+    <address>New York</address>
+    <address>NY 10001</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>NYPH-12345678</id>
+  </ids>
+  <urls>
+    <url>Medical Record Number</url>
+    <url>https://myconnectnyp.org</url>
+  </urls>
+  <devices>
+    <device>Zimmer Persona knee replacement system</device>
+  </devices>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ramesh Srinivasan</value></variations></name>
+    <name><variations><value>Dr. Rachel Kim</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+    <date><original>2023-01-18</original><formatted>2023-01-18</formatted></date>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-03-01</original><formatted>2023-03-01</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices>
+    <device>Zimmer Persona Knee System</device>
+  </devices>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>Duke University Hospital</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut Drive</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>Patient ID</id>
+    <id>DUH-1234567</id>
+  </ids>
+  <urls>
+    <url>https://mychart.dukehealth.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akua Mensah</value></variations></name>
+    <name><variations><value>Dr. Julian Sanchez</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-01-28</original><formatted>2023-01-28</formatted></date>
+    <date><original>2023-02-08</original><formatted>2023-02-08</formatted></date>
+    <date><original>2023-03-01</original><formatted>2023-03-01</formatted></date>
+  </dates>
+  <places>
+    <place>Emory University Hospital</place>
+  </places>
+  <addresses>
+    <address>901 Willow Creek Drive</address>
+    <address>Atlanta, GA 30350</address>
+  </addresses>
+  <phones>
+    <phone>(404) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>EUH-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>713-123-4567</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-22</original><formatted>2023-03-22</formatted></date>
+    <date><original>2023-05-03</original><formatted>2023-05-03</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>Medical Record Number</id>
+    <id>NYPH-56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+    <name><variations><value>Dr. Rachel Kim</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2022-08-22</original><formatted>2022-08-22</formatted></date>
+    <date><original>2022-08-25</original><formatted>2022-08-25</formatted></date>
+    <date><original>2022-08-29</original><formatted>2022-08-29</formatted></date>
+    <date><original>2022-09-05</original><formatted>2022-09-05</formatted></date>
+    <date><original>2022-09-19</original><formatted>2022-09-19</formatted></date>
+  </dates>
+  <places>
+    <place>OSF HealthCare St. Joseph Medical Center</place>
+  </places>
+  <addresses>
+    <address>901 Maplewood Drive</address>
+    <address>Bloomington, IL 61704</address>
+  </addresses>
+  <phones>
+    <phone>(309) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>Medical Record Number</id>
+    <id>OSFH-12345678</id>
+  </ids>
+  <urls>
+    <url>www.osfhealthcare.org/orthopedics</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>Houston Methodist Hospital</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>713-123-4567</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Rohan Jensen</value></variations></name>
+    <name><variations><value>Dr. Kaur</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2022-08-22</original><formatted>2022-08-22</formatted></date>
+    <date><original>2022-08-25</original><formatted>2022-08-25</formatted></date>
+  </dates>
+  <places>
+    <place>cardiac intensive care unit</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut Street</address>
+    <address>Apt 3A</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>Patient ID</id>
+    <id>PHS-56789012</id>
+  </ids>
+  <urls/>
+  <devices>
+    <device>ECG</device>
+    <device>Coronary angiography</device>
+  </devices>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Fatima Hassan</value></variations></name>
+    <name><variations><value>Dr. Maria Rodriguez</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-04-25</original><formatted>2023-04-25</formatted></date>
+  </dates>
+  <places>
+    <place>University of Michigan Hospital</place>
+    <place>University of Michigan Multiple Sclerosis Center</place>
+  </places>
+  <addresses>
+    <address>901 S. Main St</address>
+    <address>Apt 3A</address>
+    <address>Ann Arbor</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>UMH-34567890</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-22</original><formatted>2023-03-22</formatted></date>
+    <date><original>2023-04-05</original><formatted>2023-04-05</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>(212) 555-9012</phone>
+    <phone>https://mychart.nyp.org</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>Medical Record Number</id>
+    <id>NYPH-89012345</id>
+  </ids>
+  <urls/>
+  <devices>
+    <device>CT scan</device>
+  </devices>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-04-25</original><formatted>2023-04-25</formatted></date>
+    <date><original>2023-04-28</original><formatted>2023-04-28</formatted></date>
+    <date><original>2023-05-05</original><formatted>2023-05-05</formatted></date>
+    <date><original>2023-06-10</original><formatted>2023-06-10</formatted></date>
+    <date><original>2023-07-01</original><formatted>2023-07-01</formatted></date>
+  </dates>
+  <places>
+    <place>UCLA Health - Ronald Reagan Medical Center</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut Drive</address>
+    <address>Apt 12C</address>
+    <address>Los Angeles</address>
+  </addresses>
+  <phones>
+    <phone>(310) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>UCLAH-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+    <name><variations><value>Dr. Rachel Kim</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+    <date><original>2023-02-10</original><formatted>2023-02-10</formatted></date>
+    <date><original>2023-02-17</original><formatted>2023-02-17</formatted></date>
+  </dates>
+  <places>
+    <place>Neurology Department</place>
+    <place>NewYork-Presbyterian Hospital</place>
+    <place>Neurology Department</place>
+  </places>
+  <addresses>
+    <address>901 Lexington Avenue</address>
+    <address>Apt 3A</address>
+    <address>New York</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>Patient ID</id>
+    <id>NYPH-56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-03-22</original><formatted>2023-03-22</formatted></date>
+    <date><original>2023-04-05</original><formatted>2023-04-05</formatted></date>
+  </dates>
+  <places>
+    <place>Denver Health Medical Center</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut Drive</address>
+    <address>Apt 3A</address>
+  </addresses>
+  <phones>
+    <phone>(720) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>Patient ID</id>
+    <id>DHMC-45678901</id>
+  </ids>
+  <urls/>
+  <devices>
+    <device>CT scan</device>
+    <device>MRI</device>
+  </devices>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Dr. Ramesh Patel</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-01-27</original><formatted>2023-01-27</formatted></date>
+    <date><original>2023-02-01</original><formatted>2023-02-01</formatted></date>
+    <date><original>2023-02-08</original><formatted>2023-02-08</formatted></date>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital of the University of Pennsylvania</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut Street</address>
+    <address>Apt 3A</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>HUP-12345678</id>
+  </ids>
+  <urls>
+    <url>Medical Record Number</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava Wong</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-06-20</original><formatted>2023-06-20</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-08-22</original><formatted>2023-08-22</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>Medical Record Number</id>
+    <id>NYPH-56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Rohan Jensen</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-22</original><formatted>2023-03-22</formatted></date>
+    <date><original>2023-03-29</original><formatted>2023-03-29</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses>
+    <address>3456 Broadway</address>
+    <address>Apt 3A</address>
+    <address>New York</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>Patient ID</id>
+    <id>NYPH-56789012</id>
+  </ids>
+  <urls>
+    <url>https://covid19.nyp.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates/>
+  <places>
+    <place>emergency department</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut Street</address>
+    <address>Apt 3A</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>Patient ID</id>
+    <id>PHS-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Yuna Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-01-28</original><formatted>2023-01-28</formatted></date>
+    <date><original>2023-02-01</original><formatted>2023-02-01</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses>
+    <address>901 Lexington Avenue</address>
+    <address>Apt 14C</address>
+    <address>New York</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>akira.nakamura@email.com</email>
+  </emails>
+  <ids>
+    <id>Medical Record Number</id>
+    <id>NYPH-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akua Mensah</value></variations></name>
+    <name><variations><value>Dr. Julian Lee</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+    <date><original>2023-01-18</original><formatted>2023-01-18</formatted></date>
+    <date><original>2023-01-22</original><formatted>2023-01-22</formatted></date>
+    <date><original>2023-02-01</original><formatted>2023-02-01</formatted></date>
+    <date><original>2023-03-10</original><formatted>2023-03-10</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital of the University of Pennsylvania</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut Street</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>Medical Record Number</url>
+  </urls>
+  <devices>
+    <device>prosthetic implant</device>
+  </devices>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Lian Chen</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>9015 Walnut Drive</address>
+    <address>CO 80219</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ramesh Srinivasan</value></variations></name>
+  </names>
+  <ages>
+    <age>60-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-01-28</original><formatted>2023-01-28</formatted></date>
+    <date><original>2023-02-08</original><formatted>2023-02-08</formatted></date>
+    <date><original>2023-02-15</original><formatted>2023-02-15</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses>
+    <address>123 Parkview Drive</address>
+    <address>New York</address>
+    <address>NY 10021</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+    <phone>(212) 555-1000</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>NYPH-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Dr. Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>Johns Hopkins Hospital</place>
+  </places>
+  <addresses>
+    <address>901 Lexington Street</address>
+    <address>Apt 3A</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>Medical Record Number</id>
+    <id>SHC-56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Yui Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-04-22</original><formatted>2023-04-22</formatted></date>
+  </dates>
+  <places>
+    <place>University of California, San Francisco Medical Center</place>
+  </places>
+  <addresses>
+    <address>901 Cherry Blossom Lane</address>
+    <address>San Francisco</address>
+  </addresses>
+  <phones>
+    <phone>(415) 123-4567</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>Patient ID</id>
+    <id>UCSF-567890</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira Hassan</value></variations></name>
+    <name><variations><value>Dr. Rachel Kim</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-01-28</original><formatted>2023-01-28</formatted></date>
+    <date><original>2023-02-01</original><formatted>2023-02-01</formatted></date>
+    <date><original>2023-02-15</original><formatted>2023-02-15</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses>
+    <address>901 Main Street</address>
+    <address>Apt 3A</address>
+    <address>New York</address>
+    <address>NY 10001</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>NYPH-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ramesh Srinivasan</value></variations></name>
+    <name><variations><value>Dr. Maria Rodriguez</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-04-20</original><formatted>2023-04-20</formatted></date>
+    <date><original>2023-04-25</original><formatted>2023-04-25</formatted></date>
+    <date><original>2023-05-01</original><formatted>2023-05-01</formatted></date>
+    <date><original>2023-06-15</original><formatted>2023-06-15</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital of the University of Pennsylvania</place>
+  </places>
+  <addresses>
+    <address>9012 Pine Street</address>
+    <address>Apt 3A</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>HUP-12345678</id>
+  </ids>
+  <urls/>
+  <devices>
+    <device>Medtronic CareLink Network</device>
+  </devices>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Fatima Hassan</value></variations></name>
+    <name><variations><value>Dr. Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>1423 Cypress Drive</address>
+    <address>Apt 3A</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-06-22</original><formatted>2023-06-22</formatted></date>
+    <date><original>2023-07-13</original><formatted>2023-07-13</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital of the University of Pennsylvania</place>
+  </places>
+  <addresses>
+    <address>9010 Walnut Street</address>
+    <address>Apt 3A</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-22</original><formatted>2023-01-22</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>(718) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>Patient ID</id>
+    <id>AH-123456</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-01-27</original><formatted>2023-01-27</formatted></date>
+    <date><original>2023-02-10</original><formatted>2023-02-10</formatted></date>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+    <date><original>2023-04-20</original><formatted>2023-04-20</formatted></date>
+  </dates>
+  <places>
+    <place>cardiology department</place>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails>
+    <email>ahmed.ali@email.com</email>
+  </emails>
+  <ids>
+    <id>Medical Record Number</id>
+    <id>NYPH-654321</id>
+  </ids>
+  <urls>
+    <url>https://mychart.nyp.org</url>
+  </urls>
+  <devices>
+    <device>Xience V everolimus-eluting coronary stent</device>
+  </devices>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira Hassan</value></variations></name>
+    <name><variations><value>Dr. David Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2022-08-25</original><formatted>2022-08-25</formatted></date>
+    <date><original>2022-08-28</original><formatted>2022-08-28</formatted></date>
+    <date><original>2022-09-01</original><formatted>2022-09-01</formatted></date>
+    <date><original>2022-09-05</original><formatted>2022-09-05</formatted></date>
+    <date><original>2022-09-15</original><formatted>2022-09-15</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>Medical Record Number</id>
+    <id>NYP-12345678</id>
+  </ids>
+  <urls>
+    <url>www.nyp.org/orthopedics</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Ali</value></variations></name>
+    <name><variations><value>Dr. Thompson</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails>
+    <email>myhealth.stanfordhealthcare.org</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>3210 Lakeview Drive</address>
+  </addresses>
+  <phones>
+    <phone>(919) 123-4567</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>Patient ID</id>
+    <id>RMH-9012345</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amita Desai</value></variations></name>
+    <name><variations><value>amita.desai</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates>
+    <date><original>2023-06-22</original><formatted>2023-06-22</formatted></date>
+    <date><original>2023-07-06</original><formatted>2023-07-06</formatted></date>
+  </dates>
+  <places>
+    <place>University of Colorado Hospital</place>
+  </places>
+  <addresses>
+    <address>901 Lincoln Street</address>
+    <address>Denver</address>
+  </addresses>
+  <phones>
+    <phone>(303) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>Patient ID</id>
+  </ids>
+  <urls>
+    <url>https://patientportal uchospital.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Dr. Rohan Patel</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+  </names>
+  <ages>
+    <age>75-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-01-28</original><formatted>2023-01-28</formatted></date>
+    <date><original>2023-02-10</original><formatted>2023-02-10</formatted></date>
+    <date><original>2023-02-15</original><formatted>2023-02-15</formatted></date>
+    <date><original>2023-03-24</original><formatted>2023-03-24</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses>
+    <address>901 Lexington Avenue</address>
+    <address>Apt 12C</address>
+    <address>New York</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>NYP-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+    <name><variations><value>Dr. Rachel Kim</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-08-20</original><formatted>2023-08-20</formatted></date>
+    <date><original>2023-08-22</original><formatted>2023-08-22</formatted></date>
+    <date><original>2023-09-03</original><formatted>2023-09-03</formatted></date>
+    <date><original>2023-10-15</original><formatted>2023-10-15</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital of the University of Pennsylvania</place>
+    <place>urology department</place>
+    <place>Urology Department</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut Street</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+    <phone>(215) 662-8777</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>HUP-56789012</id>
+  </ids>
+  <urls/>
+  <devices>
+    <device>robotic-assisted laparoscopic prostatectomy</device>
+  </devices>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+  </names>
+  <ages>
+    <age>29-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Mission Street</address>
+    <address>Apt 3A</address>
+    <address>San Francisco</address>
+  </addresses>
+  <phones>
+    <phone>(415) 123-4567</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amara Diallo</value></variations></name>
+    <name><variations><value>Dr. Liam Chen</value></variations></name>
+    <name><variations><value>Dr. Ava Patel</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-02-01</original><formatted>2023-02-01</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses>
+    <address>901 Park Avenue</address>
+    <address>Apt 3A</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>Medical Record Number</id>
+    <id>NYPH-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ling Wong</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-05</original><formatted>2023-03-05</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses>
+    <address>3456 Broadway</address>
+    <address>Apt 10A</address>
+    <address>New York</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+    <phone>https://mychart.nyp.org</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>NYPH-567890</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>Medical Record Number</id>
+    <id>NYPH-87654321</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>901 Lexington Avenue</address>
+    <address>Apt 3C</address>
+    <address>New York</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Dr. Liam Chen</value></variations></name>
+    <name><variations><value>Ms. Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-04-15</original><formatted>2023-04-15</formatted></date>
+    <date><original>2023-07-22</original><formatted>2023-07-22</formatted></date>
+    <date><original>2023-10-15</original><formatted>2023-10-15</formatted></date>
+  </dates>
+  <places>
+    <place>University of California, San Francisco Medical Center</place>
+  </places>
+  <addresses>
+    <address>1456 Cherry Blossom Lane</address>
+    <address>San Francisco</address>
+  </addresses>
+  <phones>
+    <phone>(415) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices>
+    <device>MRI scan</device>
+  </devices>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>(713) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>email.com</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava Wong</value></variations></name>
+    <name><variations><value>Dr. Liam Chen</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Leila Hassan</value></variations></name>
+    <name><variations><value>Dr. Rohan Patel</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-22</original><formatted>2023-01-22</formatted></date>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses>
+    <address>901 Park Avenue</address>
+    <address>Apt 3C</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>l.hassan@email.com</email>
+  </emails>
+  <ids>
+    <id>NYPH-56789012</id>
+  </ids>
+  <urls>
+    <url>https://myconnectnyp.org</url>
+  </urls>
+  <devices>
+    <device>ACL</device>
+  </devices>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amara Diallo</value></variations></name>
+    <name><variations><value>Dr. Rohan Patel</value></variations></name>
+  </names>
+  <ages>
+    <age>65-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-05</original><formatted>2023-01-05</formatted></date>
+    <date><original>2023-01-10</original><formatted>2023-01-10</formatted></date>
+  </dates>
+  <places>
+    <place>Emergency Department</place>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails>
+    <email>amara.diallo@email.com</email>
+  </emails>
+  <ids>
+    <id>Medical Record Number</id>
+    <id>NYPH-987654321</id>
+  </ids>
+  <urls/>
+  <devices>
+    <device>home oxygen therapy equipment</device>
+  </devices>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava Wong</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-06-20</original><formatted>2023-06-20</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira Hassan</value></variations></name>
+    <name><variations><value>Dr. Julian Sanchez</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+    <date><original>2023-01-18</original><formatted>2023-01-18</formatted></date>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-02-01</original><formatted>2023-02-01</formatted></date>
+    <date><original>2023-01-22</original><formatted>2023-01-22</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses>
+    <address>901 Park Avenue</address>
+    <address>New York</address>
+    <address>NY 10021</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>NYPH-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-03-22</original><formatted>2023-03-22</formatted></date>
+    <date><original>2023-03-29</original><formatted>2023-03-29</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>(713) 123-4567</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>29</age>
+  </ages>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>901 Lexington Ave</address>
+    <address>Apt 3A</address>
+    <address>New York</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>https://myhealth.nychealth.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Dr. Julian Lee</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old male</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-01-28</original><formatted>2023-01-28</formatted></date>
+    <date><original>2023-02-08</original><formatted>2023-02-08</formatted></date>
+  </dates>
+  <places>
+    <place>University of California, San Francisco Medical Center</place>
+  </places>
+  <addresses>
+    <address>901 Linden Street</address>
+    <address>Apt 3A</address>
+    <address>San Francisco</address>
+  </addresses>
+  <phones>
+    <phone>(415) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Leila Hassan</value></variations></name>
+    <name><variations><value>leila.hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses>
+    <address>901 Broadway</address>
+    <address>Apt 3A</address>
+    <address>New York</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>Medical Record Number</id>
+    <id>NYP-12345678</id>
+  </ids>
+  <urls>
+    <url>https://mychart.nyp.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Mrs. Akua Mensah</value></variations></name>
+    <name><variations><value>Dr. Rohan Patel</value></variations></name>
+    <name><variations><value>Mrs. Mensah</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023/01/20</original><formatted>2023/01/20</formatted></date>
+    <date><original>2023/03/10</original><formatted>2023/03/10</formatted></date>
+    <date><original>2023/04/05</original><formatted>2023/04/05</formatted></date>
+  </dates>
+  <places>
+    <place>cardiology department</place>
+  </places>
+  <addresses>
+    <address>3456 Broadway</address>
+    <address>Apt 12C</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>email.com</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Al-Khateeb</value></variations></name>
+    <name><variations><value>Dr. Rachel Kim</value></variations></name>
+    <name><variations><value>Dr. Rachel Kim</value></variations></name>
+  </names>
+  <ages>
+    <age>39-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+    <date><original>2023-01-20</original><formatted>2023-01-20</formatted></date>
+    <date><original>2023-02-02</original><formatted>2023-02-02</formatted></date>
+    <date><original>2023-02-10</original><formatted>2023-02-10</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital of the University of Pennsylvania</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut Street</address>
+    <address>Apt 3A</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>ahmed.al-khateeb@email.com</email>
+  </emails>
+  <ids>
+    <id>HUP-56789012</id>
+  </ids>
+  <urls>
+    <url>https://myPennMedicine.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>clinic</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>(415) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>29</age>
+  </ages>
+  <dates/>
+  <places>
+    <place>NYU Langone Medical Center</place>
+  </places>
+  <addresses>
+    <address>901 Broadway</address>
+    <address>Apt 3C</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>https://nyulangone.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Li Ming Wong</value></variations></name>
+    <name><variations><value>Dr. Sofia Patel</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-01-28</original><formatted>2023-01-28</formatted></date>
+    <date><original>2023-02-04</original><formatted>2023-02-04</formatted></date>
+    <date><original>2023-02-11</original><formatted>2023-02-11</formatted></date>
+    <date><original>2023-03-01</original><formatted>2023-03-01</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses>
+    <address>9012 Broadway Avenue</address>
+    <address>Apt 3C</address>
+    <address>New York</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+    <phone>(212) 123-4567</phone>
+  </phones>
+  <emails>
+    <email>pcp.practice@email.com</email>
+    <email>hr.department@company.com</email>
+  </emails>
+  <ids>
+    <id>NYPH-654321</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-01-28</original><formatted>2023-01-28</formatted></date>
+    <date><original>2023-02-15</original><formatted>2023-02-15</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses>
+    <address>321 Main St</address>
+    <address>Apt 3A</address>
+    <address>New York</address>
+    <address>NY 10001</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>Medical Record Number</id>
+    <id>NYPH-90123456</id>
+  </ids>
+  <urls>
+    <url>https://myconnectnyp.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+    <date><original>2023-01-18</original><formatted>2023-01-18</formatted></date>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-02-05</original><formatted>2023-02-05</formatted></date>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses>
+    <address>901 Park Avenue</address>
+    <address>Apt 12A</address>
+    <address>New York</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>NYPH-12345678</id>
+  </ids>
+  <urls>
+    <url>Medical Record Number</url>
+    <url>https://myconnectnyp.org</url>
+  </urls>
+  <devices>
+    <device>Smith & Nephew Journey II XR knee replacement system</device>
+  </devices>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Rohan Jensen</value></variations></name>
+  </names>
+  <ages>
+    <age>29</age>
+  </ages>
+  <dates>
+    <date><original>2022-11-15</original><formatted>2022-11-15</formatted></date>
+  </dates>
+  <places>
+    <place>clinic</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails>
+    <email>rjensen@email.com</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Dr. Rachel Lee</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-06-20</original><formatted>2023-06-20</formatted></date>
+    <date><original>2023-07-15</original><formatted>2023-07-15</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital of the University of Pennsylvania</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut Street</address>
+    <address>Philadelphia</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>HUP-45678901</id>
+  </ids>
+  <urls>
+    <url>https://myPennMedicine.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Dr. Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>Medical Record Number</id>
+    <id>NYP-87654321</id>
+  </ids>
+  <urls>
+    <url>https://mychart.nyp.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Gupta</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-06-15</original><formatted>2023-06-15</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses>
+    <address>345 W 57th St</address>
+    <address>Apt 12B</address>
+    <address>New York</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+    <phone>https://patientportal.nyp.org</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>Patient ID</id>
+    <id>NYPH-9012345</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>akira.nakamura</value></variations></name>
+    <name><variations><value>Dr. Ramesh Patel</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-04-15</original><formatted>2023-04-15</formatted></date>
+    <date><original>2023-05-10</original><formatted>2023-05-10</formatted></date>
+  </dates>
+  <places>
+    <place>Stanford Health Care</place>
+    <place>Stanford Health Care</place>
+    <place>Stanford Health Care</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>(650) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>SHC-12345678</id>
+  </ids>
+  <urls>
+    <url>Medical Record Number</url>
+  </urls>
+  <devices>
+    <device>MRI scan</device>
+  </devices>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>Houston Methodist Hospital</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>713-123-4567</phone>
+  </phones>
+  <emails>
+    <email>a.hassan@email.com</email>
+  </emails>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Dr. Lee</value></variations></name>
+  </names>
+  <ages>
+    <age>29</age>
+  </ages>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>321 Cedar Lane</address>
+    <address>Apt 3A</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-06-20</original><formatted>2023-06-20</formatted></date>
+    <date><original>2023-08-15</original><formatted>2023-08-15</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses>
+    <address>890 Broadway</address>
+    <address>Apt 12A</address>
+    <address>New York</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>https://myconnect.nyp.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>29-year-old man</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Main St</address>
+    <address>Apt 3A</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira Hassan</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-03-20</original><formatted>2023-03-20</formatted></date>
+    <date><original>2023-03-22</original><formatted>2023-03-22</formatted></date>
+    <date><original>2023-04-17</original><formatted>2023-04-17</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital of the University of Pennsylvania</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut Street</address>
+    <address>Apt 3A</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+    <phone>(267)9023456</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>HUP-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akhil Jensen</value></variations></name>
+    <name><variations><value>Dr. Rachel Kim</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-06-20</original><formatted>2023-06-20</formatted></date>
+    <date><original>2023-07-10</original><formatted>2023-07-10</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital of the University of Pennsylvania</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut Street</address>
+    <address>Apt 3A</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>Patient ID</id>
+    <id>HUP-45678901</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-10-15</original><formatted>2023-10-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Mission Street</address>
+    <address>Apt 3A</address>
+  </addresses>
+  <phones>
+    <phone>(415) 123-4567</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira Hassan</value></variations></name>
+    <name><variations><value>Dr. Liam Chen</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+    <date><original>2023-01-18</original><formatted>2023-01-18</formatted></date>
+    <date><original>2023-01-22</original><formatted>2023-01-22</formatted></date>
+    <date><original>2023-02-01</original><formatted>2023-02-01</formatted></date>
+    <date><original>2023-03-10</original><formatted>2023-03-10</formatted></date>
+    <date><original>2023-01-20</original><formatted>2023-01-20</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital of the University of Pennsylvania</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut Street</address>
+    <address>Philadelphia</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>HUP-12345678</id>
+  </ids>
+  <urls>
+    <url>https://myPennMedicine.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Mr. Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+    <date><original>2023-03-20</original><formatted>2023-03-20</formatted></date>
+    <date><original>2023-03-25</original><formatted>2023-03-25</formatted></date>
+    <date><original>2023-04-01</original><formatted>2023-04-01</formatted></date>
+    <date><original>2023-05-01</original><formatted>2023-05-01</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses>
+    <address>3456 Broadway</address>
+    <address>Apt 12A</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>NYPH-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Dr. Fatima Hassan</value></variations></name>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+    <name><variations><value>Mr. Ali</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+    <date><original>2023-03-17</original><formatted>2023-03-17</formatted></date>
+    <date><original>2023-03-20</original><formatted>2023-03-20</formatted></date>
+    <date><original>May 1, 2023</original><formatted>May 1, 2023</formatted></date>
+  </dates>
+  <places>
+    <place>Cedars-Sinai Medical Center</place>
+    <place>Coronary Care Unit</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut Drive</address>
+    <address>Los Angeles</address>
+  </addresses>
+  <phones>
+    <phone>(310) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>Patient ID</id>
+    <id>CSMC-12345678</id>
+  </ids>
+  <urls/>
+  <devices>
+    <device>stent</device>
+  </devices>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aishwarya Desai</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>https://myconnectnyp.org</url>
+    <url>www.nyp.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava Wong</value></variations></name>
+  </names>
+  <ages>
+    <age>29</age>
+  </ages>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>1456 Pine Street</address>
+    <address>Apt 3A</address>
+    <address>San Francisco</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>Patient ID</id>
+    <id>SFGH-456789</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Dr. Julian Sanchez</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+    <date><original>2023-03-20</original><formatted>2023-03-20</formatted></date>
+    <date><original>2023-03-27</original><formatted>2023-03-27</formatted></date>
+    <date><original>2023-04-10</original><formatted>2023-04-10</formatted></date>
+  </dates>
+  <places>
+    <place>University of Washington Medical Center</place>
+  </places>
+  <addresses>
+    <address>901 Cherry Blossom Drive</address>
+    <address>Seattle, WA 98122</address>
+  </addresses>
+  <phones>
+    <phone>(206) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>Medical Record Number</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Dr. Sofia Patel</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2022-08-25</original><formatted>2022-08-25</formatted></date>
+    <date><original>2022-08-27</original><formatted>2022-08-27</formatted></date>
+    <date><original>2022-09-01</original><formatted>2022-09-01</formatted></date>
+    <date><original>2022-09-15</original><formatted>2022-09-15</formatted></date>
+    <date><original>2022-10-20</original><formatted>2022-10-20</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital of the University of Pennsylvania</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut Street</address>
+    <address>Apt 3A</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>HUP-12345678</id>
+  </ids>
+  <urls/>
+  <devices>
+    <device>Stryker Triathlon total knee replacement system</device>
+  </devices>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-04-22</original><formatted>2023-04-22</formatted></date>
+    <date><original>2023-05-06</original><formatted>2023-05-06</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+    <name><variations><value>Dr. Sofia Patel</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+    <date><original>2023-03-18</original><formatted>2023-03-18</formatted></date>
+    <date><original>2023-03-25</original><formatted>2023-03-25</formatted></date>
+    <date><original>2023-04-10</original><formatted>2023-04-10</formatted></date>
+    <date><original>2023-05-01</original><formatted>2023-05-01</formatted></date>
+  </dates>
+  <places>
+    <place>Ronald Reagan UCLA Medical Center</place>
+  </places>
+  <addresses>
+    <address>9017 Sunset Boulevard</address>
+    <address>Los Angeles</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>Patient ID</id>
+  </ids>
+  <urls/>
+  <devices>
+    <device>Stryker Triathlon Total Knee System</device>
+  </devices>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Dr. Maria Rodriguez</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids>
+    <id>SHC-12345678</id>
+  </ids>
+  <urls>
+    <url>https://myhealth.stanfordhealthcare.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-03-22</original><formatted>2023-03-22</formatted></date>
+    <date><original>2023-03-25</original><formatted>2023-03-25</formatted></date>
+    <date><original>2023-04-05</original><formatted>2023-04-05</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses>
+    <address>901 Washington Street</address>
+    <address>Apt 3C</address>
+    <address>New York</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>Medical Record Number</id>
+    <id>NYP-45678901</id>
+  </ids>
+  <urls/>
+  <devices>
+    <device>ECG</device>
+  </devices>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava Wong</value></variations></name>
+    <name><variations><value>Dr. Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>www.eyecarecenter.org/cataracts</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+    <name><variations><value>Mr. Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-25</original><formatted>2023-03-25</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses>
+    <address>525 East 68th Street</address>
+    <address>New York</address>
+    <address>NY 10065</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-8901</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>Medical Record Number</id>
+    <id>NYPH-56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+    <name><variations><value>Dr. Julian Sanchez</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+    <date><original>2023-01-17</original><formatted>2023-01-17</formatted></date>
+    <date><original>2023-01-22</original><formatted>2023-01-22</formatted></date>
+    <date><original>2023-02-05</original><formatted>2023-02-05</formatted></date>
+    <date><original>2023-03-01</original><formatted>2023-03-01</formatted></date>
+  </dates>
+  <places>
+    <place>Ronald Reagan UCLA Medical Center</place>
+  </places>
+  <addresses>
+    <address>9012 Walnut Drive</address>
+    <address>Apt 12B</address>
+  </addresses>
+  <phones>
+    <phone>(310) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-22</original><formatted>2023-01-22</formatted></date>
+    <date><original>2023-01-29</original><formatted>2023-01-29</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Street</address>
+    <address>Apt 3A</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>HUP-12345678</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava Wong</value></variations></name>
+    <name><variations><value>Dr. Lee</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates/>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+    <name><variations><value>Mr. Ali</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-22</original><formatted>2023-03-22</formatted></date>
+    <date><original>2023-03-29</original><formatted>2023-03-29</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses>
+    <address>123 W 110th St</address>
+    <address>Apt 4A</address>
+    <address>New York</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>NYPH-56789012</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Fatima Hassan</value></variations></name>
+    <name><variations><value>Dr. David Lee</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2022-08-25</original><formatted>2022-08-25</formatted></date>
+    <date><original>2022-09-02</original><formatted>2022-09-02</formatted></date>
+    <date><original>2022-09-09</original><formatted>2022-09-09</formatted></date>
+  </dates>
+  <places>
+    <place>Emergency Department</place>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses>
+    <address>901 River Road</address>
+    <address>Apartment 3A</address>
+    <address>New York</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-9012</phone>
+    <phone>https://patientportal.nyp.org</phone>
+  </phones>
+  <emails>
+    <email>f.hassan@email.com</email>
+  </emails>
+  <ids>
+    <id>NYPH-90123456</id>
+  </ids>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava Wong</value></variations></name>
+    <name><variations><value>Dr. Lee</value></variations></name>
+  </names>
+  <ages>
+    <age>29-year-old woman</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-20</original><formatted>2023-01-20</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>https://mychart.ucsfmedicalcenter.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Fatima Ali</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-20</original><formatted>2023-01-20</formatted></date>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-02-01</original><formatted>2023-02-01</formatted></date>
+    <date><original>2023-02-10</original><formatted>2023-02-10</formatted></date>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital of the University of Pennsylvania</place>
+  </places>
+  <addresses>
+    <address>9012 Chestnut Drive</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Jain</value></variations></name>
+  </names>
+  <ages>
+    <age>35-year-old</age>
+  </ages>
+  <dates/>
+  <places>
+    <place>cardiology department</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>https://mychart.cardiohealth.com</url>
+    <url>https://www.heart.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Dr. Thompson</value></variations></name>
+  </names>
+  <ages>
+    <age>65</age>
+  </ages>
+  <dates>
+    <date><original>2023-01-05</original><formatted>2023-01-05</formatted></date>
+  </dates>
+  <places>
+    <place>NewYork-Presbyterian Hospital</place>
+  </places>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aruna Desai</value></variations></name>
+    <name><variations><value>Dr. Patel</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>901 Lexington Drive</address>
+    <address>Apt 3A</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Dr. Rachel Lee</value></variations></name>
+  </names>
+  <ages>
+    <age>35</age>
+  </ages>
+  <dates/>
+  <places>
+    <place>NYU Langone Medical Center</place>
+  </places>
+  <addresses/>
+  <phones>
+    <phone>(212) 555-9012</phone>
+  </phones>
+  <emails/>
+  <ids>
+    <id>Patient ID</id>
+  </ids>
+  <urls>
+    <url>https://mychart.nyulmc.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Rohan Desai</value></variations></name>
+    <name><variations><value>Dr. Maria Rodriguez</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-01-31</original><formatted>2023-01-31</formatted></date>
+    <date><original>2023-02-07</original><formatted>2023-02-07</formatted></date>
+    <date><original>2023-03-01</original><formatted>2023-03-01</formatted></date>
+  </dates>
+  <places>
+    <place>Hospital of the University of Pennsylvania</place>
+  </places>
+  <addresses>
+    <address>2345 Walnut Street</address>
+    <address>Apt 12A</address>
+  </addresses>
+  <phones>
+    <phone>(215) 555-9012</phone>
+  </phones>
+  <emails>
+    <email>rdesai@email.com</email>
+  </emails>
+  <ids>
+    <id>HUP-12345678</id>
+  </ids>
+  <urls>
+    <url>Medical Record Number</url>
+  </urls>
+  <devices>
+    <device>CABG</device>
+  </devices>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+  </names>
+  <ages>
+    <age>29</age>
+  </ages>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"

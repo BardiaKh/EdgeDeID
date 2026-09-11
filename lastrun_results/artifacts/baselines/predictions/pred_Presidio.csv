@@ -1,0 +1,3065 @@
+prediction
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Rachel Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>three days</original><formatted>three days</formatted></date>
+    <date><original>one week</original><formatted>one week</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Broadway</address>
+    <address>New York</address>
+    <address>NY</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>https://mychart.nyulmc.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira Hassan</value></variations></name>
+    <name><variations><value>Julian Sanchez</value></variations></name>
+    <name><variations><value>Zimmer Persona</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Lisa Nguyen</value></variations></name>
+    <name><variations><value>Sanchez</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2022-01-15</original><formatted>2022-01-15</formatted></date>
+    <date><original>38-year-old</original><formatted>38-year-old</formatted></date>
+    <date><original>2022-01-17</original><formatted>2022-01-17</formatted></date>
+    <date><original>4-6 weeks</original><formatted>4-6 weeks</formatted></date>
+    <date><original>2022-01-24</original><formatted>2022-01-24</formatted></date>
+    <date><original>2022-02-14
+3</original><formatted>2022-02-14
+3</formatted></date>
+    <date><original>2022-03-01</original><formatted>2022-03-01</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Maple Street</address>
+    <address>New York</address>
+    <address>NY</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>amira.hassan@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://myconnectnyp.org</url>
+    <url>https://recoveryplan.nyp.org</url>
+    <url>email.com</url>
+    <url>www.nyp.org/orthopedics/knee-replacement.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ramesh Srinivasan</value></variations></name>
+    <name><variations><value>Rachel Kim</value></variations></name>
+    <name><variations><value>Srinivasan</value></variations></name>
+    <name><variations><value>Srinivasan</value></variations></name>
+    <name><variations><value>Srinivasan</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Srinivasan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+    <date><original>62-year-old</original><formatted>62-year-old</formatted></date>
+    <date><original>several years</original><formatted>several years</formatted></date>
+    <date><original>2023-01-18</original><formatted>2023-01-18</formatted></date>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-03-01</original><formatted>2023-03-01</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>Mr.Sr</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>27615</original><formatted>27615</formatted></date>
+    <date><original>six weeks</original><formatted>six weeks</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Walnut Drive</address>
+    <address>Raleigh</address>
+    <address>NC</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>https://mychart.dukehealth.org</url>
+    <url>https://www.heart.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akua Mensah</value></variations></name>
+    <name><variations><value>Julian Sanchez</value></variations></name>
+    <name><variations><value>Mensah</value></variations></name>
+    <name><variations><value>Leila Hassan</value></variations></name>
+    <name><variations><value>Sanchez</value></variations></name>
+    <name><variations><value>Mensah</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-04-15</original><formatted>2023-04-15</formatted></date>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2023-01-28</original><formatted>2023-01-28</formatted></date>
+    <date><original>6-8 weeks</original><formatted>6-8 weeks</formatted></date>
+    <date><original>2023-02-08
+2</original><formatted>2023-02-08
+2</formatted></date>
+    <date><original>2023-03-01
+3</original><formatted>2023-03-01
+3</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Willow Creek Drive</address>
+    <address>Atlanta</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>akua.mensah@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://patientportal.emoryhealthcare.org</url>
+    <url>https://www.myrehabprogram.com/access1234.</url>
+    <url>akua.men</url>
+    <url>email.com</url>
+    <url>www.euhorthopedics.com/spineeducation.</url>
+    <url>Ms.Men</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>713-123-4567</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Maria Rodriguez</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2023-03-22</original><formatted>2023-03-22</formatted></date>
+    <date><original>six weeks</original><formatted>six weeks</formatted></date>
+    <date><original>2023-05-03</original><formatted>2023-05-03</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails>
+    <email>amit.kumar@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://www.nyp.org/kidneyhealth.</url>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+    <name><variations><value>Rachel Kim</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Karen Thompson</value></variations></name>
+    <name><variations><value>Michael Lee</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2022-08-22</original><formatted>2022-08-22</formatted></date>
+    <date><original>65 year old</original><formatted>65 year old</formatted></date>
+    <date><original>2022-08-25</original><formatted>2022-08-25</formatted></date>
+    <date><original>6-8 weeks</original><formatted>6-8 weeks</formatted></date>
+    <date><original>2022-08-29</original><formatted>2022-08-29</formatted></date>
+    <date><original>2022-09-05</original><formatted>2022-09-05</formatted></date>
+    <date><original>2022-09-19</original><formatted>2022-09-19</formatted></date>
+    <date><original>daily</original><formatted>daily</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Bloomington</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>www.osfhealthcare.org/orthopedics.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>713-123-4567</phone>
+  </phones>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Rohan Jensen</value></variations></name>
+    <name><variations><value>Jensen</value></variations></name>
+    <name><variations><value>Kaur</value></variations></name>
+    <name><variations><value>Smith</value></variations></name>
+    <name><variations><value>Jensen</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2022-08-22</original><formatted>2022-08-22</formatted></date>
+    <date><original>the next two days</original><formatted>the next two days</formatted></date>
+    <date><original>2022-08-25</original><formatted>2022-08-25</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Street</address>
+    <address>Philadelphia</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>r.jensen@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>r.je</url>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Fatima Hassan</value></variations></name>
+    <name><variations><value>Maria Rodriguez</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-06-20</original><formatted>2023-06-20</formatted></date>
+    <date><original>2023-07-11</original><formatted>2023-07-11</formatted></date>
+    <date><original>2023-04-25</original><formatted>2023-04-25</formatted></date>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>MI 48104</original><formatted>MI 48104</formatted></date>
+    <date><original>every three months</original><formatted>every three months</formatted></date>
+    <date><original>2023-10-24</original><formatted>2023-10-24</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Ann Arbor</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>fatima.hassan@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://www.umich-ms.org/patient-resources/</url>
+    <url>email.com</url>
+    <url>1.MR</url>
+    <url>2.Ne</url>
+    <url>3.Co</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Maria Rodriguez</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2023-03-22</original><formatted>2023-03-22</formatted></date>
+    <date><original>the next week</original><formatted>the next week</formatted></date>
+    <date><original>2023-04-05</original><formatted>2023-04-05</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>https://mychart.nyp.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+    <name><variations><value>Maria Rodriguez</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>John Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-04-25</original><formatted>2023-04-25</formatted></date>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>CA 90036</original><formatted>CA 90036</formatted></date>
+    <date><original>2023-04-28</original><formatted>2023-04-28</formatted></date>
+    <date><original>6-8 weeks</original><formatted>6-8 weeks</formatted></date>
+    <date><original>2023-05-05</original><formatted>2023-05-05</formatted></date>
+    <date><original>2023-06-10</original><formatted>2023-06-10</formatted></date>
+    <date><original>2023-07-01</original><formatted>2023-07-01</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Walnut Drive</address>
+    <address>Los Angeles</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>https://my.uclahealth.org</url>
+    <url>www.uclahealth.org/neurosurgery/patient-resources.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+    <name><variations><value>Rachel Kim</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>James Davis</value></variations></name>
+    <name><variations><value>Lisa Nguyen</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-01</original><formatted>2023-03-01</formatted></date>
+    <date><original>2023-01-20</original><formatted>2023-01-20</formatted></date>
+    <date><original>2023-04-14</original><formatted>2023-04-14</formatted></date>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2023-02-10
+2</original><formatted>2023-02-10
+2</formatted></date>
+    <date><original>2023-02-17
+3</original><formatted>2023-02-17
+3</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Lexington Avenue</address>
+    <address>New York</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>ahmed.ali@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://mychart.nyp.org</url>
+    <url>https://symptoms.nyp.org</url>
+    <url>https://pharmacy.nyp.org</url>
+    <url>ahmed.al</url>
+    <url>email.com</url>
+    <url>www.nypneurology.org/mseducation.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2023-03-22</original><formatted>2023-03-22</formatted></date>
+    <date><original>two weeks</original><formatted>two weeks</formatted></date>
+    <date><original>2023-04-05</original><formatted>2023-04-05</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Walnut Drive</address>
+    <address>Denver</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>amit.kumar@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://patientportal.denverhealth.org</url>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Ramesh Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Maria Rodriguez</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2023-01-27</original><formatted>2023-01-27</formatted></date>
+    <date><original>6-8 weeks</original><formatted>6-8 weeks</formatted></date>
+    <date><original>2023-02-01
+2</original><formatted>2023-02-01
+2</formatted></date>
+    <date><original>2023-02-08</original><formatted>2023-02-08</formatted></date>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+    <date><original>two weeks</original><formatted>two weeks</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Street</address>
+    <address>Philadelphia</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>akira.nakamura@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://myPennMedicine.org</url>
+    <url>https://www.PennMedicine.org/physicaltherapy</url>
+    <url>https://www.AAOS.org/knee-exercises</url>
+    <url>akira.na</url>
+    <url>email.com</url>
+    <url>www.PennMedicine.org/orthopedics.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava Wong</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Ava</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-06-20</original><formatted>2023-06-20</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-08-22</original><formatted>2023-08-22</formatted></date>
+    <date><original>six weeks</original><formatted>six weeks</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Rohan Jensen</value></variations></name>
+    <name><variations><value>Jensen</value></variations></name>
+    <name><variations><value>COVID-19</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2023-03-22</original><formatted>2023-03-22</formatted></date>
+    <date><original>2023-03-29</original><formatted>2023-03-29</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Broadway</address>
+    <address>New York</address>
+    <address>NY</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>https://covid19.nyp.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>one week</original><formatted>one week</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Street</address>
+    <address>Philadelphia</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>amit.kumar@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Sofia Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Maria Rodriguez</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Yuna Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-02-08</original><formatted>2023-02-08</formatted></date>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>75-year-old</original><formatted>75-year-old</formatted></date>
+    <date><original>2023-01-28</original><formatted>2023-01-28</formatted></date>
+    <date><original>6-8 weeks</original><formatted>6-8 weeks</formatted></date>
+    <date><original>2023-02-01
+2</original><formatted>2023-02-01
+2</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Lexington Avenue</address>
+    <address>New York</address>
+    <address>NY</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>akira.nakamura@email.com</email>
+    <email>y.nakamara@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://mychart.nyp.org</url>
+    <url>akira.na</url>
+    <url>email.com</url>
+    <url>www.nyp.org/hipreplacementeducation.</url>
+    <url>Mr.Na</url>
+    <url>y.na</url>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akua Mensah</value></variations></name>
+    <name><variations><value>Julian Lee</value></variations></name>
+    <name><variations><value>Mensah</value></variations></name>
+    <name><variations><value>Sophia Patel</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Mensah</value></variations></name>
+    <name><variations><value>Mensah</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>19104</original><formatted>19104</formatted></date>
+    <date><original>2023-01-18</original><formatted>2023-01-18</formatted></date>
+    <date><original>4-6 weeks</original><formatted>4-6 weeks</formatted></date>
+    <date><original>2023-01-22</original><formatted>2023-01-22</formatted></date>
+    <date><original>2023-02-01</original><formatted>2023-02-01</formatted></date>
+    <date><original>2023-03-10</original><formatted>2023-03-10</formatted></date>
+    <date><original>six months</original><formatted>six months</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Street</address>
+    <address>Philadelphia</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>akua.mensah@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://my.pennmedicine.org</url>
+    <url>https://www.jointreplacementsupport.org</url>
+    <url>akua.men</url>
+    <url>email.com</url>
+    <url>www.pennmedicine.org/orthopaedics/patient-education.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Lian Chen</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>9015 Walnut Drive</address>
+    <address>Denver</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ramesh Srinivasan</value></variations></name>
+    <name><variations><value>Sophia Patel</value></variations></name>
+    <name><variations><value>Srinivasan</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Srinivasan</value></variations></name>
+    <name><variations><value>Henry Lee</value></variations></name>
+    <name><variations><value>Lisa Nguyen</value></variations></name>
+    <name><variations><value>Rachel Kim</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-01</original><formatted>2023-03-01</formatted></date>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>60-year-old</original><formatted>60-year-old</formatted></date>
+    <date><original>2023-01-28</original><formatted>2023-01-28</formatted></date>
+    <date><original>6-8 weeks</original><formatted>6-8 weeks</formatted></date>
+    <date><original>2023-02-08
+2</original><formatted>2023-02-08
+2</formatted></date>
+    <date><original>2023-02-15
+3</original><formatted>2023-02-15
+3</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>123 Parkview Drive</address>
+    <address>New York</address>
+    <address>NY</address>
+  </addresses>
+  <phones>
+    <phone>(212) 555-1000</phone>
+  </phones>
+  <emails>
+    <email>r.srinivasan@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://mychart.nyp.org</url>
+    <url>r.sr</url>
+    <url>email.com</url>
+    <url>www.nyp.org/spinecare.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>one month</original><formatted>one month</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Lexington Street</address>
+    <address>Baltimore</address>
+    <address>MD</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Liang</value></variations></name>
+    <name><variations><value>Liang</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Liang</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>three weeks</original><formatted>three weeks</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Yui Nakamura</value></variations></name>
+    <name><variations><value>Cherry Blossom Lane</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>CA 94118</original><formatted>CA 94118</formatted></date>
+    <date><original>2023-04-22</original><formatted>2023-04-22</formatted></date>
+    <date><original>two weeks</original><formatted>two weeks</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>San Francisco</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>y.nakamura@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://ucsfmychart.ucsfmedicalcenter.org</url>
+    <url>y.na</url>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira Hassan</value></variations></name>
+    <name><variations><value>Rachel Kim</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Ms Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-10</original><formatted>2023-03-10</formatted></date>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2023-01-28</original><formatted>2023-01-28</formatted></date>
+    <date><original>6-8 weeks</original><formatted>6-8 weeks</formatted></date>
+    <date><original>2023-02-01
+2</original><formatted>2023-02-01
+2</formatted></date>
+    <date><original>2023-02-15
+3</original><formatted>2023-02-15
+3</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Main Street</address>
+    <address>New York</address>
+    <address>NY</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>amira.hassan@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://mychart.nyp.org</url>
+    <url>https://orthoinfo.org/</url>
+    <url>https://www.ninds.nih.gov/</url>
+    <url>email.com</url>
+    <url>www.nyp.org/spinecare.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ramesh Srinivasan</value></variations></name>
+    <name><variations><value>Maria Rodriguez</value></variations></name>
+    <name><variations><value>Srinivasan</value></variations></name>
+    <name><variations><value>David Lee</value></variations></name>
+    <name><variations><value>Emily Chen</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Srinivasan</value></variations></name>
+    <name><variations><value>Srinivasan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-05-10</original><formatted>2023-05-10</formatted></date>
+    <date><original>2023-04-20</original><formatted>2023-04-20</formatted></date>
+    <date><original>62-year-old</original><formatted>62-year-old</formatted></date>
+    <date><original>19104</original><formatted>19104</formatted></date>
+    <date><original>2023-04-25</original><formatted>2023-04-25</formatted></date>
+    <date><original>4-6 weeks</original><formatted>4-6 weeks</formatted></date>
+    <date><original>2023-05-01</original><formatted>2023-05-01</formatted></date>
+    <date><original>2023-06-15</original><formatted>2023-06-15</formatted></date>
+    <date><original>daily</original><formatted>daily</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Pine Street</address>
+    <address>Philadelphia</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>ramesh.srinivasan@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://carelink.medtronic.com</url>
+    <url>https://myhealth.upenn.edu</url>
+    <url>ramesh.sr</url>
+    <url>email.com</url>
+    <url>www.pennmedicine.org/hipreplacement.</url>
+    <url>Mr.Sr</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Fatima Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>1423 Cypress Drive</address>
+    <address>Brooklyn</address>
+    <address>NY</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Rachel Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2023-06-22</original><formatted>2023-06-22</formatted></date>
+    <date><original>2023-07-13</original><formatted>2023-07-13</formatted></date>
+    <date><original>daily</original><formatted>daily</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9010 Walnut Street</address>
+    <address>Philadelphia</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>amit.kumar@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2023-01-22</original><formatted>2023-01-22</formatted></date>
+    <date><original>one week</original><formatted>one week</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>62-year-old</original><formatted>62-year-old</formatted></date>
+    <date><original>2023-01-27</original><formatted>2023-01-27</formatted></date>
+    <date><original>4-6 weeks</original><formatted>4-6 weeks</formatted></date>
+    <date><original>2023-02-10
+2</original><formatted>2023-02-10
+2</formatted></date>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+    <date><original>2023-04-20</original><formatted>2023-04-20</formatted></date>
+    <date><original>one year</original><formatted>one year</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails>
+    <email>ahmed.ali@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://mychart.nyp.org</url>
+    <url>ahmed.al</url>
+    <url>email.com</url>
+    <url>www.nypheart.org/hearteducation.</url>
+    <url>Mr.Al</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira Hassan</value></variations></name>
+    <name><variations><value>David Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Rachel Kim</value></variations></name>
+    <name><variations><value>Michael Patel</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Emily Chen</value></variations></name>
+    <name><variations><value>Rachel Kim</value></variations></name>
+    <name><variations><value>Michael Patel</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2022-08-25</original><formatted>2022-08-25</formatted></date>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2022-08-28</original><formatted>2022-08-28</formatted></date>
+    <date><original>6-8 weeks</original><formatted>6-8 weeks</formatted></date>
+    <date><original>2022-09-01
+2</original><formatted>2022-09-01
+2</formatted></date>
+    <date><original>2022-09-05</original><formatted>2022-09-05</formatted></date>
+    <date><original>2022-09-15</original><formatted>2022-09-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails>
+    <email>amira.hassan@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>email.com</url>
+    <url>www.nyp.org/orthopedics.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Ali</value></variations></name>
+    <name><variations><value>Thompson</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>annual</original><formatted>annual</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>https://myhealth.stanfordhealthcare.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>27607</original><formatted>27607</formatted></date>
+    <date><original>123-4567</original><formatted>123-4567</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>3210 Lakeview Drive</address>
+    <address>Raleigh</address>
+    <address>NC</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amita Desai</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>35</original><formatted>35</formatted></date>
+    <date><original>2023-06-22</original><formatted>2023-06-22</formatted></date>
+    <date><original>2023-07-06</original><formatted>2023-07-06</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Denver</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>amita.desai@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>amita.de</url>
+    <url>email.com</url>
+    <url>uchospital.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Rohan Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>75-year-old</original><formatted>75-year-old</formatted></date>
+    <date><original>2023-01-28</original><formatted>2023-01-28</formatted></date>
+    <date><original>6-8 weeks</original><formatted>6-8 weeks</formatted></date>
+    <date><original>2023-02-10
+2</original><formatted>2023-02-10
+2</formatted></date>
+    <date><original>2023-02-15</original><formatted>2023-02-15</formatted></date>
+    <date><original>2023-03-24</original><formatted>2023-03-24</formatted></date>
+    <date><original>one week</original><formatted>one week</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Lexington Avenue</address>
+    <address>New York</address>
+    <address>NY</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>akira.nakamura@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://myconnect.nyp.org</url>
+    <url>https://www.nyp.org/socialwork/support</url>
+    <url>akira.na</url>
+    <url>email.com</url>
+    <url>www.nyp.org/hipreplacementeducation.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+    <name><variations><value>Rachel Kim</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-08-20</original><formatted>2023-08-20</formatted></date>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2023-08-22</original><formatted>2023-08-22</formatted></date>
+    <date><original>4-6 weeks</original><formatted>4-6 weeks</formatted></date>
+    <date><original>2023-09-03</original><formatted>2023-09-03</formatted></date>
+    <date><original>2023-10-15</original><formatted>2023-10-15</formatted></date>
+    <date><original>the next two days</original><formatted>the next two days</formatted></date>
+    <date><original>six weeks</original><formatted>six weeks</formatted></date>
+    <date><original>24-hour</original><formatted>24-hour</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Street</address>
+    <address>Philadelphia</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>ahmed.ali@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://myhealth.upenn.edu</url>
+    <url>ahmed.al</url>
+    <url>email.com</url>
+    <url>www.pennmedicine.org/urology/prostate-cancer.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>29-year-old</original><formatted>29-year-old</formatted></date>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>123-4567</original><formatted>123-4567</formatted></date>
+    <date><original>CA 94103</original><formatted>CA 94103</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Mission Street</address>
+    <address>San Francisco</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>amit.kumar@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amara Diallo</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+    <name><variations><value>Liam Chen</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+    <name><variations><value>Ava Patel</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+    <name><variations><value>Drs</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+    <name><variations><value>Yoon Lee</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nii Mensah</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-02-01</original><formatted>2023-02-01</formatted></date>
+    <date><original>2023-02-05</original><formatted>2023-02-05</formatted></date>
+    <date><original>2023-02-10</original><formatted>2023-02-10</formatted></date>
+    <date><original>2023-02-17</original><formatted>2023-02-17</formatted></date>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2023-02-01</original><formatted>2023-02-01</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Park Avenue</address>
+    <address>New York</address>
+    <address>NY</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>site.Fo</url>
+    <url>Dr.Pa</url>
+    <url>3.Fo</url>
+    <url>Dr.Ni</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ling Wong</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2023-03-05</original><formatted>2023-03-05</formatted></date>
+    <date><original>two weeks</original><formatted>two weeks</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Broadway</address>
+    <address>New York</address>
+    <address>NY</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>l.wong@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://mychart.nyp.org</url>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses>
+    <address>NYPH-87654321</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>six weeks</original><formatted>six weeks</formatted></date>
+    <date><original>the day</original><formatted>the day</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Lexington Avenue</address>
+    <address>New York</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>a.hassan@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Cherry Blossom Lane</value></variations></name>
+    <name><variations><value>Liam Chen</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>1456</original><formatted>1456</formatted></date>
+    <date><original>CA 94118</original><formatted>CA 94118</formatted></date>
+    <date><original>every three months</original><formatted>every three months</formatted></date>
+    <date><original>2023-04-15
+2</original><formatted>2023-04-15
+2</formatted></date>
+    <date><original>2023-07-22</original><formatted>2023-07-22</formatted></date>
+    <date><original>2023-10-15</original><formatted>2023-10-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>San Francisco</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>akira.nakamura@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://mychart.ucsfmedicalcenter.org</url>
+    <url>akira.na</url>
+    <url>email.com</url>
+    <url>www.ucsfhealth.org/ms_resources.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails>
+    <email>a.hassan@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava Wong</value></variations></name>
+    <name><variations><value>Liam Chen</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Ava</value></variations></name>
+    <name><variations><value>Ava</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>28 year old</original><formatted>28 year old</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Leila Hassan</value></variations></name>
+    <name><variations><value>Rohan Patel</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Rachel Kim</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-12</original><formatted>2023-03-12</formatted></date>
+    <date><original>2023-01-22</original><formatted>2023-01-22</formatted></date>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Park Avenue</address>
+    <address>New York</address>
+    <address>NY</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>l.hassan@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://myconnectnyp.org</url>
+    <url>email.com</url>
+    <url>Dr.Pa</url>
+    <url>www.nyp.org/orthopedics/ACLrecovery.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amara Diallo</value></variations></name>
+    <name><variations><value>Rohan Patel</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+    <name><variations><value>Diallo</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Casey Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-24</original><formatted>2023-01-24</formatted></date>
+    <date><original>2023-02-01</original><formatted>2023-02-01</formatted></date>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+    <date><original>2023-01-05</original><formatted>2023-01-05</formatted></date>
+    <date><original>65-year-old</original><formatted>65-year-old</formatted></date>
+    <date><original>123-4567</original><formatted>123-4567</formatted></date>
+    <date><original>2023-01-10</original><formatted>2023-01-10</formatted></date>
+    <date><original>two weeks</original><formatted>two weeks</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>(212) 123-4567</phone>
+  </phones>
+  <emails>
+    <email>amara.diallo@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://mychart.nyp.org</url>
+    <url>email.com</url>
+    <url>3.Me</url>
+    <url>www.nyp.org/copd-management.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava Wong</value></variations></name>
+    <name><variations><value>Jackson</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-06-20</original><formatted>2023-06-20</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira Hassan</value></variations></name>
+    <name><variations><value>Julian Sanchez</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Sanchez</value></variations></name>
+    <name><variations><value>Emily Lee</value></variations></name>
+    <name><variations><value>David Kim</value></variations></name>
+    <name><variations><value>Ms Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-02-05</original><formatted>2023-02-05</formatted></date>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2023-01-18</original><formatted>2023-01-18</formatted></date>
+    <date><original>6 weeks</original><formatted>6 weeks</formatted></date>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-02-01</original><formatted>2023-02-01</formatted></date>
+    <date><original>2023-01-22</original><formatted>2023-01-22</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Park Avenue</address>
+    <address>New York</address>
+    <address>NY</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>amira.hassan@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://mychart.nyp.org</url>
+    <url>email.com</url>
+    <url>www.nypneurosurgery.org/spinecare.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2023-03-22</original><formatted>2023-03-22</formatted></date>
+    <date><original>2023-03-29</original><formatted>2023-03-29</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>29</original><formatted>29</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>New York</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>https://myhealth.nychealth.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Julian Lee</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-02-22</original><formatted>2023-02-22</formatted></date>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>CA 94115</original><formatted>CA 94115</formatted></date>
+    <date><original>2023-01-28</original><formatted>2023-01-28</formatted></date>
+    <date><original>6-8 weeks</original><formatted>6-8 weeks</formatted></date>
+    <date><original>2023-02-08
+2</original><formatted>2023-02-08
+2</formatted></date>
+    <date><original>2023/03/15</original><formatted>2023/03/15</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Linden Street</address>
+    <address>San Francisco</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>akira.nakamura@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://www.ucsfhealth.org/mychart/</url>
+    <url>akira.na</url>
+    <url>email.com</url>
+    <url>www.ucsfhealth.org/spinecenter.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Leila Hassan</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Leila</value></variations></name>
+    <name><variations><value>Leila</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>24 hours</original><formatted>24 hours</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Broadway</address>
+    <address>New York</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>leila.hassan@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://mychart.nyp.org</url>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akua Mensah</value></variations></name>
+    <name><variations><value>Rohan Patel</value></variations></name>
+    <name><variations><value>Mensah</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Mensah</value></variations></name>
+    <name><variations><value>Mensah</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Lisa Nguyen</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>10031</original><formatted>10031</formatted></date>
+    <date><original>every six months</original><formatted>every six months</formatted></date>
+    <date><original>2023/01/20</original><formatted>2023/01/20</formatted></date>
+    <date><original>2023/03/10</original><formatted>2023/03/10</formatted></date>
+    <date><original>2023/04/05</original><formatted>2023/04/05</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Broadway</address>
+    <address>New York</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>akmensah@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Al-Khateeb</value></variations></name>
+    <name><variations><value>Rachel Kim</value></variations></name>
+    <name><variations><value>Al-Khateeb</value></variations></name>
+    <name><variations><value>Al-Khateeb</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Al-Khateeb</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+    <name><variations><value>Rachel Kim</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+    <date><original>39-year-old</original><formatted>39-year-old</formatted></date>
+    <date><original>19104</original><formatted>19104</formatted></date>
+    <date><original>6-8 weeks</original><formatted>6-8 weeks</formatted></date>
+    <date><original>2023-01-20</original><formatted>2023-01-20</formatted></date>
+    <date><original>two weeks</original><formatted>two weeks</formatted></date>
+    <date><original>2023-02-02</original><formatted>2023-02-02</formatted></date>
+    <date><original>2023-02-10</original><formatted>2023-02-10</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Street</address>
+    <address>Philadelphia</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>ahmed.al-khateeb@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://myPennMedicine.org</url>
+    <url>ahmed.al</url>
+    <url>email.com</url>
+    <url>www.PennMedicine.org/ThoracicSpineSurgery.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails>
+    <email>a.kumar@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>29</original><formatted>29</formatted></date>
+    <date><original>four weeks</original><formatted>four weeks</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Broadway</address>
+    <address>New York</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>a.hassan@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://nyulangone.org/patient-resources/pregnancy-and-childbirth</url>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Li Ming Wong</value></variations></name>
+    <name><variations><value>Sofia Patel</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+    <name><variations><value>Maria Rodriguez</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>38-year-old</original><formatted>38-year-old</formatted></date>
+    <date><original>10024</original><formatted>10024</formatted></date>
+    <date><original>2023-01-28</original><formatted>2023-01-28</formatted></date>
+    <date><original>6-8 weeks</original><formatted>6-8 weeks</formatted></date>
+    <date><original>2023-02-04</original><formatted>2023-02-04</formatted></date>
+    <date><original>2023-02-11</original><formatted>2023-02-11</formatted></date>
+    <date><original>2023-03-01</original><formatted>2023-03-01</formatted></date>
+    <date><original>123-4567</original><formatted>123-4567</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Broadway Avenue</address>
+    <address>New York</address>
+    <address>NY</address>
+  </addresses>
+  <phones>
+    <phone>(212) 123-4567</phone>
+  </phones>
+  <emails>
+    <email>lm.wong@email.com</email>
+    <email>pcp.practice@email.com</email>
+    <email>hr.department@company.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://patientportal.nyp.org</url>
+    <url>email.com</url>
+    <url>www.nyportho.org/tkrrecovery.</url>
+    <url>pcp.pr</url>
+    <url>email.com</url>
+    <url>hr.de</url>
+    <url>company.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>10001</original><formatted>10001</formatted></date>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-01-28</original><formatted>2023-01-28</formatted></date>
+    <date><original>2023-02-15</original><formatted>2023-02-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>New York</address>
+    <address>NY</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>https://myconnectnyp.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Rachel Kim</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Lisa Nguyen</value></variations></name>
+    <name><variations><value>Emily Chen</value></variations></name>
+    <name><variations><value>Kim</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2023-01-18</original><formatted>2023-01-18</formatted></date>
+    <date><original>6-8 weeks</original><formatted>6-8 weeks</formatted></date>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>2023-02-05</original><formatted>2023-02-05</formatted></date>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Park Avenue</address>
+    <address>New York</address>
+    <address>NY</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>akira.nakamura@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://myconnectnyp.org</url>
+    <url>akira.na</url>
+    <url>email.com</url>
+    <url>www.nyp.org/orthopedicsurgery/patienteducation/kneereplacement.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Rohan Jensen</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Jensen</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>29</original><formatted>29</formatted></date>
+    <date><original>2022-11-15</original><formatted>2022-11-15</formatted></date>
+    <date><original>the day</original><formatted>the day</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails>
+    <email>rjensen@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Rachel Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2023-06-20</original><formatted>2023-06-20</formatted></date>
+    <date><original>2023-07-15</original><formatted>2023-07-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Street</address>
+    <address>Philadelphia</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>amit.kumar@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://myPennMedicine.org</url>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>six months</original><formatted>six months</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>https://mychart.nyp.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Gupta</value></variations></name>
+    <name><variations><value>Gupta</value></variations></name>
+    <name><variations><value>Maria Rodriguez</value></variations></name>
+    <name><variations><value>Gupta</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2023-06-15</original><formatted>2023-06-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>New York</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>a.gupta@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://patientportal.nyp.org</url>
+    <url>a.gu</url>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Ramesh Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-04-15</original><formatted>2023-04-15</formatted></date>
+    <date><original>75-year-old</original><formatted>75-year-old</formatted></date>
+    <date><original>the past year</original><formatted>the past year</formatted></date>
+    <date><original>2023-05-10</original><formatted>2023-05-10</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails>
+    <email>akira.nakamura@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>www.stanfordhealthcare.org/medical-conditions/brain-and-nerves/memory-loss.html.</url>
+    <url>https://myhealth.stanfordhealthcare.org</url>
+    <url>https://www.stanfordhealthcare.org/campaigns/caregiver-support-program.html</url>
+    <url>https://med.stanford.edu/alzheimers/trials.html</url>
+    <url>akira.na</url>
+    <url>email.com</url>
+    <url>www.brainhealth.org/cognitive-assessment.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones>
+    <phone>713-123-4567</phone>
+  </phones>
+  <emails>
+    <email>a.hassan@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>29</original><formatted>29</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>New York</address>
+    <address>NY</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Rachel Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2023-06-20</original><formatted>2023-06-20</formatted></date>
+    <date><original>2023-08-15</original><formatted>2023-08-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Broadway</address>
+    <address>New York</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>amit.kumar@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://myconnect.nyp.org</url>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Main St</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>29-year-old</original><formatted>29-year-old</formatted></date>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>CA 90024</original><formatted>CA 90024</formatted></date>
+    <date><original>an additional six months</original><formatted>an additional six months</formatted></date>
+    <date><original>three months</original><formatted>three months</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Los Angeles</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>https://mychart.uclahealth.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Maria Rodriguez</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>John Lee</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-20,Amira</original><formatted>2023-03-20,Amira</formatted></date>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2023-03-22</original><formatted>2023-03-22</formatted></date>
+    <date><original>8:45 AM</original><formatted>8:45 AM</formatted></date>
+    <date><original>2023-04-17</original><formatted>2023-04-17</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Street</address>
+    <address>Philadelphia</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>amira.hassan@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://myhealth.upenn.edu</url>
+    <url>email.com</url>
+    <url>3.La</url>
+    <url>www.hupobgyn.org/newmomresources</url>
+    <url>www.chop.edu/yourbabiesfirstyear.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akhil Jensen</value></variations></name>
+    <name><variations><value>Jensen</value></variations></name>
+    <name><variations><value>Rachel Kim</value></variations></name>
+    <name><variations><value>Jensen</value></variations></name>
+    <name><variations><value>Jensen</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2023-06-20</original><formatted>2023-06-20</formatted></date>
+    <date><original>2023-07-10</original><formatted>2023-07-10</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Street</address>
+    <address>Philadelphia</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>a.jensen@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://www.pennmedicine.org/orthopaedics/patient-resources.</url>
+    <url>a.je</url>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Rachel Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>CA 94103</original><formatted>CA 94103</formatted></date>
+    <date><original>six months</original><formatted>six months</formatted></date>
+    <date><original>2023-10-15</original><formatted>2023-10-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 Mission Street</address>
+    <address>San Francisco</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>amit.kumar@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://www.sfdph.org/dph/default.asp.</url>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amira Hassan</value></variations></name>
+    <name><variations><value>Liam Chen</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Fatima Patel</value></variations></name>
+    <name><variations><value>Chen</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>19104</original><formatted>19104</formatted></date>
+    <date><original>2023-01-18</original><formatted>2023-01-18</formatted></date>
+    <date><original>6-8 weeks</original><formatted>6-8 weeks</formatted></date>
+    <date><original>2023-01-22</original><formatted>2023-01-22</formatted></date>
+    <date><original>2023-02-01
+3</original><formatted>2023-02-01
+3</formatted></date>
+    <date><original>2023-03-10</original><formatted>2023-03-10</formatted></date>
+    <date><original>2023-01-20</original><formatted>2023-01-20</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Street</address>
+    <address>Philadelphia</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>amira.hassan@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://myPennMedicine.org</url>
+    <url>email.com</url>
+    <url>www.PennOrtho.org/kneereplacement.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Sofia Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Henry Lee</value></variations></name>
+    <name><variations><value>Maria Rodriguez</value></variations></name>
+    <name><variations><value>Jane Smith</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+    <date><original>10031</original><formatted>10031</formatted></date>
+    <date><original>2023-03-20</original><formatted>2023-03-20</formatted></date>
+    <date><original>6-8 weeks</original><formatted>6-8 weeks</formatted></date>
+    <date><original>2023-03-25</original><formatted>2023-03-25</formatted></date>
+    <date><original>2023-04-01
+3</original><formatted>2023-04-01
+3</formatted></date>
+    <date><original>2023-05-01</original><formatted>2023-05-01</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Broadway</address>
+    <address>New York</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>akira.nakamura@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>akira.na</url>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Fatima Hassan</value></variations></name>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Juan Reyes</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Amy Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-24</original><formatted>2023-03-24</formatted></date>
+    <date><original>2023-04-10</original><formatted>2023-04-10</formatted></date>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+    <date><original>65-year-old</original><formatted>65-year-old</formatted></date>
+    <date><original>CA 90036</original><formatted>CA 90036</formatted></date>
+    <date><original>2023-03-17</original><formatted>2023-03-17</formatted></date>
+    <date><original>2023-03-20</original><formatted>2023-03-20</formatted></date>
+    <date><original>two weeks</original><formatted>two weeks</formatted></date>
+    <date><original>one week</original><formatted>one week</formatted></date>
+    <date><original>May 1</original><formatted>May 1</formatted></date>
+    <date><original>2023</original><formatted>2023</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Walnut Drive</address>
+    <address>Los Angeles</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>ahmed.ali@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://patients.cedars-sinai.edu</url>
+    <url>ahmed.al</url>
+    <url>email.com</url>
+    <url>2.Car</url>
+    <url>3.Fo</url>
+    <url>www.cedars-sinai.org/heartdisease.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aishwarya Desai</value></variations></name>
+    <name><variations><value>Rachel Lee</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>six weeks</original><formatted>six weeks</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>www.nyp.org</url>
+    <url>https://myconnectnyp.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava Wong</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>29</original><formatted>29</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>1456 Pine Street</address>
+    <address>San Francisco</address>
+    <address>CA 94109</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>awong@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Cherry Blossom Drive</value></variations></name>
+    <name><variations><value>Julian Sanchez</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Sophia Patel</value></variations></name>
+    <name><variations><value>Sanchez</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-05-01</original><formatted>2023-05-01</formatted></date>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+    <date><original>65-year-old</original><formatted>65-year-old</formatted></date>
+    <date><original>2023-03-20</original><formatted>2023-03-20</formatted></date>
+    <date><original>6-8 weeks</original><formatted>6-8 weeks</formatted></date>
+    <date><original>2023-03-27
+2</original><formatted>2023-03-27
+2</formatted></date>
+    <date><original>2023-04-10</original><formatted>2023-04-10</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Seattle</address>
+    <address>WA</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>akira.nakamura@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://patientportal.uwmedicine.org</url>
+    <url>akira.na</url>
+    <url>email.com</url>
+    <url>www.uwmedicine.org/orthopedics/patienteducation.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Sofia Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Rachel Lee</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2022-08-25</original><formatted>2022-08-25</formatted></date>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2022-08-27</original><formatted>2022-08-27</formatted></date>
+    <date><original>4-6 weeks</original><formatted>4-6 weeks</formatted></date>
+    <date><original>2022-09-01
+2</original><formatted>2022-09-01
+2</formatted></date>
+    <date><original>2022-09-15</original><formatted>2022-09-15</formatted></date>
+    <date><original>2022-10-20</original><formatted>2022-10-20</formatted></date>
+    <date><original>two weeks</original><formatted>two weeks</formatted></date>
+    <date><original>every four hours</original><formatted>every four hours</formatted></date>
+    <date><original>daily</original><formatted>daily</formatted></date>
+    <date><original>the next few weeks</original><formatted>the next few weeks</formatted></date>
+    <date><original>daily</original><formatted>daily</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Street</address>
+    <address>Philadelphia</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>akira.nakamura@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://myhealth.upenn.edu</url>
+    <url>akira.na</url>
+    <url>email.com</url>
+    <url>www.pennmedicine.org/orthopaedics</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2023-04-22</original><formatted>2023-04-22</formatted></date>
+    <date><original>2023-05-06</original><formatted>2023-05-06</formatted></date>
+    <date><original>the next few days</original><formatted>the next few days</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+    <name><variations><value>Ronald Reagan</value></variations></name>
+    <name><variations><value>Sofia Patel</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Jasmine Lee</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>CA 90069</original><formatted>CA 90069</formatted></date>
+    <date><original>2023-03-18</original><formatted>2023-03-18</formatted></date>
+    <date><original>6-8 weeks</original><formatted>6-8 weeks</formatted></date>
+    <date><original>2023-03-25</original><formatted>2023-03-25</formatted></date>
+    <date><original>2023-04-10</original><formatted>2023-04-10</formatted></date>
+    <date><original>2023-05-01</original><formatted>2023-05-01</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9017 Sunset Boulevard</address>
+    <address>Los Angeles</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>https://my.uclahealth.org</url>
+    <url>https://www.myrehab.com/uclaortho.</url>
+    <url>www.uclahealth.org/orthopedics.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Maria Rodriguez</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>an additional 90 days</original><formatted>an additional 90 days</formatted></date>
+    <date><original>six months</original><formatted>six months</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>https://myhealth.stanfordhealthcare.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Maria Rodriguez</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2023-03-22</original><formatted>2023-03-22</formatted></date>
+    <date><original>2023-03-25</original><formatted>2023-03-25</formatted></date>
+    <date><original>2023-04-05</original><formatted>2023-04-05</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Washington Street</address>
+    <address>New York</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>amit.kumar@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://www.nyp.org/patient-portal</url>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava Wong</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates/>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>www.eyecarecenter.org/cataracts.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Lisa Nguyen</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-03-25</original><formatted>2023-03-25</formatted></date>
+    <date><original>six weeks</original><formatted>six weeks</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>New York</address>
+    <address>NY</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>amit.kumar@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://www.mypatientportal.nyp.org</url>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+    <name><variations><value>Ronald Reagan</value></variations></name>
+    <name><variations><value>Julian Sanchez</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Maria Rodriguez</value></variations></name>
+    <name><variations><value>Emily Chen</value></variations></name>
+    <name><variations><value>Sanchez</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-15</original><formatted>2023-01-15</formatted></date>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>CA 90001</original><formatted>CA 90001</formatted></date>
+    <date><original>2023-01-17</original><formatted>2023-01-17</formatted></date>
+    <date><original>6-8 weeks</original><formatted>6-8 weeks</formatted></date>
+    <date><original>2023-01-22</original><formatted>2023-01-22</formatted></date>
+    <date><original>2023-02-05</original><formatted>2023-02-05</formatted></date>
+    <date><original>2023-03-01</original><formatted>2023-03-01</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Walnut Drive</address>
+    <address>Los Angeles</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>ahmed.ali@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://my.uclahealth.org</url>
+    <url>ahmed.al</url>
+    <url>email.com</url>
+    <url>www.uclahealth.org/orthopedicsurgery.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Samantha Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2023-01-22</original><formatted>2023-01-22</formatted></date>
+    <date><original>several days</original><formatted>several days</formatted></date>
+    <date><original>2023-01-29</original><formatted>2023-01-29</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Walnut Street</address>
+    <address>Philadelphia</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava Wong</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ahmed Ali</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>2023-03-22</original><formatted>2023-03-22</formatted></date>
+    <date><original>2023-03-29</original><formatted>2023-03-29</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>New York</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>ahmed.ali@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://www.nyp.org/patient-portal</url>
+    <url>ahmed.al</url>
+    <url>email.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Fatima Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>David Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2022-08-25</original><formatted>2022-08-25</formatted></date>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>several days</original><formatted>several days</formatted></date>
+    <date><original>2022-09-02</original><formatted>2022-09-02</formatted></date>
+    <date><original>one week</original><formatted>one week</formatted></date>
+    <date><original>two weeks</original><formatted>two weeks</formatted></date>
+    <date><original>2022-09-09</original><formatted>2022-09-09</formatted></date>
+    <date><original>2022-10-14
+
+Medication</original><formatted>2022-10-14
+
+Medication</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>901 River Road</address>
+    <address>New York</address>
+    <address>NY</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>f.hassan@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://weillcornell.org/research/clinical-trials</url>
+    <url>https://patientportal.nyp.org</url>
+    <url>email.com</url>
+    <url>2.Car</url>
+    <url>1.An</url>
+    <url>2.Pa</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Ava Wong</value></variations></name>
+    <name><variations><value>Lee</value></variations></name>
+    <name><variations><value>Wong</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>29-year-old</original><formatted>29-year-old</formatted></date>
+    <date><original>2023-01-20</original><formatted>2023-01-20</formatted></date>
+    <date><original>three months</original><formatted>three months</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>https://mychart.ucsfmedicalcenter.org</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Fatima Ali</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Maria Rodriguez</value></variations></name>
+    <name><variations><value>Tom Bradley</value></variations></name>
+    <name><variations><value>Ali</value></variations></name>
+    <name><variations><value>Smith</value></variations></name>
+    <name><variations><value>Maria Rodriguez</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-20</original><formatted>2023-01-20</formatted></date>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+    <date><original>19118</original><formatted>19118</formatted></date>
+    <date><original>2023-01-25,Ms</original><formatted>2023-01-25,Ms</formatted></date>
+    <date><original>2023-02-01</original><formatted>2023-02-01</formatted></date>
+    <date><original>2023-02-10</original><formatted>2023-02-10</formatted></date>
+    <date><original>2023-03-15</original><formatted>2023-03-15</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>9012 Chestnut Drive</address>
+    <address>Philadelphia</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>fatima.ali@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>fatima.al</url>
+    <url>email.com</url>
+    <url>3.Ne</url>
+    <url>Dr.Pa</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Jain</value></variations></name>
+    <name><variations><value>Lisa Nguyen</value></variations></name>
+    <name><variations><value>Jain</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+    <name><variations><value>Jain</value></variations></name>
+    <name><variations><value>Jain</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+    <name><variations><value>Nguyen</value></variations></name>
+    <name><variations><value>Jain</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>35-year-old</original><formatted>35-year-old</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>https://www.heart.org</url>
+    <url>https://mychart.cardiohealth.com</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aisha Hassan</value></variations></name>
+    <name><variations><value>Thompson</value></variations></name>
+    <name><variations><value>Hassan</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>65</original><formatted>65</formatted></date>
+    <date><original>2023-01-05</original><formatted>2023-01-05</formatted></date>
+    <date><original>six months</original><formatted>six months</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Aruna Desai</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>six months</original><formatted>six months</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>Lexington Drive</address>
+    <address>San Francisco</address>
+    <address>CA 94109</address>
+  </addresses>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls/>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Amit Kumar</value></variations></name>
+    <name><variations><value>Rachel Lee</value></variations></name>
+    <name><variations><value>Kumar</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>35</original><formatted>35</formatted></date>
+    <date><original>six months</original><formatted>six months</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails>
+    <email>amit.kumar@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://mychart.nyulmc.org</url>
+    <url>email.com</url>
+    <url>www.nyulangone.org/health-wellness.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Rohan Desai</value></variations></name>
+    <name><variations><value>Maria Rodriguez</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+    <name><variations><value>Emily Chen</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+    <name><variations><value>Rodriguez</value></variations></name>
+    <name><variations><value>Desai</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>2023-01-25</original><formatted>2023-01-25</formatted></date>
+    <date><original>55-year-old</original><formatted>55-year-old</formatted></date>
+    <date><original>2023-01-31</original><formatted>2023-01-31</formatted></date>
+    <date><original>6-8 weeks</original><formatted>6-8 weeks</formatted></date>
+    <date><original>2023-02-07</original><formatted>2023-02-07</formatted></date>
+    <date><original>2023-03-01</original><formatted>2023-03-01</formatted></date>
+  </dates>
+  <places/>
+  <addresses>
+    <address>2345 Walnut Street</address>
+    <address>Philadelphia</address>
+  </addresses>
+  <phones/>
+  <emails>
+    <email>rdesai@email.com</email>
+  </emails>
+  <ids/>
+  <urls>
+    <url>https://my.pennmedicine.org</url>
+    <url>email.com</url>
+    <url>www.pennmedicine.org/heart-and-vascular/cabg.</url>
+  </urls>
+  <devices/>
+</phi_entities>"
+"<phi_entities>
+  <names>
+    <name><variations><value>Akira Nakamura</value></variations></name>
+    <name><variations><value>Patel</value></variations></name>
+    <name><variations><value>Nakamura</value></variations></name>
+  </names>
+  <ages/>
+  <dates>
+    <date><original>29</original><formatted>29</formatted></date>
+    <date><original>two weeks</original><formatted>two weeks</formatted></date>
+  </dates>
+  <places/>
+  <addresses/>
+  <phones/>
+  <emails/>
+  <ids/>
+  <urls>
+    <url>https://www.diabetes.org/.</url>
+  </urls>
+  <devices/>
+</phi_entities>"

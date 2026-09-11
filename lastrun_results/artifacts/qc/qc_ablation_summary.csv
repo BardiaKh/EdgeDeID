@@ -1,0 +1,6 @@
+Configuration,Micro-P,Micro-R,Micro-F1,F-beta(b=2),Macro-F1,Zero-leak,Halluc.
+Raw (no QC),0.9969,0.9614,0.9789,0.9683,0.9741,0.7200,0.0031
++Repair,0.9969,0.9614,0.9789,0.9683,0.9741,0.7200,0.0031
++Tier-2 (regex),0.9963,0.9614,0.9786,0.9682,0.9733,0.7200,0.0037
++Tier-3 (spaCy),0.9434,0.9623,0.9527,0.9584,0.9269,0.7300,0.0566
+[QC Calibration],QC-Recall=1.0000,QC-Prec=0.0700,FN-rate=0.0000,FP-rate=1.0000,,tag-cov=0.0000,
