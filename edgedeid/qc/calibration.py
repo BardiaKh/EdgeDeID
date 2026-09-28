@@ -22,7 +22,8 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
-from ..rl.rewards import QC_COMPLETE_THRESHOLD, _extract_qc_status, entity_recall
+from ..eval.metrics import note_recall
+from ..rl.rewards import QC_COMPLETE_THRESHOLD, _extract_qc_status
 
 
 @dataclass
@@ -94,10 +95,13 @@ def compute_qc_calibration(
 ) -> QCCalibrationResult:
     """Measure calibration of <qc_status> against actual per-sample recall.
 
-    'Actually complete' is defined as per-sample entity_recall >=
-    completeness_threshold, sharing both the scoring function and the default
-    cutoff (QC_COMPLETE_THRESHOLD) with the GRPO reward, so the evaluation
-    signal cannot drift from the training signal.
+    'Actually complete' is defined as per-note recall >= completeness_threshold,
+    where recall is ``note_recall`` — the same-category, full-containment rule
+    behind the reported zero-leak metric. With the default threshold of 1.0,
+    "actually complete" is exactly "zero-leak note", so a calibration table can
+    be read directly against the zero-leak numbers. (This previously used the
+    bidirectional ``entity_recall``, under which a partial span such as "Amit"
+    for "Amit Kumar" counted as caught even though zero-leak counts it a leak.)
 
     Missing <qc_status> tags are treated as claimed=incomplete (conservative),
     but counted separately so you can see tag coverage.
@@ -107,7 +111,7 @@ def compute_qc_calibration(
 
     for pred, gt in zip(predictions, ground_truths):
         status = _extract_qc_status(pred)
-        score = entity_recall(pred, gt)
+        score = note_recall(pred, gt)
         result.scores.append(score)
 
         actually_complete = score >= completeness_threshold

@@ -46,7 +46,7 @@ PROJECT_ROOT_HINT = Path(PROJECT_ROOT_HINT).expanduser().resolve()
 if str(PROJECT_ROOT_HINT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT_HINT))
 
-from pipeline.runtime import detect_runtime_paths
+from edgedeid.runtime import detect_runtime_paths
 
 RUNTIME = detect_runtime_paths(project_root=PROJECT_ROOT_HINT)
 REPO_ROOT = RUNTIME["project_root"]
@@ -70,11 +70,11 @@ import torch
 from datasets import load_dataset
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-from pipeline.rl import GRPOConfig
-from pipeline.rl.data import prepare_grpo_split
-from pipeline.rl.grpo import build_grpo_trainer, prepare_grpo_reward_function
-from pipeline.rl.evaluation import evaluate_policy, compute_metrics
-from pipeline.training import expand_tokenizer
+from edgedeid.rl import GRPOConfig
+from edgedeid.rl.data import prepare_grpo_split
+from edgedeid.rl.grpo import build_grpo_trainer, prepare_grpo_reward_function
+from edgedeid.rl.evaluation import evaluate_policy, compute_metrics
+from edgedeid.training import expand_tokenizer
 
 print("torch:", torch.__version__, "| CUDA:", torch.cuda.is_available())
 
@@ -227,7 +227,7 @@ print("\n--- ground_truth (head) ---\n", sample0["ground_truth"][:300])
 # Run the reward pipeline on a single example before launching training.
 
 # %%
-from pipeline.rl.rewards import (
+from edgedeid.rl.rewards import (
     reward_xml_structure,
     reward_phi_text_presence,
     reward_completeness,

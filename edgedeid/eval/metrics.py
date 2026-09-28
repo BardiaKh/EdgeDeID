@@ -151,6 +151,35 @@ def compare_sample(
     return gt_stats, pred_stats
 
 
+def note_recall(pred_xml: str, gt_xml: str) -> float:
+    """Per-note recall under the exact rule behind ``zero_leak_rate``.
+
+    A reference entity counts as caught only when a prediction *of the same
+    category* fully contains it (``_covers``). A note with no reference entities
+    has nothing to miss and scores 1.0.
+
+    This is the single definition of "complete" for QC labels and QC evaluation.
+    It deliberately differs from ``edgedeid.rl.rewards.entity_recall``, which is
+    bidirectional and category-agnostic: there a partial span such as "Amit" for
+    the reference "Amit Kumar" counts as a hit, whereas here — as in the reported
+    zero-leak metric — the uncovered "Kumar" is a leak.
+    """
+    gt_s, _ = compare_sample(gt_xml, pred_xml)
+    total = sum(v["total"] for v in gt_s.values())
+    if total == 0:
+        return 1.0
+    return sum(v["correct"] for v in gt_s.values()) / total
+
+
+def note_is_complete(pred_xml: str, gt_xml: str) -> bool:
+    """True iff the note is zero-leak: every reference entity was caught.
+
+    Summing this over a set of notes and dividing by the count reproduces
+    ``compute_metrics(...).zero_leak_rate`` exactly.
+    """
+    return note_recall(pred_xml, gt_xml) >= 1.0
+
+
 # ─── aggregate metrics ────────────────────────────────────────────────────────
 
 @dataclass

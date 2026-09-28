@@ -15,6 +15,12 @@ import re
 
 from .base import BaselineModel
 
+# _USE_CACHE_NOTE: the EdgeDeID checkpoints were saved with use_cache=False in
+# config.json (inherited from gradient-checkpointed SFT). transformers 5.x ignores
+# that at generate() time, but 4.x can carry it into generation, which disables
+# the KV cache and recomputes the full ~1-5k-token sequence at every decoding
+# step. Every generate() call below therefore passes use_cache=True explicitly.
+
 
 class QwenDeidBaseline(BaselineModel):
     """Qwen3-0.6B causal LM that generates <phi_entities> XML directly.
@@ -97,6 +103,7 @@ class QwenDeidBaseline(BaselineModel):
                 max_new_tokens=self.max_new_tokens,
                 do_sample=False,                           # greedy / deterministic
                 stop_strings=self.gen_stop_str,            # halt once the final tag closes
+                use_cache=True,                            # see _USE_CACHE_NOTE
                 tokenizer=self.tokenizer,
                 pad_token_id=self.tokenizer.pad_token_id,
             )
@@ -125,6 +132,7 @@ class QwenDeidBaseline(BaselineModel):
                 max_new_tokens=self.max_new_tokens,
                 do_sample=False,
                 stop_strings=self.gen_stop_str,
+                use_cache=True,                            # see _USE_CACHE_NOTE
                 tokenizer=self.tokenizer,
                 pad_token_id=self.tokenizer.pad_token_id,
             )
@@ -159,6 +167,7 @@ class QwenDeidBaseline(BaselineModel):
                 temperature=temperature,
                 num_return_sequences=k,
                 stop_strings=self.gen_stop_str,
+                use_cache=True,                            # see _USE_CACHE_NOTE
                 tokenizer=self.tokenizer,
                 pad_token_id=self.tokenizer.pad_token_id,
             )
