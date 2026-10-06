@@ -52,6 +52,10 @@ class QCConfig:
     use_tier3: bool = False              # enable Tier-3 spaCy NER on escalated samples
     tier3_on_escalated_only: bool = True  # if False, run T3 on every sample (expensive)
     escalation_fn: EscalationFn | None = None  # opt-in expensive handler
+    # v2 precision fixes (2026-10-05); all off by default so v1 stays reproducible.
+    lenient_repair: bool = False     # recovering-parser fallback for mismatched tags
+    strict_dates: bool = False       # Tier-2: drop numeric "dates" with impossible month/day
+    precision_guards: bool = False   # Tier-3: abbreviation/institution/case guards
 
 
 @dataclass(slots=True)
@@ -82,8 +86,8 @@ def run_qc(
     intrinsic = qc_status or _extract_qc(model_output)
 
     # ── Tier-2: structural repair + regex detectors + reconcile ───────────────
-    t2_detections = detect(source_note)
-    rep = repair_xml(model_output)
+    t2_detections = detect(source_note, strict_dates=cfg.strict_dates)
+    rep = repair_xml(model_output, lenient=cfg.lenient_repair)
     if rep.root is None:
         root = ET.fromstring(empty_phi_xml())
         repair_status = "unrecoverable"
@@ -122,7 +126,7 @@ def run_qc(
     run_t3 = cfg.use_tier3 and (escalated or not cfg.tier3_on_escalated_only)
     if run_t3:
         from .detectors_contextual import detect_contextual  # lazy import (heavy)
-        t3_detections = detect_contextual(source_note)
+        t3_detections = detect_contextual(source_note, guarded=cfg.precision_guards)
         if t3_detections:
             # re-parse to get a fresh mutable root from the T2-reconciled XML
             try:
@@ -143,7 +147,7 @@ def run_qc(
     # ── optional external escalation handler ─────────────────────────────────
     if escalated and cfg.escalation_fn is not None:
         replacement = cfg.escalation_fn(source_note, final_xml, dict(audit))
-        rep2 = repair_xml(replacement)
+        rep2 = repair_xml(replacement, lenient=cfg.lenient_repair)
         if rep2.root is not None:
             rec2 = reconcile(rep2.root, t2_detections)
             final_xml = rec2.xml

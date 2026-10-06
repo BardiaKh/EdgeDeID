@@ -122,8 +122,28 @@ def _non_overlapping(dets: list[Detection]) -> list[Detection]:
 
 # ─── public API ───────────────────────────────────────────────────────────────
 
-def detect(note: str) -> list[Detection]:
-    """Return all high-recall PHI detections in ``note`` (non-overlapping)."""
+_NUMERIC_DATE = re.compile(r"(\d{1,4})[/-](\d{1,2})[/-](\d{2,4})")
+
+
+def _plausible_numeric_date(span: str) -> bool:
+    """Reject digit triples that cannot be a calendar date. ICU notes are full of
+    vitals and ventilator settings in the same shape (BP/HR/RR "41/27/162", ABG
+    "7.41/27/162"), which the bare patterns accepted as dates."""
+    m = _NUMERIC_DATE.fullmatch(span)
+    if not m:
+        return True                                  # month-name forms: unaffected
+    a, b, c = (int(x) for x in m.groups())
+    if len(m.group(1)) == 4:                         # 2024-03-22
+        y, mo, d = a, b, c
+    else:                                            # 03/22/2023 (US order)
+        mo, d, y = a, b, c
+    return 1 <= mo <= 12 and 1 <= d <= 31 and (len(str(y)) != 4 or 1900 <= y <= 2100)
+
+
+def detect(note: str, strict_dates: bool = False) -> list[Detection]:
+    """Return all high-recall PHI detections in ``note`` (non-overlapping).
+
+    ``strict_dates`` drops numeric "dates" with an impossible month or day."""
     if not isinstance(note, str) or not note:
         return []
 
@@ -148,6 +168,8 @@ def detect(note: str) -> list[Detection]:
         dets.append(Detection("age", m.group(gi), m.start(gi), m.end(gi)))
     for rx in _DATE_RES:
         for m in rx.finditer(note):
+            if strict_dates and not _plausible_numeric_date(m.group(0)):
+                continue
             dets.append(Detection("date", m.group(0), m.start(), m.end()))
 
     return _non_overlapping(dets)

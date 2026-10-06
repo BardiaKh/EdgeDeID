@@ -135,8 +135,13 @@ def union_inproc(
     return out
 
 
-def make_qc_config(use_tier3: bool = True):
+def make_qc_config(use_tier3: bool = True, v2: bool = False):
     """Build a QCConfig, auto-degrading Tier-3 → Tier-2 when spaCy is unavailable.
+
+    ``v2`` (2026-10-05) turns on the precision fixes: a missing <qc_status> tag no
+    longer escalates every note (the model never emits it, so v1 ran Tier-3 on all
+    of them), lenient XML recovery, calendar-valid numeric dates, and the Tier-3
+    abbreviation / institution / all-caps guards.
 
     Tier-3 needs spaCy + ``en_core_web_sm``; without them ``apply_qc_batch``
     raises ImportError on the first escalated sample. Pre-flighting the import
@@ -153,6 +158,9 @@ def make_qc_config(use_tier3: bool = True):
             print(f"  [QC] Tier-3 unavailable ({type(e).__name__}); using Tier-2 only. "
                   f"Install: pip install spacy && python -m spacy download en_core_web_sm")
             use_tier3 = False
+    if v2:
+        return QCConfig(use_tier3=use_tier3, escalate_on_missing_qc=False, lenient_repair=True,
+                        strict_dates=True, precision_guards=True)
     return QCConfig(use_tier3=use_tier3)
 
 

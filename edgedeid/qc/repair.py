@@ -85,8 +85,30 @@ def _close_dangling_tags(text: str) -> str:
     return text
 
 
-def repair_xml(model_output: str) -> RepairResult:
-    """Extract and (if needed) deterministically repair the <phi_entities> block."""
+def _lenient_parse(text: str) -> tuple[str, ET.Element] | None:
+    """Last resort: lxml's recovering parser. Mismatched closing tags (49 of the 63
+    unparseable EdgeDeID-SFT outputs on MIMIC, e.g. ``<place>...</device>``) defeat
+    the deterministic fixes above; recovery keeps every element that is still
+    well-formed instead of discarding the whole note."""
+    try:
+        from lxml import etree
+    except ImportError:
+        return None
+    try:
+        root = etree.fromstring(text.encode("utf-8"), etree.XMLParser(recover=True))
+    except etree.XMLSyntaxError:
+        return None
+    if root is None or root.tag != "phi_entities":
+        return None
+    xml = etree.tostring(root, encoding="unicode")
+    parsed = _try_parse(xml)
+    return (xml, parsed) if parsed is not None else None
+
+
+def repair_xml(model_output: str, lenient: bool = False) -> RepairResult:
+    """Extract and (if needed) deterministically repair the <phi_entities> block.
+
+    ``lenient`` adds a recovering-parser fallback (status ``"repaired_lenient"``)."""
     if not isinstance(model_output, str) or "<phi_entities" not in model_output:
         return RepairResult(None, "unrecoverable", None)
 
@@ -120,6 +142,11 @@ def repair_xml(model_output: str) -> RepairResult:
     root = _try_parse(repaired)
     if root is not None:
         return RepairResult(repaired, "repaired", root)
+
+    if lenient:
+        got = _lenient_parse(repaired)
+        if got is not None:
+            return RepairResult(got[0], "repaired_lenient", got[1])
 
     return RepairResult(None, "unrecoverable", None)
 
