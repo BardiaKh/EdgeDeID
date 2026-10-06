@@ -56,7 +56,7 @@ from edgedeid.data.preprocessing import preprocess_text  # noqa: E402
 from edgedeid.data.xml_utils import convert_to_xml  # noqa: E402
 from edgedeid.eval.metrics import compute_metrics  # noqa: E402
 
-DEFAULT_EVAL = "evals/ext_eval/revizied_evals.xlsx"
+DEFAULT_EVAL = "evals/ext_eval/LLM_Eval.xlsx"   # clean benchmark; see edgedeid/eval/benchmark.py
 
 # Field-level PHI surface-form rotation. Mirrors the training-time augmentation
 # policy, so this profile measures sensitivity to formats the model was already
@@ -146,10 +146,8 @@ def strip_tags(tagged: str) -> str:
 
 
 def load_tagged_gold(path: str) -> list[str]:
-    df = pd.read_excel(path)
-    df = preprocess_text(df, input_col="default_response_0",
-                         output_col="default_response_1")
-    return df["default_response_1"].astype(str).tolist()
+    from edgedeid.eval.benchmark import load_tagged_gold as _load
+    return _load(path)
 
 
 def make_split(tagged_gold: list[str], profile: str, seed: int):

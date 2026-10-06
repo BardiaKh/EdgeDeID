@@ -121,15 +121,27 @@ def _soft_match(a: str, b: str) -> bool:
 def compare_sample(
     gt_xml: str,
     pred_xml: str,
+    type_agnostic: bool = False,
 ) -> tuple[dict[str, dict], dict[str, dict]]:
     """Compare one prediction against one ground truth.
 
     Returns (gt_stats, pred_stats) where each maps tag → {correct, total}.
     gt_stats   drives recall  (how many GT entities were found)
     pred_stats drives precision (how many predicted entities are correct)
+
+    type_agnostic : if True, collapse every entity type into a single "PHI"
+        bucket before matching — i.e. score whether a PHI span is *detected at
+        all*, regardless of which type label it carries. Useful when the gold
+        and the model disagree on typing (e.g. MIMIC tags "CALVERT" as a name
+        while a model emits it as a place), which understates true detection
+        under the default type-matched scoring.
     """
     gt_entities = extract_entities(gt_xml)
     pred_entities = extract_entities(pred_xml)
+
+    if type_agnostic:
+        gt_entities = {"PHI": [v for vals in gt_entities.values() for v in vals]}
+        pred_entities = {"PHI": [v for vals in pred_entities.values() for v in vals]}
 
     gt_stats: dict[str, dict] = {}
     for tag, gt_vals in gt_entities.items():
@@ -235,6 +247,7 @@ def compute_metrics(
     ground_truths: list[str],
     source_notes: list[str] | None = None,
     supported_entities: set[str] | None = None,
+    type_agnostic: bool = False,
 ) -> EvalResult:
     """Compute all metrics over a list of predictions.
 
@@ -252,8 +265,26 @@ def compute_metrics(
     """
     assert len(predictions) == len(ground_truths)
 
-    # xml_parse_rate
-    parsed = [_extract_phi_block(p) is not None for p in predictions]
+    # In detection-only mode everything collapses to a single "PHI" tag, so the
+    # per-type `supported_entities` filter no longer applies (it would drop the
+    # lone PHI class and empty the per-entity / macro breakdown).
+    if type_agnostic:
+        supported_entities = None
+
+    # xml_parse_rate: the block must exist AND parse. A block that fails to parse
+    # (mismatched tag, bare '&') makes extract_entities return nothing, i.e. the
+    # whole note scores as "no predictions"; counting it as parsed hid 63/2434
+    # unparseable MIMIC outputs behind a reported parse rate of 1.0.
+    def _parses(p: str) -> bool:
+        block = _extract_phi_block(p) if isinstance(p, str) else None
+        if block is None:
+            return False
+        try:
+            ET.fromstring(block)
+            return True
+        except ET.ParseError:
+            return False
+    parsed = [_parses(p) for p in predictions]
     xml_parse_rate = sum(parsed) / len(predictions) if predictions else 0.0
 
     # accumulate per-tag stats + zero-leak tracking
@@ -262,7 +293,7 @@ def compute_metrics(
     n_zero_leak = 0
 
     for pred, gt in zip(predictions, ground_truths):
-        gt_s, pred_s = compare_sample(gt, pred)
+        gt_s, pred_s = compare_sample(gt, pred, type_agnostic=type_agnostic)
         for tag, stats in gt_s.items():
             accum_gt.setdefault(tag, {"correct": 0, "total": 0})
             accum_gt[tag]["correct"] += stats["correct"]
