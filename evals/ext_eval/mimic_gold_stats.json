@@ -1,0 +1,26 @@
+{
+  "source": "human gold standard (PhysioNet deid 1.1, id-phi.phrase)",
+  "n_records": 2434,
+  "records_with_phi": 735,
+  "gold_spans": 1778,
+  "by_schema_tag": {
+    "name": 824,
+    "date": 528,
+    "place": 366,
+    "phone": 53,
+    "age": 4,
+    "id": 3
+  },
+  "by_gold_type": {
+    "HCPName": 593,
+    "Date": 482,
+    "Location": 366,
+    "RelativeProxyName": 175,
+    "PTName": 54,
+    "Phone": 53,
+    "DateYear": 46,
+    "Age": 4,
+    "Other": 3,
+    "PTNameInitial": 2
+  }
+}
