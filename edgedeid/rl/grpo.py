@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import warnings
 from typing import Any, Callable
 
 from .config import GRPOConfig
@@ -48,6 +49,11 @@ def build_grpo_trainer(
     from trl.trainer.grpo_trainer import GRPOTrainer
     from trl.trainer.grpo_config import GRPOConfig as TRLGRPOConfig
     
+    import torch
+    # TRL defaults bf16=True, which raises on a machine without a bf16 GPU (e.g. the
+    # CPU tests). On the training GPUs (bf16-capable) this leaves the default alone.
+    precision = {} if (torch.cuda.is_available() and torch.cuda.is_bf16_supported()) else {"bf16": False}
+
     trl_cfg = TRLGRPOConfig(
         output_dir=config.output_dir,
         run_name=config.run_name,
@@ -68,7 +74,14 @@ def build_grpo_trainer(
         gradient_accumulation_steps=config.gradient_accumulation_steps,
         logging_steps=config.logging_steps,
         report_to="wandb" if config.wandb_project else "none",
+        # KL to the frozen SFT reference; see GRPOConfig.beta. With beta > 0 TRL
+        # loads a reference copy of the model (fine at 0.6B) and logs "kl".
+        beta=config.beta,
+        **precision,
     )
+    if not trl_cfg.beta:
+        warnings.warn("GRPO beta=0: no KL anchor -- output the reward does not score "
+                      "(e.g. <formatted> dates) is free to drift from SFT.", stacklevel=2)
 
     return GRPOTrainer(
         model=model,

@@ -122,6 +122,7 @@ config = GRPOConfig(
     max_prompt_length       = None,             # None = no truncation; our SFT prompts run 1000-4600+ tokens and the instructions sit at the front (TRL truncates from the left)
     max_completion_length   = 1024,
     seed                    = 2025,
+    beta                    = float(os.environ.get("GRPO_BETA", "0.04")),  # KL to SFT ref; 0 = none (all runs before 2026-10-02)
     reward_weights          = {                 # weights for combined reward
         "presence":     0.30,
         "completeness": 0.40,                   # recall-weighted F-beta (beta=2)
@@ -295,8 +296,14 @@ trainer = build_grpo_trainer(
 # Inject our lively stdout callback
 trainer.add_callback(LiveConsoleLoggingCallback())
 
-print("Pushed trainer logic... launching training!")
-trainer.train()
+# Resume: GRPO_RESUME=1 continues from the newest checkpoint-* in OUTPUT_DIR (if any),
+# so a crash or preemption on a shared GPU costs at most save_steps (500) steps.
+from transformers.trainer_utils import get_last_checkpoint
+RESUME = None
+if os.environ.get("GRPO_RESUME") == "1" and os.path.isdir(OUTPUT_DIR):
+    RESUME = get_last_checkpoint(OUTPUT_DIR)
+print("Pushed trainer logic... launching training!", f"(resuming from {RESUME})" if RESUME else "")
+trainer.train(resume_from_checkpoint=RESUME)
 
 # %% [markdown]
 # ## 6 — Evaluate

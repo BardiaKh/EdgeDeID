@@ -92,6 +92,13 @@ def main() -> None:
     tok.padding_side = "left"                       # generation
     model = PeftModel.from_pretrained(base, args.sft_adapter, is_trainable=True)
     model.print_trainable_parameters()
+    # trl 0.23 enables checkpointing on the PEFT base WITHOUT our kwargs, so it
+    # runs reentrant, yet skips enable_input_require_grads because our kwargs say
+    # use_reentrant=False. The frozen embeddings then cut the graph and backward
+    # raises "element 0 of tensors does not require grad". Harmless on trl>=1.0.
+    model.enable_input_require_grads()
+    if torch.cuda.is_available():
+        model.to("cuda")        # score `before` on the GPU; the trainer would move it anyway
 
     before = val_auroc(model, tok, val_rows)
     print("before GRPO (= SFT adapter):", before)
