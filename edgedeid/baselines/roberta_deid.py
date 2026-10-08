@@ -82,14 +82,48 @@ class RobertaDeidBaseline(BaselineModel):
         # every entity past token 512 and tank recall on long notes.
         raw = self._pipe(note, stride=128)
         entities: dict[str, list[str]] = {}
-        for r in raw:
-            # entity_group may carry a BILOU prefix (B-/I-/L-/U-); take the base
-            # label after the final hyphen. ("U-PATIENT" -> "PATIENT")
-            label = r["entity_group"].split("-")[-1].strip()
+        for label, start, end in _merge_bilou(raw, note):
             schema_key = _I2B2_TO_SCHEMA.get(label)
             if schema_key is None:
                 continue
-            text = r["word"].strip()
+            text = note[start:end].strip().rstrip(",;:")
             if text:
                 entities.setdefault(schema_key, []).append(text)
         return entities
+
+
+def _merge_bilou(raw: list[dict], note: str) -> list[tuple[str, int, int]]:
+    """Join the pipeline's per-word groups back into whole entity spans.
+
+    The pipeline's aggregation only understands B-/I- prefixes. These models
+    use BILOU, so a multi-word entity comes back in pieces: "Rachel", "Lee";
+    "2022", "01", "15"; "212", "555", "0188". Under containment matching each
+    piece then counts as a miss. A group continues the previous span when it
+    has the same base label, is not itself a span start (B-/U-), the previous
+    group was not a span end (L-/U-), and the two are separated in the note
+    only by whitespace or by an unspaced separator such as "-", "/" or ".".
+    Some transformers versions strip the prefix before we see it; the prefix
+    checks then never fire and adjacency alone decides.
+    """
+    def joinable(gap: str) -> bool:
+        if not gap.strip():
+            return True
+        return len(gap) <= 2 and not any(c.isspace() or c.isalnum() for c in gap)
+
+    spans: list[tuple[str, int, int]] = []
+    prev_prefix = None
+    for r in sorted(raw, key=lambda x: x["start"]):
+        prefix, _, label = r["entity_group"].rpartition("-")
+        label = label.strip()
+        if (
+            spans
+            and spans[-1][0] == label
+            and prefix not in ("B", "U")
+            and prev_prefix not in ("L", "U")
+            and joinable(note[spans[-1][2]:r["start"]])
+        ):
+            spans[-1] = (label, spans[-1][1], max(spans[-1][2], r["end"]))
+        else:
+            spans.append((label, r["start"], r["end"]))
+        prev_prefix = prefix
+    return spans
