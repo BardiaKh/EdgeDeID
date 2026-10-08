@@ -297,3 +297,116 @@ def convert_corpus(text_path: str, res_path: str) -> list[ConvertedRecord]:
         convert_record(rid, text_records[rid], res_records[rid])
         for rid in common_ids
     ]
+
+
+# ─── human gold standard (PhysioNet deid 1.1: id-phi.phrase) ──────────────────
+#
+# ``id.res.txt`` above is NOT a human annotation: it is the output of the
+# ``deid.pl`` software itself (PhysioNet describes ``id.res`` as "the
+# deidentified output text, with PHI replaced by tags"; 99.5% of its spans
+# overlap deid.pl's own GSoutput/id.phi). PhysioNet reports deid.pl at recall
+# 0.967 / PPV 0.748 against the human gold standard, so scoring against
+# ``id.res.txt`` grades models against a noisy automatic tagger.
+#
+# The human gold standard ships as ``id-phi.phrase`` (one line per PHI:
+# ``patient note start end type phrase``), 1,779 spans over the same 2,434
+# notes. Its offsets are one character short of ``parse_records``' bodies
+# (measured: all 1,779 phrases sit at exactly ``start + 1``); spans are placed
+# by their phrase there, and any phrase that does not match exactly raises,
+# rather than being silently mis-tagged.
+
+GOLD_TYPE_TO_TAG: dict[str, str] = {
+    "HCPName": "name",            # health-care provider
+    "PTName": "name",
+    "PTNameInitial": "name",
+    "RelativeProxyName": "name",
+    "Date": "date",
+    "DateYear": "date",           # e.g. "MI '92" -- a year, not an age
+    "Location": "place",          # hospitals, wards, towns: one gold type, mapped
+                                  # to place as the id.res.txt conversion did
+    "Phone": "phone",
+    "Age": "age",                 # HIPAA: only ages >= 90 are PHI (4 spans, all "98")
+    "Other": "id",                # 3 spans: "#rg17", "ref #8336652", "2115" after
+                                  # "admission note" -- identifier-like numbers
+}
+_GOLD_NAME_TYPE = {"HCPName": "provider", "PTName": "patient", "PTNameInitial": "patient"}
+GOLD_OFFSET_SHIFT = 1
+
+
+def read_gold_phrases(phrase_path: str) -> dict[str, list[tuple[int, str, str]]]:
+    """Parse ``id-phi.phrase`` into {record_id: [(start, gold_type, phrase), ...]}."""
+    out: dict[str, list[tuple[int, str, str]]] = {}
+    with open(phrase_path, encoding="utf-8", errors="replace") as f:
+        for line in f:
+            if not line.strip():
+                continue
+            patient, note, start, _end, gtype, phrase = line.rstrip("\n").split(None, 5)
+            out.setdefault(f"{patient}-{note}", []).append((int(start), gtype, phrase.strip()))
+    return out
+
+
+def convert_record_gold(record_id: str, text_body: str,
+                        gold: list[tuple[int, str, str]]) -> ConvertedRecord:
+    spans: list[tuple[int, int, str]] = []
+    for start, gtype, phrase in gold:
+        s = start + GOLD_OFFSET_SHIFT
+        e = s + len(phrase)
+        if text_body[s:e] != phrase:
+            raise ValueError(f"{record_id}: gold phrase {phrase!r} not found at offset {s} "
+                             f"(text there: {text_body[s:e]!r})")
+        if gtype not in GOLD_TYPE_TO_TAG:
+            raise ValueError(f"{record_id}: unknown gold PHI type {gtype!r}")
+        spans.append((s, e, gtype))
+    spans.sort()
+    # One overlap exists in the corpus (record 11-1: "Kessler-Adventist" and
+    # "Adventist Hosp", both Location): same-type overlaps merge into their union;
+    # a cross-type overlap has no single right tag and raises.
+    merged: list[tuple[int, int, str]] = []
+    for s, e, g in spans:
+        if merged and s < merged[-1][1]:
+            ps, pe, pg = merged[-1]
+            if GOLD_TYPE_TO_TAG[pg] != GOLD_TYPE_TO_TAG[g]:
+                raise ValueError(f"{record_id}: overlapping gold spans of different type at {ps}-{pe} and {s}-{e}")
+            merged[-1] = (ps, max(pe, e), pg)
+        else:
+            merged.append((s, e, g))
+    spans = merged
+
+    tagged = text_body
+    counters = {"name": 0, "place": 0, "id": 0}
+    phi_spans = [PhiSpan(text=text_body[s:e], label=g, tag=GOLD_TYPE_TO_TAG[g]) for s, e, g in spans]
+    for (s, e, gtype), span in sorted(zip(spans, phi_spans), key=lambda x: x[0][0], reverse=True):
+        tag = span.tag
+        if tag in counters:
+            counters[tag] += 1
+            attrs = f' id="{counters[tag]}"'
+            if tag == "name":
+                attrs += f' type="{_GOLD_NAME_TYPE.get(gtype, "other")}"'
+            open_tag = f"<{tag}{attrs}>"
+        else:
+            open_tag = f"<{tag}>"
+        tagged = tagged[:s] + open_tag + tagged[s:e] + f"</{tag}>" + tagged[e:]
+
+    return ConvertedRecord(
+        record_id=record_id,
+        source_note=text_body,
+        tagged_note=tagged,
+        ground_truth_xml=convert_to_xml(tagged, sort_by_position=True),
+        spans=phi_spans,
+    )
+
+
+def convert_corpus_gold(text_path: str, phrase_path: str) -> list[ConvertedRecord]:
+    """Ground truth from the HUMAN gold standard, same record order as convert_corpus."""
+    text_records = parse_records(text_path)
+    gold = read_gold_phrases(phrase_path)
+    unknown = gold.keys() - text_records.keys()
+    if unknown:
+        raise ValueError(f"gold names {len(unknown)} record(s) absent from {text_path}: {sorted(unknown)[:5]}")
+
+    def _sort_key(rid: str) -> tuple[int, int]:
+        doc, line = rid.split("-")
+        return int(doc), int(line)
+
+    return [convert_record_gold(rid, text_records[rid], gold.get(rid, []))
+            for rid in sorted(text_records, key=_sort_key)]
