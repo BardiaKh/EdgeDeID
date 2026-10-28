@@ -8,7 +8,7 @@ from huggingface_hub import model_info, dataset_info
 MODELS = [
     "EdgeDeID/Qwen3-1.7B-Base_SFT",
     "EdgeDeID/Qwen3-0.6B-Base_SFT",
-    "EdgeDeID/Qwen3-0.6B-GRPO",
+    "EdgeDeID/Qwen3-0.6B-GRPO-KL",
 ]
 
 DATASETS = [

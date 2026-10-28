@@ -1,4 +1,4 @@
-"""Load the 100-note radiology benchmark as (notes, ground-truth XML).
+"""Load the 100-note in-domain benchmark as (notes, ground-truth XML).
 
 The benchmark is ``evals/ext_eval/LLM_Eval.xlsx`` (committed 2026-05-03 as
 ``evals/synth_eval/LLM Eval.xlsx``, removed in 0f8f188, restored here):

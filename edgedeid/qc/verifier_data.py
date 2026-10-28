@@ -2,7 +2,7 @@
 
 Every example pairs a training note with a candidate annotation and a verdict.
 Candidates come from perturbing that note's gold annotation, plus (optionally)
-real system outputs on the same training notes. MIMIC and the radiology
+real system outputs on the same training notes. MIMIC and the in-domain
 benchmark are never touched here — they are test sets.
 
 Two rules keep the labels honest:

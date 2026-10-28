@@ -79,7 +79,7 @@ def _load_nlp():
 
 
 # ── precision guards (QCConfig.precision_guards) ──────────────────────────────
-# Measured on the radiology benchmark and MIMIC, the unguarded Tier-3 added 93 and
+# Measured on the in-domain benchmark and MIMIC, the unguarded Tier-3 added 93 and
 # 13,603 entities of which 1 and 109 were PHI: en_core_web_sm labels clinical
 # abbreviations (ECG, CT, CAD, PMH) as ORG -> "place", and the address regex ran
 # case-insensitively, so its "capitalised street name" matched any word and the

@@ -4,7 +4,7 @@ Utilities for pushing data/models to and pulling them from the EdgeDeID HuggingF
 
 **Collection:** `https://huggingface.co/EdgeDeID`  
 **Dataset repo:** `EdgeDeID/synthetic-dataset`  
-**Model repos:** `EdgeDeID/Qwen3-1.7B-Base_SFT`, `EdgeDeID/Qwen3-0.6B-Base_SFT`
+**Model repos:** `EdgeDeID/Qwen3-0.6B-Base_SFT`, `EdgeDeID/Qwen3-1.7B-Base_SFT`, `EdgeDeID/Qwen3-0.6B-GRPO-KL`
 
 ---
 

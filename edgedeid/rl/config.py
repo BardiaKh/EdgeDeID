@@ -53,6 +53,6 @@ class GRPOConfig(RLConfig):
     # TRL's default beta=0.0 (confirmed in all three local runs' training_args.bin)
     # -- no anchor at all on output the reward does not score. The published
     # checkpoint drifted on exactly that: it writes the wrong ISO year in every
-    # <formatted> date (235/235 on the radiology benchmark; SFT 0/235). 0.04 is the
+    # <formatted> date (235/235 on the in-domain benchmark; SFT 0/235). 0.04 is the
     # GRPO paper's value and TRL's own default before it moved to 0.0.
     beta: float = 0.04

@@ -9,7 +9,7 @@ Usage in notebooks / scripts:
     model, tokenizer = load_model("grpo")
 
     # Or by full repo id
-    model, tokenizer = load_model("EdgeDeID/Qwen3-0.6B-GRPO")
+    model, tokenizer = load_model("EdgeDeID/Qwen3-0.6B-GRPO-KL")
 
     # Pre-download weights without instantiating the model
     from scripts.load_model_from_hf import download_model
@@ -19,7 +19,7 @@ CLI:
     python scripts/load_model_from_hf.py            # loads the GRPO model
     python scripts/load_model_from_hf.py sft-0.6b   # loads an SFT model
 
-Token resolution (automatic, models are private/gated):
+Token resolution (automatic; optional, the released models are public):
   1. ~/.huggingface/token (local setup)
   2. .env file in repo root (Colab/Kaggle)
   3. HF_TOKEN environment variable
@@ -39,7 +39,7 @@ from huggingface_hub import snapshot_download
 
 # Short name -> HF repo id. Keep in sync with scripts/verify_hf_collection.py.
 MODELS = {
-    "grpo": "EdgeDeID/Qwen3-0.6B-GRPO",
+    "grpo": "EdgeDeID/Qwen3-0.6B-GRPO-KL",
     "sft-0.6b": "EdgeDeID/Qwen3-0.6B-Base_SFT",
     "sft-1.7b": "EdgeDeID/Qwen3-1.7B-Base_SFT",
 }

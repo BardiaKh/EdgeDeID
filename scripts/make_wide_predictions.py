@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Assemble per-system predictions on the radiology benchmark into one wide CSV.
+"""Assemble per-system predictions on the in-domain benchmark into one wide CSV.
 
 Output columns: ``id, text, ground_truth, <one column per system>`` — the same
 shape as ``merged_all_models.csv`` (MIMIC), so ``scripts/eval_qc_verifier.py``

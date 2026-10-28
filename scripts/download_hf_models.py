@@ -4,9 +4,9 @@ Download all EdgeDeID models from HuggingFace Hub into ./models/.
 
 Usage:
     python scripts/download_hf_models.py              # all models
-    python scripts/download_hf_models.py Qwen3-0.6B-GRPO
+    python scripts/download_hf_models.py Qwen3-0.6B-GRPO-KL
 
-Private repos need a token: huggingface-cli login (or set HF_TOKEN).
+The released repos are public; a token is only needed to push (huggingface-cli login, or set HF_TOKEN).
 """
 
 import sys
@@ -17,7 +17,7 @@ from huggingface_hub import snapshot_download
 MODELS = {
     "Qwen3-1.7B-Base_SFT": "EdgeDeID/Qwen3-1.7B-Base_SFT",
     "Qwen3-0.6B-Base_SFT": "EdgeDeID/Qwen3-0.6B-Base_SFT",
-    "Qwen3-0.6B-GRPO": "EdgeDeID/Qwen3-0.6B-GRPO",
+    "Qwen3-0.6B-GRPO-KL": "EdgeDeID/Qwen3-0.6B-GRPO-KL",
 }
 
 MODELS_DIR = Path(__file__).parent.parent / "models"

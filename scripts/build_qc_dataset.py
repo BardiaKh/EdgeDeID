@@ -9,7 +9,7 @@ Outputs (in --out-dir):
   stats.json           class balance per split and per perturbation family
 
 Notes are split into disjoint pools (sft / grpo / val) before any candidate is
-generated, so no training note appears in two splits. The radiology benchmark
+generated, so no training note appears in two splits. The in-domain benchmark
 and MIMIC are never read here.
 
 Usage

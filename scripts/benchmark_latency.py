@@ -79,7 +79,7 @@ REGISTRY: dict[str, tuple[str, dict]] = {
     "OPF":             ("opf", {}),
     "Qwen3-0.6B-Base": ("qwen", {"model_src": "Qwen/Qwen3-0.6B-Base"}),
     "EdgeDeID-SFT":    ("qwen", {"model_src": "EdgeDeID/Qwen3-0.6B-Base_SFT"}),
-    "EdgeDeID-GRPO":   ("qwen", {"model_src": "EdgeDeID/Qwen3-0.6B-GRPO"}),
+    "EdgeDeID-GRPO":   ("qwen", {"model_src": "EdgeDeID/Qwen3-0.6B-GRPO-KL"}),
 }
 DEFAULT_MODELS = [m for m in REGISTRY]
 
@@ -357,7 +357,7 @@ def main() -> None:
     ap.add_argument("--models", default=",".join(DEFAULT_MODELS),
                     help=f"comma list from {list(REGISTRY)} (+ GGUF)")
     ap.add_argument("--notes-from", default="ablation/B_predictions.csv",
-                    help="CSV with a note/text column (the radiology benchmark notes)")
+                    help="CSV with a note/text column (the in-domain benchmark notes)")
     ap.add_argument("--n", type=int, default=20)
     ap.add_argument("--warmup", type=int, default=2)
     ap.add_argument("--threads", type=int, default=None,
@@ -375,7 +375,7 @@ def main() -> None:
     args = ap.parse_args()
     args.overrides = dict(o.split("=", 1) for o in args.override)
 
-    # HF_TOKEN for the private EdgeDeID/* checkpoints; children inherit the env.
+    # HF_TOKEN is optional (the EdgeDeID/* checkpoints are public); children inherit the env.
     from edgedeid.qc.train_utils import load_env
     load_env(os.path.join(REPO, ".env"))
 

@@ -18,7 +18,7 @@ HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 MODELS=(
   "Qwen/Qwen3-0.6B-Base|Qwen3-0.6B-Base"
   "EdgeDeID/Qwen3-0.6B-Base_SFT|EdgeDeID-SFT"
-  "EdgeDeID/Qwen3-0.6B-GRPO|EdgeDeID-GRPO"
+  "EdgeDeID/Qwen3-0.6B-GRPO-KL|EdgeDeID-GRPO"
 )
 
 wait_for_server() {  # poll /v1/models until ready (max ~5 min)

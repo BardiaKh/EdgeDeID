@@ -1,25 +1,16 @@
-# EdgeDeID — Final Full-Run Runbook
+# EdgeDeID — Evaluation Runbook
 
-Everything needed to regenerate every number in the paper, in dependency order,
-for one clean run on a GPU machine. Written for Bardia.
-
-**Target:** ARR October cycle — submission **12 Oct 2026**; results needed by
-**8 Oct**.
-
-What changed since the last run, in one paragraph: the ablation ladder is now
-A–E (§3); there is a **new QC verifier** (§5) that replaces the self-assessment
-tag that never appeared; the latency benchmark was **broken** and is replaced
-by a script (§6); the definition of "complete" is now the zero-leak rule
-everywhere (§7). Everything new is smoke-tested end-to-end on CPU against the
-real TRL/PEFT APIs — see §9 for what was and was not tested.
+The commands that regenerate the evaluation numbers in the paper
+([arXiv:2610.33839](https://arxiv.org/abs/2610.33839)), in dependency order.
+Training the models themselves is described in the README.
 
 ---
 
 ## 0. Setup
 
 ```bash
-git pull && pip install -e .          # pyproject now also pulls peft + psutil
-echo "HF_TOKEN=hf_..." > .env         # scripts read .env; checkpoints are private
+git pull && pip install -e .          # pulls peft + psutil too
+echo "HF_TOKEN=hf_..." > .env         # scripts read .env; only needed to push to the Hub
 python -m spacy download en_core_web_sm    # optional: QC Tier-3 only
 ```
 
@@ -43,10 +34,10 @@ version, ignored: [...]", read the list.**
 | Significance (paired bootstrap) | `scripts/compare_runs.py` | CPU | <1 min |
 | MIMIC generalization | `scripts/score_mimic.py` | CPU | <1 min |
 | Robustness / noise | `scripts/robustness_eval.py` | GPU | ~15 min |
-| **QC verifier (new)** | `scripts/build_qc_dataset.py` → `train_qc_sft.py` → `train_qc_grpo.py` → `eval_qc_verifier.py` | GPU | ~1.5–3 h |
-| **Latency (fixed)** | `scripts/benchmark_latency.py` | CPU + GPU | ~1–2 h (CPU) |
+| QC verifier | `scripts/build_qc_dataset.py` → `train_qc_sft.py` → `train_qc_grpo.py` → `eval_qc_verifier.py` | GPU | ~1.5–3 h |
+| Latency | `scripts/benchmark_latency.py` | CPU + GPU | ~1–2 h (CPU) |
 
-**Do not use `baselines.ipynb` §8 (latency) any more** — see §6.
+**Do not use `baselines.ipynb` §8 (latency)**; use §6 below.
 
 ---
 
@@ -54,8 +45,8 @@ version, ignored: [...]", read the list.**
 
 | Set | File | Size | Role |
 |---|---|---|---|
-| Radiology benchmark | `evals/ext_eval/revizied_evals.xlsx` | 100 notes | primary |
-| MIMIC (i2b2 format) | `merged_all_models.csv` (13 systems' outputs) | 2,434 records | external generalization |
+| In-domain benchmark (100 synthetic clinical notes, manually verified) | `evals/ext_eval/LLM_Eval.xlsx` | 100 notes | primary |
+| MIMIC ICU nursing notes (PhysioNet de-identification gold standard) | `merged_all_models.csv` (13 systems' outputs) | 2,434 records | external generalization |
 | Synthetic train split | `EdgeDeID/synthetic-dataset` `train.csv` | 25,972 notes | **only** source of QC-verifier training data |
 
 Neither test set is ever used for training or threshold selection. MIMIC is
@@ -64,18 +55,17 @@ and is omitted from the MIMIC table.
 
 ---
 
-## 3. Ablation ladder — now continuous A–E
+## 3. Ablation ladder A–E
 
 | Row | Config | How |
 |---|---|---|
 | A | Base, 0-shot | inference (`Qwen/Qwen3-0.6B-Base`) |
 | B | SFT (pseudo-label) | inference (`EdgeDeID/Qwen3-0.6B-Base_SFT`) |
 | C | SFT + QC | derived from B |
-| D | SFT + GRPO | inference (`EdgeDeID/Qwen3-0.6B-GRPO`) |
+| D | SFT + GRPO | inference (`EdgeDeID/Qwen3-0.6B-GRPO-KL`) |
 | E | SFT + GRPO + QC | derived from D |
 
-> ⚠️ **`rm -f ablation/*_predictions.csv` before running.** Under the old
-> letters `C_predictions.csv` was SFT; now `C` is SFT+QC. A stale cache
+> ⚠️ **`rm -f ablation/*_predictions.csv` before running.** A stale cache
 > silently yields wrong numbers.
 
 ---
@@ -126,16 +116,9 @@ python scripts/robustness_eval.py --model EdgeDeID/Qwen3-0.6B-Base_SFT --all
 ### 4.7 QC verifier — GPU (see §5)
 ### 4.8 Latency — CPU and GPU (see §6)
 
-### 4.9 Audit — CPU, last
-```bash
-python scripts/audit_paper_tables.py --artifacts artifacts
-```
-Checks every table in `draft.tex` against its CSV and that every F1 is the
-harmonic mean of the P and R beside it. Non-zero exit on a real mismatch.
-
 ---
 
-## 5. The QC verifier (new)
+## 5. The QC verifier
 
 ### Why
 The self-assessment tag was trained with GRPO and never appeared. Cause: SFT
@@ -241,22 +224,15 @@ python scripts/eval_qc_verifier.py \
 
 ---
 
-## 6. Latency — the old benchmark was broken
+## 6. Latency
 
-### Diagnosis
-| # | Problem | Evidence |
-|---|---|---|
-| 1 | **No common device.** `CUDA_VISIBLE_DEVICES=""` was set mid-kernel after §4 had initialized CUDA, so it did nothing. Only our model (it exposes `.model`) was force-moved to CPU fp32. Pipeline baselines default to `cuda:0` (transformers 5.x: `device=None → 0`), OPF picks CUDA explicitly, GLiNER/Presidio/scispaCy stay on CPU. | Pipeline baselines' "CPU" latency equals their batched-GPU §4 timing (RoBERTa 12.3 vs 12.9 ms). Re-measured on a real CPU: **BERT-i2b2 = 286 ms/note**, not 9 ms. |
-| 2 | **"Peak RSS" was a delta** of current RSS inside one long-lived process; freed memory is reused. | Values of 0 and **−1 MB** in the table. |
-| 3 | GGUF cell spawned `llama-cli` **per note** → timed model loading. | (never run) |
-| 4 | Checkpoints saved with `use_cache: false` (from gradient-checkpointed SFT). | On transformers 5.8 `generate()` ignores it (tested: cache stays on); 4.x may not. Now pinned `use_cache=True` in every `generate()` call. |
+Our model writes about 180 output tokens one at a time (median prompt 1,060
+tokens, of which the fixed instruction block is 867, or 82%), so it is slower
+than an encoder tagger on the same device. The paper reports 0.5 s per note
+with vLLM on one L40S and 3.9 s per note, 615 MB, for the Q4_K_M GGUF on eight
+CPU threads.
 
-The ~23 s/note for our model is therefore most likely a **real CPU-fp32
-number**, compared against GPU baselines. It is also inherently larger than an
-encoder's: the model writes ~180 output tokens one at a time (median prompt
-1,060 tokens, of which the fixed instruction block is 867 = 82%).
-
-### Fixed protocol
+### Protocol
 ```bash
 python scripts/benchmark_latency.py --device cpu  --notes-from ablation/B_predictions.csv
 python scripts/benchmark_latency.py --device cuda --notes-from ablation/B_predictions.csv
@@ -285,51 +261,30 @@ quoting it.
 
 ---
 
-## 7. Definition of "complete" — now one rule everywhere
+## 7. Definition of "complete"
 
 `note_recall` / `note_is_complete` (`edgedeid/eval/metrics.py`): a reference
 entity counts as caught only if a prediction **of the same category fully
 contains it** — exactly the zero-leak rule. `qc/calibration.py` and the new
-verifier use it. Previously calibration used `rl.rewards.entity_recall`
-(bidirectional, category-agnostic), under which a partial span "Amit" for
-"Amit Kumar" counted as caught although zero-leak counts it a leak.
-`QC_COMPLETE_THRESHOLD` stays 1.0 (the paper text still says 0.7 — to fix).
+verifier use it.
+A partial span ("Amit" for "Amit Kumar") is therefore a leak.
+`QC_COMPLETE_THRESHOLD` is 1.0.
 
 ---
 
-## 8. Findings the re-run should reproduce
+## 8. Findings a rerun should reproduce
 
-- SFT is the best extraction configuration; neither GRPO nor QC improves it.
-- GRPO vs SFT: F1 −0.0051 [−0.0089, −0.0020], recall −0.0103
-  [−0.0167, −0.0051], zero-leak −0.0800 [−0.1300, −0.0300]; precision
-  +0.0004 not significant.
-- QC Tier-3: recall +0.0017 and zero-leak +0.0100, neither significant;
-  precision −0.0536, F1 −0.0257, hallucination +0.0536, all significant.
-- MIMIC: SFT 0.984 → 0.423 F1, beaten by RoBERTa-i2b2 (0.571); a precision
-  collapse on ICU shorthand. Annotation-convention mismatch explains at most
-  ~20% of the false positives (removing ages entirely: 0.423 → 0.439); the
-  rest are register errors — drug names and abbreviations tagged as names
-  (VANCOMYCIN, FOLEY, A+Ox3), military times read as years (1930 = 7:30 pm).
+From the paper (Appendices E, F and J):
+
+- In-domain, GRPO and the QC layer change nothing: the paired-bootstrap
+  differences on recall, precision, F1 and zero-leak are all 0.000 (GRPO − SFT)
+  or within 0.001 (QC on GRPO). Only the verifier helps.
+- MIMIC, SFT: F1 0.478, below RoBERTa-i2b2 (0.675). GRPO − SFT: F1 +0.046
+  [+0.021, +0.074], recall −0.052, precision +0.112. QC on SFT: F1 −0.091
+  [−0.164, −0.013], recall +0.046, precision −0.126; nearly all of it is
+  repair recovering malformed outputs, about nine in ten of which are not PHI.
+- Three hand-written in-context examples: F1 +0.083 for SFT and +0.084 for GRPO
+  on MIMIC.
+- Verifier, on the nine systems other than EdgeDeID: AUROC 0.938 (SFT adapter),
+  0.941 (after GRPO), 0.766 (zero-shot).
 - Self-assessment tag coverage: 0/100 (expected again with `FORCE_REGEN`).
-
----
-
-## 9. What was tested, and what was not
-
-Tested locally (CPU, transformers 5.8, trl 1.4, peft 0.18):
-- The full verifier chain end-to-end on a tiny random model: build → SFT →
-  GRPO → assemble → evaluate. Wiring only; says nothing about accuracy.
-- Dataset builder on the real 25,972-note train split.
-- Latency script on real models on CPU.
-
-**Not tested:** anything on GPU; any real training run; transformers 4.x /
-trl 0.23. First real signal will be the stage-1 `val_auroc` — if it is ≈0.5
-after training, stop and check before running stage 2.
-
----
-
-## 10. What to send back
-
-`artifacts/` (all subfolders), `ablation/`, `checkpoints/qc_sft/` and
-`checkpoints/qc_grpo/` (adapters only, a few MB each), the training logs of
-§5 steps 2–3, and `artifacts/latency/*_meta.json` (hardware for the paper).

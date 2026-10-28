@@ -18,7 +18,7 @@ design, so a model is otherwise charged for predicting categories MIMIC never
 annotates (it contains zero emails, urls and devices). Stripping them from both
 sides is the like-for-like comparison.
 
-Note that ``zero_leak_rate`` is reported but is NOT comparable to the radiology
+Note that ``zero_leak_rate`` is reported but is NOT comparable to the in-domain
 benchmark: ~60% of MIMIC records contain no PHI at all, so the metric is
 trivially satisfied on those. It is deliberately omitted from the paper's MIMIC
 table.

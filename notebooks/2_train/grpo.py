@@ -55,7 +55,7 @@ print("runtime:", RUNTIME["env"])
 print("REPO_ROOT:", REPO_ROOT)
 print("OUTPUT_ROOT:", OUTPUT_ROOT)
 
-# load gated-HF credentials from .env (HF_TOKEN) — dataset & model are private
+# load optional HF credentials from .env (HF_TOKEN); the dataset and models are public
 env_path = REPO_ROOT / ".env"
 if env_path.exists():
     for line in env_path.read_text().splitlines():
@@ -88,7 +88,7 @@ print("torch:", torch.__version__, "| CUDA:", torch.cuda.is_available())
 SFT_MODEL_ID   = "EdgeDeID/Qwen3-0.6B-Base_SFT"      # HF repo of the SFT checkpoint
 
 # ── dataset ────────────────────────────────────────────────────────────────
-DATASET_ID     = "EdgeDeID/synthetic-dataset"        # HF dataset repo (gated)
+DATASET_ID     = "EdgeDeID/synthetic-dataset"        # HF dataset repo
 TRAIN_FILE     = "train.csv"
 EVAL_FILE      = "test.csv"                           # set None to skip eval
 NOTE_KEY       = "original"                           # raw note column
@@ -177,13 +177,13 @@ else:
 # %% [markdown]
 # ## 3 — Prepare Dataset
 #
-# Downloads and loads the synthetic training dataset directly from the Hugging Face Hub (gated). 
+# Downloads and loads the synthetic training dataset directly from the Hugging Face Hub. 
 # Using `load_dataset` without streaming ensures the dataset is downloaded into memory completely (which `trl`'s `GRPOTrainer` requires). The row mapping formats the input features according to the configured `GRPOConfig`.
 
 # %%
 from huggingface_hub import hf_hub_download
 
-# the dataset repo is gated -> resolve files with the token, then load the CSV.
+# resolve the files from the Hub, then load the CSV.
 train_path = hf_hub_download(
     repo_id=DATASET_ID, filename=TRAIN_FILE, repo_type="dataset", token=HF_TOKEN
 )
@@ -332,7 +332,7 @@ else:
 # Commits the final model weights and tokenizer configurations back to local disk and pushes them to your targeted Hugging Face Hub repository.
 
 # %%
-HF_REPO_ID = "EdgeDeID/Qwen3-0.6B-GRPO"   # target HF repo
+HF_REPO_ID = "EdgeDeID/Qwen3-0.6B-GRPO-KL"   # target HF repo
 
 trainer.model.save_pretrained(OUTPUT_DIR)
 tokenizer.save_pretrained(OUTPUT_DIR)
