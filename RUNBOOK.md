@@ -21,7 +21,6 @@ real TRL/PEFT APIs — see §9 for what was and was not tested.
 git pull && pip install -e .          # pyproject now also pulls peft + psutil
 echo "HF_TOKEN=hf_..." > .env         # scripts read .env; checkpoints are private
 python -m spacy download en_core_web_sm    # optional: QC Tier-3 only
-python -m pytest tests/test_qc_verifier.py -q   # 19 tests, ~1 min, CPU
 ```
 
 Versions: `pyproject.toml` pins `transformers<5`, `trl>=0.23`. The new scripts
@@ -228,7 +227,6 @@ python scripts/eval_qc_verifier.py \
   verify — so a KL term would pull the verifier back toward chance.
 * **Scoring** needs no generation: the two verdicts differ at their first
   token (`in` vs `complete`), so one forward pass gives P(incomplete).
-  Batched scoring is tested equal to brute force.
 * **Thresholds** are picked on the synthetic *validation* split and applied
   unchanged to the test sets (1/3, 0.5, and "catch ≥95% on validation").
 
@@ -319,8 +317,6 @@ verifier use it. Previously calibration used `rl.rewards.entity_recall`
 ## 9. What was tested, and what was not
 
 Tested locally (CPU, transformers 5.8, trl 1.4, peft 0.18):
-- 19 unit tests (`tests/test_qc_verifier.py`), including batched scoring equal
-  to brute force on a tiny Qwen3 with the real tokenizer.
 - The full verifier chain end-to-end on a tiny random model: build → SFT →
   GRPO → assemble → evaluate. Wiring only; says nothing about accuracy.
 - Dataset builder on the real 25,972-note train split.

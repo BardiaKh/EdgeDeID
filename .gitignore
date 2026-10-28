@@ -55,3 +55,7 @@ Thumbs.db
 .claude/
 
 paper/
+
+# Test and virtualenv caches
+.pytest_cache/
+.venv*/
