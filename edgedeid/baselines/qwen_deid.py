@@ -40,6 +40,9 @@ class QwenDeidBaseline(BaselineModel):
         # the budget uniform across all generative models for a fair comparison.
         max_new_tokens: int = 1024,
         emit_qc_status: bool = False,
+        # Few-shot {original, anonymized} dicts for the prompt's <examples>
+        # block (see edgedeid.fewshot); None = zero-shot, as in training.
+        examples: list[dict] | None = None,
     ):
         import torch
         from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -55,6 +58,7 @@ class QwenDeidBaseline(BaselineModel):
         self.emit_qc_status = emit_qc_status
         self.gen_stop_str = "</qc_status>" if emit_qc_status else self.stop_str
         self.max_new_tokens = max_new_tokens
+        self.examples = examples
         self._torch = torch
 
         # float16 is unstable on MPS/CPU — use float32 there, bf16 on CUDA.
@@ -94,7 +98,7 @@ class QwenDeidBaseline(BaselineModel):
     def predict_xml(self, note: str) -> str:
         from edgedeid.eval.inference import _build_prompt
 
-        prompt = _build_prompt(note, with_qc_status=self.emit_qc_status)
+        prompt = _build_prompt(note, self.examples, with_qc_status=self.emit_qc_status)
         inputs = self.tokenizer(prompt, return_tensors="pt", truncation=True,
                                 max_length=4096).to(self.device)
         with self._torch.no_grad():
@@ -119,7 +123,7 @@ class QwenDeidBaseline(BaselineModel):
         """
         from edgedeid.eval.inference import _build_prompt
 
-        prompts = [_build_prompt(n, with_qc_status=self.emit_qc_status) for n in notes]
+        prompts = [_build_prompt(n, self.examples, with_qc_status=self.emit_qc_status) for n in notes]
         # Left-padding is required for correct batched decoding of causal LMs.
         prev_side = self.tokenizer.padding_side
         self.tokenizer.padding_side = "left"
@@ -153,7 +157,7 @@ class QwenDeidBaseline(BaselineModel):
         """
         from edgedeid.eval.inference import _build_prompt
 
-        prompts = [_build_prompt(n, with_qc_status=self.emit_qc_status) for n in notes]
+        prompts = [_build_prompt(n, self.examples, with_qc_status=self.emit_qc_status) for n in notes]
         prev_side = self.tokenizer.padding_side
         self.tokenizer.padding_side = "left"
         inputs = self.tokenizer(prompts, return_tensors="pt", truncation=True,
